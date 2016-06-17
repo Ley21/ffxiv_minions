@@ -1,11 +1,12 @@
 <?php
     require_once "config.php";
+    require_once "helper.php";
     
     // Create table for minions 
     $database->query("CREATE TABLE minions (
         id INT NOT NULL,
         name VARCHAR(100) NOT NULL,
-        icon_url VARCHAR(100) NOT NULL,
+        icon_url VARCHAR(255) NOT NULL,
         description TEXT NOT NULL,
         method VARCHAR(100),
         method_description TEXT,
@@ -37,32 +38,7 @@
         $first = 1;
         $last = $_GET["last"];
         foreach(range($first, $last) as $number) {
-            $json = file_get_contents("https://api.xivdb.com/minion/$number");
-            $obj = json_decode($json);
-            $db_minion = strtolower($obj->name);
-            
-            if(empty($obj->id)){
-                //echo "Minion with number '$number' does not exists.";
-            }
-            elseif($db_minion == "wind-up merlwyb" ||
-                $db_minion == "wind-up kan-e" ||
-                $db_minion == "wind-up raubahn"){
-                
-            }
-            else{
-                $name = $database->quote($obj->name);
-                $xivdb_icon = $database->quote($obj->xivdb_icon);
-                $info = $database->quote($obj->info1);
-                
-                $database->query("REPLACE INTO minions VALUES (
-                    $obj->id, 
-                    $name, 
-                    $xivdb_icon,
-                    $info,
-                    '',
-                    '');");
-                    //var_dump($database->error());
-            }
+            insert_update_minion($number);
         }
     }
     

@@ -40,6 +40,20 @@
             //document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
             return  false;
         });
+        
+        $(document).on("click",'#ranking',function(){
+          $('#content').html("Loading ranking...");
+          $.ajax
+          ({ 
+              url: 'ranking.php',
+              data: "",
+              type: 'post',
+              success: function(data)
+              {
+                 $('#content').html(data);
+              }
+          });
+        });
     </script> 
   </head>
   <body>
@@ -74,8 +88,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-
-        
+      <li><a id="ranking">Ranking</a></li>
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
       <div class="form-group">

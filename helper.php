@@ -9,7 +9,7 @@
         foreach($sql_data as $minion_data){
             $name = ucwords($minion_data['name']);
             $m_id = $minion_data['id'];
-            $icon_url = "http://xivdb.com".$minion_data['icon_url'];
+            $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
             $table .= "<tr>";
             $table .= "<td><a href='https://xivdb.com/minion/$m_id'>$name</a></td>";
@@ -19,6 +19,27 @@
         }
         $table .= "</table></div>
         </div>";
+        return $table;
+    }
+    
+    function create_ranking(){
+        global $database;
+        $table = '<table class="table table-striped"><tr><th>Name</th><th>World</th><th>Number of Minions</th></tr>';
+        $players = $database->select("players",["id","name","world"],"");
+        $ranking = array();
+        foreach($players as $player){
+            $count = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
+            array_push($ranking,array($count,$player));
+        }
+        arsort($ranking);
+        foreach($ranking as $r_player){
+            $player = $r_player[1];
+            $name = ucwords($player['name']);
+            $world = ucwords($player['world']);
+            $count = $r_player[0];
+            $table .= "<tr><td>$name</td><td>$world</td><td>$count</td></tr>";
+        }
+        $table .= '</table>';
         return $table;
     }
     
@@ -32,7 +53,7 @@
             $count++;
             $name = ucwords($minion_data['name']);
             $m_id = $minion_data['id'];
-            $icon_url = "http://xivdb.com".$minion_data['icon_url'];
+            $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
             $thumbnail .= '<div class="col-xs-0 col-md-1">';
             $thumbnail .= "<a href='https://xivdb.com/minion/$m_id' class='thumbnail'>";
@@ -129,4 +150,42 @@
         return $output;
     }
 
+    function insert_update_minion($id){
+        global $database;
+        $json = file_get_contents("https://api.xivdb.com/minion/$id");
+        $obj = json_decode($json);
+        $db_minion = strtolower($obj->name);
+        
+        if(empty($obj->id)){
+            //echo "Minion with number '$number' does not exists.";
+        }
+        elseif($db_minion == "wind-up merlwyb" ||
+            $db_minion == "wind-up kan-e" ||
+            $db_minion == "wind-up raubahn"){
+            
+        }
+        elseif($obj->id == 68 ||$obj->id == 69 || $obj->id == 70){
+            
+        }
+        else{
+            $xivdb_icon = $database->quote("http://xivdb.com".$obj->xivdb_icon);
+            
+            $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
+            if(empty($db_id)){
+                $database->insert("minions",[
+                    "id"=>$obj->id,
+                    "name"=>$obj->name,
+                    "icon_url" => $xivdb_icon,
+                    "description" => $obj->info1]);
+            }
+            else{
+                $database->update("minions",[
+                    "id"=>$obj->id,
+                    "name"=>$obj->name,
+                    "icon_url" => $xivdb_icon,
+                    "description"=>$obj->info1],
+                    ["id[=]"=>$id]);
+            }
+        }
+    }
 ?>
