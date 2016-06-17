@@ -1,0 +1,6 @@
+{
+    "require": {
+        "catfan/Medoo": "^1.0",
+        "viion/xivpads-lodestoneapi": "^1.0"
+    }
+}
