@@ -55,9 +55,9 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
-            $thumbnail .= '<div class="col-xs-0 col-md-1">';
-            $thumbnail .= "<a href='https://xivdb.com/minion/$m_id' class='thumbnail'>";
-            $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url>";
+            $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto">';
+            $thumbnail .= "<a href='https://xivdb.com/minion/$m_id' class='thumbnail' >";
+            $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url >";
             $thumbnail .= "</a>";
             $thumbnail .= "</div>";
         }
