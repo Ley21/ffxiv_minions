@@ -52,7 +52,7 @@
 
           <p class="text-center">
 <div class="row">
-  <div class="col-md-9 col-md-offset-1">
+  <div class="col-md-12 col-md-offset-0">
 <div class="jumbotron">
   <h1>FFXIV - Minions</h1>
   <p>Minion Collection Site</p>

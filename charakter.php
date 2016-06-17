@@ -87,6 +87,8 @@
         "*", ["name[=]"=> $name]);
     $p_id = $player[0]["id"];
     $p_name = ucwords($player[0]["name"]);
+    $p_server = ucwords($player[0]["world"]);
+    $p_portrait = ucwords($player[0]["portrait"]);
     
     //Get existing minions
     $exitsts_minions = $database->select("minions", 
@@ -98,10 +100,17 @@
         "WHERE id NOT IN (SELECT id FROM minions LEFT JOIN player_minion ON minions.id = player_minion.m_id
         WHERE player_minion.p_id=$p_id)");
 
+
+
     //Show all minions as tables
     echo "<center>";
-    echo "<h2>$p_name</h2></br>";          
-    echo create_table("Owened Minions",$exitsts_minions);
+    echo '<div class="row"><div class="col-md-3">';
+    echo '<div class="page-header">'."<h1>$p_name</br><small>$p_server</small></h1>";
+    echo "<img src=$p_portrait class='img-rounded img-responsive'></div>";
+    echo '</div>';
+    echo '<div class="col-md-9">';
+    echo create_thumbnail("Owned Minions",$exitsts_minions);
+    echo '</div></div>';
     echo create_table("Missing Minions",$missing_minions);
     echo "</center>";
 
@@ -112,10 +121,11 @@
         $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Description</th></tr>';
         foreach($sql_data as $minion_data){
             $name = ucwords($minion_data['name']);
+            $m_id = $minion_data['id'];
             $icon_url = "http://xivdb.com".$minion_data['icon_url'];
             $description = $minion_data['description'];
             $table .= "<tr>";
-            $table .= "<td>$name</td>";
+            $table .= "<td><a href='https://xivdb.com/minion/$m_id'>$name</a></td>";
             $table .= "<td><img class='media-object' src=$icon_url></td>";
             $table .= "<td>$description</td>";
             $table .= "</tr>";
@@ -123,6 +133,28 @@
         $table .= "</table></div>
         </div>";
         return $table;
+    }
+    
+    function create_thumbnail($title,$sql_data){
+        $thumbnail = '<div class="panel panel-primary">
+        <div class="panel-heading">'.$title.'</div>
+        <div class="panel-body">';
+        $count = 0;
+        foreach($sql_data as $minion_data){
+            
+            $count++;
+            $name = ucwords($minion_data['name']);
+            $m_id = $minion_data['id'];
+            $icon_url = "http://xivdb.com".$minion_data['icon_url'];
+            $description = $minion_data['description'];
+            $thumbnail .= '<div class="col-xs-0 col-md-1">';
+            $thumbnail .= "<a href='https://xivdb.com/minion/$m_id' class='thumbnail'>";
+            $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url>";
+            $thumbnail .= "</a>";
+            $thumbnail .= "</div>";
+        }
+        $thumbnail .= "</div></div>";
+        return $thumbnail;
     }
     
     

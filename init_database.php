@@ -16,7 +16,7 @@
         id INT NOT NULL,
         name VARCHAR(100) NOT NULL,
         world VARCHAR(50) NOT NULL,
-        portrait VARCHAR(100) NOT NULL,
+        portrait VARCHAR(250) NOT NULL,
         last_update_date DATE NOT NULL,
         PRIMARY KEY ( id )
         );");
