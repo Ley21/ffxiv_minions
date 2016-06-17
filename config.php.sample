@@ -10,10 +10,10 @@
     // Initialize
     $database = new medoo([
         'database_type' => 'mysql',
-        'database_name' => 'minions',
-        'server' => getenv('IP'),
-        'username' => 'minions',
-        'password' => 'xmdRxXLaddKmcWd5',
+        'database_name' => 'DATABASE_NAME',
+        'server' => 'SERVER_ADDRESS',
+        'username' => 'USERNAME',
+        'password' => 'PASSWORD',
         'charset' => 'utf8'
     ]);
 
