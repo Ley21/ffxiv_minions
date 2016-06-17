@@ -1,3 +1,4 @@
+
 <?php
 
     require_once "config.php";
@@ -17,6 +18,10 @@
         $api = new Viion\Lodestone\LodestoneAPI();
         $character = $api->Search->Character($name, $server);
         
+        if(empty($character->id)){
+            echo "Could not find the charakter '$name' on server '$server'";
+            exit;
+        }
         $c_name = strtolower($character->name);
         $c_world = strtolower($character->world);
         $c_portrait = $database->quote($character->portrait);
@@ -104,24 +109,29 @@
     //Show all minions as tables
     echo "<center>";
     echo "<h2>$p_name</h2></br>";          
-    echo create_table($exitsts_minions);
-    echo create_table($missing_minions);
+    echo create_table("Owened Minions",$exitsts_minions);
+    echo create_table("Missing Minions",$missing_minions);
     echo "</center>";
 
-    function create_table($sql_data){
-        $table = "<table><tr><th>Name</th><th>Icon</th><th>Description</th></tr>";
+    function create_table($title,$sql_data){
+        $table = '<div class="panel panel-primary">
+        <div class="panel-heading">'.$title.'</div>
+        <div class="panel-body">';
+        $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Description</th></tr>';
         foreach($sql_data as $minion_data){
             $name = ucwords($minion_data['name']);
             $icon_url = "http://xivdb.com".$minion_data['icon_url'];
             $description = $minion_data['description'];
             $table .= "<tr>";
             $table .= "<td>$name</td>";
-            $table .= "<td><img src=$icon_url></td>";
+            $table .= "<td><img class='media-object' src=$icon_url></td>";
             $table .= "<td>$description</td>";
             $table .= "</tr>";
         }
-        $table .= "</table>";
+        $table .= "</table></div>
+        </div>";
         return $table;
     }
+    
     
 ?>
