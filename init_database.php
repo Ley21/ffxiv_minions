@@ -39,8 +39,15 @@
         foreach(range($first, $last) as $number) {
             $json = file_get_contents("https://api.xivdb.com/minion/$number");
             $obj = json_decode($json);
+            $db_minion = strtolower($obj->name);
+            
             if(empty($obj->id)){
-                echo "Minion with number '$number' does not exists.";
+                //echo "Minion with number '$number' does not exists.";
+            }
+            elseif($db_minion == "wind-up merlwyb" ||
+                $db_minion == "wind-up kan-e" ||
+                $db_minion == "wind-up raubahn"){
+                
             }
             else{
                 $name = $database->quote($obj->name);

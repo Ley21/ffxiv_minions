@@ -66,14 +66,6 @@
             $db_minion = strtolower($data['name']);
             $m_id = $data["id"];
             
-            //Workaround because for each gc another minion exists.
-            if($db_minion == "wind-up merlwyb" ||
-                $db_minion == "wind-up kan-e" ||
-                $db_minion == "wind-up raubahn"){
-                $db_minion = "wind-up leader";
-                
-            }
-            
             foreach($minions as $minion){
                 
                 $player_minion = strtolower($minion['name']);
