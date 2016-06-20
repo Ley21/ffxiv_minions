@@ -208,7 +208,7 @@
         //Save the database in the file / update new minions to file
         $minions = $database->select("minions",
             ["id","name","method","method_description"]);
-        $json_informations = json_encode($minions);
+        $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
         file_put_contents($file, $json_informations);
     }
 ?>
