@@ -40,6 +40,7 @@
         foreach(range($first, $last) as $number) {
             insert_update_minion($number);
         }
-    }
+    }    
+    read_write_methode();
     
 ?>

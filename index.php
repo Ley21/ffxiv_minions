@@ -60,6 +60,8 @@
 <?php
 
     require_once "config.php";
+    require_once "helper.php";
+    read_write_methode();
     
 ?>
 <div class="container">
