@@ -4,24 +4,41 @@
     require_once "config.php";
     require_once "helper.php";
     
-    //Get informations from get.
-    $name = strtolower($_GET["name"]);
-    $server = strtolower($_GET["server"]);
-    $esc_name = $database->quote($name);
-    
-    //Get player from database if exists.
-    $player = $database->select('players',
-        "*", ["name[=]"=> $name]);
-    
-    //Check if the last update date is longer then one day ago.
-    if($player[0]['last_update_date'] != date("Y-m-d")){
-        insert_update_charakter_by_name($name,$server);
+    $id = $_GET["id"];
+    $player;
+    if(!empty($id)){
+        
+        //Get player from database if exists.
+        $player = $database->select('players',
+            "*", ["id[=]"=> $id]);//Check if the last update date is longer then one day ago.
+        if($player[0]['last_update_date'] != date("Y-m-d")){
+            insert_update_charakter_by_id($id);
+                
+        }
             
+    }else{
+    
+        //Get informations from get.
+        $name = strtolower($_GET["name"]);
+        $server = strtolower($_GET["server"]);
+        $esc_name = $database->quote($name);
+        //Get player from database if exists.
+        $player = $database->select('players',
+            "*", ["name[=]"=> $name]);
+            //Check if the last update date is longer then one day ago.
+        if($player[0]['last_update_date'] != date("Y-m-d")){
+            insert_update_charakter_by_name($name,$server);
+                
+        }
     }
     
-    //Get player id
-    $player = $database->select('players',
-        "*", ["name[=]"=> $name]);
+    
+    if(empty($player)){
+        
+        //Get player id
+        $player = $database->select('players',
+            "*", ["name[=]"=> $name]);
+    }
     $p_id = $player[0]["id"];
     $p_name = ucwords($player[0]["name"]);
     $p_server = ucwords($player[0]["world"]);

@@ -24,7 +24,7 @@
     
     function create_ranking(){
         global $database;
-        $table = '<table class="table table-striped"><tr><th>Name</th><th>World</th><th>Number of Minions</th></tr>';
+        $table = '<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>World</th><th>Number of Minions</th></tr></thead>';
         $players = $database->select("players",["id","name","world"],"");
         $ranking = array();
         foreach($players as $player){
@@ -32,12 +32,15 @@
             array_push($ranking,array($count,$player));
         }
         arsort($ranking);
+        $nr = 1;
         foreach($ranking as $r_player){
             $player = $r_player[1];
+            $p_id = $player['id'];
             $name = ucwords($player['name']);
             $world = ucwords($player['world']);
             $count = $r_player[0];
-            $table .= "<tr><td>$name</td><td>$world</td><td>$count</td></tr>";
+            $table .= "<tr><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count</td></tr>";
+            $nr++;
         }
         $table .= '</table>';
         return $table;

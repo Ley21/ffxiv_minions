@@ -9,7 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,30 +21,32 @@
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <script src="http://xivdb.com/tooltips.js"></script>
+
     
     <script type='text/javascript'>
     
-        $(document).on("submit", "form", function(e){
-            e.preventDefault();
-            var formSubmit = $('#char_search').serialize();
+        var base_url = "/minions";
+        function loadCharakter(id) {
             $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
             $.ajax({
             
                  type: "GET",
                  url: 'charakter.php',
-                 data: formSubmit, // appears as $_GET['id'] @ your backend side
+                 data: "id="+id, // appears as $_GET['id'] @ your backend side
                  success: function(data) {
                        // data is ur summary
                       $('#content').html(data);
+                      window.history.pushState("object or string", "Charakter", base_url+"/char?id="+id);
                  }
             
                });
-            //document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
-            return  false;
-        });
+        }
         
-        $(document).on("click",'#ranking',function(){
-          $('#content').html("Loading ranking...");
+        function loadRanking() {
+            $('#content').html("Loading ranking...");
           $.ajax
           ({ 
               url: 'ranking.php',
@@ -51,9 +55,50 @@
               success: function(data)
               {
                  $('#content').html(data);
+                  $('.table').DataTable();
+                window.history.pushState("object or string", "", base_url+"/ranking");
               }
           });
+        }
+    
+        $(document).on("submit", "form", function(e){
+            e.preventDefault();
+            var formSubmit = $('#char_search').serialize();
+            
+            loadCharakter(formSubmit);
+            //document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
+            return  false;
         });
+        
+        $(document).on("click",'#ranking',function(){
+          loadRanking();
+        });
+        
+        $( document ).ready(function() {
+            var pathArray = window.location.pathname.split( '/' );
+            var last = pathArray[pathArray.length - 1];
+            if(last == "char"){
+                var id = getUrlParameter("id");
+                loadCharakter(id);
+            }else if (last == "ranking"){
+              loadRanking();
+            }
+        });
+        
+        function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+        
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+        
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
     </script> 
   </head>
   <body>
@@ -61,8 +106,8 @@
 
     require_once "config.php";
     require_once "helper.php";
-    read_write_methode();
-    
+
+    $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}";
 ?>
 <div class="container">
 
@@ -84,7 +129,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="<?php echo $actual_link;?>">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
