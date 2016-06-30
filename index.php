@@ -10,7 +10,8 @@
     <!-- Bootstrap -->
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="custom.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    
     
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,57 +25,65 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-    <script src="http://xivdb.com/tooltips.js"></script>
+    <!-- <script src="https://xivdb.com/tooltips.min.js"></script>-->
+    
 
     
     <script type='text/javascript'>
     
+        /*var xivdb_tooltips =
+        {
+            // the XIVDB server to query (this will be https soon)
+            xivdb: 'https://xivdb.com'
+        
+            
+        };*/
+    
         var base_url = "/minions";
         
-                function loadCharakter(id) {
+        function pushUrl(type,urlData){
+          
+          //var rest = urlData ? "&"+urlData : "";
+          window.history.pushState("object or string", "", base_url+"/"+type+"?"+urlData);
+        }
+        function loadCharakter(id) {
             $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-            $.ajax({
+            ajaxCall("char","charakter.php",getLangData() +"&"+"id="+id,function(data){});
             
-                 type: "GET",
-                 url: 'charakter.php',
-                 data: "id="+id, // appears as $_GET['id'] @ your backend side
-                 success: function(data) {
-                       // data is ur summary
-                      $('#content').html(data);
-                      window.history.pushState("object or string", "Charakter", base_url+"/char?id="+id);
-                 }
-            
-               });
         }
         
         function searchCharakter(formData) {
             $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-            $.ajax({
-            
-                 type: "GET",
-                 url: 'charakter.php',
-                 data: formData, // appears as $_GET['id'] @ your backend side
-                 success: function(data) {
-                       // data is ur summary
-                      $('#content').html(data);
-                      window.history.pushState("object or string", "Charakter", base_url+"/char?"+formData);
-                 }
-            
-               });
+            ajaxCall("char","charakter.php",getLangData() +"&"+formData,function(data){});
         }
         
+        
+        function getLangData(){
+          var lang = getUrlParameter("lang");
+          lang = lang ? lang : "en"
+          return "lang="+lang;
+        }
+        
+        
         function loadRanking() {
+          
             $('#content').html("Loading ranking...");
+            ajaxCall("ranking","ranking.php",getLangData(),function(data){});
+        }
+        
+        function ajaxCall(baseurl,url,submitData,func){
           $.ajax
           ({ 
-              url: 'ranking.php',
-              data: "",
-              type: 'post',
+              url: url,
+              data: submitData,
+              type: 'get',
               success: function(data)
               {
+                
                  $('#content').html(data);
-                  $('.table').DataTable();
-                window.history.pushState("object or string", "", base_url+"/ranking");
+                 func(data);
+                 pushUrl(baseurl,submitData);
+                 $('.table').DataTable();
               }
           });
         }
@@ -107,6 +116,7 @@
           loadRanking();
         });
         
+        
         $( document ).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
             var last = pathArray[pathArray.length - 1];
@@ -123,8 +133,15 @@
             }else if (last == "ranking"){
               loadRanking();
             }
+            else{
+              pushUrl("",getLangData());
+            }
+            
         });
-        
+        $(document).on("change",'#lang',function(){
+          //window.location.search = jQuery.query.set("lang", this.value);
+          //location.reload();
+        });
 
         
     </script> 
@@ -134,8 +151,11 @@
 
     require_once "config.php";
     require_once "helper.php";
+    
 
-    $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}";
+    $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=".get_lang();
+    $homeTitle = language_text("Home","","Startseite","");
+    $rankingTitle = language_text("Ranking","","Statistik","");
 ?>
 <div class="container">
 
@@ -157,13 +177,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo $actual_link;?>">Home</a>
+      <a class="navbar-brand" href="<?php echo $actual_link;?>"><?php echo $homeTitle;?></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-      <li><a id="ranking">Ranking</a></li>
+      <li><a id="ranking"><?php echo $rankingTitle;?></a></li>
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
       <div class="form-group">
@@ -236,6 +256,14 @@
     </select>
     <button type="submit" class="btn btn-default">Search</button>
     </div>
+    </form>
+    <form class="navbar-form navbar-right form-inline">
+      <select class="form-control" id="lang">
+        <option value="en" <?php echo "en" == get_lang() ? "selected='selected'" : "";?>>Englisch</option>
+        <option value="fr" <?php echo "fr" == get_lang() ? "selected='selected'" : "";?>>Französisch</option>
+        <option value="de" <?php echo "de" == get_lang() ? "selected='selected'" : "";?>>Deutsch</option>
+        <option value="jp" <?php echo "ja" == get_lang() ? "selected='selected'" : "";?>>Japanisch</option>
+      </select>
     </form>
       
     </div><!-- /.navbar-collapse -->

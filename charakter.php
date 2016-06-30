@@ -63,9 +63,11 @@
     echo "<img src=$p_portrait class='img-rounded img-responsive'></div>";
     echo '</div>';
     echo '<div class="col-md-9">';
-    echo create_thumbnail("Owned Minions",$exitsts_minions);
+    $ownedTile = language_text("Owned Minions","","Begleiter im Besitz","");
+    echo create_thumbnail($ownedTile,$exitsts_minions);
     echo '</div></div>';
-    echo create_table("Missing Minions",$missing_minions);
+    $missingTile = language_text("Missing Minions","","Fehlende Begleiter","");
+    echo create_table($missingTile,$missing_minions);
     echo "</center>";
 
     

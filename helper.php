@@ -1,43 +1,61 @@
 <?php
     require_once "config.php";
     
-    function create_table($title,$sql_data){
+    function get_lang(){
         $lang = empty($_GET["lang"]) ? "en" : $_GET["lang"];
+        return $lang;
+    }
+    function language_text($en,$fr,$de,$jp){
+        switch(get_lang()){
+            case "de":
+                return empty($de) ? $en : $de;
+            case "fr":
+                return empty($fr) ? $en : $fr;
+            case "ja":
+                return empty($ja) ? $en : $ja;
+            default:
+            case "en":
+                return $en;
+        }
+    }
+    
+    function create_table($title,$sql_data){
+        $lang = get_lang();
         $table = '<div class="panel panel-primary">
         <div class="panel-heading">'.$title.'</div>
         <div class="panel-body">';
-        switch($lang){
-            case "de":
-                $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Methode</th><th>Beschreibung</th></tr>';
-                break;
-            default:
-            case "en":
-                $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Methode</th><th>Description</th></tr>';
-                break;
-        }
-        
+        $table .= language_text('<table class="table table-striped"><thead><tr><th>Symbol</th><th>Name</th><th>Patch</th><th>Methode</th><th>Description</th></tr></thead>',
+        "",'<table class="table table-striped"><thead><tr><th>Icon</th><th>Name</th><th>Patch</th><th>Methode</th><th>Beschreibung</th></tr></thead>',"");
+
+        $table .= "<tbody>";
         foreach($sql_data as $minion_data){
             $name = ucwords($minion_data['name_'.$lang]);
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
-            $methode = empty($minion_data['method_description_'.$lang]) 
-                ? $minion_data['method_description_en'] : $minion_data['method_description_'.$lang];
+            $patch = $minion_data['patch'];
+            $methode = language_text($minion_data['method_description_en'],
+                $minion_data['method_description_fr'],
+                $minion_data['method_description_de'],
+                $minion_data['method_description_ja']);
+                
             $methode_name = $minion_data['method'] ;
             $table .= "<tr>";
-            $table .= "<td class='shrink'><a href='https://$lang.xivdb.com/minion/$m_id'>$name</a></td>";
             $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
+            $table .= "<td class='shrink'><a href='https://$lang.xivdb.com/minion/$m_id'>$name</a></td>";
+            $table .= "<td class='shrink'>$patch</td>";
             $table .= "<td class='shrink'>$methode_name</td>";
             $table .= "<td class='expand'>$methode</td>";
             $table .= "</tr>";
         }
-        $table .= "</table></div>
+        $table .= "</tbody></table></div>
         </div>";
         return $table;
     }
     
     function create_ranking(){
         global $database;
-        $table = '<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>World</th><th>Number of Minions</th></tr></thead>';
+        //$lang = get_lang();
+        $table = language_text('<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>World</th><th>Number of Minions</th></tr></thead>',"",'<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>Welt</th><th>Anzahl der Minions</th></tr></thead>',"");
         $players = $database->select("players",["id","name","world"],"");
         $ranking = array();
         foreach($players as $player){
@@ -203,7 +221,7 @@
             
         }
         else{
-            $xivdb_icon = $database->quote("http://xivdb.com".$obj->xivdb_icon);
+            $xivdb_icon = $database->quote("https://xivdb.com".$obj->xivdb_icon);
             
             $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
