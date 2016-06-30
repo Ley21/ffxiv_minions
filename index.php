@@ -25,18 +25,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-    <script src="https://xivdb.com/tooltips.js"></script>
+    <script src="http://xivdb.com/tooltips.min.js"></script>
     
 
     
     <script type='text/javascript'>
-        var xivdb_tooltips =
-        {
-            // the XIVDB server to query (this will be https soon)
-            xivdb: 'https://xivdb.com',
-            
-        };
-    
         var base_url = "/minions";
         
         function pushUrl(type,urlData){
@@ -153,10 +146,11 @@
 
     require_once "config.php";
     require_once "helper.php";
+    require_once "language.php";
     
-
+    $lang = get_lang();
     $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=".get_lang();
-    $homeTitle = language_text("Home","","Startseite","");
+    //$homeTitle = language_text("Home","","Startseite","");
     $rankingTitle = language_text("Ranking","","Statistik","");
 ?>
 <div class="container">
@@ -179,7 +173,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo $actual_link;?>"><?php echo $homeTitle;?></a>
+      <a class="navbar-brand" href="<?php echo $actual_link;?>"><?php echo $language_texts['home'][$lang];?></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -275,6 +269,8 @@
 
     <div id="content">
       <?php 
+      
+        
         $patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
         $floatPatches = array();
         foreach($patches as $patch){
@@ -302,5 +298,6 @@
 </div>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+        
   </body>
 </html>
