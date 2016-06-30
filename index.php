@@ -25,19 +25,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-    <!-- <script src="https://xivdb.com/tooltips.min.js"></script>-->
+    <script src="https://xivdb.com/tooltips.js"></script>
     
 
     
     <script type='text/javascript'>
-    
-        /*var xivdb_tooltips =
+        var xivdb_tooltips =
         {
             // the XIVDB server to query (this will be https soon)
-            xivdb: 'https://xivdb.com'
-        
+            xivdb: 'https://xivdb.com',
             
-        };*/
+        };
     
         var base_url = "/minions";
         
@@ -135,6 +133,7 @@
             }
             else{
               pushUrl("",getLangData());
+              $('.table').DataTable();
             }
             
         });
@@ -274,7 +273,27 @@
 </nav>
             
 
-    <div id="content"></div>
+    <div id="content">
+      <?php 
+        $patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
+        $floatPatches = array();
+        foreach($patches as $patch){
+          $version = $patch['patch'];
+          $float = floatval($version);
+          array_push($floatPatches,$float);
+        }
+        sort($floatPatches);
+        $lastPatch = number_format(end($floatPatches),1,".","");
+        
+        $latest_minions = $database->select("minions","*",
+          ["patch[=]"=>$lastPatch]);
+        $latestMinionTitle = language_text("Latest Minions","","Neuste Begleiter","");
+        
+        echo "<center>";
+        echo create_table($latestMinionTitle,$latest_minions);
+        echo "</center>";
+      ?>
+    </div>
 </div></p>
 </div>
 
