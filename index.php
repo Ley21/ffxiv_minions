@@ -44,6 +44,21 @@
             
                });
         }
+        function searchCharakter(formData) {
+            $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
+            $.ajax({
+            
+                 type: "GET",
+                 url: 'charakter.php',
+                 data: formData, // appears as $_GET['id'] @ your backend side
+                 success: function(data) {
+                       // data is ur summary
+                      $('#content').html(data);
+                      window.history.pushState("object or string", "Charakter", base_url+"/char?"+formData);
+                 }
+            
+               });
+        }
         
         function loadRanking() {
             $('#content').html("Loading ranking...");
@@ -65,7 +80,7 @@
             e.preventDefault();
             var formSubmit = $('#char_search').serialize();
             
-            loadCharakter(formSubmit);
+            searchCharakter(formSubmit);
             //document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
             return  false;
         });
@@ -79,7 +94,14 @@
             var last = pathArray[pathArray.length - 1];
             if(last == "char"){
                 var id = getUrlParameter("id");
-                loadCharakter(id);
+                if(id){
+                  loadCharakter(id);
+                }
+                else{
+                  var sPageURL = decodeURIComponent(window.location.search.substring(1));
+                  searchCharakter(sPageURL);
+                }
+                
             }else if (last == "ranking"){
               loadRanking();
             }

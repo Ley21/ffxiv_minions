@@ -10,7 +10,7 @@
             $name = ucwords($minion_data['name']);
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
-            $description = $minion_data['description'];
+            $description = $minion_data['description_en'];
             $table .= "<tr>";
             $table .= "<td><a href='https://xivdb.com/minion/$m_id'>$name</a></td>";
             $table .= "<td><img class='media-object' src=$icon_url></td>";
@@ -94,6 +94,8 @@
         $c_world = strtolower($character->world);
         $c_portrait = $database->quote($character->portrait);
         
+        
+        
         //Check if an charakter with the same id already exists
         $p_id = $database->get("players", "id", ["id" => $character->id]);
         $output;
@@ -103,7 +105,15 @@
             	"id" => $character->id,
             	"name" => $c_name,
             	"world" => $c_world,
+            	"title" => $character->title,
             	"portrait" => $c_portrait,
+            	"race" => $character->race,
+            	"clan" => $character->clan,
+            	"gender" => $character->gender,
+            	"nameday" => $character->nameday,
+            	"guardian" => $character->guardian,
+            	"grandCompany" => $character->grandCompany,
+            	"freeCompany" => $character->freeCompany,
             	"last_update_date" => date("Y-m-d")
             ]);
             $output = "New charakter '$c_name' with id '$character->id' from server '$c_world' was added to database.";
@@ -113,7 +123,15 @@
             $database->update("players", [
             	"name" => $c_name,
             	"world" => $c_world,
+            	"title" => $character->title,
             	"portrait" => $c_portrait,
+            	"race" => $character->race,
+            	"clan" => $character->clan,
+            	"gender" => $character->gender,
+            	"nameday" => $character->nameday,
+            	"guardian" => $character->guardian,
+            	"grandCompany" => $character->grandCompany,
+            	"freeCompany" => $character->freeCompany,
             	"last_update_date" => date("Y-m-d")
             ], ["id[=]"=>$character->id]);
             $output = "Charakter '$c_name' with id '$character->id' from server '$c_world' was updated.";
@@ -179,14 +197,28 @@
                     "id"=>$obj->id,
                     "name"=>$obj->name,
                     "icon_url" => $xivdb_icon,
-                    "description" => $obj->info1]);
+                    "name_en"=>$obj->name_en,
+                    "name_fr"=>$obj->name_fr,
+                    "name_de"=>$obj->name_de,
+                    "name_ja"=>$obj->name_ja,
+                    "description_en" => $obj->info1_en,
+                    "description_fr" => $obj->info1_fr,
+                    "description_de" => $obj->info1_de,
+                    "description_ja" => $obj->info1_ja]);
             }
             else{
                 $database->update("minions",[
                     "id"=>$obj->id,
                     "name"=>$obj->name,
                     "icon_url" => $xivdb_icon,
-                    "description"=>$obj->info1],
+                    "name_en"=>$obj->name_en,
+                    "name_fr"=>$obj->name_fr,
+                    "name_de"=>$obj->name_de,
+                    "name_ja"=>$obj->name_ja,
+                    "description_en" => $obj->info1_en,
+                    "description_fr" => $obj->info1_fr,
+                    "description_de" => $obj->info1_de,
+                    "description_ja" => $obj->info1_ja],
                     ["id[=]"=>$id]);
             }
         }
@@ -204,14 +236,20 @@
         foreach($read_minons as $minion){
             $database->update("minions",[
                 "method" => $minion->method,
-                "method_description" => $minion->method_description],
+                "method_description_en" => $minion->method_description_en,
+                "method_description_fr" => $minion->method_description_fr,
+                "method_description_de" => $minion->method_description_de,
+                "method_description_ja" => $minion->method_description_ja],
                 ["id[=]"=>$minion->id]);
         }
         
         //Save the database in the file / update new minions to file
         $minions = $database->select("minions",
-            ["id","name","method","method_description"]);
+            ["id","name","method","method_description_en","method_description_fr",
+            "method_description_de","method_description_ja"]);
         $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
         file_put_contents($file, $json_informations);
     }
 ?>
+        
+        
