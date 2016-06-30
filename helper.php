@@ -2,19 +2,32 @@
     require_once "config.php";
     
     function create_table($title,$sql_data){
+        $lang = empty($_GET["lang"]) ? "en" : $_GET["lang"];
         $table = '<div class="panel panel-primary">
         <div class="panel-heading">'.$title.'</div>
         <div class="panel-body">';
-        $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Description</th></tr>';
+        switch($lang){
+            case "de":
+                $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Methode</th><th>Beschreibung</th></tr>';
+                break;
+            default:
+            case "en":
+                $table .= '<table class="table table-striped"><tr><th>Name</th><th>Icon</th><th>Methode</th><th>Description</th></tr>';
+                break;
+        }
+        
         foreach($sql_data as $minion_data){
-            $name = ucwords($minion_data['name']);
+            $name = ucwords($minion_data['name_'.$lang]);
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
-            $description = $minion_data['description_en'];
+            $methode = empty($minion_data['method_description_'.$lang]) 
+                ? $minion_data['method_description_en'] : $minion_data['method_description_'.$lang];
+            $methode_name = $minion_data['method'] ;
             $table .= "<tr>";
-            $table .= "<td><a href='https://xivdb.com/minion/$m_id'>$name</a></td>";
-            $table .= "<td><img class='media-object' src=$icon_url></td>";
-            $table .= "<td>$description</td>";
+            $table .= "<td class='shrink'><a href='https://$lang.xivdb.com/minion/$m_id'>$name</a></td>";
+            $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
+            $table .= "<td class='shrink'>$methode_name</td>";
+            $table .= "<td class='expand'>$methode</td>";
             $table .= "</tr>";
         }
         $table .= "</table></div>
@@ -176,6 +189,7 @@
         $json = file_get_contents("https://api.xivdb.com/minion/$id");
         $obj = json_decode($json);
         $db_minion = strtolower($obj->name);
+        $patch = empty($obj->patch) ? "2.0" : $obj->patch->number;
         
         if(empty($obj->id)){
             //echo "Minion with number '$number' does not exists.";
@@ -197,6 +211,7 @@
                     "id"=>$obj->id,
                     "name"=>$obj->name,
                     "icon_url" => $xivdb_icon,
+                    "patch" => $patch,
                     "name_en"=>$obj->name_en,
                     "name_fr"=>$obj->name_fr,
                     "name_de"=>$obj->name_de,

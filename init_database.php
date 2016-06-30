@@ -7,6 +7,7 @@
         id INT NOT NULL,
         name VARCHAR(100) NOT NULL,
         icon_url VARCHAR(255) NOT NULL,
+        patch VARCHAR(50) NOT NULL,
         name_en VARCHAR(100) NOT NULL,
         name_fr VARCHAR(100) NOT NULL,
         name_de VARCHAR(100) NOT NULL,
