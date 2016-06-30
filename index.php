@@ -140,7 +140,10 @@
         });
         $(document).on("change",'#lang',function(){
           //window.location.search = jQuery.query.set("lang", this.value);
-          //location.reload();
+          var url = window.location.href;
+          var newUrl = url.replace(getLangData(),"lang="+this.value)
+          window.history.pushState("object or string", "", newUrl);
+          location.reload();
         });
 
         
@@ -262,7 +265,7 @@
         <option value="en" <?php echo "en" == get_lang() ? "selected='selected'" : "";?>>Englisch</option>
         <option value="fr" <?php echo "fr" == get_lang() ? "selected='selected'" : "";?>>Französisch</option>
         <option value="de" <?php echo "de" == get_lang() ? "selected='selected'" : "";?>>Deutsch</option>
-        <option value="jp" <?php echo "ja" == get_lang() ? "selected='selected'" : "";?>>Japanisch</option>
+        <option value="ja" <?php echo "ja" == get_lang() ? "selected='selected'" : "";?>>Japanisch</option>
       </select>
     </form>
       
