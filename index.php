@@ -29,7 +29,8 @@
     <script type='text/javascript'>
     
         var base_url = "/minions";
-        function loadCharakter(id) {
+        
+                function loadCharakter(id) {
             $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
             $.ajax({
             
@@ -44,6 +45,7 @@
             
                });
         }
+        
         function searchCharakter(formData) {
             $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
             $.ajax({
@@ -75,7 +77,22 @@
               }
           });
         }
-    
+        
+        function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+        
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+        
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+        
         $(document).on("submit", "form", function(e){
             e.preventDefault();
             var formSubmit = $('#char_search').serialize();
@@ -107,20 +124,8 @@
             }
         });
         
-        function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
+
         
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-        
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
-                }
-            }
-        };
     </script> 
   </head>
   <body>
