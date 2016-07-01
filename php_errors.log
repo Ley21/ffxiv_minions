@@ -1,6 +1,0 @@
-[01-Jul-2016 08:11:24 UTC] PHP Warning:  require_once(config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/minions/handler/ranking.php on line 2
-[01-Jul-2016 08:11:24 UTC] PHP Stack trace:
-[01-Jul-2016 08:11:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/handler/ranking.php:0
-[01-Jul-2016 08:11:24 UTC] PHP Fatal error:  require_once(): Failed opening required 'config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/minions/handler/ranking.php on line 2
-[01-Jul-2016 08:11:24 UTC] PHP Stack trace:
-[01-Jul-2016 08:11:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/handler/ranking.php:0
