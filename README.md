@@ -14,6 +14,25 @@ This site has following features:
  
 Currently we under development and we will be happy if we get some help at translation all texts to frence or japanies.
 
+### Webserver Configuration
+
+Apache htaccess:
+```
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+```
+
+Nginx Config:
+```
+# nginx configuration 
+location / { 
+if (!-e $request_filename){ 
+rewrite ^(.*)$ /index.php?path=$1 break; 
+}
+}
+```
 
 ### Version
 pre-pre-pre-alpha v0.00001
