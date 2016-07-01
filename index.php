@@ -70,7 +70,7 @@
         function ajaxCall(baseurl,url,submitData,func){
           $.ajax
           ({ 
-              url: url,
+              url: "handler/".url,
               data: submitData,
               type: 'get',
               success: function(data)
