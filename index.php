@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>FFXIV - Minion Collection</title>
+    <title>FFXIV Collections</title>
 
     <!-- Bootstrap -->
     <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -174,8 +174,8 @@ $rankingTitle = language_text("Ranking", "", "Statistik", "");
 <div class="row">
   <div class="col-md-12 col-md-offset-0">
 <div class="jumbotron">
-  <h1>FFXIV - Minions</h1>
-  <p>Minion Collection Site</p>
+  <h1>FFXIV Collectionss</h1>
+  <p>Minion & Mounts Collection Site</p>
 </div>
             
 <nav class="navbar navbar-inverse">
@@ -328,4 +328,9 @@ echo "</center>";
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
         
   </body>
+  <footer>
+    <p class="text-center">FFXIV Collections: © 2016 Andreas Spuling</p>
+    <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
+    
+  </footer>
 </html>
