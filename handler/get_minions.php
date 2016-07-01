@@ -1,7 +1,7 @@
 <?php
-    require_once "config.php";
-    require_once "helper.php";
-    require_once "language.php";
+    require_once "../config.php";
+    require_once "../helper.php";
+    require_once "../language.php";
     
     $methode = $_GET["methode"];
     $methodes_en = get_language_text("methodes","en");

@@ -1,8 +1,8 @@
 
 <?php
 
-    require_once "config.php";
-    require_once "helper.php";
+    require_once "../config.php";
+    require_once "../helper.php";
     
     $id = $_GET["id"];
     $player;
