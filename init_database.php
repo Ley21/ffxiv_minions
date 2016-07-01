@@ -61,7 +61,7 @@
                 insert_update_minion($number);
             }   
         }
-        read_write_methode();
+        read_write_methode($_GET["readonly"]);
     }    
     
     

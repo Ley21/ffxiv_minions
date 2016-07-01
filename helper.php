@@ -257,7 +257,7 @@
         }
     }
     
-    function read_write_methode(){
+    function read_write_methode($readOnly){
         global $database;
         $file = "minions.json";
         
@@ -276,12 +276,14 @@
                 ["id[=]"=>$minion->id]);
         }
         
-        //Save the database in the file / update new minions to file
-        $minions = $database->select("minions",
-            ["id","name","method","method_description_en","method_description_fr",
-            "method_description_de","method_description_ja"]);
-        $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
-        file_put_contents($file, $json_informations);
+        if(!$readOnly){
+            //Save the database in the file / update new minions to file
+            $minions = $database->select("minions",
+                ["id","name","method","method_description_en","method_description_fr",
+                "method_description_de","method_description_ja"]);
+            $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
+            file_put_contents($file, $json_informations);
+        }
     }
 ?>
         

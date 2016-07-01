@@ -32,7 +32,7 @@
         "method": "Promotions",
         "method_description_en": "Obtained as pre-order bonus for ARR.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltich als Vorbesteller-Bonus f\u00fcr ARR",
+        "method_description_de": "Vorbesteller-Bonus f\u00fcr ARR.",
         "method_description_ja": null
     },
     {
@@ -57,18 +57,18 @@
         "id": "7",
         "name": "Mammet #003G",
         "method": "Achievement Rewards",
-        "method_description_en": "Complete Hunting Log for The Maelstrom. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
+        "method_description_en": "Complete Hunting Log for the Order of the Twin Adder. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Vervollst\u00e4ndige das Bestarium des Mahlstroms. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
+        "method_description_de": "Vervollst\u00e4ndige das Bestarium der.Bruderschaft der Morgenviper. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
         "method_description_ja": null
     },
     {
         "id": "8",
         "name": "Mammet #003U",
         "method": "Achievement Rewards",
-        "method_description_en": "Complete Hunting Log for The Maelstrom. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
+        "method_description_en": "Complete Hunting Log for The Immortal Flames. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Vervollst\u00e4ndige das Bestarium des Mahlstroms. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
+        "method_description_de": "Vervollst\u00e4ndige das Bestarium der Legion der Unsterblichen. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
         "method_description_ja": null
     },
     {
@@ -77,16 +77,16 @@
         "method": "GC Purchase",
         "method_description_en": "Buy for 20,000 Storm Seals under the Officer Rank from The Maelstrom.",
         "method_description_fr": null,
-        "method_description_de": "20.000 Flotten-Taler als Offizier beim Mahlstrom",
+        "method_description_de": "20.000 Flotten-Taler als Offizier beim Mahlstrom.",
         "method_description_ja": null
     },
     {
         "id": "10",
         "name": "Serpent Hatchling",
         "method": "GC Purchase",
-        "method_description_en": "Buy for 20,000 Serpent Seals under the Officer Rank from the Order of the Twin Adder",
+        "method_description_en": "Buy for 20,000 Serpent Seals under the Officer Rank from the Order of the Twin Adder.",
         "method_description_fr": null,
-        "method_description_de": "20.000 Bruderschafts-Taler als Offizier bei der Bruderschaft der Morgenviper",
+        "method_description_de": "20.000 Bruderschafts-Taler als Offizier bei der Bruderschaft der Morgenviper.",
         "method_description_ja": null
     },
     {
@@ -95,7 +95,7 @@
         "method": "GC Purchase",
         "method_description_en": "Buy for 20,000 Flame Seals under the Officer Rank with The Immortal Flames.",
         "method_description_fr": null,
-        "method_description_de": "20.000 Legions-Taler als Offizier bei der Legion der Unsterblichen",
+        "method_description_de": "20.000 Legions-Taler als Offizier bei der Legion der Unsterblichen.",
         "method_description_ja": null
     },
     {
@@ -104,7 +104,7 @@
         "method": "Dungeons & Trials",
         "method_description_en": "Treasure Coffer #2 in <a href='http:\/\/xivdb.com\/instance\/5\/The+Aurum+Vale'>The Aurum Vale<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Kann aus der zweiten Truhe im <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm\/a> droppen.",
+        "method_description_de": "Kann aus der zweiten Truhe im <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm<\/a> droppen.",
         "method_description_ja": null
     },
     {
@@ -140,7 +140,7 @@
         "method": "Treasure Hunt",
         "method_description_en": "Treasure Hunt Reward from <a href='http:\/\/xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Timeworn Peisteskin Map<\/a>, <a href='http:\/\/xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Timeworn Dragonskin Map<\/a> and from <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Belohnung aus <a href='http:\/\/de.xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Vergilbte Basiliskenleder-Karten<\/a>, <a href='http:\/\/de.xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Vergilbte Drachenleder-Karte<\/a> und aus <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+        "method_description_de": "Belohnung aus <a href='http:\/\/de.xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Vergilbten Basiliskenleder-Karten<\/a>, <a href='http:\/\/de.xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Vergilbten Drachenleder-Karten<\/a> und aus <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
         "method_description_ja": null
     },
     {
@@ -149,7 +149,7 @@
         "method": "Tomestone Purchase",
         "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> for 7 Allagan Tomestone of Poetics.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie",
+        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie.",
         "method_description_ja": null
     },
     {
@@ -218,19 +218,19 @@
     {
         "id": "25",
         "name": "Baby Raptor",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Purchased from Boughbury Trader (X21 Y16 - South Shroud) for 2,400 gil. Only if you successfully complete the FATE <a href='http:\/\/xivdb.com\/fate\/160\/Clearing+The+Hive'>Clearing The Hive<\/a>",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich bei Astlfinger H\u00e4ndler (X21 Y16 - S\u00fcdwald) f\u00fcr 2.400 Gil. Allerdings nur wenn der FATE <a href='http:\/\/de.xivdb.com\/fate\/160\/Clearing+The+Hive'>Das Nest S\u00e4ubern<\/a> erfolgreich war.",
         "method_description_ja": null
     },
     {
         "id": "26",
         "name": "Baby Bat",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Purchased from Junkmonger Nonoroon (X11 Y24 - Upper La Noscea) for 2,400 gil. At least if he is not taking a stroll around. Oh btw. he won't sell anything while walking.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich bei Nonoroon (X11 Y24 - Oberes La Noscea) f\u00fcr 2.400 Gil, wenn er nicht gerade einen Spaziergang macht.",
         "method_description_ja": null
     },
     {
@@ -246,9 +246,9 @@
         "id": "28",
         "name": "Dust Bunny",
         "method": "Tomestone Purchase",
-        "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana (Mor Dhona X22 Y6)<\/a> for 7 Allagan Tomestone of Poetics.",
+        "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> for 7 Allagan Tomestone of Poetics.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana (Mor Dhona X22 Y6)<\/a> f\u00fcr 7 Allagische Steine der Poesie",
+        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie.",
         "method_description_ja": null
     },
     {
@@ -327,9 +327,9 @@
         "id": "37",
         "name": "Fledgling Dodo",
         "method": "Tomestone Purchase",
-        "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana (Mor Dhona X22 Y6)<\/a> for 7 Allagan Tomestone of Poetics.",
+        "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> for 7 Allagan Tomestone of Poetics.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana (Mor Dhona X22 Y6)<\/a> f\u00fcr 7 Allagische Steine der Poesie",
+        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie.",
         "method_description_ja": null
     },
     {
@@ -443,10 +443,10 @@
     {
         "id": "50",
         "name": "Wind-up Sylph",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Sylph Bast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
@@ -515,37 +515,37 @@
     {
         "id": "58",
         "name": "Wind-up Amalj'aa",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Amalj'aa. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
         "id": "59",
         "name": "Wind-up Ixal",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
         "id": "60",
         "name": "Wind-up Kobold",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Kobold Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Kobolde. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
         "id": "61",
         "name": "Wind-up Sahagin",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Sahagin Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Sahagin. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
@@ -1037,46 +1037,46 @@
     {
         "id": "123",
         "name": "Wind-up Violet",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Sylph Bast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Allied' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
         "method_description_ja": null
     },
     {
         "id": "124",
         "name": "Wind-up Founder",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Allied' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Amalj'aa. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
         "method_description_ja": null
     },
     {
         "id": "125",
         "name": "Wind-up Dezul Qualan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Allied' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
         "method_description_ja": null
     },
     {
         "id": "126",
         "name": "Wind-up Kobolder",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Kobold Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Allied' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Kobolde. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
         "method_description_ja": null
     },
     {
         "id": "127",
         "name": "Wind-up Sea Devil",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Sahagin Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Allied' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Sahagin. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
         "method_description_ja": null
     },
     {
@@ -1145,10 +1145,10 @@
     {
         "id": "135",
         "name": "Wind-up Gundu Warrior",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Vanu Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Vanu. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
@@ -1325,10 +1325,10 @@
     {
         "id": "156",
         "name": "Wind-up Gnath",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016804\/Vath+Stickpeddler>Vath Kr\u00e4mer'<\/a>(Ab Verbundenheitsgrad 'Solidarisch').",
         "method_description_ja": null
     },
     {
@@ -1469,10 +1469,10 @@
     {
         "id": "172",
         "name": "Wind-up Zundu Warrior",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Vanu Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (upon reaching 'Sworn' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Vanu. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (Verbundenheit Rang 'Solidarisch').",
         "method_description_ja": null
     },
     {
@@ -1496,10 +1496,10 @@
     {
         "id": "175",
         "name": "Wind-up Vath",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a>(Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
@@ -1568,10 +1568,10 @@
     {
         "id": "184",
         "name": "Wind-up Dragonet",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gil Purchase",
+        "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Sworn' reputation).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
         "method_description_ja": null
     },
     {
