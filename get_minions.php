@@ -10,6 +10,8 @@
     
     $minions = $database->select("minions", "*",["method[=]"=>$methode]);
     
-    $tilte = get_language_text("methode")[$index];
-    echo create_table($tilte,$minions);
+    $title = get_language_text("methodes")[$index];
+    echo "<center>";
+    echo create_table($title,$minions);
+    echo "</center>";
 ?>
