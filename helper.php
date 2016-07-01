@@ -87,8 +87,10 @@
     
     function create_thumbnail($title,$sql_data){
         $thumbnail = '<div class="panel panel-primary">
-        <div class="panel-heading">'.$title.'</div>
+        <div class="panel-heading" data-toggle="collapse" data-target="#existingMinions" aria-expanded="true" aria-controls="existingMinions">'.
+        $title.'</div>
         <div class="panel-body">';
+        $thumbnail .= '<div class="collapse  in" id="existingMinions">';
         $count = 0;
         foreach($sql_data as $minion_data){
             
@@ -103,6 +105,7 @@
             $thumbnail .= "</a>";
             $thumbnail .= "</div>";
         }
+        $thumbnail .= '</div>';
         $thumbnail .= "</div></div>";
         return $thumbnail;
     }
