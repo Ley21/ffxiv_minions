@@ -1,0 +1,49 @@
+[01-Jul-2016 09:06:45 UTC] PHP Warning:  require(/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/updaechar.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:06:45 UTC] PHP Stack trace:
+[01-Jul-2016 09:06:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:06:45 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:06:45 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:06:45 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/updaechar.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:06:45 UTC] PHP Stack trace:
+[01-Jul-2016 09:06:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:06:45 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:06:45 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:07:27 UTC] PHP Warning:  require(/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/updatechar.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:07:27 UTC] PHP Stack trace:
+[01-Jul-2016 09:07:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:07:27 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:07:27 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:07:27 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/updatechar.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:07:27 UTC] PHP Stack trace:
+[01-Jul-2016 09:07:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:07:27 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:07:27 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:07:52 UTC] PHP Warning:  require(/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/thread.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:07:52 UTC] PHP Stack trace:
+[01-Jul-2016 09:07:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:07:52 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:8
+[01-Jul-2016 09:07:52 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:8
+[01-Jul-2016 09:07:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/thread.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:07:52 UTC] PHP Stack trace:
+[01-Jul-2016 09:07:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:07:52 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:8
+[01-Jul-2016 09:07:52 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:8
+[01-Jul-2016 09:13:07 UTC] PHP Warning:  require(/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/workerthread.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:13:07 UTC] PHP Stack trace:
+[01-Jul-2016 09:13:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:13:07 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:13:07 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:13:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/src/workerthread.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/minions/vendor/viion/xivpads-lodestoneapi/api-autoloader.php on line 20
+[01-Jul-2016 09:13:07 UTC] PHP Stack trace:
+[01-Jul-2016 09:13:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:13:07 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:13:07 UTC] PHP   3. AutoLoad->autoload($classname = *uninitialized*) /home/ubuntu/workspace/minions/caller/update_charakter.php:18
+[01-Jul-2016 09:14:29 UTC] PHP Fatal error:  Class 'workerThread' not found in /home/ubuntu/workspace/minions/caller/update_charakter.php on line 28
+[01-Jul-2016 09:14:29 UTC] PHP Stack trace:
+[01-Jul-2016 09:14:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:14:43 UTC] PHP Fatal error:  Class 'workerThread' not found in /home/ubuntu/workspace/minions/caller/update_charakter.php on line 29
+[01-Jul-2016 09:14:43 UTC] PHP Stack trace:
+[01-Jul-2016 09:14:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0
+[01-Jul-2016 09:15:18 UTC] PHP Fatal error:  Class 'Thread' not found in /home/ubuntu/workspace/minions/caller/update_charakter.php on line 14
+[01-Jul-2016 09:15:18 UTC] PHP Stack trace:
+[01-Jul-2016 09:15:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/minions/caller/update_charakter.php:0

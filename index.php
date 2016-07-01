@@ -33,8 +33,10 @@
         var base_url = "/minions";
         
         function pushUrl(type,urlData){
+
           
-          //var rest = urlData ? "&"+urlData : "";
+          // var rest = urlData ? "&"+urlData : "";
+
           window.history.pushState("object or string", "", base_url+"/"+type+"?"+urlData);
         }
         function loadCharakter(id) {
@@ -104,7 +106,9 @@
             var formSubmit = $('#char_search').serialize();
             
             searchCharakter(formSubmit);
-            //document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
+
+            // document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
+
             return  false;
         });
         
@@ -144,7 +148,9 @@
             
         });
         $(document).on("change",'#lang',function(){
-          //window.location.search = jQuery.query.set("lang", this.value);
+
+          // window.location.search = jQuery.query.set("lang", this.value);
+
           var url = window.location.href;
           var newUrl = url.replace(getLangData(),"lang="+this.value)
           window.history.pushState("object or string", "", newUrl);
@@ -156,15 +162,16 @@
   </head>
   <body>
 <?php
+require_once "config.php";
+require_once "helper.php";
+require_once "language.php";
 
-    require_once "config.php";
-    require_once "helper.php";
-    require_once "language.php";
-    
-    $lang = get_lang();
-    $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=".get_lang();
-    //$homeTitle = language_text("Home","","Startseite","");
-    $rankingTitle = language_text("Ranking","","Statistik","");
+$lang = get_lang();
+$actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=" . get_lang();
+
+// $homeTitle = language_text("Home","","Startseite","");
+
+$rankingTitle = language_text("Ranking", "", "Statistik", "");
 ?>
 <div class="container">
 
@@ -186,7 +193,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo $actual_link;?>"><?php echo $language_texts['home'][$lang];?></a>
+      <a class="navbar-brand" href="<?php
+echo $actual_link; ?>"><?php
+echo $language_texts['home'][$lang]; ?></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -194,12 +203,15 @@
       <ul class="nav navbar-nav">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          <?php echo get_language_text("navDropdown");?><span class="caret"></span></a>
+          <?php
+echo get_language_text("navDropdown"); ?><span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <?php echo create_dropdown_menu();?>
+          <?php
+echo create_dropdown_menu(); ?>
         </ul>
       </li>
-      <li><a id="ranking"><?php echo $rankingTitle;?></a></li>
+      <li><a id="ranking"><?php
+echo $rankingTitle; ?></a></li>
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
       <div class="form-group">
@@ -275,10 +287,14 @@
     </form>
     <form class="navbar-form navbar-right form-inline">
       <select class="form-control" id="lang">
-        <option value="en" <?php echo "en" == get_lang() ? "selected='selected'" : "";?>>Englisch</option>
-        <option value="fr" <?php echo "fr" == get_lang() ? "selected='selected'" : "";?>>Französisch</option>
-        <option value="de" <?php echo "de" == get_lang() ? "selected='selected'" : "";?>>Deutsch</option>
-        <option value="ja" <?php echo "ja" == get_lang() ? "selected='selected'" : "";?>>Japanisch</option>
+        <option value="en" <?php
+echo "en" == get_lang() ? "selected='selected'" : ""; ?>>Englisch</option>
+        <option value="fr" <?php
+echo "fr" == get_lang() ? "selected='selected'" : ""; ?>>Französisch</option>
+        <option value="de" <?php
+echo "de" == get_lang() ? "selected='selected'" : ""; ?>>Deutsch</option>
+        <option value="ja" <?php
+echo "ja" == get_lang() ? "selected='selected'" : ""; ?>>Japanisch</option>
       </select>
     </form>
       
@@ -288,27 +304,24 @@
             
 
     <div id="content">
-      <?php 
-      
-        
-        $patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
-        $floatPatches = array();
-        foreach($patches as $patch){
-          $version = $patch['patch'];
-          $float = floatval($version);
-          array_push($floatPatches,$float);
-        }
-        sort($floatPatches);
-        $lastPatch = number_format(end($floatPatches),1,".","");
-        
-        $latest_minions = $database->select("minions","*",
-          ["patch[=]"=>$lastPatch]);
-        $latestMinionTitle = language_text("Latest Minions","","Neuste Begleiter","");
-        
-        echo "<center>";
-        echo create_table($latestMinionTitle,$latest_minions);
-        echo "</center>";
-      ?>
+      <?php
+$patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
+$floatPatches = array();
+
+foreach($patches as $patch) {
+	$version = $patch['patch'];
+	$float = floatval($version);
+	array_push($floatPatches, $float);
+}
+
+sort($floatPatches);
+$lastPatch = number_format(end($floatPatches) , 1, ".", "");
+$latest_minions = $database->select("minions", "*", ["patch[=]" => $lastPatch]);
+$latestMinionTitle = language_text("Latest Minions", "", "Neuste Begleiter", "");
+echo "<center>";
+echo create_table($latestMinionTitle, $latest_minions);
+echo "</center>";
+?>
     </div>
 </div></p>
 </div>
