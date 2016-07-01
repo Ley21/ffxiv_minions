@@ -1,6 +1,6 @@
 <?php
-    require_once "config.php";
-    require_once "helper.php";
+    require_once "../config.php";
+    require_once "../helper.php";
     
     // Create table for minions 
     $database->query("CREATE TABLE minions (
