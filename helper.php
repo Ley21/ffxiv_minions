@@ -1,5 +1,6 @@
 <?php
     require_once "config.php";
+    require_once "language.php";
     
     function get_lang(){
         $lang = empty($_GET["lang"]) ? "en" : $_GET["lang"];
@@ -17,6 +18,13 @@
             case "en":
                 return $en;
         }
+    }
+    
+    function get_language_text($name,$lang=""){
+        global $language_texts;
+        
+        $languageObject = $language_texts[$name][empty($lang) ? get_lang():$lang];
+        return empty($languageObject) ? $language_texts[$name]["en"] : $languageObject;
     }
     
     function create_table($title,$sql_data){
@@ -97,6 +105,17 @@
         }
         $thumbnail .= "</div></div>";
         return $thumbnail;
+    }
+    
+    function create_dropdown_menu(){
+        $methodes = get_language_text("methodes");
+        $methodes_en = get_language_text("methodes","en");
+        //var_dump($methodes);
+        $dropdown = "";
+        foreach($methodes as $i=>$methode){
+            $dropdown .= "<li><a id='$methodes_en[$i]' class='minion_methode'>$methode</a></li>";
+        }
+        return $dropdown;
     }
     
     function insert_update_charakter_by_id($id){

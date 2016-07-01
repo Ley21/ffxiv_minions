@@ -62,6 +62,11 @@
             ajaxCall("ranking","ranking.php",getLangData(),function(data){});
         }
         
+        function loadMinions(submit) {
+            $('#content').html("Loading Minions...");
+            ajaxCall("minions","get_minions.php",submit,function(data){});
+        }
+        
         function ajaxCall(baseurl,url,submitData,func){
           $.ajax
           ({ 
@@ -107,6 +112,10 @@
           loadRanking();
         });
         
+        $(document).on("click",'.minion_methode',function(){
+          loadMinions(getLangData()+"&methode="+this.id);
+        });
+        
         
         $( document ).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
@@ -123,6 +132,10 @@
                 
             }else if (last == "ranking"){
               loadRanking();
+            }
+            else if (last == "minions"){
+              var sPageURL = decodeURIComponent(window.location.search.substring(1));
+              loadMinions(sPageURL);
             }
             else{
               pushUrl("",getLangData());
@@ -179,6 +192,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <?php echo get_language_text("navDropdown");?><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <?php echo create_dropdown_menu();?>
+        </ul>
+      </li>
       <li><a id="ranking"><?php echo $rankingTitle;?></a></li>
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
