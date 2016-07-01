@@ -62,7 +62,7 @@ if ($updateMinions) {
 		}
 	}
 
-	read_write_methode($_GET["readonly"]);
+	read_write_methode("../minions.json",$_GET["readonly"]);
 }
 
 ?>

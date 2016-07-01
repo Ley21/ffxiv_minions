@@ -279,9 +279,8 @@
         }
     }
     
-    function read_write_methode($readOnly){
+    function read_write_methode($file,$readOnly){
         global $database;
-        $file = "minions.json";
         
         //Read local file
         $json = file_get_contents($file);

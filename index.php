@@ -30,14 +30,9 @@
 
     
     <script type='text/javascript'>
-        var base_url = "/minions";
         
         function pushUrl(type,urlData){
-
-          
-          // var rest = urlData ? "&"+urlData : "";
-
-          window.history.pushState("object or string", "", base_url+"/"+type+"?"+urlData);
+          window.history.pushState("object or string", "", "/"+type+"?"+urlData);
         }
         function loadCharakter(id) {
             $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
