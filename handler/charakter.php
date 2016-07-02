@@ -73,12 +73,12 @@
     echo "<img src=$p_portrait class='img-rounded img-responsive'></div>";
     echo '</div>';
     echo '<div class="col-md-9">';
-    echo create_thumbnail(get_language_text("owned_minions"),$exitsts_minions);
-    echo create_thumbnail(get_language_text("owned_mounts"),$exitsts_mounts);
+    echo create_thumbnail(get_language_text("owned_minions"),$exitsts_minions,"minion");
+    echo create_thumbnail(get_language_text("owned_mounts"),$exitsts_mounts,"mount");
     echo '</div></div>';
     $missingTile = language_text("Missing Minions","","Fehlende Begleiter","");
-    echo create_table(get_language_text("missing_minions"),$missing_minions);
-    echo create_table(get_language_text("missing_mounts"),$missing_mounts);
+    echo create_table(get_language_text("missing_minions"),$missing_minions,"minion");
+    echo create_table(get_language_text("missing_mounts"),$missing_mounts,"mount");
     echo "</center>";
 
     

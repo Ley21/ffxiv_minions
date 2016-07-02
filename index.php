@@ -314,8 +314,8 @@ $lastPatch = number_format(end($floatPatches) , 1, ".", "");
 $latest_minions = $database->select("minions", "*", ["patch[=]" => $lastPatch]);
 $latest_mounts = $database->select("mounts", "*", ["patch[=]" => $lastPatch]);
 echo "<center>";
-echo create_table(get_language_text("latest_minions"), $latest_minions);
-echo create_table(get_language_text("latest_mounts"), $latest_mounts);
+echo create_table(get_language_text("latest_minions"), $latest_minions,"minion");
+echo create_table(get_language_text("latest_mounts"), $latest_mounts,"mount");
 echo "</center>";
 ?>
     </div>

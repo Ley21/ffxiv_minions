@@ -28,7 +28,7 @@
         return empty($languageObject) ? $language_texts[$name]["en"] : $languageObject;
     }
     
-    function create_table($title,$sql_data){
+    function create_table($title,$sql_data,$type){
         $lang = get_lang();
         $table = '<div class="panel panel-primary">
         <div class="panel-heading">'.$title.'</div>
@@ -50,7 +50,7 @@
             $methode_name = $minion_data['method'] ;
             $table .= "<tr>";
             $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
-            $table .= "<td class='shrink'><a href='https://$lang.xivdb.com/minion/$m_id'>$name</a></td>";
+            $table .= "<td class='shrink'><a href='https://$lang.xivdb.com/$type/$m_id'>$name</a></td>";
             $table .= "<td class='shrink'>$patch</td>";
             $table .= "<td class='shrink'>$methode_name</td>";
             $table .= "<td class='expand'>$methode</td>";
@@ -64,29 +64,31 @@
     function create_ranking(){
         global $database;
         //$lang = get_lang();
-        $table = language_text('<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>World</th><th>Number of Minions</th></tr></thead>',"",'<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>Welt</th><th>Anzahl der Minions</th></tr></thead>',"");
+        $table = language_text('<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>World</th><th>Number of Minions</th><th>Number of Mounts</th></tr></thead>',"",'<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>Welt</th><th>Anzahl der Begleiter</th><th>Anzahl der Reittiere</th></tr></thead>',"");
         $players = $database->select("players",["id","name","world"],"");
         $ranking = array();
         foreach($players as $player){
-            $count = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
-            array_push($ranking,array($count,$player));
+            $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
+            $count_mounts = $database->count("player_mounts",["p_id[=]"=>$player["id"]]);
+            array_push($ranking,array($count_minions,$count_mounts,$player));
         }
         arsort($ranking);
         $nr = 1;
         foreach($ranking as $r_player){
-            $player = $r_player[1];
+            $player = $r_player[2];
             $p_id = $player['id'];
             $name = ucwords($player['name']);
             $world = ucwords($player['world']);
-            $count = $r_player[0];
-            $table .= "<tr><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count</td></tr>";
+            $count_minions = $r_player[0];
+            $count_mounts = $r_player[1];
+            $table .= "<tr><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td></tr>";
             $nr++;
         }
         $table .= '</table>';
         return $table;
     }
     
-    function create_thumbnail($title,$sql_data){
+    function create_thumbnail($title,$sql_data,$type){
         global $random_id;
         $random_id_tag = "div_".$random_id;
         $random_id++;
@@ -104,7 +106,7 @@
             $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
             $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto">';
-            $thumbnail .= "<a href='https://xivdb.com/minion/$m_id' class='thumbnail' >";
+            $thumbnail .= "<a href='https://xivdb.com/$type/$m_id' class='thumbnail' >";
             $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url >";
             $thumbnail .= "</a>";
             $thumbnail .= "</div>";
