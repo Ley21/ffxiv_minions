@@ -55,12 +55,12 @@
         
         function loadRanking() {
           
-            $('#content').html("Loading ranking...");
+            $('#content').html("<center><h2>Loading Ranking...</h2></center>");
             ajaxCall("ranking","ranking.php",getLangData(),function(data){});
         }
         
         function loadMinions(submit) {
-            $('#content').html("Loading Minions...");
+            $('#content').html("<center><h2>Loading Minions...</h2></center>");
             ajaxCall("minions","get_minions.php",submit,function(data){});
         }
         
@@ -155,7 +155,7 @@
         
     </script> 
   </head>
-  <body>
+  <body style="background-image:url(img/background_2.jpg);background-repeat:no-repeat;background-attachment:fixed">
 <?php
 require_once "config.php";
 require_once "helper.php";
@@ -168,14 +168,14 @@ $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$ba
 
 $rankingTitle = language_text("Ranking", "", "Statistik", "");
 ?>
-<div class="container">
+<div class="container" style="background-color:rgba(255, 255, 255, 0.5);">
 
           <p class="text-center">
 <div class="row">
   <div class="col-md-12 col-md-offset-0">
 <div class="jumbotron">
-  <h1>FFXIV Collectionss</h1>
-  <p>Minion & Mounts Collection Site</p>
+  <h1>FFXIV Collections</h1>
+  <p>Minions & Mounts Collection Site</p>
 </div>
             
 <nav class="navbar navbar-inverse">
@@ -319,6 +319,11 @@ echo create_table(get_language_text("latest_mounts"), $latest_mounts,"mount");
 echo "</center>";
 ?>
     </div>
+      <footer style="background-color:rgba(255, 255, 255, 0.5);">
+    <p class="text-center">FFXIV Collections: © 2016 Andreas Spuling</p>
+    <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
+    
+  </footer>
 </div></p>
 </div>
 
@@ -329,9 +334,5 @@ echo "</center>";
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
         
   </body>
-  <footer>
-    <p class="text-center">FFXIV Collections: © 2016 Andreas Spuling</p>
-    <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
-    
-  </footer>
+
 </html>

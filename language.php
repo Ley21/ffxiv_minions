@@ -12,6 +12,12 @@
     $language_texts['owned_mounts'] = array("en"=>"Owned Mounts","fr"=>"","de"=>"Reittiere im Besitz","ja"=>"");
     $language_texts['missing_mounts'] = array("en"=>"Missing Mounts","fr"=>"","de"=>"Fehlende Reittiere","ja"=>"");
     
+    $language_texts['name'] = array("en"=>"Name","fr"=>"","de"=>"Name","ja"=>"");
+    $language_texts['nr'] = array("en"=>"Nr","fr"=>"","de"=>"Nr","ja"=>"");
+    $language_texts['world'] = array("en"=>"World","fr"=>"","de"=>"Welt","ja"=>"");
+    $language_texts['number_minions'] = array("en"=>"Number of Minions","fr"=>"","de"=>"Anzahl der Begleiter","ja"=>"");
+    $language_texts['number_mounts'] = array("en"=>"Number of Mounts","fr"=>"","de"=>"Anzahl der Reittiere","ja"=>"");
+    
     
     $language_texts['methodes'] = array (
         "en"=>

@@ -12,6 +12,6 @@
     
     $title = get_language_text("methodes")[$index];
     echo "<center>";
-    echo create_table($title,$minions);
+    echo create_table($title,$minions,"minions");
     echo "</center>";
 ?>

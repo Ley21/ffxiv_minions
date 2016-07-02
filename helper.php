@@ -64,24 +64,30 @@
     function create_ranking(){
         global $database;
         //$lang = get_lang();
-        $table = language_text('<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>World</th><th>Number of Minions</th><th>Number of Mounts</th></tr></thead>',"",'<table class="table table-striped"><thead><tr><th>Nr</th><th>Name</th><th>Welt</th><th>Anzahl der Begleiter</th><th>Anzahl der Reittiere</th></tr></thead>',"");
+        $nr = get_language_text("nr");
+        $name = get_language_text("name");
+        $world = get_language_text("world");
+        $number_minions = get_language_text("number_minions");
+        $number_mounts = get_language_text("number_mounts");
+        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th></tr></thead>";
         $players = $database->select("players",["id","name","world"],"");
         $ranking = array();
         foreach($players as $player){
             $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
             $count_mounts = $database->count("player_mounts",["p_id[=]"=>$player["id"]]);
-            array_push($ranking,array($count_minions,$count_mounts,$player));
+            $count = $count_minions+ $count_mounts;
+            array_push($ranking,array($count,$count_minions,$count_mounts,$player));
         }
         arsort($ranking);
         $nr = 1;
         foreach($ranking as $r_player){
-            $player = $r_player[2];
+            $player = $r_player[3];
             $p_id = $player['id'];
             $name = ucwords($player['name']);
             $world = ucwords($player['world']);
-            $count_minions = $r_player[0];
-            $count_mounts = $r_player[1];
-            $table .= "<tr><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td></tr>";
+            $count_minions = $r_player[1];
+            $count_mounts = $r_player[2];
+            $table .= "<tr class='active'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td></tr>";
             $nr++;
         }
         $table .= '</table>';
