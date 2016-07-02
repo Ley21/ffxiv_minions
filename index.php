@@ -190,7 +190,7 @@ $rankingTitle = language_text("Ranking", "", "Statistik", "");
       </button>
       <a class="navbar-brand" href="<?php
 echo $actual_link; ?>"><?php
-echo $language_texts['home'][$lang]; ?></a>
+echo get_language_text("home"); ?></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -312,9 +312,10 @@ foreach($patches as $patch) {
 sort($floatPatches);
 $lastPatch = number_format(end($floatPatches) , 1, ".", "");
 $latest_minions = $database->select("minions", "*", ["patch[=]" => $lastPatch]);
-$latestMinionTitle = language_text("Latest Minions", "", "Neuste Begleiter", "");
+$latest_mounts = $database->select("mounts", "*", ["patch[=]" => $lastPatch]);
 echo "<center>";
-echo create_table($latestMinionTitle, $latest_minions);
+echo create_table(get_language_text("latest_minions"), $latest_minions);
+echo create_table(get_language_text("latest_mounts"), $latest_mounts);
 echo "</center>";
 ?>
     </div>

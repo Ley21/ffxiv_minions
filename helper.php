@@ -1,6 +1,7 @@
 <?php
     require_once "config.php";
     require_once "language.php";
+    $random_id = 0;
     
     function get_lang(){
         $lang = empty($_GET["lang"]) ? "en" : $_GET["lang"];
@@ -86,11 +87,14 @@
     }
     
     function create_thumbnail($title,$sql_data){
+        global $random_id;
+        $random_id_tag = "div_".$random_id;
+        $random_id++;
         $thumbnail = '<div class="panel panel-primary">
-        <div class="panel-heading" data-toggle="collapse" data-target="#existingMinions" aria-expanded="true" aria-controls="existingMinions">'.
+        <div class="panel-heading" data-toggle="collapse" data-target="#'.$random_id_tag.'" aria-expanded="true" aria-controls="'.$random_id_tag.'">'.
         $title.'</div>
         <div class="panel-body">';
-        $thumbnail .= '<div class="collapse  in" id="existingMinions">';
+        $thumbnail .= '<div class="collapse  in" id="'.$random_id_tag.'">';
         $count = 0;
         foreach($sql_data as $minion_data){
             
@@ -190,15 +194,25 @@
             $output = "Charakter '$c_name' with id '$character->id' from server '$c_world' was updated.";
         }
         
+        $p_id = $character->id;
+        
         //Get all minions from current charakter
         $minions = $character->minions;
+        insert_item_char($p_id,$minions,"minions","player_minion");
         
-        $datas = $database->select("minions", [
+        $mounts = $character->mounts;
+        insert_item_char($p_id,$mounts,"mounts","player_mounts");
+        
+        return $output;
+    }
+    
+    function insert_item_char($p_id,$items,$table,$link_table){
+        global $database;
+        $datas = $database->select($table, [
         	"id",
         	"name"
         ]); 
         
-        $p_id = $character->id;
         
         //Add all minions of an charakter to databese
         foreach($datas as $data)
@@ -208,12 +222,12 @@
             $db_minion = strtolower($data['name']);
             $m_id = $data["id"];
             
-            foreach($minions as $minion){
+            foreach($items as $item){
                 
-                $player_minion = strtolower($minion['name']);
-                if ($db_minion == $player_minion) {
+                $player_item = strtolower($item['name']);
+                if ($db_minion == $player_item) {
                     
-                    $database->query("REPLACE INTO player_minion VALUES (
+                    $database->query("REPLACE INTO $link_table VALUES (
                         $p_id, 
                         $m_id);");
                     break;
@@ -221,7 +235,6 @@
                 
             }
         }
-        return $output;
     }
 
     function insert_update_minion($id){
@@ -279,7 +292,54 @@
         }
     }
     
-    function read_write_methode($file,$readOnly){
+    function insert_update_mount($id){
+        global $database;
+        $json = file_get_contents("https://api.xivdb.com/mount/$id");
+        $obj = json_decode($json);
+        $db_minion = strtolower($obj->name);
+        $patch = empty($obj->patch) ? "2.0" : $obj->patch->number;
+        
+        if(empty($obj->id)){
+            //echo "Minion with number '$number' does not exists.";
+        }
+        else{
+            $xivdb_icon = $database->quote("https://xivdb.com".$obj->xivdb_icon);
+            
+            $db_id = $database->get("mounts",["id"],["id[=]"=>$id]);
+            if(empty($db_id)){
+                $database->insert("mounts",[
+                    "id"=>$obj->id,
+                    "name"=>$obj->name,
+                    "icon_url" => $xivdb_icon,
+                    "patch" => $patch,
+                    "name_en"=>$obj->name_en,
+                    "name_fr"=>$obj->name_fr,
+                    "name_de"=>$obj->name_de,
+                    "name_ja"=>$obj->name_ja,
+                    "description_en" => $obj->info1_en,
+                    "description_fr" => $obj->info1_fr,
+                    "description_de" => $obj->info1_de,
+                    "description_ja" => $obj->info1_ja]);
+            }
+            else{
+                $database->update("mounts",[
+                    "id"=>$obj->id,
+                    "name"=>$obj->name,
+                    "icon_url" => $xivdb_icon,
+                    "name_en"=>$obj->name_en,
+                    "name_fr"=>$obj->name_fr,
+                    "name_de"=>$obj->name_de,
+                    "name_ja"=>$obj->name_ja,
+                    "description_en" => $obj->info1_en,
+                    "description_fr" => $obj->info1_fr,
+                    "description_de" => $obj->info1_de,
+                    "description_ja" => $obj->info1_ja],
+                    ["id[=]"=>$id]);
+            }
+        }
+    }
+    
+    function read_write_methode($table,$file,$readOnly){
         global $database;
         
         //Read local file
@@ -288,7 +348,7 @@
         
         //Update mehtode from local file
         foreach($read_minons as $minion){
-            $database->update("minions",[
+            $database->update($table,[
                 "method" => $minion->method,
                 "method_description_en" => $minion->method_description_en,
                 "method_description_fr" => $minion->method_description_fr,
@@ -299,7 +359,7 @@
         
         if(!$readOnly){
             //Save the database in the file / update new minions to file
-            $minions = $database->select("minions",
+            $minions = $database->select($table,
                 ["id","name","method","method_description_en","method_description_fr",
                 "method_description_de","method_description_ja"]);
             $json_informations = json_encode($minions,JSON_PRETTY_PRINT);

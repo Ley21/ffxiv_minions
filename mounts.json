@@ -1,0 +1,560 @@
+[
+    {
+        "id": "1",
+        "name": "Company Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "4",
+        "name": "Goobbue",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "5",
+        "name": "Legacy Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "6",
+        "name": "Magitek Armor",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "8",
+        "name": "Coeurl",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "9",
+        "name": "Ahriman",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "15",
+        "name": "Unicorn",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "18",
+        "name": "Behemoth",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "19",
+        "name": "Cavalry Drake",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "20",
+        "name": "Laurel Goobbue",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "21",
+        "name": "Gilded Magitek Armor",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "22",
+        "name": "Nightmare",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "25",
+        "name": "Fat Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "26",
+        "name": "Cavalry Elbst",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "27",
+        "name": "Bomb Palanquin",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "28",
+        "name": "Aithon",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "29",
+        "name": "Xanthos",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "30",
+        "name": "Gullfaxi",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "31",
+        "name": "Enbarr",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "32",
+        "name": "Warlion",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "33",
+        "name": "Warbear",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "34",
+        "name": "Draught Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "35",
+        "name": "Direwolf",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "36",
+        "name": "Storm Warsteed",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "37",
+        "name": "Serpent Warsteed",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "38",
+        "name": "Flame Warsteed",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "40",
+        "name": "Markab",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "41",
+        "name": "Ceremony Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "42",
+        "name": "Sleipnir",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "43",
+        "name": "Boreas",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "44",
+        "name": "Parade Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "45",
+        "name": "Black Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "46",
+        "name": "Adamantoise",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "47",
+        "name": "Kirin",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "48",
+        "name": "Logistics System",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "49",
+        "name": "Fenrir",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "50",
+        "name": "Midgardsormr",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "52",
+        "name": "Amber Draught Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "53",
+        "name": "Sanuwa",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "54",
+        "name": "Griffin",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "55",
+        "name": "Manacutter",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "56",
+        "name": "War Panther",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "58",
+        "name": "Gobwalker",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "59",
+        "name": "Twintania",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "62",
+        "name": "Witch's Broom",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "67",
+        "name": "Pegasus",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "68",
+        "name": "White Devil",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "69",
+        "name": "Red Baron",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "70",
+        "name": "Wyvern",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "72",
+        "name": "Kongamato",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "73",
+        "name": "Zu",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "74",
+        "name": "Bennu",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "75",
+        "name": "White Lanner",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "76",
+        "name": "Rose Lanner",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "77",
+        "name": "Round Lanner",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "78",
+        "name": "Warring Lanner",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "80",
+        "name": "Gloria-class Airship",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "82",
+        "name": "Original Fat Chocobo",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "83",
+        "name": "Astrope",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "86",
+        "name": "Cloud Mallow",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "90",
+        "name": "Dark Lanner",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "91",
+        "name": "Aerodynamics System",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    }
+]

@@ -54,6 +54,16 @@
         "WHERE id NOT IN (SELECT id FROM minions LEFT JOIN player_minion ON minions.id = player_minion.m_id
         WHERE player_minion.p_id=$p_id)");
 
+    //Get existing mounts
+    $exitsts_mounts = $database->select("mounts", 
+        ["[>]player_mounts" => ["id" => "m_id"]],"*",
+        ["player_mounts.p_id[=]"=>$p_id]);
+        
+    //Get missing mounts
+    $missing_mounts = $database->select("mounts", "*",
+        "WHERE id NOT IN (SELECT id FROM mounts LEFT JOIN player_mounts ON mounts.id = player_mounts.m_id
+        WHERE player_mounts.p_id=$p_id)");
+
 
 
     //Show all minions as tables
@@ -63,11 +73,12 @@
     echo "<img src=$p_portrait class='img-rounded img-responsive'></div>";
     echo '</div>';
     echo '<div class="col-md-9">';
-    $ownedTile = language_text("Owned Minions","","Begleiter im Besitz","");
-    echo create_thumbnail($ownedTile,$exitsts_minions);
+    echo create_thumbnail(get_language_text("owned_minions"),$exitsts_minions);
+    echo create_thumbnail(get_language_text("owned_mounts"),$exitsts_mounts);
     echo '</div></div>';
     $missingTile = language_text("Missing Minions","","Fehlende Begleiter","");
-    echo create_table($missingTile,$missing_minions);
+    echo create_table(get_language_text("missing_minions"),$missing_minions);
+    echo create_table(get_language_text("missing_mounts"),$missing_mounts);
     echo "</center>";
 
     
