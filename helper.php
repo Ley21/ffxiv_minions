@@ -7,19 +7,6 @@
         $lang = empty($_GET["lang"]) ? "en" : $_GET["lang"];
         return $lang;
     }
-    function language_text($en,$fr,$de,$jp){
-        switch(get_lang()){
-            case "de":
-                return empty($de) ? $en : $de;
-            case "fr":
-                return empty($fr) ? $en : $fr;
-            case "ja":
-                return empty($ja) ? $en : $ja;
-            default:
-            case "en":
-                return $en;
-        }
-    }
     
     function get_language_text($name,$lang=""){
         global $language_texts;
@@ -33,8 +20,13 @@
         $table = '<div class="panel panel-primary">
         <div class="panel-heading">'.$title.'</div>
         <div class="panel-body">';
-        $table .= language_text('<table class="table table-striped"><thead><tr><th>Symbol</th><th>Name</th><th>Patch</th><th>Methode</th><th>Description</th></tr></thead>',
-        "",'<table class="table table-striped"><thead><tr><th>Icon</th><th>Name</th><th>Patch</th><th>Methode</th><th>Beschreibung</th></tr></thead>',"");
+        $icon = get_language_text("icon");
+        $name = get_language_text("name");
+        $patch = get_language_text("patch");
+        $method = get_language_text("method");
+        $description = get_language_text("description");
+        $table .= "<table class='table table-striped'><thead><tr><th>$icon</th><th>$name</th><th>$patch</th><th>$method</th><th>$description</th></tr></thead>";
+        
 
         $table .= "<tbody>";
         foreach($sql_data as $minion_data){
@@ -50,7 +42,8 @@
             $methode_name = $minion_data['method'] ;
             $table .= "<tr>";
             $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
-            $table .= "<td class='shrink'><a href='https://$lang.xivdb.com/$type/$m_id'>$name</a></td>";
+            $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
+            $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
             $table .= "<td class='shrink'>$patch</td>";
             $table .= "<td class='shrink'>$methode_name</td>";
             $table .= "<td class='expand'>$methode</td>";
@@ -152,7 +145,7 @@
     function insert_update_charakter($character){
         global $database;
         if(empty($character->id)){
-            echo "Could not find the charakter '$name' on server '$server'";
+            return "Could not find the charakter '$name' on server '$server'";
             exit;
         }
         $c_name = strtolower($character->name);

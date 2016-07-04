@@ -2,7 +2,7 @@
 require_once "../config.php";
 
 require_once "../helper.php";
-
+header("Content-Type: text/html; charset=utf-8");
 // Create table for minions
 
 $database->query("CREATE TABLE minions (

@@ -164,9 +164,7 @@ require_once "language.php";
 $lang = get_lang();
 $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=" . get_lang();
 
-// $homeTitle = language_text("Home","","Startseite","");
 
-$rankingTitle = language_text("Ranking", "", "Statistik", "");
 ?>
 <div class="container" style="background-color:rgba(255, 255, 255, 0.5);">
 
@@ -174,8 +172,8 @@ $rankingTitle = language_text("Ranking", "", "Statistik", "");
 <div class="row">
   <div class="col-md-12 col-md-offset-0">
 <div class="jumbotron">
-  <h1>FFXIV Collections</h1>
-  <p>Minions & Mounts Collection Site</p>
+  <h1><?php echo get_language_text("title"); ?></h1>
+  <p><?php echo get_language_text("subtitle"); ?></p>
 </div>
             
 <nav class="navbar navbar-inverse">
@@ -205,12 +203,11 @@ echo get_language_text("navDropdown"); ?><span class="caret"></span></a>
 echo create_dropdown_menu(); ?>
         </ul>
       </li>
-      <li><a id="ranking"><?php
-echo $rankingTitle; ?></a></li>
+      <li><a id="ranking"><?php echo get_language_text("ranking"); ?></a></li>
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
       <div class="form-group">
-    <input type="text" class="form-control" placeholder="Charakter Name" name="name">
+    <input type="text" class="form-control" placeholder="<?php echo get_language_text("char_search_placeholder"); ?>" name="name">
     <select class="form-control" name="server">
       <option value="Adamantoise">Adamantoise</option>
       <option value="Aegis">Aegis</option>
@@ -277,19 +274,19 @@ echo $rankingTitle; ?></a></li>
       <option value="Zeromus">Zeromus</option>
       <option value="Zodiark">Zodiark</option>
     </select>
-    <button type="submit" class="btn btn-default">Search</button>
+    <button type="submit" class="btn btn-default"><?php echo get_language_text("search"); ?></button>
     </div>
     </form>
     <form class="navbar-form navbar-right form-inline">
       <select class="form-control" id="lang">
         <option value="en" <?php
-echo "en" == get_lang() ? "selected='selected'" : ""; ?>>Englisch</option>
+echo "en" == get_lang() ? "selected='selected'" : ""; ?>>English</option>
         <option value="fr" <?php
-echo "fr" == get_lang() ? "selected='selected'" : ""; ?>>Französisch</option>
+echo "fr" == get_lang() ? "selected='selected'" : ""; ?>>Français</option>
         <option value="de" <?php
 echo "de" == get_lang() ? "selected='selected'" : ""; ?>>Deutsch</option>
         <option value="ja" <?php
-echo "ja" == get_lang() ? "selected='selected'" : ""; ?>>Japanisch</option>
+echo "ja" == get_lang() ? "selected='selected'" : ""; ?>>日本語</option>
       </select>
     </form>
       
@@ -319,7 +316,8 @@ echo create_table(get_language_text("latest_mounts"), $latest_mounts,"mount");
 echo "</center>";
 ?>
     </div>
-      <footer style="background-color:rgba(255, 255, 255, 0.5);">
+      <footer style="background-color:rgba(255, 255, 255, 0.5);" class="rounded">
+        </br>
     <p class="text-center">FFXIV Collections: © 2016 Andreas Spuling</p>
     <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     

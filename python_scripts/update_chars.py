@@ -1,6 +1,6 @@
 import requests
 from lxml import html
-baseurl = 'https://spielwiese-ley21.c9.io/minions'
+baseurl = ''
 page = requests.get(baseurl+'/caller/update_charakter.php?numbers=true').text
 doc = html.fromstring(page)
 divs = doc.cssselect("a")

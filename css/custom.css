@@ -4,3 +4,7 @@ table td.shrink {
 table td.expand {
     width: 99%
 }
+.rounded {
+  border-radius: 10px;
+  background: #000; 
+}
