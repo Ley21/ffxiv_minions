@@ -9,14 +9,14 @@
     $index = array_search($methode,$methodes_en);
     
     if($methode == "All"){
-        $minions = $database->select("minions", "*","");
+        $minions = $database->select("mounts", "*","");
     }
     else{
-        $minions = $database->select("minions", "*",["method[=]"=>$methode]);
+        $minions = $database->select("mounts", "*",["method[=]"=>$methode]);
     }
     
     $title = get_language_text("methodes")[$index];
     echo "<center>";
-    echo create_table($title,$minions,"minion");
+    echo create_table($title,$minions,"mount");
     echo "</center>";
 ?>

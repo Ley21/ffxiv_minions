@@ -64,6 +64,11 @@
             ajaxCall("minions","get_minions.php",submit,function(data){});
         }
         
+        function loadMounts(submit) {
+            $('#content').html("<center><h2>Loading Mounts...</h2></center>");
+            ajaxCall("mounts","get_mounts.php",submit,function(data){});
+        }
+        
         function ajaxCall(baseurl,url,submitData,func){
           $.ajax
           ({ 
@@ -111,10 +116,13 @@
           loadRanking();
         });
         
-        $(document).on("click",'.minion_methode',function(){
+        $(document).on("click",'.minions_methode',function(){
           loadMinions(getLangData()+"&methode="+this.id);
         });
         
+        $(document).on("click",'.mounts_methode',function(){
+          loadMounts(getLangData()+"&methode="+this.id);
+        });
         
         $( document ).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
@@ -136,12 +144,17 @@
               var sPageURL = decodeURIComponent(window.location.search.substring(1));
               loadMinions(sPageURL);
             }
+            else if (last == "mounts"){
+              var sPageURL = decodeURIComponent(window.location.search.substring(1));
+              loadMounts(sPageURL);
+            }
             else{
               pushUrl("",getLangData());
               $('.table').DataTable();
             }
             
         });
+        
         $(document).on("change",'#lang',function(){
 
           // window.location.search = jQuery.query.set("lang", this.value);
@@ -180,12 +193,6 @@ $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$ba
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       <a class="navbar-brand" href="<?php
 echo $actual_link; ?>"><?php
 echo get_language_text("home"); ?></a>
@@ -196,11 +203,16 @@ echo get_language_text("home"); ?></a>
       <ul class="nav navbar-nav">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          <?php
-echo get_language_text("navDropdown"); ?><span class="caret"></span></a>
+          <?php echo get_language_text("dropdown_minions"); ?><span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <?php
-echo create_dropdown_menu(); ?>
+          <?php echo create_dropdown_menu("minions"); ?>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <?php echo get_language_text("dropdown_mounts"); ?><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <?php echo create_dropdown_menu("mounts"); ?>
         </ul>
       </li>
       <li><a id="ranking"><?php echo get_language_text("ranking"); ?></a></li>

@@ -34,10 +34,7 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $patch = $minion_data['patch'];
-            $methode = language_text($minion_data['method_description_en'],
-                $minion_data['method_description_fr'],
-                $minion_data['method_description_de'],
-                $minion_data['method_description_ja']);
+            $methode = $minion_data['method_description_'.get_lang()];
                 
             $methode_name = $minion_data['method'] ;
             $table .= "<tr>";
@@ -115,13 +112,14 @@
         return $thumbnail;
     }
     
-    function create_dropdown_menu(){
+    function create_dropdown_menu($type){
         $methodes = get_language_text("methodes");
         $methodes_en = get_language_text("methodes","en");
         //var_dump($methodes);
         $dropdown = "";
+        $class = $type."_methode";
         foreach($methodes as $i=>$methode){
-            $dropdown .= "<li><a id='$methodes_en[$i]' class='minion_methode'>$methode</a></li>";
+            $dropdown .= "<li><a id='$methodes_en[$i]' class='$class'>$methode</a></li>";
         }
         return $dropdown;
     }
