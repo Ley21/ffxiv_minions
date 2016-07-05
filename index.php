@@ -25,81 +25,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
-    <script src="http://xivdb.com/tooltips.min.js"></script>
-    
-
-    
+    <script src="js/functions.js"></script>
     <script type='text/javascript'>
+    
+        var xivdb_tooltip_base_url = getUrlParameter("lang") == "en" ? 'https://xivdb.com' : 'https://'+getUrlParameter("lang")+".xivdb.com";
+        var xivdb_tooltips =
+        {
+            // the XIVDB server to query (this will be https soon)
+            xivdb: xivdb_tooltip_base_url,
         
-        function pushUrl(type,urlData){
-          window.history.pushState("object or string", "", "/"+type+"?"+urlData);
-        }
-        function loadCharakter(id) {
-            $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-            ajaxCall("char","charakter.php",getLangData() +"&"+"id="+id,function(data){});
-            
-        }
+            // the language the tooltips should be
+            language: getUrlParameter("lang"),
         
-        function searchCharakter(formData) {
-            $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-            ajaxCall("char","charakter.php",getLangData() +"&"+formData,function(data){});
-        }
+            // tooltips require JQuery and "check" it, this can add a half a second delay
+            // if you have jquery already on your site, set this false
+            jqueryEmbed: false,
         
-        
-        function getLangData(){
-          var lang = getUrlParameter("lang");
-          lang = lang ? lang : "en"
-          return "lang="+lang;
-        }
-        
-        
-        function loadRanking() {
-          
-            $('#content').html("<center><h2>Loading Ranking...</h2></center>");
-            ajaxCall("ranking","ranking.php",getLangData(),function(data){});
-        }
-        
-        function loadMinions(submit) {
-            $('#content').html("<center><h2>Loading Minions...</h2></center>");
-            ajaxCall("minions","get_minions.php",submit,function(data){});
-        }
-        
-        function loadMounts(submit) {
-            $('#content').html("<center><h2>Loading Mounts...</h2></center>");
-            ajaxCall("mounts","get_mounts.php",submit,function(data){});
-        }
-        
-        function ajaxCall(baseurl,url,submitData,func){
-          $.ajax
-          ({ 
-              url: "handler/"+url,
-              data: submitData,
-              type: 'get',
-              success: function(data)
-              {
-                
-                 $('#content').html(data);
-                 func(data);
-                 pushUrl(baseurl,submitData);
-                 $('.table').DataTable();
-              }
-          });
-        }
-        
-        function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
-        
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-        
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
-                }
-            }
+            // whether to include the content icon next to the link
+            seturlicon: false
         };
+    </script>
+    <script src="js/tooltips.js"></script>
+    <script type='text/javascript'>
+
         
         $(document).on("submit", "form", function(e){
             e.preventDefault();
@@ -124,7 +72,7 @@
           loadMounts(getLangData()+"&methode="+this.id);
         });
         
-        $( document ).ready(function() {
+        $(document).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
             var last = pathArray[pathArray.length - 1];
             if(last == "char"){

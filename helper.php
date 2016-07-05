@@ -34,7 +34,8 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $patch = $minion_data['patch'];
-            $methode = $minion_data['method_description_'.get_lang()];
+            $methode_lang = $minion_data['method_description_'.get_lang()];
+            $methode = empty($methode_lang) ? $minion_data['method_description_en'] : $methode_lang;
                 
             $methode_name = $minion_data['method'] ;
             $table .= "<tr>";
