@@ -65,9 +65,10 @@
         $world = get_language_text("world");
         $number_minions = get_language_text("number_minions");
         $number_mounts = get_language_text("number_mounts");
-        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th></tr></thead>";
+        $last_sync_title = get_language_text("last_synced");
+        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th><th>$last_sync_title</th></tr></thead>";
         $where_clause = empty($fc) ? "" : ["freeCompany"=>$fc];
-        $players = $database->select("players",["id","name","world"],$where_clause);
+        $players = $database->select("players",["id","name","world","last_update_date"],$where_clause);
         $ranking = array();
         foreach($players as $player){
             $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
@@ -84,7 +85,8 @@
             $world = ucwords($player['world']);
             $count_minions = $r_player[1];
             $count_mounts = $r_player[2];
-            $table .= "<tr class='active' id='$p_id'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td></tr>";
+            $last_sync_date = $player['last_update_date'];
+            $table .= "<tr class='active' id='$p_id'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td><td>$last_sync_date</td></tr>";
             $nr++;
         }
         $table .= '</table>';
@@ -126,7 +128,8 @@
         $dropdown = "";
         $class = $type."_methode";
         foreach($methodes as $i=>$methode){
-            $dropdown .= "<li><a id='$methodes_en[$i]' class='$class'>$methode</a></li>";
+            $methode_get = urlencode ($methodes_en[$i]);
+            $dropdown .= "<li><a id='$methode_get' class='$class'>$methode</a></li>";
         }
         return $dropdown;
     }

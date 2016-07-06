@@ -28,6 +28,7 @@
     $language_texts['patch'] = array("en"=>"Patch","fr"=>"","de"=>"Patch","ja"=>"");
     $language_texts['method'] = array("en"=>"Method","fr"=>"","de"=>"Methode","ja"=>"");
     $language_texts['description'] = array("en"=>"Description","fr"=>"","de"=>"Beschreibung","ja"=>"");
+    $language_texts['last_synced'] = array("en"=>"Last time synced","fr"=>"","de"=>"Letztes Mal syncronisiert","ja"=>"");
     
     $language_texts['title_char'] = array("en"=>"Title","fr"=>"","de"=>"Titel","ja"=>"");
     $language_texts['race'] = array("en"=>"Race","fr"=>"","de"=>"Rasse","ja"=>"");
@@ -53,5 +54,7 @@
             "Gehilfen Erkundung","Sonstige Methoden"),
         "ja"=>
         array());
+    $language_texts['gc'] = array("en"=>array(),"fr"=>array(),"de"=>array(),"ja"=>array());
+        
 
 ?>
