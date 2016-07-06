@@ -120,7 +120,7 @@
         "id": "14",
         "name": "Baby Bun",
         "method": "FATE Rewards",
-        "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/218\/Lazy+For+You'>Lazy For You<\/a> in the East Shroud.",
+        "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/218\/Lazy+For+You'>Lazy For You<\/a>.",
         "method_description_fr": null,
         "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/218\/Lazy+For+You'>Undank Des Faulen<\/a> Gold.",
         "method_description_ja": null
@@ -155,10 +155,10 @@
     {
         "id": "18",
         "name": "Infant Imp",
-        "method": null,
-        "method_description_en": null,
+        "method": "FATE Rewards",
+        "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Go,+Go,+Gorgimera<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Etwas Von Allem<\/a>Gold.",
         "method_description_ja": null
     },
     {
@@ -173,10 +173,10 @@
     {
         "id": "20",
         "name": "Black Coeurl",
-        "method": null,
-        "method_description_en": null,
+        "method": "MGP Purchase",
+        "method_description_en": "Purchasable for 20,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 20.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
         "method_description_ja": null
     },
     {
@@ -272,10 +272,10 @@
     {
         "id": "31",
         "name": "Pudgy Puk",
-        "method": null,
-        "method_description_en": null,
+        "method": "FATE Rewards",
+        "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/quest\/66364\/The+Eyes+Have+It'>The Eyes Have It<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/quest\/66364\/The+Eyes+Have+It'>Spannende Aussichten<\/a> Gold.",
         "method_description_ja": null
     },
     {
@@ -299,10 +299,10 @@
     {
         "id": "34",
         "name": "Smallshell",
-        "method": null,
-        "method_description_en": null,
+        "method": "FATE Rewards",
+        "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/335\/It's+Not+Lupus'>It's Not Lupus<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/335\/It's+Not+Lupus'>Krabbe XXL<\/a> Gold.",
         "method_description_ja": null
     },
     {
@@ -677,19 +677,19 @@
     {
         "id": "82",
         "name": "Wind-up Succubus",
-        "method": null,
-        "method_description_en": null,
+        "method": "Monster Hunt",
+        "method_description_en": "Purchased with 500 Allied Seals from your GC affiliated Hunt Bill Master. (<a href='http:\/\/xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Maelstrom<\/a>, <a href='http:\/\/xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Order of the Twin Adder<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Immortal Flames<\/a>)",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 500 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> or <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
         "method_description_ja": null
     },
     {
         "id": "83",
         "name": "Zu Hatchling",
-        "method": null,
-        "method_description_en": null,
+        "method": "MGP Purchase",
+        "method_description_en": "Purchasable for 10,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 10.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
         "method_description_ja": null
     },
     {
@@ -776,10 +776,10 @@
     {
         "id": "93",
         "name": "Treasure Box",
-        "method": null,
-        "method_description_en": null,
+        "method": "Monster Hunt",
+        "method_description_en": "Purchased with 440 Allied Seals from your GC affiliated Hunt Bill Master. (<a href='http:\/\/xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Maelstrom<\/a>, <a href='http:\/\/xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Order of the Twin Adder<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Immortal Flames<\/a>)",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 440 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> or <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
         "method_description_ja": null
     },
     {
@@ -893,10 +893,10 @@
     {
         "id": "106",
         "name": "Heavy Hatchling",
-        "method": null,
-        "method_description_en": null,
+        "method": "MGP Purchase",
+        "method_description_en": "Purchasable for 20,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 20.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
         "method_description_ja": null
     },
     {
@@ -992,10 +992,10 @@
     {
         "id": "117",
         "name": "Water Imp",
-        "method": null,
-        "method_description_en": null,
+        "method": "MGP Purchase",
+        "method_description_en": "Purchasable for 10,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 10.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1226,10 +1226,10 @@
     {
         "id": "144",
         "name": "Griffin Hatchling",
-        "method": null,
-        "method_description_en": null,
+        "method": "Monster Hunt",
+        "method_description_en": "Purchased with 400 Clan Hunt Seals from <a href='http:\/\/xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 400 Centurio-Abzeichen bei <a href='http:\/\/de.xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1262,10 +1262,10 @@
     {
         "id": "148",
         "name": "Behemoth Heir",
-        "method": null,
-        "method_description_en": null,
+        "method": "Monster Hunt",
+        "method_description_en": "Purchased with 400 Clan Hunt Seals from <a href='http:\/\/xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 400 Centurio-Abzeichen bei <a href='http:\/\/de.xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1307,10 +1307,10 @@
     {
         "id": "154",
         "name": "Gold Rush Minecart",
-        "method": null,
-        "method_description_en": null,
+        "method": "FATE Rewards",
+        "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/855\/On+Dangerous+Ground'>On Dangerous Ground<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/855\/On+Dangerous+Ground'>Wider Die Eigene Natur<\/a> Gold.",
         "method_description_ja": null
     },
     {
@@ -1328,7 +1328,7 @@
         "method": "Gil Purchase",
         "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
         "method_description_fr": null,
-        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016804\/Vath+Stickpeddler>Vath Kr\u00e4mer'<\/a>(Ab Verbundenheitsgrad 'Solidarisch').",
+        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a>(Ab Verbundenheitsgrad 'Solidarisch').",
         "method_description_ja": null
     },
     {
@@ -1487,10 +1487,10 @@
     {
         "id": "174",
         "name": "Wind-up Nero Tol Scaeva",
-        "method": null,
-        "method_description_en": null,
+        "method": "MGP Purchase",
+        "method_description_en": "Purchasable for 30,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 30.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1595,10 +1595,10 @@
     {
         "id": "187",
         "name": "Piggy",
-        "method": null,
-        "method_description_en": null,
+        "method": "MGP Purchase",
+        "method_description_en": "Purchasable for 10,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 10.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
         "method_description_ja": null
     },
     {
