@@ -54,8 +54,8 @@ function ajaxCall(baseurl,url,submitData,func){
          func(data);
          pushUrl(baseurl,submitData);
          $('.table').DataTable();
-         //XIVDBTooltips.setOptions("undefined" != typeof xivdb_tooltips ? xivdb_tooltips : xivdb_tooltips_default);
          XIVDBTooltips.initialize();
+         
       }
   });
 }
