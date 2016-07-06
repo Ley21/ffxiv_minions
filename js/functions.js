@@ -9,7 +9,7 @@ function loadCharakter(id) {
 
 function searchCharakter(formData) {
     $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-    ajaxCall("char","charakter.php",getLangData() +"&"+formData,function(data){});
+    ajaxCall("char","charakter.php",formData,function(data){});
 }
 
 
@@ -25,10 +25,10 @@ function loadRanking() {
     $('#content').html("<center><h2>Loading Ranking...</h2></center>");
     ajaxCall("ranking","ranking.php",getLangData(),function(data){});
 }
-function loadFreeCompany($data) {
+function loadFreeCompany(submit) {
   
     $('#content').html("<center><h2>Loading Ranking...</h2></center>");
-    ajaxCall("freeCompany","fc_ranking.php",getLangData(),function(data){});
+    ajaxCall("freeCompany","fc_ranking.php",submit,function(data){});
 }
 
 function loadMinions(submit) {

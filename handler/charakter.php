@@ -45,7 +45,7 @@
     $p_server = ucwords($player_entry["world"]);
     $p_title = ucwords($player_entry["title"]);
     $p_race = ucwords($player_entry["race"]);
-    $p_gc = ucwords($player_entry["grandCompany"]);
+    $p_gc = get_language_text("gc_names")[$player_entry["grandCompany"]];
     $p_fc = ucwords($player_entry["freeCompany"]);
     $p_portrait = ucwords($player_entry["portrait"]);
     

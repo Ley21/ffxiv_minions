@@ -66,7 +66,7 @@
           loadRanking();
         });
         $(document).on("click",'#freeCompany',function(){
-          loadFreeCompany(getLangData()+"&fc="+this.text);
+          loadFreeCompany(getLangData()+"&fc="+$("#freeCompany").text());
         });
         
         $(document).on("click",'.minions_methode',function(){

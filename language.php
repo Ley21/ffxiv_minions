@@ -54,7 +54,17 @@
             "Gehilfen Erkundung","Sonstige Methoden"),
         "ja"=>
         array());
-    $language_texts['gc'] = array("en"=>array(),"fr"=>array(),"de"=>array(),"ja"=>array());
+    $language_texts['gc_names'] = array(
+        "en"=>array(
+            "Order of the Twin Adder"=>"Order Of The Twin Adder",
+            "Maelstrom"=>"Maelstrom",
+            "Immortal Flames"=>"The Immortal Flames"),
+        "fr"=>array(),
+        "de"=>array(
+            "Order of the Twin Adder"=>"Bruderschaft der Morgenviper",
+            "Maelstrom"=>"Mahlstrom",
+            "Immortal Flames"=>"Legion der Unsterblichen"),
+        "ja"=>array());
         
 
 ?>
