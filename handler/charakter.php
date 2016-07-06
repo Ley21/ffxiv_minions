@@ -39,10 +39,15 @@
         $player = $database->select('players',
             "*", ["name[=]"=> $name]);
     }
-    $p_id = $player[0]["id"];
-    $p_name = ucwords($player[0]["name"]);
-    $p_server = ucwords($player[0]["world"]);
-    $p_portrait = ucwords($player[0]["portrait"]);
+    $player_entry = $player[0];
+    $p_id = $player_entry["id"];
+    $p_name = ucwords($player_entry["name"]);
+    $p_server = ucwords($player_entry["world"]);
+    $p_title = ucwords($player_entry["title"]);
+    $p_race = ucwords($player_entry["race"]);
+    $p_gc = ucwords($player_entry["grandCompany"]);
+    $p_fc = ucwords($player_entry["freeCompany"]);
+    $p_portrait = ucwords($player_entry["portrait"]);
     
     //Get existing minions
     $exitsts_minions = $database->select("minions", 
@@ -64,14 +69,26 @@
         "WHERE id NOT IN (SELECT id FROM mounts LEFT JOIN player_mounts ON mounts.id = player_mounts.m_id
         WHERE player_mounts.p_id=$p_id)");
 
-
+    
+        
 
     //Show all minions as tables
     echo "<center>";
     echo '<div class="row"><div class="col-md-3">';
-    echo '<div class="page-header">'."<h1>$p_name</br><small>$p_server</small></h1>";
-    echo "<img src=$p_portrait class='img-rounded img-responsive'></div>";
+    echo '<div class="panel panel-primary"><div class="panel-heading">'.get_language_text("charakter").'</div>';
+    echo '<div class="panel-body">';
+    //echo "<h1>$p_name</br><small>$p_server</small></h1>";
+    echo "<img src=$p_portrait class='img-rounded img-responsive'>";
     echo '</div>';
+    echo get_col_row(get_language_text("name"),$p_name);
+    echo get_col_row(get_language_text("world"),$p_server);
+    if(!empty($p_title)){
+        echo get_col_row(get_language_text("title_char"),$p_title);
+    }
+    echo get_col_row(get_language_text("race"),$p_race);
+    echo get_col_row(get_language_text("grandCompany"),$p_gc);
+    echo get_col_row(get_language_text("freeCompany"),"<a id='freeCompany'>$p_fc</a>");
+    echo '</br></div></div>';
     echo '<div class="col-md-9">';
     echo create_thumbnail(get_language_text("owned_minions"),$exitsts_minions,"minion");
     echo create_thumbnail(get_language_text("owned_mounts"),$exitsts_mounts,"mount");
@@ -81,6 +98,13 @@
     echo "</center>";
 
     
-    
+    function get_col_row ($title,$value){
+         return "<div class='row'>
+                    <div class='col-xs-1 col-sm-1'></div>
+                    <div class='col-xs-7 col-sm-5 info_grid'><b>$title</b></div>
+                    <div class='col-xs-3 col-sm-5 rounded_row'>$value</div>
+                    <div class='col-xs-1 col-sm-1'></div>
+                    </div>";
+    }
     
 ?>

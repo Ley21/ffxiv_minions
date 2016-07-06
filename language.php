@@ -10,6 +10,7 @@
     $language_texts['search'] = array("en"=>"Search","fr"=>"","de"=>"Suchen","ja"=>"");
     $language_texts['dropdown_minions'] = array("en"=>"Minions","fr"=>"","de"=>"Begleiter","ja"=>"");
     $language_texts['dropdown_mounts'] = array("en"=>"Mounts","fr"=>"","de"=>"Reittiere","ja"=>"");
+    $language_texts['charakter'] = array("en"=>"Charakter","fr"=>"","de"=>"Charakter","ja"=>"");
     
     $language_texts['latest_minions'] = array("en"=>"Latest Minions","fr"=>"","de"=>"Neuste Begleiter","ja"=>"");
     $language_texts['latest_mounts'] = array("en"=>"Latest Mounts","fr"=>"","de"=>"Neuste Reittiere","ja"=>"");
@@ -28,23 +29,28 @@
     $language_texts['method'] = array("en"=>"Method","fr"=>"","de"=>"Methode","ja"=>"");
     $language_texts['description'] = array("en"=>"Description","fr"=>"","de"=>"Beschreibung","ja"=>"");
     
+    $language_texts['title_char'] = array("en"=>"Title","fr"=>"","de"=>"Titel","ja"=>"");
+    $language_texts['race'] = array("en"=>"Race","fr"=>"","de"=>"Rasse","ja"=>"");
+    $language_texts['grandCompany'] = array("en"=>"Grand Company","fr"=>"","de"=>"Staatliche Gesellschaft","ja"=>"");
+    $language_texts['freeCompany'] = array("en"=>"Free Company","fr"=>"","de"=>"Freie Gesellschaft","ja"=>"");
+    $language_texts['has_minion'] = array("en"=>"Which Charakter has this minion...","fr"=>"","de"=>"Welcher Charakter hat dieses Minion...","ja"=>"");
     
     
     $language_texts['methodes'] = array (
         "en"=>
         array("All","Gil Purchase","MGP Purchase","Tomestone Purchase","GC Purchase",
-        "Mogry Shop Purchase","Dungeons & Trials","Crafting","Gathering","Gardening",
-        "Achievement Rewards","FATE Rewards","Quest Rewards","Seasonal Rewards",
-        "Veteran Rewards","Treasure Hunt","Treasure Dungeons","Monster Hunt","Promotions",
-        "Retainer Ventures","Misc. Methods"),
+            "Mogry Shop Purchase","Dungeons & Trials","Crafting","Gathering","Gardening",
+            "Achievement Rewards","FATE Rewards","Quest Rewards","Seasonal Rewards",
+            "Veteran Rewards","Treasure Hunt","Treasure Dungeons","Monster Hunt","Promotions",
+            "Retainer Ventures","Misc. Methods"),
         "fr"=>
         array(),
         "de"=>
-        array("Alle","Gil Kauf","MGP Kauf","Allagische Steine Kauf","Staatstaler Kauf",
-        "Mogry Shop Kauf","Dungeons & Prüfungen","Handwerken","Sammeln","Züchten",
-        "Errungenschafts Belohnung","FATE Belohnung","Auftrags Belohnung","Seasonal Belohnung",
-        "Veteranen Belohnung","Schatzkarten","Schatzkarten Dungeon","Hohe Jagt","Aktionen",
-        "Gehilfen Erkundung","Sonstige Methoden"),
+        array("Alle","Gil","MGP","Allagische Steine","Staatstaler",
+            "Mogry Shop","Dungeons & Prüfungen","Handwerken","Sammeln","Gärtnern",
+            "Errungenschafts Belohnung","FATE Belohnung","Auftrags Belohnung","Saisonale Belohnung",
+            "Veteranen Belohnung","Schatzkarten","Schatzkarten Dungeon","Hohe Jagd","Aktionen",
+            "Gehilfen Erkundung","Sonstige Methoden"),
         "ja"=>
         array());
 

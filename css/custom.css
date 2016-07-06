@@ -8,3 +8,13 @@ table td.expand {
   border-radius: 10px;
   background: #000; 
 }
+.rounded_row {
+   border-radius: 10px; 
+   background: #fff;
+}
+.info_grid{
+    background: #337ab7;
+    color: #fff;
+    border-radius: 10px; 
+    
+}

@@ -38,6 +38,11 @@
             $methode = empty($methode_lang) ? $minion_data['method_description_en'] : $methode_lang;
                 
             $methode_name = $minion_data['method'] ;
+            if(!empty($methode_name)){
+                $methodes_en = get_language_text("methodes","en");
+                $m_index = array_search($methode_name,$methodes_en);
+                $methode_name = get_language_text("methodes")[$m_index];
+            }
             $table .= "<tr>";
             $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
             $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
@@ -52,7 +57,7 @@
         return $table;
     }
     
-    function create_ranking(){
+    function create_ranking($fc = ""){
         global $database;
         //$lang = get_lang();
         $nr = get_language_text("nr");
@@ -61,7 +66,8 @@
         $number_minions = get_language_text("number_minions");
         $number_mounts = get_language_text("number_mounts");
         $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th></tr></thead>";
-        $players = $database->select("players",["id","name","world"],"");
+        $where_clause = empty($fc) ? "" : ["freeCompany"=>$fc];
+        $players = $database->select("players",["id","name","world"],$where_clause);
         $ranking = array();
         foreach($players as $player){
             $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
@@ -78,7 +84,7 @@
             $world = ucwords($player['world']);
             $count_minions = $r_player[1];
             $count_mounts = $r_player[2];
-            $table .= "<tr class='active'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td></tr>";
+            $table .= "<tr class='active' id='$p_id'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td></tr>";
             $nr++;
         }
         $table .= '</table>';

@@ -36,6 +36,8 @@
         
             // the language the tooltips should be
             language: getUrlParameter("lang"),
+            
+            seturlname: false,
         
             // tooltips require JQuery and "check" it, this can add a half a second delay
             // if you have jquery already on your site, set this false
@@ -63,6 +65,9 @@
         $(document).on("click",'#ranking',function(){
           loadRanking();
         });
+        $(document).on("click",'#freeCompany',function(){
+          loadFreeCompany(getLangData()+"&fc="+this.text);
+        });
         
         $(document).on("click",'.minions_methode',function(){
           loadMinions(getLangData()+"&methode="+this.id);
@@ -74,6 +79,7 @@
         
         $(document).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
+            var data = decodeURIComponent(window.location.search.substring(1));
             var last = pathArray[pathArray.length - 1];
             if(last == "char"){
                 var id = getUrlParameter("id");
@@ -81,20 +87,20 @@
                   loadCharakter(id);
                 }
                 else{
-                  var sPageURL = decodeURIComponent(window.location.search.substring(1));
-                  searchCharakter(sPageURL);
+                  searchCharakter(data);
                 }
                 
             }else if (last == "ranking"){
               loadRanking();
             }
             else if (last == "minions"){
-              var sPageURL = decodeURIComponent(window.location.search.substring(1));
-              loadMinions(sPageURL);
+              loadMinions(data);
             }
             else if (last == "mounts"){
-              var sPageURL = decodeURIComponent(window.location.search.substring(1));
-              loadMounts(sPageURL);
+              loadMounts(data);
+            }
+            else if (last == "freeCompany"){
+              loadFreeCompany(data);
             }
             else{
               pushUrl("",getLangData());
@@ -113,6 +119,22 @@
           location.reload();
         });
 
+        $(document).on("change",'#find_minion',function(){
+          $( "tr" ).removeClass( "success" );
+          $.ajax
+          ({ 
+              url: "handler/find_player_minions.php",
+              data: "minion="+this.value,
+              type: 'get',
+              success: function(data)
+              {
+                var obj = JSON.parse(data);
+                obj.forEach(function(id){
+                  $("#"+id ).addClass( "success" );
+                });      
+              }
+          });
+        });
         
     </script> 
   </head>

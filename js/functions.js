@@ -25,6 +25,11 @@ function loadRanking() {
     $('#content').html("<center><h2>Loading Ranking...</h2></center>");
     ajaxCall("ranking","ranking.php",getLangData(),function(data){});
 }
+function loadFreeCompany($data) {
+  
+    $('#content').html("<center><h2>Loading Ranking...</h2></center>");
+    ajaxCall("freeCompany","fc_ranking.php",getLangData(),function(data){});
+}
 
 function loadMinions(submit) {
     $('#content').html("<center><h2>Loading Minions...</h2></center>");
