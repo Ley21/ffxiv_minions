@@ -149,6 +149,7 @@ $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$ba
 
 
 ?>
+
 <div class="container" style="background-color:rgba(255, 255, 255, 0.5);">
 
           <p class="text-center">
@@ -276,8 +277,8 @@ echo "ja" == get_lang() ? "selected='selected'" : ""; ?>>日本語</option>
   </div><!-- /.container-fluid -->
 </nav>
             
-
-    <div id="content">
+<div class="rounded_row" >
+    <div id="content" style="padding:20px">
       <?php
 $patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
 $floatPatches = array();
@@ -298,6 +299,7 @@ echo create_table(get_language_text("latest_mounts"), $latest_mounts,"mount");
 echo "</center>";
 ?>
     </div>
+    </div>
       <footer style="background-color:rgba(255, 255, 255, 0.5);" class="rounded">
         </br>
     <p class="text-center">FFXIV Collections: © 2016 Andreas Spuling</p>
@@ -310,9 +312,10 @@ echo "</center>";
 
 
 </div>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
-        
-  </body>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
 
 </html>
