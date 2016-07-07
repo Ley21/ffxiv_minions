@@ -77,6 +77,9 @@
         $(document).on("click",'.mounts_methode',function(){
           loadMounts(getLangData()+"&methode="+this.id);
         });
+        $(document).on("click",'#char_button',function(){
+          browserAs();
+        });
         
         $(document).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
@@ -90,6 +93,7 @@
                 else{
                   searchCharakter(data);
                 }
+                
                 
             }else if (last == "ranking"){
               loadRanking();
@@ -111,6 +115,7 @@
         });
         $(document).on('draw.dt','.table', function () {
             XIVDBTooltips.initialize();
+            browserView();
         } );
         
         $(document).on("change",'#lang',function(){
@@ -139,6 +144,8 @@
               }
           });
         });
+        
+        
         
     </script> 
   </head>

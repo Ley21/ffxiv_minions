@@ -59,7 +59,8 @@
                 $m_index = array_search($methode_name,$methodes_en);
                 $methode_name = get_language_text("methodes")[$m_index];
             }
-            $table .= "<tr>";
+            $dom_id = $type."_".$m_id;
+            $table .= "<tr id='$dom_id'>";
             $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
             $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
             $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
@@ -128,8 +129,9 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
+            $dom_id = $type."_".$m_id;
             $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px">';
-            $thumbnail .= "<a href='https://xivdb.com/$type/$m_id' class='thumbnail' >";
+            $thumbnail .= "<a  id='$dom_id' href='https://xivdb.com/$type/$m_id' class='thumbnail' >";
             $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url >";
             $thumbnail .= "</a>";
             $thumbnail .= "</div>";

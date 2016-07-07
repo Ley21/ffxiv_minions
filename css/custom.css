@@ -26,3 +26,11 @@ table td.expand {
     margin-bottom:2px;
     
 }
+
+a.danger {
+  background-color: #e4b9b9;
+}
+
+a.success{
+  background-color: #dff0d8;
+}

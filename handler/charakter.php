@@ -77,7 +77,7 @@
     echo '<div class="row"><div class="col-md-4">';
     echo '<div class="panel panel-primary"><div class="panel-heading">'.get_language_text("charakter").'</div>';
     echo '<div class="panel-body">';
-    //echo "<h1>$p_name</br><small>$p_server</small></h1>";
+    echo "<div id='$p_id' class='player_id'></div>";
     echo "<img src=$p_portrait class='img-rounded img-responsive'>";
     echo '</div>';
     echo get_col_row(get_language_text("name"),$p_name);
@@ -88,6 +88,7 @@
     echo get_col_row(get_language_text("race"),$p_race);
     echo get_col_row(get_language_text("grandCompany"),$p_gc);
     echo get_col_row(get_language_text("freeCompany"),"<a id='freeCompany'>$p_fc</a>");
+    echo "<div class='row'><button type='button' class='btn' id='char_button' style='width:83%'></button></div>";
     echo '</br></div></div>';
     echo '<div class="col-md-8">';
     echo create_thumbnail(get_language_text("owned_minions"),$exitsts_minions,"minion");

@@ -37,6 +37,8 @@
     $language_texts['freeCompany'] = array("en"=>"Free Company","fr"=>"","de"=>"Freie Gesellschaft","ja"=>"");
     $language_texts['has_minion'] = array("en"=>"Which Charakter has this minion...","fr"=>"","de"=>"Welcher Charakter hat dieses Minion...","ja"=>"");
     
+    $language_texts['my_char'] = array("en"=>"This is my charakter","fr"=>"","de"=>"Das ist mein Charakter","ja"=>"");
+    $language_texts['not_my_char'] = array("en"=>"This is not my charakter","fr"=>"","de"=>"Das ist nicht mein Charakter","ja"=>"");
     
     $language_texts['methodes'] = array (
         "en"=>
