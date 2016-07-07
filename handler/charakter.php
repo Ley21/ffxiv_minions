@@ -69,7 +69,8 @@
         "WHERE id NOT IN (SELECT id FROM mounts LEFT JOIN player_mounts ON mounts.id = player_mounts.m_id
         WHERE player_mounts.p_id=$p_id)");
 
-    
+    $lodestone_lang = get_lang() == "ja" ? "jp" : get_lang();
+    $charakter_link = "http://$lodestone_lang.finalfantasyxiv.com/lodestone/character/$p_id";
         
 
     //Show all minions as tables
@@ -80,7 +81,7 @@
     echo "<div id='$p_id' class='player_id'></div>";
     echo "<img src=$p_portrait class='img-rounded img-responsive'>";
     echo '</div>';
-    echo get_col_row(get_language_text("name"),$p_name);
+    echo get_col_row(get_language_text("name"),"<a href='$charakter_link' target='_blank' id='p_name'>$p_name</a>");
     echo get_col_row(get_language_text("world"),$p_server);
     if(!empty($p_title)){
         echo get_col_row(get_language_text("title_char"),$p_title);

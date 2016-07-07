@@ -81,6 +81,12 @@
           browserAs();
         });
         
+        $(document).on("click",'#user',function(){
+          var p_id = getCookie("player_id");
+          loadCharakter(p_id);
+        });
+        
+        
         $(document).ready(function() {
             var pathArray = window.location.pathname.split( '/' );
             var data = decodeURIComponent(window.location.search.substring(1));
@@ -193,6 +199,8 @@ echo get_language_text("home"); ?></a>
           <?php echo create_dropdown_menu("minions"); ?>
         </ul>
       </li>
+
+      
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           <?php echo get_language_text("dropdown_mounts"); ?><span class="caret"></span></a>
@@ -274,6 +282,7 @@ echo get_language_text("home"); ?></a>
     <button type="submit" class="btn btn-default"><?php echo get_language_text("search"); ?></button>
     </div>
     </form>
+    
     <form class="navbar-form navbar-right form-inline">
       <select class="form-control" id="lang">
         <option value="en" <?php
@@ -286,7 +295,11 @@ echo "de" == get_lang() ? "selected='selected'" : ""; ?>>Deutsch</option>
 echo "ja" == get_lang() ? "selected='selected'" : ""; ?>>日本語</option>
       </select>
     </form>
-      
+      <form class="navbar-form navbar-right form-inline">
+    <button type="button" class="btn btn-primary" id="user" style="display: none;">
+    <span class="glyphicon glyphicon-user" aria-hidden="true"/><?php echo " ".get_language_text("my_char");?>
+    </button>
+    </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

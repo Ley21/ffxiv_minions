@@ -63,7 +63,14 @@ function ajaxCall(baseurl,url,submitData,func){
   });
 }
 
-
+function addCharButton(){
+    var name = getCookie("player_name");
+    var html = '<span class="glyphicon glyphicon-user" aria-hidden="true"/> ';
+    html += name;
+    $("#user").css("display","inline");
+    $("#user").html(html);
+    
+}
 
 function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
@@ -83,12 +90,15 @@ function getUrlParameter(sParam) {
 function browserAs(){
     if($('#char_button').attr("class").indexOf("success") > -1){
         var id = $(".player_id").attr('id');
+        var name = $("#p_name").text();
         setCookie("player_id",id,14);
+        setCookie("player_name",name,14);
         var jsonData = getMinionsMounts();
         setCookie("minions_mounts",jsonData,14);
         set_char(false);
       }else{
         setCookie("player_id","",14);
+        setCookie("player_name","",14);
         setCookie("minions_mounts","",14);
         set_char(true);
       }
@@ -111,6 +121,7 @@ function browserView(){
     var p_id = getCookie("player_id");
     cleanAll();
     if(p_id != ""){
+        addCharButton();
         var json = getCookie("minions_mounts");
         var obj = JSON.parse(json);
         for (i = 1; i < 300; i++) {
@@ -137,6 +148,9 @@ function browserView(){
         if(p_id != id){
             set_char(true);
         }
+    }
+    else{
+        $("#user").css("display","none");
     }
 }
 
