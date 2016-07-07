@@ -153,12 +153,15 @@ $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$ba
 
 
 ?>
-
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-8"><center>
 <div class="container" style="background-color:rgba(255, 255, 255, 0.5);">
 
           <p class="text-center">
-<div class="row">
-  <div class="col-md-12 col-md-offset-0">
+
+
+  
 <div class="jumbotron">
   <h1><?php echo get_language_text("title"); ?></h1>
   <p><?php echo get_language_text("subtitle"); ?></p>
@@ -310,8 +313,12 @@ echo "</center>";
     <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     
   </footer>
-</div></p>
+</p>
+
 </div>
+</center>
+</div>
+<div class="col-md-1"></div>
 
 
 

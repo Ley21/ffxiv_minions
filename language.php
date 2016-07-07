@@ -22,8 +22,9 @@
     $language_texts['name'] = array("en"=>"Name","fr"=>"","de"=>"Name","ja"=>"");
     $language_texts['nr'] = array("en"=>"Nr","fr"=>"","de"=>"Nr","ja"=>"");
     $language_texts['world'] = array("en"=>"World","fr"=>"","de"=>"Welt","ja"=>"");
-    $language_texts['number_minions'] = array("en"=>"Number of Minions","fr"=>"","de"=>"Anzahl der Begleiter","ja"=>"");
-    $language_texts['number_mounts'] = array("en"=>"Number of Mounts","fr"=>"","de"=>"Anzahl der Reittiere","ja"=>"");
+    $language_texts['number_minions'] = array("en"=>"Minions","fr"=>"","de"=>"Begleiter","ja"=>"");
+    $language_texts['number_mounts'] = array("en"=>"Mounts","fr"=>"","de"=>"Reittiere","ja"=>"");
+    $language_texts['number_all'] = array("en"=>"All","fr"=>"","de"=>"Gesamt","ja"=>"");
     $language_texts['icon'] = array("en"=>"Icon","fr"=>"","de"=>"Symbol","ja"=>"");
     $language_texts['patch'] = array("en"=>"Patch","fr"=>"","de"=>"Patch","ja"=>"");
     $language_texts['method'] = array("en"=>"Method","fr"=>"","de"=>"Methode","ja"=>"");

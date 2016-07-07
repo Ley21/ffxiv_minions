@@ -15,6 +15,22 @@
         return empty($languageObject) ? $language_texts[$name]["en"] : $languageObject;
     }
     
+    function get_title_language_text($title){
+        
+        if(get_lang() != "en"){
+            $getdata = http_build_query(
+                array('one'=>'titles','string'=>$title));
+            $context = stream_context_create($opts);
+            $search_url = "https://api.xivdb.com/search?".$getdata;
+            $json = file_get_contents($search_url);
+            $obj = json_decode($json);
+            $prop = "name_".get_lang();
+            $translated_title = $obj->titles->results[0]->$prop;
+            return $translated_title;
+        }
+        return $title;
+    }
+    
     function create_table($title,$sql_data,$type){
         $lang = get_lang();
         $table = '<div class="panel panel-primary">
@@ -65,8 +81,9 @@
         $world = get_language_text("world");
         $number_minions = get_language_text("number_minions");
         $number_mounts = get_language_text("number_mounts");
+        $number_all = get_language_text("number_all");
         $last_sync_title = get_language_text("last_synced");
-        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th><th>$last_sync_title</th></tr></thead>";
+        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th><th>$number_all</th><th>$last_sync_title</th></tr></thead>";
         $where_clause = empty($fc) ? "" : ["freeCompany"=>$fc];
         $players = $database->select("players",["id","name","world","last_update_date"],$where_clause);
         $ranking = array();
@@ -83,10 +100,11 @@
             $p_id = $player['id'];
             $name = ucwords($player['name']);
             $world = ucwords($player['world']);
+            $count = $r_player[0];
             $count_minions = $r_player[1];
             $count_mounts = $r_player[2];
             $last_sync_date = $player['last_update_date'];
-            $table .= "<tr class='active' id='$p_id'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td><td>$last_sync_date</td></tr>";
+            $table .= "<tr class='active' id='$p_id'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td><td>$count</td><td>$last_sync_date</td></tr>";
             $nr++;
         }
         $table .= '</table>';
@@ -110,7 +128,7 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
-            $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto">';
+            $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px">';
             $thumbnail .= "<a href='https://xivdb.com/$type/$m_id' class='thumbnail' >";
             $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url >";
             $thumbnail .= "</a>";

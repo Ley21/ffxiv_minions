@@ -2,13 +2,13 @@ function pushUrl(type,urlData){
   window.history.pushState("object or string", "", "/"+type+"?"+urlData);
 }
 function loadCharakter(id) {
-    $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
+    //$('#content').html("<center>Loading your Minions form database and lodestone...</center>");
     ajaxCall("char","charakter.php",getLangData() +"&"+"id="+id,function(data){});
     
 }
 
 function searchCharakter(formData) {
-    $('#content').html("<center>Loading your Minions form database and lodestone...</center>");
+    //$('#content').html("<center>Loading your Minions form database and lodestone...</center>");
     ajaxCall("char","charakter.php",formData,function(data){});
 }
 
@@ -22,26 +22,27 @@ function getLangData(){
 
 function loadRanking() {
   
-    $('#content').html("<center><h2>Loading Ranking...</h2></center>");
+    //$('#content').html("<center><h2>Loading Ranking...</h2></center>");
     ajaxCall("ranking","ranking.php",getLangData(),function(data){});
 }
 function loadFreeCompany(submit) {
   
-    $('#content').html("<center><h2>Loading Ranking...</h2></center>");
+    //$('#content').html("<center><h2>Loading Ranking...</h2></center>");
     ajaxCall("freeCompany","fc_ranking.php",submit,function(data){});
 }
 
 function loadMinions(submit) {
-    $('#content').html("<center><h2>Loading Minions...</h2></center>");
+    //$('#content').html("<center><h2>Loading Minions...</h2></center>");
     ajaxCall("minions","get_minions.php",submit,function(data){});
 }
 
 function loadMounts(submit) {
-    $('#content').html("<center><h2>Loading Mounts...</h2></center>");
+    //$('#content').html("<center><h2>Loading Mounts...</h2></center>");
     ajaxCall("mounts","get_mounts.php",submit,function(data){});
 }
 
 function ajaxCall(baseurl,url,submitData,func){
+    $('#content').html("<center><img src='img/ajax-loader.gif'></center>");
   $.ajax
   ({ 
       url: "handler/"+url,
