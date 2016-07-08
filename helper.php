@@ -191,12 +191,12 @@
                 $row .= "<td>$count_minions</td>";
                 break;
             case "mounts":
-                $count_mounts = $rank[1]->minions;
+                $count_mounts = $rank[1]->mounts;
                 $row .= "<td>$count_mounts</td>";
                 break;
             default:
                 $count_minions = $rank[1]->minions;
-                $count_mounts = $rank[1]->minions;
+                $count_mounts = $rank[1]->mounts;
                 $count_all = $rank[1]->all;
                 $row .= "<td>$count_minions</td>";
                 $row .= "<td>$count_mounts</td>";
