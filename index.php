@@ -63,11 +63,11 @@
             return  false;
         });
         
-        $(document).on("click",'#ranking',function(){
-          loadRanking();
+        $(document).on("click",'.ranking_dropdown',function(){
+          loadRanking(getLangData()+"&type="+this.id);
         });
-        $(document).on("click",'#freeCompany',function(){
-          loadFreeCompany(getLangData()+"&fc="+$("#freeCompany").text());
+        $(document).on("click",'.freeCompany',function(){
+          loadFreeCompany(getLangData()+"&fc="+this.id);
         });
         
         $(document).on("click",'.minions_methode',function(){
@@ -102,7 +102,7 @@
                 
                 
             }else if (last == "ranking"){
-              loadRanking();
+              loadRanking(data);
             }
             else if (last == "minions"){
               loadMinions(data);
@@ -208,7 +208,19 @@ echo get_language_text("home"); ?></a>
           <?php echo create_dropdown_menu("mounts"); ?>
         </ul>
       </li>
-      <li><a id="ranking"><?php echo get_language_text("ranking"); ?></a></li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <?php echo get_language_text("ranking"); ?><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <?php 
+            echo "<li><a id='all' class='ranking_dropdown'>".get_language_text("all")."</a></li>"; 
+            echo "<li><a id='minions' class='ranking_dropdown'>".get_language_text("minions")."</a></li>";
+            echo "<li><a id='mounts' class='ranking_dropdown'>".get_language_text("mounts")."</a></li>";
+          ?>
+        </ul>
+      </li>
+      <!--<li><a id="ranking"><?php //echo get_language_text("ranking"); ?></a></li>-->
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
       <div class="form-group">

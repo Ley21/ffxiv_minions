@@ -33,8 +33,9 @@
     
     function create_table($title,$sql_data,$type){
         $lang = get_lang();
+        $count = count($sql_data);
         $table = '<div class="panel panel-primary">
-        <div class="panel-heading">'.$title.'</div>
+        <div class="panel-heading"><h4><b>'.$title.": $count".'</b></h4></div>
         <div class="panel-body">';
         $icon = get_language_text("icon");
         $name = get_language_text("name");
@@ -74,9 +75,50 @@
         return $table;
     }
     
-    function create_ranking($fc = ""){
+    function create_ranking($type = "",$fc = ""){
         global $database;
-        //$lang = get_lang();
+        
+        $table = crate_ranking_header($type);
+        $players = $database->select("players",["id","name","world","last_update_date"],
+            empty($fc) ? "" : ["freeCompanyId"=>$fc]);
+        $ranking = get_ranking_players($players,$type);
+        $table .= crate_ranking_table($ranking,$type);
+        if(!empty($fc)){
+            $table .= get_missing_player_ranking_rows($fc);
+        }
+        $table .= '</table>';
+        
+        return $table;
+    }
+    
+    function get_ranking_players($players,$type = ""){
+        global $database;
+        $ranking = array();
+        foreach($players as $player){
+            $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
+            $count_mounts = $database->count("player_mounts",["p_id[=]"=>$player["id"]]);
+            $count = $count_minions+ $count_mounts;
+            $key;
+            switch($type){
+                case "minions":
+                    $key = $count_minions;
+                    break;
+                case "mounts":
+                    $key = $count_mounts;
+                    break;
+                default:
+                    $key = $count;
+                    break;
+                    
+            }
+            $ranking[] = array($key,(object)array("all"=>$count,"minions"=>$count_minions,"mounts"=>$count_mounts,"player"=>$player));
+            
+        }
+        arsort($ranking);
+        return $ranking;
+    }
+    
+    function crate_ranking_header($type = ""){
         $nr = get_language_text("nr");
         $name = get_language_text("name");
         $world = get_language_text("world");
@@ -84,41 +126,118 @@
         $number_mounts = get_language_text("number_mounts");
         $number_all = get_language_text("number_all");
         $last_sync_title = get_language_text("last_synced");
-        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th><th>$number_minions</th><th>$number_mounts</th><th>$number_all</th><th>$last_sync_title</th></tr></thead>";
-        $where_clause = empty($fc) ? "" : ["freeCompany"=>$fc];
-        $players = $database->select("players",["id","name","world","last_update_date"],$where_clause);
-        $ranking = array();
-        foreach($players as $player){
-            $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
-            $count_mounts = $database->count("player_mounts",["p_id[=]"=>$player["id"]]);
-            $count = $count_minions+ $count_mounts;
-            array_push($ranking,array($count,$count_minions,$count_mounts,$player));
+        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th>";
+
+        switch($type){
+            case "minions":
+                $table .= "<th>$number_minions</th>";
+                break;
+            case "mounts":
+                $table .= "<th>$number_mounts</th>";
+                break;
+            default:
+                $table .= "<th>$number_minions</th>";
+                $table .= "<th>$number_mounts</th>";
+                $table .= "<th>$number_all</th>";
+                break;
+                
         }
-        arsort($ranking);
-        $nr = 1;
-        foreach($ranking as $r_player){
-            $player = $r_player[3];
-            $p_id = $player['id'];
-            $name = ucwords($player['name']);
-            $world = ucwords($player['world']);
-            $count = $r_player[0];
-            $count_minions = $r_player[1];
-            $count_mounts = $r_player[2];
-            $last_sync_date = $player['last_update_date'];
-            $table .= "<tr class='active' id='$p_id'><td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td><td>$count_minions</td><td>$count_mounts</td><td>$count</td><td>$last_sync_date</td></tr>";
-            $nr++;
-        }
-        $table .= '</table>';
+        $table .= "<th>$last_sync_title</th></tr></thead>";
         return $table;
+    }
+    
+    function crate_ranking_table($ranking,$type = ""){
+        $table = "";
+        $nr = 0;
+        $count_befor = $ranking[0][0];
+        foreach($ranking as $rank){
+            $count_key = $rank[0];
+            if($count_befor != $count_key){
+                $nr++;
+                $count_befor = $count_key;
+            }
+            
+            $table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
+        } 
+        return $table;
+    }
+    
+    function create_ranking_row($nr,$player,$rank = null,$type =""){
+        $p_id = $player['id'];
+        $row = "<tr class='active' id='$p_id'>";
+
+        $row .= create_inner_ranking_row($nr,$player,$rank,$type);
+        $row .= "</tr>";
+        return $row;
+    }
+    
+    function create_inner_ranking_row($nr,$player,$rank = null,$type =""){
+        $p_id = $player['id'];
+        $last_sync_date_button = "<button class='btn btn-info' onclick='updateCharakter($p_id)'>".get_language_text("update_char")."</button>";
+        if($rank == null){
+            $rank = array(0,(object)array("all"=>0,"minions"=>0,"mounts"=>0,"player"=>$player));
+        }
+        
+        $name = ucwords($player['name']);
+        $world = ucwords($player['world']);
+        $date_diff = date_diff(date_create($player['last_update_date']), date_create(date("Y-m-d")));
+        $last_sync_date = empty($player['last_update_date']) || $date_diff->d > 7 
+            ? $last_sync_date_button : $player['last_update_date'];
+        $row = "<td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td>";
+
+        switch($type){
+            case "minions":
+                $count_minions = $rank[1]->minions;
+                $row .= "<td>$count_minions</td>";
+                break;
+            case "mounts":
+                $count_mounts = $rank[1]->minions;
+                $row .= "<td>$count_mounts</td>";
+                break;
+            default:
+                $count_minions = $rank[1]->minions;
+                $count_mounts = $rank[1]->minions;
+                $count_all = $rank[1]->all;
+                $row .= "<td>$count_minions</td>";
+                $row .= "<td>$count_mounts</td>";
+                $row .= "<td>$count_all</td>";
+                break;
+        }
+        $row .= "<td>$last_sync_date</td>";
+        return $row;
+    }
+    
+    function get_missing_player_ranking_rows($fc){
+        global $database;
+        
+        
+        $api = new Viion\Lodestone\LodestoneAPI();
+        $freeCompany = $api->Search->Freecompany($fc,true);
+        
+        $rows = "";
+        foreach($freeCompany->members as $member){
+            $in_table = $database->has("players", ["AND"=>["freeCompanyId"=>$fc,"id"=>$member["id"]]]);
+            if(!$in_table){
+                //$character = $api->Search->Character($member["id"]);
+                $player = array(
+                    "id"=>$member["id"],
+                    "name"=>$member["name"],
+                    "world"=>$member["world"],
+                    "last_update_date"=>"");
+                $rows .= create_ranking_row("999",$player);
+            }
+        }
+        return $rows;
     }
     
     function create_thumbnail($title,$sql_data,$type){
         global $random_id;
         $random_id_tag = "div_".$random_id;
         $random_id++;
+        $count = count($sql_data);
         $thumbnail = '<div class="panel panel-primary">
-        <div class="panel-heading" data-toggle="collapse" data-target="#'.$random_id_tag.'" aria-expanded="true" aria-controls="'.$random_id_tag.'">'.
-        $title.'</div>
+        <div class="panel-heading" data-toggle="collapse" data-target="#'.$random_id_tag.'" aria-expanded="true" aria-controls="'.$random_id_tag.'"><h4><b>'.
+        $title.": $count".'</b></h4></div>
         <div class="panel-body">';
         $thumbnail .= '<div class="collapse  in" id="'.$random_id_tag.'">';
         $count = 0;
@@ -160,6 +279,7 @@
         $character = $api->Search->Character($id);
         
         return insert_update_charakter($character);
+        
     }
     
     function insert_update_charakter_by_name($name,$server){
@@ -200,6 +320,7 @@
             	"guardian" => $character->guardian,
             	"grandCompany" => $character->grandCompany,
             	"freeCompany" => $character->freeCompany,
+            	"freeCompanyId" => $character->freeCompanyId,
             	"last_update_date" => date("Y-m-d")
             ]);
             $output = "New charakter '$c_name' with id '$character->id' from server '$c_world' was added to database.";
@@ -218,6 +339,7 @@
             	"guardian" => $character->guardian,
             	"grandCompany" => $character->grandCompany,
             	"freeCompany" => $character->freeCompany,
+            	"freeCompanyId" => $character->freeCompanyId,
             	"last_update_date" => date("Y-m-d")
             ], ["id[=]"=>$character->id]);
             $output = "Charakter '$c_name' with id '$character->id' from server '$c_world' was updated.";

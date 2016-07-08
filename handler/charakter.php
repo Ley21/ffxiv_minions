@@ -47,6 +47,7 @@
     $p_race = $player_entry["race"];
     $p_gc = get_language_text("gc_names")[$player_entry["grandCompany"]];
     $p_fc = $player_entry["freeCompany"];
+    $p_fc_id = $player_entry["freeCompanyId"];
     $p_portrait = $player_entry["portrait"];
     
     //Get existing minions
@@ -76,7 +77,7 @@
     //Show all minions as tables
     echo "<center>";
     echo '<div class="row"><div class="col-md-4">';
-    echo '<div class="panel panel-primary"><div class="panel-heading">'.get_language_text("charakter").'</div>';
+    echo '<div class="panel panel-primary"><div class="panel-heading"><h4><b>'.get_language_text("charakter").'</b></h4></div>';
     echo '<div class="panel-body">';
     echo "<div id='$p_id' class='player_id'></div>";
     echo "<img src=$p_portrait class='img-rounded img-responsive'>";
@@ -88,7 +89,7 @@
     }
     echo get_col_row(get_language_text("race"),$p_race);
     echo get_col_row(get_language_text("grandCompany"),$p_gc);
-    echo get_col_row(get_language_text("freeCompany"),"<a id='freeCompany'>$p_fc</a>");
+    echo get_col_row(get_language_text("freeCompany"),"<a id='$p_fc_id' class='freeCompany'>$p_fc</a>");
     echo "<div class='row'><button type='button' class='btn' id='char_button' style='width:83%'></button></div>";
     echo '</br></div></div>';
     echo '<div class="col-md-8">';

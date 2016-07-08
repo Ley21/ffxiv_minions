@@ -12,6 +12,22 @@ function searchCharakter(formData) {
     ajaxCall("char","charakter.php",formData,function(data){});
 }
 
+function updateCharakter(id){
+    $('#content').html("<center><img src='img/ajax-loader.gif'></center>");
+    $.ajax
+    ({ 
+      url: "caller/update_charakter.php",
+      data: "id="+id,
+      type: 'get',
+      success: function(data)
+      {
+          var submit = decodeURIComponent(window.location.search.substring(1));
+          loadFreeCompany(submit);
+      }
+    });
+    
+}
+
 
 function getLangData(){
   var lang = getUrlParameter("lang");
@@ -20,10 +36,10 @@ function getLangData(){
 }
 
 
-function loadRanking() {
-  
+function loadRanking(submit) {
+    
     //$('#content').html("<center><h2>Loading Ranking...</h2></center>");
-    ajaxCall("ranking","ranking.php",getLangData(),function(data){});
+    ajaxCall("ranking","ranking.php",submit,function(data){});
 }
 function loadFreeCompany(submit) {
   

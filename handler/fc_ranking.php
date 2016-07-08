@@ -14,7 +14,8 @@
     }
     echo "</select></form></br>";
       
-    $free_company = $_GET['fc'];
-    echo create_ranking($free_company);
+    //$free_company = $_GET['fc'];
+    $fc_id = $_GET['fc'];
+    echo create_ranking("",$fc_id);
 
 ?>

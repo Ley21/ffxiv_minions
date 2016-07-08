@@ -30,7 +30,9 @@
     $language_texts['method'] = array("en"=>"Method","fr"=>"","de"=>"Methode","ja"=>"");
     $language_texts['description'] = array("en"=>"Description","fr"=>"","de"=>"Beschreibung","ja"=>"");
     $language_texts['last_synced'] = array("en"=>"Last time synced","fr"=>"","de"=>"Letztes Mal syncronisiert","ja"=>"");
-    
+    $language_texts['all'] = array("en"=>"All","fr"=>"","de"=>"Alle","ja"=>"");
+    $language_texts['minions'] = array("en"=>"Minions","fr"=>"","de"=>"Begleiter","ja"=>"");
+    $language_texts['mounts'] = array("en"=>"Mounts","fr"=>"","de"=>"Reittiere","ja"=>"");
     $language_texts['title_char'] = array("en"=>"Title","fr"=>"","de"=>"Titel","ja"=>"");
     $language_texts['race'] = array("en"=>"Race","fr"=>"","de"=>"Rasse","ja"=>"");
     $language_texts['grandCompany'] = array("en"=>"Grand Company","fr"=>"","de"=>"Staatliche Gesellschaft","ja"=>"");
@@ -39,7 +41,7 @@
     
     $language_texts['my_char'] = array("en"=>"Charakter","fr"=>"","de"=>"Charakter","ja"=>"");
     $language_texts['not_my_char'] = array("en"=>"This is not my charakter","fr"=>"","de"=>"Das ist nicht mein Charakter","ja"=>"");
-    
+    $language_texts['update_char'] = array("en"=>"Update Charakter","fr"=>"","de"=>"Update Charakter","ja"=>"");
     
     $language_texts['methodes'] = array (
         "en"=>

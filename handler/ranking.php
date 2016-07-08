@@ -2,6 +2,7 @@
     require_once "../config.php";
     require_once "../helper.php";
     
-    echo create_ranking();
+    $type = $_GET["type"];
+    echo create_ranking($type);
 
 ?>

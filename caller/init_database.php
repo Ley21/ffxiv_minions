@@ -59,6 +59,7 @@ $database->query("CREATE TABLE players (
         guardian VARCHAR(100) NOT NULL,
         grandCompany VARCHAR(50) ,
         freeCompany VARCHAR(100),
+        freeCompanyId VARCHAR(30),
         last_update_date DATE NOT NULL,
         PRIMARY KEY ( id )
         );");
