@@ -408,9 +408,9 @@
         "id": "46",
         "name": "Tender Lamb",
         "method": "Seasonal Rewards",
-        "method_description_en": "<a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Heavensturn Event 2015<\/a>. From Wednesday, December 31, 2014 to Wednesday, January 14, 2015. Currently only available at Mog Station",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Heavensturn Event 2015<\/a>. From Wednesday, December 31, 2014 to Wednesday, January 14, 2015. Currently only available at Mog Station",
         "method_description_fr": null,
-        "method_description_de": "<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Himmelswende 2015<\/a>. Von Mittwoch, den 31.12.2014 bis Mittwoch, den 14.1.2015. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Himmelswende 2015<\/a>. Von Mittwoch, den 31.12.2014 bis Mittwoch, den 14.1.2015. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
         "method_description_ja": null
     },
     {
@@ -570,9 +570,9 @@
         "id": "64",
         "name": "Wind-up Edvya",
         "method": "Seasonal Rewards",
-        "method_description_en": "<a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Little Ladies' Day Event 2014<\/a>. From Friday, February 28, 2014 to Thursday, March 13, 2014. Currently only available at Mog Station",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Little Ladies' Day Event 2014<\/a>. From Friday, February 28, 2014 to Thursday, March 13, 2014. Currently only available at Mog Station",
         "method_description_fr": null,
-        "method_description_de": "<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Prinzessinnentag 2014<\/a>. Von Freitag, den 28.02.2014 bis Donnerstag, den 13.03.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Prinzessinnentag 2014<\/a>. Von Freitag, den 28.02.2014 bis Donnerstag, den 13.03.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
         "method_description_ja": null
     },
     {
@@ -885,9 +885,9 @@
         "id": "105",
         "name": "Hoary The Snowman",
         "method": "Seasonal Rewards",
-        "method_description_en": "<a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Starlight Celebration 2014<\/a>. From Thursday, December 18, 2014 to Wednesday, December 31, 2014. Currently only available at Mog Station",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Starlight Celebration 2014<\/a>. From Thursday, December 18, 2014 to Wednesday, December 31, 2014. Currently only available at Mog Station",
         "method_description_fr": null,
-        "method_description_de": "<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Sternlichtfest 2014<\/a>. Von Donnerstag, den 18.12.2014 bis Mittwoch, den 31.12.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Sternlichtfest 2014<\/a>. Von Donnerstag, den 18.12.2014 bis Mittwoch, den 31.12.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
         "method_description_ja": null
     },
     {
@@ -1013,7 +1013,7 @@
         "method": "Quest Rewards",
         "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/65902\/The+Rising+Chorus'>The Rising Chorus<\/a>. (First time completing <a href='http:\/\/xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>The Keeper Of The Lake<\/a>)",
         "method_description_fr": null,
-        "method_description_de": "Quest-Belohnung von <a href='http:\/\/xivdb.com\/quest\/65902\/The+Rising+Chorus'>The Rising Chorus<\/a>. (Nach dem ersten Abschlie\u00dfen von <a href='http:\/\/xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>H\u00fcter Des Sees<\/a>",
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/65902\/The+Rising+Chorus'>Der H\u00fcter Erwacht<\/a>. (Nach dem ersten Abschlie\u00dfen von <a href='http:\/\/de.xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>H\u00fcter Des Sees<\/a>)",
         "method_description_ja": null
     },
     {
