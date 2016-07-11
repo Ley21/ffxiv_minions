@@ -39,9 +39,9 @@
         "id": "5",
         "name": "Baby Behemoth",
         "method": "Promotions",
-        "method_description_en": "Obtained from purchasing and registering a Collector's Edition (ARR) or upgrade to Collector's Edition (ARR) via Mog-Station.",
+        "method_description_en": "Obtained from purchasing and registering a Collector's Edition (ARR) or upgrade to Collector's Edition (ARR) via Mog Station.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich durch die Registrierung einer Collector's Edition (ARR) oder durch das Upgrade zur Collector's Edition via Mog-Station.",
+        "method_description_de": "Erh\u00e4ltlich durch die Registrierung einer Collector's Edition (ARR) oder durch das Upgrade zur Collector's Edition via Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -59,7 +59,7 @@
         "method": "Achievement Rewards",
         "method_description_en": "Complete Hunting Log for the Order of the Twin Adder. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Vervollst\u00e4ndige das Bestarium der.Bruderschaft der Morgenviper. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
+        "method_description_de": "Vervollst\u00e4ndige das Bestarium der Bruderschaft der Morgenviper. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
         "method_description_ja": null
     },
     {
@@ -104,7 +104,7 @@
         "method": "Dungeons & Trials",
         "method_description_en": "Treasure Coffer #2 in <a href='http:\/\/xivdb.com\/instance\/5\/The+Aurum+Vale'>The Aurum Vale<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Kann aus der zweiten Truhe im <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm<\/a> droppen.",
+        "method_description_de": "Kann aus der zweiten Truhe im Dungeon <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm<\/a> droppen.",
         "method_description_ja": null
     },
     {
@@ -158,16 +158,16 @@
         "method": "FATE Rewards",
         "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Go,+Go,+Gorgimera<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Etwas Von Allem<\/a>Gold.",
+        "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Etwas Von Allem<\/a> Gold.",
         "method_description_ja": null
     },
     {
         "id": "19",
         "name": "Coeurl Kitten",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66827\/Curiosity+Killed+The+Coeurl'>Curiosity Killed The Coeurl<\/a>. It requires prerequisite <a href='http:\/\/xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Like Cats And Dogs<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66827\/Curiosity+Killed+The+Coeurl'>Die Unschuld Der Jugend<\/a>. Die Quest wird durch die Vor-Quest <a href='http:\/\/de.xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Krieg Der Raubtiere<\/a> freigeschaltet.",
         "method_description_ja": null
     },
     {
@@ -182,10 +182,10 @@
     {
         "id": "21",
         "name": "Wind-up Gentleman",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66038\/Her+Last+Vow'>Her Last Vow<\/a> (Hildibrand Quest).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66038\/Her+Last+Vow'>Ruin\u00f6se Revanche<\/a> (Hildibrand Quest).",
         "method_description_ja": null
     },
     {
@@ -281,19 +281,19 @@
     {
         "id": "32",
         "name": "Buffalo Calf",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66722\/You're+Gonna+Carry+That'>You're Gonna Carry That<\/a> (Main Scenario Quest Lv. 50).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66722\/You're+Gonna+Carry+That'>Tatarus Sieben Sachen<\/a> (Hauptszenario Quest Lv. 50).",
         "method_description_ja": null
     },
     {
         "id": "33",
         "name": "Cactuar Cutting",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66558\/Zombies+Are+People+Too'>Zombies Are People Too<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66558\/Zombies+Are+People+Too'>Love Me Sabotender<\/a>.",
         "method_description_ja": null
     },
     {
@@ -308,19 +308,19 @@
     {
         "id": "35",
         "name": "Wolf Pup",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66826\/Man's+Best+Fiend'>Man's Best Fiend<\/a>. It requires prerequisite <a href='http:\/\/xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Like Cats And Dogs<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66826\/Man's+Best+Fiend'>Wolfshundb\u00e4ndiger<\/a>. Die Quest wird durch die Vor-Quest <a href='http:\/\/de.xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Krieg Der Raubtiere<\/a> freigeschaltet.",
         "method_description_ja": null
     },
     {
         "id": "36",
         "name": "Beady Eye",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 90 cumulative days (3 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 90 aktive Abo-Tage (3 Monate).",
         "method_description_ja": null
     },
     {
@@ -362,10 +362,10 @@
     {
         "id": "41",
         "name": "Goobbue Sproutling",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66386\/It+Was+A+Very+Good+Year'>It Was A Very Good Year<\/a> (Main Scenario Quest Lv. 33).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66386\/It+Was+A+Very+Good+Year'>Wandelndes Biotop<\/a> (Hauptszenario Quest Lv. 33).",
         "method_description_ja": null
     },
     {
@@ -398,19 +398,19 @@
     {
         "id": "45",
         "name": "Mini Mole",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67021\/Thwack-a-Mole'>Thwack-a-Mole<\/a> (Delivery Moogle Quest).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67021\/Thwack-a-Mole'>Hau Den Mull!<\/a> (Mogry-Post Quests).",
         "method_description_ja": null
     },
     {
         "id": "46",
         "name": "Tender Lamb",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "<a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Heavensturn Event 2015<\/a>. From Wednesday, December 31, 2014 to Wednesday, January 14, 2015. Currently only available at Mog Station",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Himmelswende 2015<\/a>. Von Mittwoch, den 31.12.2014 bis Mittwoch, den 14.1.2015. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
         "method_description_ja": null
     },
     {
@@ -434,10 +434,10 @@
     {
         "id": "49",
         "name": "Wind-up Goblin",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 450 cumulative days (15 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 450 aktive Abo-Tage (15 Monate).",
         "method_description_ja": null
     },
     {
@@ -452,19 +452,19 @@
     {
         "id": "51",
         "name": "Wind-up Cursor",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 30 cumulative days (1 month).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 30 aktive Abo-Tage (1 Monat).",
         "method_description_ja": null
     },
     {
         "id": "52",
         "name": "Wind-up Airship",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66043\/The+Gridanian+Envoy'>The Gridanian Envoy<\/a>, <a href='http:\/\/xivdb.com\/quest\/66064\/The+Ul'dahn+Envoy'>The Ul'dahn Envoy<\/a> or <a href='http:\/\/xivdb.com\/quest\/66082\/The+Lominsan+Envoy'>The Lominsan Envoy<\/a> (Main Scenario Quest Lv. 14).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66043\/The+Gridanian+Envoy'>Die Stimme Des Waldes<\/a>, <a href='http:\/\/de.xivdb.com\/quest\/66064\/The+Ul'dahn+Envoy'>Die Stimme Der W\u00fcste<\/a> oder <a href='http:\/\/de.xivdb.com\/quest\/66082\/The+Lominsan+Envoy'>Die Stimme Des Meeres<\/a> (Hauptszenario Quest Lv. 14).",
         "method_description_ja": null
     },
     {
@@ -479,10 +479,10 @@
     {
         "id": "54",
         "name": "Black Chocobo Chick",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 60 cumulative days (2 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 60 aktive Abo-Tage (2 Monate).",
         "method_description_ja": null
     },
     {
@@ -551,28 +551,28 @@
     {
         "id": "62",
         "name": "Wind-up Brickman",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Theres_Golems_in_Those_Hills\/'>Breaking Brick Mountains<\/a>. From Tuesday, Jan. 21 - Mon. February 3, 2014.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Theres_Golems_in_Those_Hills\/'>Harte Steine, weiche Birnen<\/a>. Von Dienstag, den 21.1.2014 bis Montag, den 3.2.2014",
         "method_description_ja": null
     },
     {
         "id": "63",
         "name": "Wind-up Shantotto",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/That_Old_Black_Magic\/'>That Old Black Magic<\/a>. From Tuesday, Jan. 21 - Mon. February 3, 2014.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/That_Old_Black_Magic\/'>Der schwarze D\u00e4mon<\/a>. Von Dienstag, den 21.1.2014 bis Montag, den 3.2.2014",
         "method_description_ja": null
     },
     {
         "id": "64",
         "name": "Wind-up Edvya",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "<a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Little Ladies' Day Event 2014<\/a>. From Friday, February 28, 2014 to Thursday, March 13, 2014. Currently only available at Mog Station",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Prinzessinnentag 2014<\/a>. Von Freitag, den 28.02.2014 bis Donnerstag, den 13.03.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
         "method_description_ja": null
     },
     {
@@ -596,19 +596,19 @@
     {
         "id": "67",
         "name": "Minion Of Light",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 180 cumulative days (6 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 180 aktive Abo-Tage (6 Monate).",
         "method_description_ja": null
     },
     {
         "id": "71",
         "name": "Wind-up Leader",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 270 cumulative days (9 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 270 aktive Abo-Tage (9 Monate).",
         "method_description_ja": null
     },
     {
@@ -623,19 +623,19 @@
     {
         "id": "76",
         "name": "Wind-up Odin",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 360 cumulative days (12 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 360 aktive Abo-Tage (12 Monate).",
         "method_description_ja": null
     },
     {
         "id": "77",
         "name": "Wind-up Warrior Of Light",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 360 cumulative days (12 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 360 aktive Abo-Tage (12 Monate).",
         "method_description_ja": null
     },
     {
@@ -680,7 +680,7 @@
         "method": "Monster Hunt",
         "method_description_en": "Purchased with 500 Allied Seals from your GC affiliated Hunt Bill Master. (<a href='http:\/\/xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Maelstrom<\/a>, <a href='http:\/\/xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Order of the Twin Adder<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Immortal Flames<\/a>)",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich f\u00fcr 500 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> or <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 500 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
         "method_description_ja": null
     },
     {
@@ -695,19 +695,19 @@
     {
         "id": "84",
         "name": "Wind-up Nanamo",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 630 cumulative days (21 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 630 aktive Abo-Tage (21 Monate).",
         "method_description_ja": null
     },
     {
         "id": "85",
         "name": "Wind-up Gilgamesh",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 540 cumulative days (18 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 540 aktive Abo-Tage (18 Monate).",
         "method_description_ja": null
     },
     {
@@ -758,10 +758,10 @@
     {
         "id": "91",
         "name": "Wind-up Y'shtola",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -779,7 +779,7 @@
         "method": "Monster Hunt",
         "method_description_en": "Purchased with 440 Allied Seals from your GC affiliated Hunt Bill Master. (<a href='http:\/\/xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Maelstrom<\/a>, <a href='http:\/\/xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Order of the Twin Adder<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Immortal Flames<\/a>)",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich f\u00fcr 440 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> or <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
+        "method_description_de": "Erh\u00e4ltlich f\u00fcr 440 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
         "method_description_ja": null
     },
     {
@@ -821,19 +821,19 @@
     {
         "id": "98",
         "name": "Wind-up Minfilia",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
         "id": "99",
         "name": "Wind-up Thancred",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -866,10 +866,10 @@
     {
         "id": "103",
         "name": "Panda Cub",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -884,10 +884,10 @@
     {
         "id": "105",
         "name": "Hoary The Snowman",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "<a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Starlight Celebration 2014<\/a>. From Thursday, December 18, 2014 to Wednesday, December 31, 2014. Currently only available at Mog Station",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Sternlichtfest 2014<\/a>. Von Donnerstag, den 18.12.2014 bis Mittwoch, den 31.12.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
         "method_description_ja": null
     },
     {
@@ -902,28 +902,28 @@
     {
         "id": "107",
         "name": "Wind-up Yda",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
         "id": "108",
         "name": "Wind-up Papalymo",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
         "id": "109",
         "name": "Wind-up Urianger",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -1010,19 +1010,19 @@
     {
         "id": "119",
         "name": "Midgardsormr",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/65902\/The+Rising+Chorus'>The Rising Chorus<\/a>. (First time completing <a href='http:\/\/xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>The Keeper Of The Lake<\/a>)",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/xivdb.com\/quest\/65902\/The+Rising+Chorus'>The Rising Chorus<\/a>. (Nach dem ersten Abschlie\u00dfen von <a href='http:\/\/xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>H\u00fcter Des Sees<\/a>",
         "method_description_ja": null
     },
     {
         "id": "121",
         "name": "Doman Magpie",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -1100,37 +1100,37 @@
     {
         "id": "130",
         "name": "Wind-up Alphinaud",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67140\/In+Search+Of+Iceheart'>In Search Of Iceheart<\/a> (Main Scenario Quest Lv. 51).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/xivdb.com\/quest\/67140\/In+Search+Of+Iceheart'>In Search Of Iceheart<\/a> (Hauptszenario Quest Lv. 51).",
         "method_description_ja": null
     },
     {
         "id": "131",
         "name": "Wind-up Alisaie",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
         "id": "132",
         "name": "Wind-up Tataru",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
         "id": "133",
         "name": "Wind-up Cid",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67184\/A+Difference+Of+Opinion'>A Difference Of Opinion<\/a> (Main Scenario Quest Lv. 57).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67184\/A+Difference+Of+Opinion'>Mit Eigenen Waffen<\/a> (Hauptszenario Quest Lv. 57).",
         "method_description_ja": null
     },
     {
@@ -1235,10 +1235,10 @@
     {
         "id": "145",
         "name": "Wind-up Iceheart",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>The Rising<\/a>. From Thursday, August 27, 2015 to Monday, September 7, 2015.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>Fest der Wiedergeburt<\/a> Ab Donnerstag, dem 27.08.2015 bis Montag, dem 07.09.2015.",
         "method_description_ja": null
     },
     {
@@ -1271,19 +1271,19 @@
     {
         "id": "149",
         "name": "Accompaniment Node",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67649\/Do+It+For+Gilly'>Do It For Gilly<\/a> (Main Scenario Quest Lv. 60).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67649\/Do+It+For+Gilly'>Zur\u00fcck Auf Den Rechten Weg<\/a> (Hauptszenario Quest Lv. 60).",
         "method_description_ja": null
     },
     {
         "id": "150",
         "name": "Wind-up Yugiri",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>The Rising<\/a>. From Thursday, August 27, 2015 to Monday, September 7, 2015.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>Fest der Wiedergeburt 2015<\/a> Ab Donnerstag, dem 27.08.2015 bis Montag, dem 07.09.2015.",
         "method_description_ja": null
     },
     {
@@ -1328,7 +1328,7 @@
         "method": "Gil Purchase",
         "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
         "method_description_fr": null,
-        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a>(Ab Verbundenheitsgrad 'Solidarisch').",
+        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
         "method_description_ja": null
     },
     {
@@ -1352,10 +1352,10 @@
     {
         "id": "159",
         "name": "Pumpkin Butler",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/All_Saints_Wake\/'>All Saints Wake<\/a>. From Thursday, October 22, 2015 to Wednesday, November 4, 2015.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/All_Saints_Wake\/'>Allerschutzheiligen<\/a> Von Donnerstag, den 22.10.2015 bis Mittwoch, den 04.11.2015.",
         "method_description_ja": null
     },
     {
@@ -1424,10 +1424,10 @@
     {
         "id": "167",
         "name": "Wind-up Firion",
-        "method": null,
-        "method_description_en": null,
+        "method": "Veteran Rewards",
+        "method_description_en": "Veteran Reward for subscribing for 960 cumulative days (32 months).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 960 aktive Abo-Tage (32 Monate).",
         "method_description_ja": null
     },
     {
@@ -1478,10 +1478,10 @@
     {
         "id": "173",
         "name": "Wind-up Haurchefant",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67699\/As+Goes+Light,+So+Goes+Darkness'>As Goes Light, So Goes Darkness<\/a> (Main Scenario Quest Lv. 60).",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67699\/As+Goes+Light,+So+Goes+Darkness'>Licht Und Dunkel<\/a> (Hauptszenario Quest Lv. 60).",
         "method_description_ja": null
     },
     {
@@ -1499,7 +1499,7 @@
         "method": "Gil Purchase",
         "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Trusted' reputation).",
         "method_description_fr": null,
-        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a>(Ab Verbundenheitsgrad 'Vertraut').",
+        "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
         "method_description_ja": null
     },
     {
@@ -1571,7 +1571,7 @@
         "method": "Gil Purchase",
         "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Sworn' reputation).",
         "method_description_fr": null,
-        "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
+        "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbauch<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
         "method_description_ja": null
     },
     {
