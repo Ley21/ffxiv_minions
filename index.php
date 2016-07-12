@@ -56,7 +56,7 @@
             e.preventDefault();
             var formSubmit = $('#char_search').serialize();
             
-            searchCharakter(formSubmit);
+            searchCharakter(getLangData()+"&"+formSubmit);
 
             // document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
 
