@@ -44,6 +44,11 @@
     $language_texts['not_my_char'] = array("en"=>"This is not my charakter","fr"=>"","de"=>"Das ist nicht mein Charakter","ja"=>"");
     $language_texts['update_char'] = array("en"=>"Update Charakter","fr"=>"","de"=>"Update Charakter","ja"=>"");
     
+    $language_texts['can_fly'] = array("en"=>"Can Fly","fr"=>"","de"=>"Flugfähig","ja"=>"");
+    $language_texts['unknown'] = array("en"=>"Unknown","fr"=>"","de"=>"Unbekannt","ja"=>"");
+    $language_texts['yes'] = array("en"=>"Yes","fr"=>"","de"=>"Ja","ja"=>"");
+    $language_texts['no'] = array("en"=>"No","fr"=>"","de"=>"Nein","ja"=>"");
+    
     $language_texts['methodes'] = array (
         "en"=>
         array("All","Gil Purchase","MGP Purchase","Tomestone Purchase","GC Purchase",

@@ -40,9 +40,14 @@
         $icon = get_language_text("icon");
         $name = get_language_text("name");
         $patch = get_language_text("patch");
+        $can_fly = get_language_text("can_fly");
         $method = get_language_text("method");
+        
         $description = get_language_text("description");
-        $table .= "<table class='table table-striped'><thead><tr><th>$icon</th><th>$name</th><th>$patch</th><th>$method</th><th>$description</th></tr></thead>";
+        $table .= "<table class='table table-striped'>
+                    <thead><tr><th>$icon</th><th>$name</th><th>$patch</th>";
+        $table .= $type == "mount" ? "<th>$can_fly</th>":"";
+        $table .= "<th>$method</th><th>$description</th></tr></thead>";
         
 
         $table .= "<tbody>";
@@ -51,6 +56,7 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $patch = $minion_data['patch'];
+            
             $methode_lang = $minion_data['method_description_'.get_lang()];
             $methode = empty($methode_lang) ? $minion_data['method_description_en'] : $methode_lang;
                 
@@ -66,6 +72,13 @@
             $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
             $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
             $table .= "<td class='shrink'>$patch</td>";
+            if($type == "mount"){
+                $can_fly =  $minion_data['can_fly'];
+                $can_fly = empty($can_fly) ? get_language_text("unknown") : 
+                    ($can_fly ? get_language_text("yes") : get_language_text("no"));
+                
+                $table .= "<td class='shrink'>$can_fly</td>";
+            }
             $table .= "<td class='shrink'>$methode_name</td>";
             $table .= "<td class='expand'>$methode</td>";
             $table .= "</tr>";
