@@ -38,7 +38,8 @@
     $language_texts['grandCompany'] = array("en"=>"Grand Company","fr"=>"","de"=>"Staatliche Gesellschaft","ja"=>"");
     $language_texts['freeCompany'] = array("en"=>"Free Company","fr"=>"","de"=>"Freie Gesellschaft","ja"=>"");
     $language_texts['has_minion'] = array("en"=>"Which Charakter has this minion...","fr"=>"","de"=>"Welcher Charakter hat dieses Minion...","ja"=>"");
-    
+    $language_texts['gl_rank'] = array("en"=>"Global Rank","fr"=>"","de"=>"Globaler Rang","ja"=>"");
+    $language_texts['w_rank'] = array("en"=>"World Rank","fr"=>"","de"=>"Welt Rang","ja"=>"");
     $language_texts['my_char'] = array("en"=>"Charakter","fr"=>"","de"=>"Charakter","ja"=>"");
     $language_texts['not_my_char'] = array("en"=>"This is not my charakter","fr"=>"","de"=>"Das ist nicht mein Charakter","ja"=>"");
     $language_texts['update_char'] = array("en"=>"Update Charakter","fr"=>"","de"=>"Update Charakter","ja"=>"");
