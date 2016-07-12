@@ -509,10 +509,11 @@
         }
         
         if(!$readOnly){
+            $list = $table == "mounts" ?  ["id","name","can_fly","method","method_description_en","method_description_fr",
+                "method_description_de","method_description_ja"] : ["id","name","method","method_description_en","method_description_fr",
+                "method_description_de","method_description_ja"];
             //Save the database in the file / update new minions to file
-            $minions = $database->select($table,
-                ["id","name","method","method_description_en","method_description_fr",
-                "method_description_de","method_description_ja"]);
+            $minions = $database->select($table,$list);
             $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
             file_put_contents($file, $json_informations);
         }

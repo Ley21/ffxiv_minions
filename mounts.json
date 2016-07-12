@@ -2,6 +2,7 @@
     {
         "id": "1",
         "name": "Company Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -11,6 +12,7 @@
     {
         "id": "4",
         "name": "Goobbue",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -20,6 +22,7 @@
     {
         "id": "5",
         "name": "Legacy Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -29,6 +32,7 @@
     {
         "id": "6",
         "name": "Magitek Armor",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -38,6 +42,7 @@
     {
         "id": "8",
         "name": "Coeurl",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -47,6 +52,7 @@
     {
         "id": "9",
         "name": "Ahriman",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -56,6 +62,7 @@
     {
         "id": "15",
         "name": "Unicorn",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -65,6 +72,7 @@
     {
         "id": "18",
         "name": "Behemoth",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -74,6 +82,7 @@
     {
         "id": "19",
         "name": "Cavalry Drake",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -83,6 +92,7 @@
     {
         "id": "20",
         "name": "Laurel Goobbue",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -92,6 +102,7 @@
     {
         "id": "21",
         "name": "Gilded Magitek Armor",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -101,6 +112,7 @@
     {
         "id": "22",
         "name": "Nightmare",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -110,6 +122,7 @@
     {
         "id": "25",
         "name": "Fat Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -119,6 +132,7 @@
     {
         "id": "26",
         "name": "Cavalry Elbst",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -128,6 +142,7 @@
     {
         "id": "27",
         "name": "Bomb Palanquin",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -137,6 +152,7 @@
     {
         "id": "28",
         "name": "Aithon",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -146,6 +162,7 @@
     {
         "id": "29",
         "name": "Xanthos",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -155,6 +172,7 @@
     {
         "id": "30",
         "name": "Gullfaxi",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -164,6 +182,7 @@
     {
         "id": "31",
         "name": "Enbarr",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -173,6 +192,7 @@
     {
         "id": "32",
         "name": "Warlion",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -182,6 +202,7 @@
     {
         "id": "33",
         "name": "Warbear",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -191,6 +212,7 @@
     {
         "id": "34",
         "name": "Draught Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -200,6 +222,7 @@
     {
         "id": "35",
         "name": "Direwolf",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -209,6 +232,7 @@
     {
         "id": "36",
         "name": "Storm Warsteed",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -218,6 +242,7 @@
     {
         "id": "37",
         "name": "Serpent Warsteed",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -227,6 +252,7 @@
     {
         "id": "38",
         "name": "Flame Warsteed",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -236,6 +262,7 @@
     {
         "id": "40",
         "name": "Markab",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -245,6 +272,7 @@
     {
         "id": "41",
         "name": "Ceremony Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -254,6 +282,7 @@
     {
         "id": "42",
         "name": "Sleipnir",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -263,6 +292,7 @@
     {
         "id": "43",
         "name": "Boreas",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -272,6 +302,7 @@
     {
         "id": "44",
         "name": "Parade Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -281,6 +312,7 @@
     {
         "id": "45",
         "name": "Black Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -290,6 +322,7 @@
     {
         "id": "46",
         "name": "Adamantoise",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -299,6 +332,7 @@
     {
         "id": "47",
         "name": "Kirin",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -308,6 +342,7 @@
     {
         "id": "48",
         "name": "Logistics System",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -317,6 +352,7 @@
     {
         "id": "49",
         "name": "Fenrir",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -326,6 +362,7 @@
     {
         "id": "50",
         "name": "Midgardsormr",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -335,6 +372,7 @@
     {
         "id": "52",
         "name": "Amber Draught Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -344,6 +382,7 @@
     {
         "id": "53",
         "name": "Sanuwa",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -353,6 +392,7 @@
     {
         "id": "54",
         "name": "Griffin",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -362,6 +402,7 @@
     {
         "id": "55",
         "name": "Manacutter",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -371,6 +412,7 @@
     {
         "id": "56",
         "name": "War Panther",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -380,6 +422,7 @@
     {
         "id": "58",
         "name": "Gobwalker",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -389,6 +432,7 @@
     {
         "id": "59",
         "name": "Twintania",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -398,6 +442,7 @@
     {
         "id": "62",
         "name": "Witch's Broom",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -407,6 +452,7 @@
     {
         "id": "67",
         "name": "Pegasus",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -416,6 +462,7 @@
     {
         "id": "68",
         "name": "White Devil",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -425,6 +472,7 @@
     {
         "id": "69",
         "name": "Red Baron",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -434,6 +482,7 @@
     {
         "id": "70",
         "name": "Wyvern",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -443,6 +492,7 @@
     {
         "id": "72",
         "name": "Kongamato",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -452,6 +502,7 @@
     {
         "id": "73",
         "name": "Zu",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -461,6 +512,7 @@
     {
         "id": "74",
         "name": "Bennu",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -470,6 +522,7 @@
     {
         "id": "75",
         "name": "White Lanner",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -479,6 +532,7 @@
     {
         "id": "76",
         "name": "Rose Lanner",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -488,6 +542,7 @@
     {
         "id": "77",
         "name": "Round Lanner",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -497,6 +552,7 @@
     {
         "id": "78",
         "name": "Warring Lanner",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -506,6 +562,7 @@
     {
         "id": "80",
         "name": "Gloria-class Airship",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -515,6 +572,7 @@
     {
         "id": "82",
         "name": "Original Fat Chocobo",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -524,6 +582,7 @@
     {
         "id": "83",
         "name": "Astrope",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -533,6 +592,7 @@
     {
         "id": "86",
         "name": "Cloud Mallow",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -542,6 +602,7 @@
     {
         "id": "90",
         "name": "Dark Lanner",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
@@ -551,6 +612,7 @@
     {
         "id": "91",
         "name": "Aerodynamics System",
+        "can_fly": null,
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
