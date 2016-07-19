@@ -86,6 +86,8 @@ if ($updateMinions) {
 
 	$first = 1;
 	$last = $_GET["last"];
+	$first = empty($_GET["first"]) ? $first : $_GET["first"];
+	
 	$type = $_GET["type"];
 	if ($last > 0) {
 		foreach(range($first, $last) as $number) {
