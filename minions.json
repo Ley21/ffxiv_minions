@@ -1512,6 +1512,15 @@
         "method_description_ja": null
     },
     {
+        "id": "177",
+        "name": "Dress-up Y'shtola",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
         "id": "178",
         "name": "Calca",
         "method": null,
@@ -1629,6 +1638,15 @@
         "method_description_ja": null
     },
     {
+        "id": "192",
+        "name": "Wind-up Krile",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
         "id": "193",
         "name": "Wind-up Aymeric",
         "method": null,
@@ -1647,8 +1665,143 @@
         "method_description_ja": null
     },
     {
+        "id": "196",
+        "name": "Wind-up Sasquatch",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
         "id": "197",
         "name": "Dwarf Rabbit",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "198",
+        "name": "Hecteye",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "200",
+        "name": "Jibanyan",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "201",
+        "name": "Komasan",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "202",
+        "name": "Whisper",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "203",
+        "name": "Blizzaria",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "204",
+        "name": "Kyubi",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "205",
+        "name": "Komajiro",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "206",
+        "name": "Manjimutt",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "207",
+        "name": "Noko",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "208",
+        "name": "Venoct",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "209",
+        "name": "Shogunyan",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "210",
+        "name": "Hovernyan",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "211",
+        "name": "Robonyan F-type",
+        "method": null,
+        "method_description_en": null,
+        "method_description_fr": null,
+        "method_description_de": null,
+        "method_description_ja": null
+    },
+    {
+        "id": "212",
+        "name": "USApyon",
         "method": null,
         "method_description_en": null,
         "method_description_fr": null,
