@@ -29,6 +29,7 @@ Nginx Config:
 # nginx configuration 
 location / {
    try_files $uri $uri/ /index.php?$args;
+   index index.php
 }
 
 ```

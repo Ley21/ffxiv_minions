@@ -28,8 +28,9 @@
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <script src="js/functions.js"></script>
     <script type='text/javascript'>
-    
-        var xivdb_tooltip_base_url = getUrlParameter("lang") == "en" ? 'https://xivdb.com' : 'https://'+getUrlParameter("lang")+".xivdb.com";
+        
+        var valid = getUrlParameter("lang") === undefined || getUrlParameter("lang") == "en";
+        var xivdb_tooltip_base_url = valid  ? 'https://xivdb.com' : 'https://'+getUrlParameter("lang")+".xivdb.com";
         var xivdb_tooltips =
         {
             // the XIVDB server to query (this will be https soon)
