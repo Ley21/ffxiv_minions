@@ -102,9 +102,9 @@
         "id": "12",
         "name": "Morbol Seedling",
         "method": "Dungeons & Trials",
-        "method_description_en": "Treasure Coffer #2 in <a href='http:\/\/xivdb.com\/instance\/5\/The+Aurum+Vale'>The Aurum Vale<\/a>.",
+        "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/5\/The+Aurum+Vale'>The Aurum Vale<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Kann aus der zweiten Truhe im Dungeon <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm<\/a> droppen.",
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm<\/a>.",
         "method_description_ja": null
     },
     {
@@ -371,10 +371,10 @@
     {
         "id": "42",
         "name": "Bite-sized Pudding",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/10\/The+Wanderer's+Palace'>The Wanderer's Palace<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/10\/The+Wanderer's+Palace'>Palast Des Wanderers<\/a>.",
         "method_description_ja": null
     },
     {
@@ -389,10 +389,10 @@
     {
         "id": "44",
         "name": "Demon Brick",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/14\/Amdapor+Keep'>Amdapor Keep<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/14\/Amdapor+Keep'>Die Ruinen Von Amdapor<\/a>.",
         "method_description_ja": null
     },
     {
@@ -416,10 +416,10 @@
     {
         "id": "47",
         "name": "Slime Puddle",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/18\/Copperbell+Mines+(Hard)'>Copperbell+Mines+(Hard)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/18\/Copperbell+Mines+(Hard)'>Kupferglocken-Mine (schwer)<\/a>.",
         "method_description_ja": null
     },
     {
@@ -659,10 +659,10 @@
     {
         "id": "80",
         "name": "Baby Opo-opo",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/20\/Brayflox's+Longstop+(Hard)'>Brayflox's Longstop (Hard)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20\/Brayflox's+Longstop+(Hard)'>Br\u00fcllvolx' Langrast (schwer)<\/a>.",
         "method_description_ja": null
     },
     {
@@ -857,10 +857,10 @@
     {
         "id": "102",
         "name": "Naughty Nanka",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/23\/Hullbreaker+Isle'>Hullbreaker Isle<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/23\/Hullbreaker+Isle'>Schiffbrecher-Insel<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1622,10 +1622,10 @@
     {
         "id": "189",
         "name": "Calamari",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/45\/Hullbreaker+Isle+(Hard)'>Hullbreaker Isle (Hard)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/45\/Hullbreaker+Isle+(Hard)'>Schiffbrecher-Insel (schwer)<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1670,16 +1670,16 @@
         "method": "Misc. Methods",
         "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 3 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4tlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherbe<\/a>. (Palast Der Toten)",
+        "method_description_de": "Erh\u00e4tlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherben<\/a>. (Palast Der Toten)",
         "method_description_ja": null
     },
     {
         "id": "197",
         "name": "Dwarf Rabbit",
-        "method": null,
-        "method_description_en": null,
+        "method": "Treasure Dungeons",
+        "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1688,7 +1688,7 @@
         "method": "Misc. Methods",
         "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 3 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherbe<\/a>. (Palast Der Toten)",
+        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherben<\/a>. (Palast Der Toten)",
         "method_description_ja": null
     },
     {
