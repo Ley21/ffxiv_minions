@@ -1514,10 +1514,10 @@
     {
         "id": "177",
         "name": "Dress-up Y'shtola",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -1640,10 +1640,10 @@
     {
         "id": "192",
         "name": "Wind-up Krile",
-        "method": null,
-        "method_description_en": null,
+        "method": "Mogry Shop Purchase",
+        "method_description_en": "Purchasable from the Mog Station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
         "method_description_ja": null
     },
     {
@@ -1667,10 +1667,10 @@
     {
         "id": "196",
         "name": "Wind-up Sasquatch",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 3 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4tlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherbe<\/a>. (Palast Der Toten)",
         "method_description_ja": null
     },
     {
@@ -1685,127 +1685,127 @@
     {
         "id": "198",
         "name": "Hecteye",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 3 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherbe<\/a>. (Palast Der Toten)",
         "method_description_ja": null
     },
     {
         "id": "200",
         "name": "Jibanyan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "201",
         "name": "Komasan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "202",
         "name": "Whisper",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "203",
         "name": "Blizzaria",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "204",
         "name": "Kyubi",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "205",
         "name": "Komajiro",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "206",
         "name": "Manjimutt",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "207",
         "name": "Noko",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "208",
         "name": "Venoct",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "209",
         "name": "Shogunyan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "210",
         "name": "Hovernyan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "211",
         "name": "Robonyan F-type",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     },
     {
         "id": "212",
         "name": "USApyon",
-        "method": null,
-        "method_description_en": null,
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
     }
 ]
