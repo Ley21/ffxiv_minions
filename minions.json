@@ -506,10 +506,10 @@
     {
         "id": "57",
         "name": "Tight-beaked Parrot",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (Hard)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (schwer)<\/a>.",
         "method_description_ja": null
     },
     {
@@ -767,10 +767,10 @@
     {
         "id": "92",
         "name": "Wind-up Onion Knight",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/30011\/Syrcus+Tower'>Syrcus Tower<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30011\/Syrcus+Tower'>Kristallturm - Der Syrcus-Turm<\/a>.",
         "method_description_ja": null
     },
     {
@@ -875,10 +875,10 @@
     {
         "id": "104",
         "name": "Wind-up Ultros",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/20026\/The+Dragon's+Neck'>The Dragon's Neck<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20026\/The+Dragon's+Neck'>Das Drachenhals-Kolosseum<\/a>.",
         "method_description_ja": null
     },
     {
@@ -947,10 +947,10 @@
     {
         "id": "112",
         "name": "Mummy's Little Mummy",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/26\/The+Sunken+Temple+Of+Qarn+(Hard)'>The Sunken Temple Of Qarn (Hard)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/26\/The+Sunken+Temple+Of+Qarn+(Hard)'>Versunkener Tempel Von Qarn (schwer)<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1679,7 +1679,7 @@
         "method": "Treasure Dungeons",
         "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+        "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
         "method_description_ja": null
     },
     {
