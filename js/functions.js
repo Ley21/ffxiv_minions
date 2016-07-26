@@ -1,19 +1,48 @@
+var languageTexts = 
+{
+    'update_message': {en:"Charakter will be update from lodestone",fr:"",de:"Der Charakter wird vom Lodestone aktuallisiert",ja:""},
+    'load_char_message':{en:"Loading Charakter",fr:"",de:"Charakter wird geladen",ja:""},
+    'load_ranking':{en:"Loading Ranking",fr:"",de:"Rangliste wird geladen",ja:""},
+    'load_freecompany':{en:"Loading Free Company Ranking",fr:"",de:"Freie Gesellschafts Rangliste wird geladen",ja:""},
+    'load_minions':{en:"Loading Minions",fr:"",de:"Begleiter werden geladen",ja:""},
+    'load_mounts':{en:"Loading Mounts",fr:"",de:"Reittiere werden geladen",ja:""},
+};
+
+function get_language_text(key){
+    var lang = getUrlParameter("lang");
+    var text = languageTexts[key][lang];
+    return text == "" ? languageTexts[key].en : text;
+}
+
 function pushUrl(type,urlData){
   window.history.pushState("object or string", "", "/"+type+"?"+urlData);
 }
+
 function loadCharakter(id) {
     //$('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-    ajaxCall("char","charakter.php",getLangData() +"&"+"id="+id,function(data){});
+    var submit = getLangData() +"&"+"id="+id;
+    checkCharakter(submit,function(update){
+        ajaxCall("char","charakter.php",submit,function(data){},
+            update ? get_language_text("update_message") : get_language_text("load_char_message"));
+    });
     
 }
 
+function checkCharakter(submit,func){
+    ajaxCall("","check_charakter.php",submit,function(data){
+        func(data.indexOf("true") > -1);
+    },null);
+}
+
 function searchCharakter(formData) {
-    //$('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-    ajaxCall("char","charakter.php",formData,function(data){});
+    checkCharakter(formData,function(update){
+        ajaxCall("char","charakter.php",formData,function(data){},
+            update ? get_language_text("update_message") : get_language_text("load_char_message"));
+    });
 }
 
 function updateCharakter(id){
-    $('#content').html("<center><img src='img/ajax-loader.gif'></center>");
+    loadingMessage();
     $.ajax
     ({ 
       url: "caller/update_charakter.php",
@@ -28,37 +57,43 @@ function updateCharakter(id){
     
 }
 
-
 function getLangData(){
   var lang = getUrlParameter("lang");
   lang = lang ? lang : "en"
   return "lang="+lang;
 }
 
-
 function loadRanking(submit) {
     
     //$('#content').html("<center><h2>Loading Ranking...</h2></center>");
-    ajaxCall("ranking","ranking.php",submit,function(data){});
+    ajaxCall("ranking","ranking.php",submit,function(data){},get_language_text("load_ranking"));
 }
+
 function loadFreeCompany(submit) {
   
     //$('#content').html("<center><h2>Loading Ranking...</h2></center>");
-    ajaxCall("freeCompany","fc_ranking.php",submit,function(data){});
+    ajaxCall("freeCompany","fc_ranking.php",submit,function(data){},get_language_text("load_freecompany"));
 }
 
 function loadMinions(submit) {
     //$('#content').html("<center><h2>Loading Minions...</h2></center>");
-    ajaxCall("minions","get_minions.php",submit,function(data){});
+    ajaxCall("minions","get_minions.php",submit,function(data){},get_language_text("load_minions"));
 }
 
 function loadMounts(submit) {
     //$('#content').html("<center><h2>Loading Mounts...</h2></center>");
-    ajaxCall("mounts","get_mounts.php",submit,function(data){});
+    ajaxCall("mounts","get_mounts.php",submit,function(data){},get_language_text("load_mounts"));
 }
 
-function ajaxCall(baseurl,url,submitData,func){
-    $('#content').html("<center><img src='img/ajax-loader.gif'></center>");
+function loadingMessage(customMessage = ""){
+    $('#content').html("<p><center><img src='img/gears.gif'><h2>"+customMessage+"</h2></center></p>");
+}
+
+function ajaxCall(baseurl,url,submitData,func,customMessage = ""){
+    $('#content').html("");
+    if(customMessage != null){
+        loadingMessage(customMessage);
+    }
   $.ajax
   ({ 
       url: "handler/"+url,
@@ -137,6 +172,11 @@ function browserView(){
     var p_id = getCookie("player_id");
     cleanAll();
     if(p_id != ""){
+        var id = $(".player_id").attr('id');
+        if(p_id == id){
+            var jsonData = getMinionsMounts();
+            setCookie("minions_mounts",jsonData,14);
+        }
         addCharButton();
         var json = getCookie("minions_mounts");
         var obj = JSON.parse(json);
