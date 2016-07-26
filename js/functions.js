@@ -31,7 +31,7 @@ function loadCharakter(id) {
 function checkCharakter(submit,func){
     ajaxCall("","check_charakter.php",submit,function(data){
         func(data.indexOf("true") > -1);
-    },null);
+    },get_language_text("load_char_message"));
 }
 
 function searchCharakter(formData) {
@@ -42,7 +42,7 @@ function searchCharakter(formData) {
 }
 
 function updateCharakter(id){
-    loadingMessage();
+    loadingMessage(get_language_text("update_message"));
     $.ajax
     ({ 
       url: "caller/update_charakter.php",

@@ -73,12 +73,14 @@
 
     $lodestone_lang = get_lang() == "ja" ? "jp" : get_lang();
     $charakter_link = "http://$lodestone_lang.finalfantasyxiv.com/lodestone/character/$p_id";
-        
+    
+    /*    
     $global_rank = $database->query("SELECT p.id,p.name,p.world,(SELECT COUNT(pm.p_id) FROM player_minion as pm WHERE pm.p_id=p.id) as minions,
         (SELECT rank FROM (SELECT id, m,@curRank := @curRank + 1 as rank FROM (SELECT pl.id,(SELECT COUNT(plm.p_id) FROM player_minion as plm WHERE plm.p_id=pl.id) as m  FROM `players` as pl  GROUP BY m  ORDER BY m DESC) as ranking, (SELECT @curRank := 0)  r)  as ranking WHERE m = minions) as rank FROM `players` as p WHERE id=".$p_id)->fetchAll();
     $world_rank = $database->query("SELECT p.id,p.name,p.world, 
         (SELECT COUNT(pm.p_id) FROM player_minion as pm WHERE pm.p_id=p.id) as minions,
         (SELECT rank FROM (SELECT id, m,@curRank := @curRank + 1 as rank FROM (SELECT pl.id,(SELECT COUNT(plm.p_id) FROM player_minion as plm WHERE plm.p_id=pl.id) as m  FROM (SELECT * FROM `players` WHERE world LIKE '$p_world') as pl  GROUP BY m  ORDER BY m DESC) as ranking, (SELECT @curRank := 0)  r)  as ranking WHERE m = minions) as rank FROM (SELECT * FROM `players` WHERE world LIKE '$p_world') as p WHERE id=".$p_id)->fetchAll();
+    */
     //Show all minions as tables
     echo "<center>";
     echo '<div class="row"><div class="col-md-4">';
@@ -95,8 +97,8 @@
     echo get_col_row(get_language_text("race"),$p_race);
     echo get_col_row(get_language_text("grandCompany"),$p_gc);
     echo get_col_row(get_language_text("freeCompany"),"<a id='$p_fc_id' class='freeCompany'>$p_fc</a>");
-    echo get_col_row(get_language_text("gl_rank"),$global_rank[0]["rank"]);
-    echo get_col_row(get_language_text("w_rank"),$world_rank[0]["rank"]);
+    //echo get_col_row(get_language_text("gl_rank"),$global_rank[0]["rank"]);
+    //echo get_col_row(get_language_text("w_rank"),$world_rank[0]["rank"]);
     echo "<div class='row'><button type='button' class='btn' id='char_button' style='width:83%'></button></div>";
     echo '</br></div></div>';
     echo '<div class="col-md-8">';
