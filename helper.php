@@ -535,6 +535,7 @@
             $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
             file_put_contents($file, $json_informations);
         }
+        return "The methodes for table '$table' have been updated.</br>";
     }
 ?>
         

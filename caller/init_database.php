@@ -105,8 +105,8 @@ if ($updateMinions) {
 		}
 	}
 
-	read_write_methode("minions","../minions.json",$_GET["readonly"]);
-	read_write_methode("mounts","../mounts.json",$_GET["readonly"]);
+	echo read_write_methode("minions","../minions.json",$_GET["readonly"]);
+	echo read_write_methode("mounts","../mounts.json",$_GET["readonly"]);
 }
-
+exit;
 ?>
