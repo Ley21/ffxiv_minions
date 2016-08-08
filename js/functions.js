@@ -51,7 +51,12 @@ function updateCharakter(id){
       success: function(data)
       {
           var submit = decodeURIComponent(window.location.search.substring(1));
-          loadFreeCompany(submit);
+          if(submit.indexOf("fc=") > -1){
+              loadFreeCompany(submit);
+          }
+          else{
+              loadRanking(submit);
+          }
       }
     });
     
