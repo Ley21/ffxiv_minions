@@ -168,7 +168,7 @@ $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$ba
 
 ?>
 <div class="row">
-  <div class="col-md-1"></div>
+  <div class="col-md-2"></div>
   <div class="col-md-8"><center>
 <div class="container" style="background-color:rgba(255, 255, 255, 0.5);">
 
@@ -351,7 +351,7 @@ echo "</center>";
 </div>
 </center>
 </div>
-<div class="col-md-1"></div>
+<div class="col-md-2"></div>
 
 
 
