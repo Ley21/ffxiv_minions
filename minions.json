@@ -1514,10 +1514,10 @@
     {
         "id": "177",
         "name": "Dress-up Y'shtola",
-        "method": "Mogry Shop Purchase",
-        "method_description_en": "Purchasable from the Mog Station.",
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http://eu.finalfantasyxiv.com/lodestone/special/2016/The_Rising/'>The Rising<\/a>. From Saturday, August 27, 2016 to Monday, September 12, 2016.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+        "method_description_de": "Belohnung des Events: <a href='http://de.finalfantasyxiv.com/lodestone/special/2016/The_Rising/'>Fest der Wiedergeburt<\/a> Von Samstag, den 27.08.2016 bis Montag, den 12.09.2016.",
         "method_description_ja": null
     },
     {
@@ -1640,10 +1640,10 @@
     {
         "id": "192",
         "name": "Wind-up Krile",
-        "method": "Mogry Shop Purchase",
-        "method_description_en": "Purchasable from the Mog Station.",
+        "method": "Seasonal Rewards",
+        "method_description_en": "Reward for the Special Event <a href='http://eu.finalfantasyxiv.com/lodestone/special/2016/The_Rising/'>The Rising<\/a>. From Saturday, August 27, 2016 to Monday, September 12, 2016.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+        "method_description_de": "Belohnung des Events: <a href='http://de.finalfantasyxiv.com/lodestone/special/2016/The_Rising/'>Fest der Wiedergeburt<\/a> Von Samstag, den 27.08.2016 bis Montag, den 12.09.2016.",
         "method_description_ja": null
     },
     {
