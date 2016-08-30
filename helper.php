@@ -74,8 +74,15 @@
             $table .= "<td class='shrink'>$patch</td>";
             if($type == "mount"){
                 $can_fly =  $minion_data['can_fly'];
-                $can_fly = empty($can_fly) ? get_language_text("unknown") : 
-                    ($can_fly ? get_language_text("yes") : get_language_text("no"));
+                if($can_fly == 0){
+                    $can_fly = get_language_text("no");
+                }
+                elseif($can_fly == 1){
+                    $can_fly = get_language_text("yes");
+                }
+                else{
+                    $can_fly = get_language_text("unknown");
+                }
                 
                 $table .= "<td class='shrink'>$can_fly</td>";
             }
@@ -513,17 +520,24 @@
         
         //Read local file
         $json = file_get_contents($file);
-        $read_minons = json_decode($json);
+        $read_collectables = json_decode($json);
         
         //Update mehtode from local file
-        foreach($read_minons as $minion){
-            $database->update($table,[
-                "method" => $minion->method,
-                "method_description_en" => $minion->method_description_en,
-                "method_description_fr" => $minion->method_description_fr,
-                "method_description_de" => $minion->method_description_de,
-                "method_description_ja" => $minion->method_description_ja],
-                ["id[=]"=>$minion->id]);
+        foreach($read_collectables as $coll){
+            $data = $table == "mounts" ? [
+                "method" => $coll->method,
+                "can_fly" => $coll->can_fly,
+                "method_description_en" => $coll->method_description_en,
+                "method_description_fr" => $coll->method_description_fr,
+                "method_description_de" => $coll->method_description_de,
+                "method_description_ja" => $coll->method_description_ja] :
+                    [
+                "method" => $coll->method,
+                "method_description_en" => $coll->method_description_en,
+                "method_description_fr" => $coll->method_description_fr,
+                "method_description_de" => $coll->method_description_de,
+                "method_description_ja" => $coll->method_description_ja];
+            $database->update($table,$data,["id[=]"=>$coll->id]);
         }
         
         if(!$readOnly){
