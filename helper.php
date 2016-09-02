@@ -166,6 +166,39 @@
         return $table;
     }
     
+    function get_ranking_of_player($id,$world = "",$type=""){
+        global $database;
+        
+        $players = $database->select("players",["id","name","world","last_update_date"],empty($world) ? "" : ["world[=]"=>$world] );
+        $ranking = get_ranking_players($players,$type);
+        $nr = 0;
+        $count_befor = $ranking[0][0];
+        foreach($ranking as $rank){
+            $count_key = $rank[0];
+            if($count_befor != $count_key){
+                $nr++;
+                $count_befor = $count_key;
+            }
+            
+            if($rank[1]->player['id'] == $id){
+                return $nr;
+            }
+        } 
+    }
+    
+    function create_char_ranking($id,$world = ""){
+        $cell = "";
+        $gl_rank_all = get_ranking_of_player($id,$world);
+        $gl_rank_minion = get_ranking_of_player($id,$world,"minions");
+        $gl_rank_mounts = get_ranking_of_player($id,$world,"mounts");
+        $cell .= get_language_text("all").": ".$gl_rank_all;
+        $cell .= "</br>";
+        $cell .= get_language_text("minions").": ".$gl_rank_minion;
+        $cell .= "</br>";
+        $cell .= get_language_text("mounts").": ".$gl_rank_mounts;
+        return $cell;
+    }
+    
     function crate_ranking_table($ranking,$type = ""){
         $table = "";
         $nr = 0;
@@ -250,6 +283,78 @@
         return $rows;
     }
     
+    function get_rarest_object($id,$table){
+        global $database;
+        $result = $database->query("SELECT COUNT( p_id ),m_id FROM $table GROUP BY m_id ORDER BY COUNT( p_id ) ASC")->fetchAll();
+        foreach($result as $obj){
+            if($database->has($table,["AND"=>["p_id"=>$id,"m_id"=>$obj['m_id']]])){
+                return $obj['m_id'];
+            }
+        }
+    }
+    
+    function create_rarest_thumbnail($id){
+        global $database;
+        global $random_id;
+        $random_id_tag = "div_".$random_id;
+        $random_id++;
+        $title = get_language_text("rarest");
+        $thumbnail = '<div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse" data-target="#'.$random_id_tag.'" aria-expanded="true" aria-controls="'.$random_id_tag.'"><h4><b>'.
+        $title.'</b></h4></div>
+        <div class="panel-body">';
+        $thumbnail .= '<div class="collapse  in" id="'.$random_id_tag.'">';
+        
+        $minion_id = get_rarest_object($id,"player_minion");
+        $mount_id = get_rarest_object($id,"player_mounts");
+        
+        $table = '<div class="media">';
+        $table .= '<div>';
+        
+        $minion = $database->get("minions","*",["id[=]"=>$minion_id]);
+        $minion_name = ucwords($minion['name']);
+        $minion_icon_url = $minion['icon_url'];
+        $minion_thumbnail .= create_thumbnail_link("minion",$minion_id,$minion_name,$minion_icon_url);
+        
+        $table .= $minion_thumbnail;
+        $table .= "</div>";
+        $table .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px; padding-left:2em">';
+        $table .= "<h4>  $minion_name</h4>";
+        $table .= "</div></div>";
+        
+        $table .= '<div class="media">';
+        $table .= '<div >';
+        
+        $mount = $database->get("mounts","*",["id[=]"=>$mount_id]);
+        $mount_name = ucwords($mount['name']);
+        $mount_icon_url = $mount['icon_url'];
+        $mount_thumbnail .= create_thumbnail_link("mount",$mount_id,$mount_name,$mount_icon_url);
+        
+        $table .= $mount_thumbnail;
+        $table .= "</div>";
+        $table .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px; padding-left:2em">';
+        $table .= "<h4>  $mount_name</h4></div></div>";
+        
+        $thumbnail .= $table;
+        $thumbnail .= '</div>';
+        $thumbnail .= "</div></div>";
+        return $thumbnail;
+    }
+    
+    function create_thumbnail_link($type,$id,$name,$url,$remove_div = false){
+        $thumbnail = "";
+        $dom_id = $type."_".$id;
+        $lang = get_lang();
+        $lang = $lang == "en" ? "" : $lang.".";
+        
+        $thumbnail .= $remove_div ? "" :'<div class="col-xs-0 col-md-2" style="width:auto; padding:0px">';
+        $thumbnail .= "<a  id='$dom_id' href='https://".$lang."xivdb.com/$type/$id' class='thumbnail' >";
+        $thumbnail .= "<img class='media-object' alt='$name' src=$url >";
+        $thumbnail .= "</a>";
+        $thumbnail .= $remove_div ? "" :"</div>";
+        return $thumbnail;
+    }
+    
     function create_thumbnail($title,$sql_data,$type){
         global $random_id;
         $random_id_tag = "div_".$random_id;
@@ -268,12 +373,15 @@
             $m_id = $minion_data['id'];
             $icon_url = $minion_data['icon_url'];
             $description = $minion_data['description'];
+            $thumbnail .= create_thumbnail_link($type,$m_id,$name,$icon_url);
+            /*
             $dom_id = $type."_".$m_id;
             $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px">';
             $thumbnail .= "<a  id='$dom_id' href='https://xivdb.com/$type/$m_id' class='thumbnail' >";
             $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url >";
             $thumbnail .= "</a>";
             $thumbnail .= "</div>";
+            */
         }
         $thumbnail .= '</div>';
         $thumbnail .= "</div></div>";

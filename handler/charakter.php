@@ -50,6 +50,7 @@
     $p_fc = $player_entry["freeCompany"];
     $p_fc_id = $player_entry["freeCompanyId"];
     $p_portrait = $player_entry["portrait"];
+    $p_gender = $player_entry["gender"];
     
     //Get existing minions
     $exitsts_minions = $database->select("minions", 
@@ -74,13 +75,7 @@
     $lodestone_lang = get_lang() == "ja" ? "jp" : get_lang();
     $charakter_link = "http://$lodestone_lang.finalfantasyxiv.com/lodestone/character/$p_id";
     
-    /*    
-    $global_rank = $database->query("SELECT p.id,p.name,p.world,(SELECT COUNT(pm.p_id) FROM player_minion as pm WHERE pm.p_id=p.id) as minions,
-        (SELECT rank FROM (SELECT id, m,@curRank := @curRank + 1 as rank FROM (SELECT pl.id,(SELECT COUNT(plm.p_id) FROM player_minion as plm WHERE plm.p_id=pl.id) as m  FROM `players` as pl  GROUP BY m  ORDER BY m DESC) as ranking, (SELECT @curRank := 0)  r)  as ranking WHERE m = minions) as rank FROM `players` as p WHERE id=".$p_id)->fetchAll();
-    $world_rank = $database->query("SELECT p.id,p.name,p.world, 
-        (SELECT COUNT(pm.p_id) FROM player_minion as pm WHERE pm.p_id=p.id) as minions,
-        (SELECT rank FROM (SELECT id, m,@curRank := @curRank + 1 as rank FROM (SELECT pl.id,(SELECT COUNT(plm.p_id) FROM player_minion as plm WHERE plm.p_id=pl.id) as m  FROM (SELECT * FROM `players` WHERE world LIKE '$p_world') as pl  GROUP BY m  ORDER BY m DESC) as ranking, (SELECT @curRank := 0)  r)  as ranking WHERE m = minions) as rank FROM (SELECT * FROM `players` WHERE world LIKE '$p_world') as p WHERE id=".$p_id)->fetchAll();
-    */
+    
     //Show all minions as tables
     echo "<center>";
     echo '<div class="row"><div class="col-md-4">';
@@ -92,18 +87,22 @@
     echo get_col_row(get_language_text("name"),"<a href='$charakter_link' target='_blank' id='p_name'>$p_name</a>");
     echo get_col_row(get_language_text("world"),$p_server);
     if(!empty($p_title)){
-        echo get_col_row(get_language_text("title_char"),$p_title);
+        echo get_col_row(get_language_text("title_char")."</br>",$p_title);
     }
     echo get_col_row(get_language_text("race"),$p_race);
+    echo get_col_row(get_language_text("gender"),get_language_text($p_gender));
     echo get_col_row(get_language_text("grandCompany"),$p_gc);
     echo get_col_row(get_language_text("freeCompany"),"<a id='$p_fc_id' class='freeCompany'>$p_fc</a>");
-    //echo get_col_row(get_language_text("gl_rank"),$global_rank[0]["rank"]);
-    //echo get_col_row(get_language_text("w_rank"),$world_rank[0]["rank"]);
+    $gl_rank = create_char_ranking($p_id);
+    echo get_col_row("</br>".get_language_text("gl_rank")."</br></br>",$gl_rank);
+    $w_rank = create_char_ranking($p_id,$p_world);
+    echo get_col_row("</br>".get_language_text("w_rank")."</br></br>",$w_rank);
     echo "<div class='row'><button type='button' class='btn' id='char_button' style='width:83%'></button></div>";
     echo '</br></div></div>';
     echo '<div class="col-md-8">';
     echo create_thumbnail(get_language_text("owned_minions"),$exitsts_minions,"minion");
     echo create_thumbnail(get_language_text("owned_mounts"),$exitsts_mounts,"mount");
+    echo create_rarest_thumbnail($p_id);
     echo '</div></div>';
     echo create_table(get_language_text("missing_minions"),$missing_minions,"minion");
     echo create_table(get_language_text("missing_mounts"),$missing_mounts,"mount");
