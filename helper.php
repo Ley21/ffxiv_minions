@@ -68,8 +68,9 @@
             }
             $dom_id = $type."_".$m_id;
             $table .= "<tr id='$dom_id'>";
-            $table .= "<td class='shrink'><img class='media-object' src=$icon_url></td>";
             $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
+            $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
+            
             $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
             $table .= "<td class='shrink'>$patch</td>";
             if($type == "mount"){
@@ -191,11 +192,11 @@
         $gl_rank_all = get_ranking_of_player($id,$world);
         $gl_rank_minion = get_ranking_of_player($id,$world,"minions");
         $gl_rank_mounts = get_ranking_of_player($id,$world,"mounts");
-        $cell .= get_language_text("all").": ".$gl_rank_all;
+        $cell .= "<b>".get_language_text("all").":</b> ".$gl_rank_all;
         $cell .= "</br>";
-        $cell .= get_language_text("minions").": ".$gl_rank_minion;
+        $cell .= "<b>".get_language_text("minions").":</b> ".$gl_rank_minion;
         $cell .= "</br>";
-        $cell .= get_language_text("mounts").": ".$gl_rank_mounts;
+        $cell .= "<b>".get_language_text("mounts").":</b> ".$gl_rank_mounts;
         return $cell;
     }
     
