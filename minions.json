@@ -191,28 +191,28 @@
     {
         "id": "22",
         "name": "Gravel Golem",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1469'>Gravel Golem</a> by goldsmith.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1469'>Kiesgolem</a> vom Goldschmied hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "23",
         "name": "Wind-up Tonberry",
-        "method": null,
-        "method_description_en": null,
+        "method": "Treasure Hunt",
+        "method_description_en": "Can be found in a treasure of a 'Timeworn Boarskin Map'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch eine Schatzkiste aus einer 'Vergilbte Keilerleder-Karte'.",
         "method_description_ja": null
     },
     {
         "id": "24",
         "name": "Tiny Tortoise",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gathering",
+        "method_description_en": "Can be fished at <a href='http://en.ff14angler.com/?spot=10406'>The Salt Strand</a> in Lower La Noscea.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann am <a href='http://de.ff14angler.com/?spot=10406'>Salzstrand</a> im Unteren La Noscea geangelt werden.",
         "method_description_ja": null
     },
     {
@@ -236,10 +236,10 @@
     {
         "id": "27",
         "name": "Tiny Bulb",
-        "method": null,
-        "method_description_en": null,
+        "method": "Treasure Hunt",
+        "method_description_en": "Can be found in a treasure of a 'Timeworn Toadskin Map'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch eine Schatzkiste aus einer 'Vergilbte Krötenleder-Karte'.",
         "method_description_ja": null
     },
     {
@@ -254,19 +254,19 @@
     {
         "id": "29",
         "name": "Wind-up Dullahan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1384'>Wind-up Dullahan</a> by armorer.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1384'>Mechanischer Dullahan</a> vom Plattner hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "30",
         "name": "Gigantpole",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gathering",
+        "method_description_en": "Can be fished at <a href='http://en.ff14angler.com/?spot=30304'>The Burning Wall</a> in Eastern Thanalan.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann am <a href='http://de.ff14angler.com/?spot=30304'>Feuerwall</a> im Östlichen Thanalan geangelt werden.",
         "method_description_ja": null
     },
     {
@@ -335,28 +335,28 @@
     {
         "id": "38",
         "name": "Coblyn Larva",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gathering",
+        "method_description_en": "Can be obtained by gather from an Unspoiled Node in Eastern Thanalan at 9:00 AM EZ by a Miner.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann von einer Unendeckten Abbaustelle im Östlichen Thanalan um 9:00 EZ als Minenarbeiter abgebaut werden.",
         "method_description_ja": null
     },
     {
         "id": "39",
         "name": "Wind-up Aldgoat",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1385'>Wind-up Aldgoat</a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1385'>Steinbock-Stofftier</a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "40",
         "name": "Fledgling Apkallu",
-        "method": null,
-        "method_description_en": null,
+        "method": "Achievement Rewards",
+        "method_description_en": "Reward for obtain the achievement <a href='http://xivdb.com/achievement/929'>Out Of Sight Out Of Mind<\/a>. Complete entries 1-80 in your sightseeing log.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/929'>Weltenbummler<\/a>. Die sehenswerten Orte 001-080 aus dem Eorzea Incognita entdeckt.",
         "method_description_ja": null
     },
     {
@@ -380,10 +380,10 @@
     {
         "id": "43",
         "name": "Model Vanguard",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1468'>Model Vanguard</a> by goldsmith.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1468'>Aufzieh-Frontbrecher</a> vom Goldschmied hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -425,10 +425,10 @@
     {
         "id": "48",
         "name": "Kidragora",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gathering",
+        "method_description_en": "Can be obtained by gather from an Unspoiled Node in East Shroud at 9:00 PM EZ by a Botanik.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann von einer Unendeckten Abbaustelle im Ostwald um 21:00 EZ als Gärtner abgebaut werden.",
         "method_description_ja": null
     },
     {
@@ -470,10 +470,10 @@
     {
         "id": "53",
         "name": "Wind-up Qiqirn",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1383'>Wind-up Qiqirn</a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1383'>Qiqirn-Stofftier</a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -488,19 +488,19 @@
     {
         "id": "55",
         "name": "Wind-up Dalamud",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das einlösen eines Codes aus dem 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
         "method_description_ja": null
     },
     {
         "id": "56",
         "name": "Minute Mindflayer",
-        "method": null,
-        "method_description_en": null,
+        "method": "Retainer Ventures",
+        "method_description_en": "Can be obtained by Field / Highland Exploration XIII.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch eine Erkundung XIII eines Gärtner-/Minenarbeiter-Gehilfen.",
         "method_description_ja": null
     },
     {
@@ -578,19 +578,20 @@
     {
         "id": "65",
         "name": "Wind-up Sun",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Can be purchased by exchanged a 'Elexir' at the NPC at (X:12 Y:36) in Western La Noscea.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch die Abgabe eines 'Elexirs' bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
         "method_description_ja": null
     },
     {
         "id": "66",
         "name": "Plush Cushion",
         "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/7559'>Plush Cushion</a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/7559'>Sitzkissen</a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -614,10 +615,10 @@
     {
         "id": "75",
         "name": "Princely Hatchling",
-        "method": null,
-        "method_description_en": null,
+        "method": "Achievement Rewards",
+        "method_description_en": "Reward for obtain the achievement <a href='http://xivdb.com/achievement/859'>Leaving A Good Impression II<\/a>. Receive 50 player commendations.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/859'>Einen Guten Eindruck Hinterlassen II<\/a>. 50 Ehrungen zum wertvollsten Spieler erhalten.",
         "method_description_ja": null
     },
     {
@@ -641,19 +642,19 @@
     {
         "id": "78",
         "name": "Wind-up Bahamut",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das einlösen eines Codes aus dem 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
         "method_description_ja": null
     },
     {
         "id": "79",
         "name": "Wind-up Moogle",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - A Real Reborn Colletors Edition' or the upgrade of the standard edition in the mogry station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - A Real Reborn Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
         "method_description_ja": null
     },
     {
@@ -668,10 +669,10 @@
     {
         "id": "81",
         "name": "Magic Broom",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1941'>Magic Broom</a> by carpenter.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1941'>Zauberbesen</a> vom Zimmerer hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -713,46 +714,46 @@
     {
         "id": "86",
         "name": "Onion Prince",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gardening",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
         "method_description_ja": null
     },
     {
         "id": "87",
         "name": "Eggplant Knight",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gardening",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
         "method_description_ja": null
     },
     {
         "id": "88",
         "name": "Garlic Jester",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gardening",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
         "method_description_ja": null
     },
     {
         "id": "89",
         "name": "Tomato King",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gardening",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
         "method_description_ja": null
     },
     {
         "id": "90",
         "name": "Mandragora Queen",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gardening",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
         "method_description_ja": null
     },
     {

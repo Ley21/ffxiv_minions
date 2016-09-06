@@ -49,7 +49,7 @@
             seturlicon: false
         };
     </script>
-    <script src="https://raw.githubusercontent.com/viion/XIVDB-Tooltips/master/tooltips.js"></script>
+    <script src="http://xivdb.com/tooltips.js"></script>
     <script type='text/javascript'>
 
         

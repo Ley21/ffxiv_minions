@@ -631,6 +631,7 @@
         $json = file_get_contents($file);
         $read_collectables = json_decode($json);
         
+        $missing = 0;
         //Update mehtode from local file
         foreach($read_collectables as $coll){
             $logs .= "-> $table - $coll->id updated.</br>";
@@ -649,8 +650,11 @@
                 "method_description_de" => $coll->method_description_de,
                 "method_description_ja" => $coll->method_description_ja];
             $database->update($table,$data,["id[=]"=>$coll->id]);
+            if(empty($coll->method)){
+                $missing++;
+            }
         }
-        
+        $logs .= "===> $table is missing '$missing' methods.</br>";
         if(!$readOnly){
             $logs .= "</br>Write database to file.</br";
             $list = $table == "mounts" ?  ["id","name","can_fly","method","method_description_en","method_description_fr",
