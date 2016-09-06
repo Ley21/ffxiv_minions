@@ -626,13 +626,15 @@
     
     function read_write_methode($table,$file,$readOnly){
         global $database;
-        
+        $logs;
         //Read local file
         $json = file_get_contents($file);
         $read_collectables = json_decode($json);
         
         //Update mehtode from local file
         foreach($read_collectables as $coll){
+            $logs .= "-> $table - $coll->id updated.</br>";
+            $logs .= "--> Methode: $coll->method || Desciption: - $coll->method_description_en.</br>";
             $data = $table == "mounts" ? [
                 "method" => $coll->method,
                 "can_fly" => $coll->can_fly,
@@ -650,6 +652,7 @@
         }
         
         if(!$readOnly){
+            $logs .= "</br>Write database to file.</br";
             $list = $table == "mounts" ?  ["id","name","can_fly","method","method_description_en","method_description_fr",
                 "method_description_de","method_description_ja"] : ["id","name","method","method_description_en","method_description_fr",
                 "method_description_de","method_description_ja"];
@@ -658,7 +661,8 @@
             $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
             file_put_contents($file, $json_informations);
         }
-        return "The methodes for table '$table' have been updated.</br>";
+        $logs .= "The methodes for table '$table' have been updated.</br></br>";
+        return $logs;
     }
 ?>
         
