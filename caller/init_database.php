@@ -24,6 +24,7 @@ $database->query("CREATE TABLE minions (
         description_fr TEXT NOT NULL,
         description_de TEXT NOT NULL,
         description_ja TEXT NOT NULL,
+        can_fly tinyint(1),
         method VARCHAR(100),
         method_description_en TEXT,
         method_description_fr TEXT,
