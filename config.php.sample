@@ -5,6 +5,8 @@
     require 'vendor/viion/xivpads-lodestoneapi/api-autoloader.php';
     
     $ssl = true;
+    $external_key = "KEY_FOR_ALL_CALLER_OPERATIONS";
+    
     // Initialize
     $database = new medoo([
         'database_type' => 'mysql',

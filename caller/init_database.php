@@ -5,6 +5,12 @@ require_once "../helper.php";
 header("Content-Type: text/html; charset=utf-8");
 // Create table for minions
 
+if($_GET['key'] != $external_key){
+        echo "You are not authorised to call this page.";
+        exit;
+        
+}
+
 $database->query("CREATE TABLE minions (
         id INT NOT NULL,
         name VARCHAR(100) NOT NULL,
