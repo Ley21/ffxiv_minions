@@ -138,9 +138,9 @@
         "id": "16",
         "name": "Bluebird",
         "method": "Treasure Hunt",
-        "method_description_en": "Treasure Hunt Reward from <a href='http:\/\/xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Timeworn Peisteskin Map<\/a>, <a href='http:\/\/xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Timeworn Dragonskin Map<\/a> and from <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+        "method_description_en": "Treasure Hunt Reward from <a href='http:\/\/xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Timeworn Peisteskin Map<\/a>, <a href='http:\/\/xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Timeworn Dragonskin Map<\/a>..",
         "method_description_fr": null,
-        "method_description_de": "Belohnung aus <a href='http:\/\/de.xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Vergilbten Basiliskenleder-Karten<\/a>, <a href='http:\/\/de.xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Vergilbten Drachenleder-Karten<\/a> und aus <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+        "method_description_de": "Belohnung aus <a href='http:\/\/de.xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Vergilbten Basiliskenleder-Karten<\/a>, <a href='http:\/\/de.xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Vergilbten Drachenleder-Karten<\/a>.",
         "method_description_ja": null
     },
     {
@@ -192,9 +192,9 @@
         "id": "22",
         "name": "Gravel Golem",
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1469'>Gravel Golem</a> by goldsmith.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1469'>Gravel Golem<\/a> by goldsmith.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1469'>Kiesgolem</a> vom Goldschmied hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1469'>Kiesgolem<\/a> vom Goldschmied hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -203,16 +203,16 @@
         "method": "Treasure Hunt",
         "method_description_en": "Can be found in a treasure of a 'Timeworn Boarskin Map'.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch eine Schatzkiste aus einer 'Vergilbte Keilerleder-Karte'.",
+        "method_description_de": "Erh\u00e4ltlich durch eine Schatzkiste aus einer 'Vergilbte Keilerleder-Karte'.",
         "method_description_ja": null
     },
     {
         "id": "24",
         "name": "Tiny Tortoise",
         "method": "Gathering",
-        "method_description_en": "Can be fished at <a href='http://en.ff14angler.com/?spot=10406'>The Salt Strand</a> in Lower La Noscea.",
+        "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/?spot=10406'>The Salt Strand<\/a> in Lower La Noscea.",
         "method_description_fr": null,
-        "method_description_de": "Kann am <a href='http://de.ff14angler.com/?spot=10406'>Salzstrand</a> im Unteren La Noscea geangelt werden.",
+        "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=10406'>Salzstrand<\/a> im Unteren La Noscea geangelt werden.",
         "method_description_ja": null
     },
     {
@@ -239,7 +239,7 @@
         "method": "Treasure Hunt",
         "method_description_en": "Can be found in a treasure of a 'Timeworn Toadskin Map'.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch eine Schatzkiste aus einer 'Vergilbte Krötenleder-Karte'.",
+        "method_description_de": "Erh\u00e4ltlich durch eine Schatzkiste aus einer 'Vergilbte Kr\u00f6tenleder-Karte'.",
         "method_description_ja": null
     },
     {
@@ -255,18 +255,18 @@
         "id": "29",
         "name": "Wind-up Dullahan",
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1384'>Wind-up Dullahan</a> by armorer.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1384'>Wind-up Dullahan<\/a> by armorer.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1384'>Mechanischer Dullahan</a> vom Plattner hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1384'>Mechanischer Dullahan<\/a> vom Plattner hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "30",
         "name": "Gigantpole",
         "method": "Gathering",
-        "method_description_en": "Can be fished at <a href='http://en.ff14angler.com/?spot=30304'>The Burning Wall</a> in Eastern Thanalan.",
+        "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/?spot=30304'>The Burning Wall<\/a> in Eastern Thanalan.",
         "method_description_fr": null,
-        "method_description_de": "Kann am <a href='http://de.ff14angler.com/?spot=30304'>Feuerwall</a> im Östlichen Thanalan geangelt werden.",
+        "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=30304'>Feuerwall<\/a> im \u00d6stlichen Thanalan geangelt werden.",
         "method_description_ja": null
     },
     {
@@ -338,23 +338,23 @@
         "method": "Gathering",
         "method_description_en": "Can be obtained by gather from an Unspoiled Node in Eastern Thanalan at 9:00 AM EZ by a Miner.",
         "method_description_fr": null,
-        "method_description_de": "Kann von einer Unendeckten Abbaustelle im Östlichen Thanalan um 9:00 EZ als Minenarbeiter abgebaut werden.",
+        "method_description_de": "Kann von einer Unendeckten Abbaustelle im \u00d6stlichen Thanalan um 9:00 EZ als Minenarbeiter abgebaut werden.",
         "method_description_ja": null
     },
     {
         "id": "39",
         "name": "Wind-up Aldgoat",
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1385'>Wind-up Aldgoat</a> by weaver.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1385'>Wind-up Aldgoat<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1385'>Steinbock-Stofftier</a> vom Weber hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1385'>Steinbock-Stofftier<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "40",
         "name": "Fledgling Apkallu",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http://xivdb.com/achievement/929'>Out Of Sight Out Of Mind<\/a>. Complete entries 1-80 in your sightseeing log.",
+        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/929'>Out Of Sight Out Of Mind<\/a>. Complete entries 1-80 in your sightseeing log.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/929'>Weltenbummler<\/a>. Die sehenswerten Orte 001-080 aus dem Eorzea Incognita entdeckt.",
         "method_description_ja": null
@@ -381,9 +381,9 @@
         "id": "43",
         "name": "Model Vanguard",
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1468'>Model Vanguard</a> by goldsmith.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1468'>Model Vanguard<\/a> by goldsmith.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1468'>Aufzieh-Frontbrecher</a> vom Goldschmied hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1468'>Aufzieh-Frontbrecher<\/a> vom Goldschmied hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -428,7 +428,7 @@
         "method": "Gathering",
         "method_description_en": "Can be obtained by gather from an Unspoiled Node in East Shroud at 9:00 PM EZ by a Botanik.",
         "method_description_fr": null,
-        "method_description_de": "Kann von einer Unendeckten Abbaustelle im Ostwald um 21:00 EZ als Gärtner abgebaut werden.",
+        "method_description_de": "Kann von einer Unendeckten Abbaustelle im Ostwald um 21:00 EZ als G\u00e4rtner abgebaut werden.",
         "method_description_ja": null
     },
     {
@@ -471,9 +471,9 @@
         "id": "53",
         "name": "Wind-up Qiqirn",
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1383'>Wind-up Qiqirn</a> by weaver.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1383'>Wind-up Qiqirn<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1383'>Qiqirn-Stofftier</a> vom Weber hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1383'>Qiqirn-Stofftier<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -491,16 +491,16 @@
         "method": "Promotions",
         "method_description_en": "Obtained by redeeming a code through purchasing the 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das einlösen eines Codes aus dem 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
         "method_description_ja": null
     },
     {
         "id": "56",
         "name": "Minute Mindflayer",
         "method": "Retainer Ventures",
-        "method_description_en": "Can be obtained by Field / Highland Exploration XIII.",
+        "method_description_en": "Can be obtained by Field \/ Highland Exploration XIII.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch eine Erkundung XIII eines Gärtner-/Minenarbeiter-Gehilfen.",
+        "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIII eines Minenarbeiter-Gehilfen oder eines Gehilfen mit einer Kampfklasse.",
         "method_description_ja": null
     },
     {
@@ -581,17 +581,16 @@
         "method": "Misc. Methods",
         "method_description_en": "Can be purchased by exchanged a 'Elexir' at the NPC at (X:12 Y:36) in Western La Noscea.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch die Abgabe eines 'Elexirs' bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
+        "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines 'Elexirs' bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
         "method_description_ja": null
     },
     {
         "id": "66",
         "name": "Plush Cushion",
-        "method": null,
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/7559'>Plush Cushion</a> by weaver.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/7559'>Plush Cushion<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/7559'>Sitzkissen</a> vom Weber hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/7559'>Sitzkissen<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -616,7 +615,7 @@
         "id": "75",
         "name": "Princely Hatchling",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http://xivdb.com/achievement/859'>Leaving A Good Impression II<\/a>. Receive 50 player commendations.",
+        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/859'>Leaving A Good Impression II<\/a>. Receive 50 player commendations.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/859'>Einen Guten Eindruck Hinterlassen II<\/a>. 50 Ehrungen zum wertvollsten Spieler erhalten.",
         "method_description_ja": null
@@ -645,7 +644,7 @@
         "method": "Promotions",
         "method_description_en": "Obtained by redeeming a code through purchasing the 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das einlösen eines Codes aus dem 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
         "method_description_ja": null
     },
     {
@@ -670,9 +669,9 @@
         "id": "81",
         "name": "Magic Broom",
         "method": "Crafting",
-        "method_description_en": "Can be crafted from recept <a href='http://xivdb.com/recipe/1941'>Magic Broom</a> by carpenter.",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1941'>Magic Broom<\/a> by carpenter.",
         "method_description_fr": null,
-        "method_description_de": "Kann durch das Rezept <a href='http://de.xivdb.com/recipe/1941'>Zauberbesen</a> vom Zimmerer hergestellt werden.",
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1941'>Zauberbesen<\/a> vom Zimmerer hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -715,45 +714,45 @@
         "id": "86",
         "name": "Onion Prince",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "87",
         "name": "Eggplant Knight",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "88",
         "name": "Garlic Jester",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "89",
         "name": "Tomato King",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "90",
         "name": "Mandragora Queen",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here</a>.",
+        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href=''>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erhältlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier</a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href=''>hier<\/a>.",
         "method_description_ja": null
     },
     {
@@ -786,37 +785,37 @@
     {
         "id": "94",
         "name": "Tiny Tapir",
-        "method": null,
-        "method_description_en": null,
+        "method": "Retainer Ventures",
+        "method_description_en": "Can be obtained by Field Exploration XIV.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV eines Gehilfen mit einer Kampfklasse.",
         "method_description_ja": null
     },
     {
         "id": "95",
         "name": "Nana Bear",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/2070'>Nana Bear<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/2070'>Nana-Stoffb\u00e4r<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "96",
         "name": "Miniature Minecart",
-        "method": null,
-        "method_description_en": null,
+        "method": "Retainer Ventures",
+        "method_description_en": "Can be obtained by Field Exploration XIV\/XVIII.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV\/XVIII eines Minenarbeiter-Gehilfen.",
         "method_description_ja": null
     },
     {
         "id": "97",
         "name": "Nutkin",
-        "method": null,
-        "method_description_en": null,
+        "method": "Treasure Hunt",
+        "method_description_en": "Treasure Hunt Reward from a <a href='http:\/\/xivdb.com\/item\/8156'>Unhidden Leather Map<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung aus einer <a href='http:\/\/de.xivdb.com\/item\/8156'>Unversteckte Lederkarte<\/a>.",
         "method_description_ja": null
     },
     {
@@ -840,19 +839,19 @@
     {
         "id": "100",
         "name": "Model Magitek Bit",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/2070'>Model Magitek Bit<\/a> by blacksmith.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/2137'>Aufzieh-Magitek-Drohne<\/a> vom Grobschmied hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "101",
         "name": "Puff Of Darkness",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in the Treasure Coffer of the last boss in <a href='http:\/\/xivdb.com\/instance\/30020'>The World of Darkness<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Aus der Schatzkiste beim letzten Gegner in <a href='http:\/\/de.xivdb.com\/instance\/30020'>Die Welt der Dunkelheit<\/a>.",
         "method_description_ja": null
     },
     {
@@ -930,19 +929,19 @@
     {
         "id": "110",
         "name": "Fat Cat",
-        "method": null,
-        "method_description_en": null,
+        "method": "Retainer Ventures",
+        "method_description_en": "Can be obtained by Waterside Exploration XIV.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV eines Fischer-Gehilfen.",
         "method_description_ja": null
     },
     {
         "id": "111",
         "name": "Littlefoot",
-        "method": null,
-        "method_description_en": null,
+        "method": "Retainer Ventures",
+        "method_description_en": "Can be obtained by Woodland Exploration XIV.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV eines G\u00e4rtner-Gehilfen.",
         "method_description_ja": null
     },
     {
@@ -957,37 +956,37 @@
     {
         "id": "113",
         "name": "Model Enterprise",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV: A Realm Reborn The Art of Eorzea - Another Dawn -'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV: A Realm Reborn The Art of Eorzea - Another Dawn -'.",
         "method_description_ja": null
     },
     {
         "id": "114",
         "name": "Wind-up Delivery Moogle",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV: A REALM REBORN [Delivery Moogle]'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV: A REALM REBORN [Delivery Moogle]'.",
         "method_description_ja": null
     },
     {
         "id": "115",
         "name": "Assassin Fry",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Can be obtained by desynthese of an <a href='http:\/\/xivdb.com\/item\/8761'>Ninja Betta<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Desynthese eines <a href='http:\/\/de.xivdb.com\/item\/8761'>Ninja-Kampffisch<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "116",
         "name": "Demon Box",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Obtained by visiting a Ceremony of <a href='http:\/\/www.finalfantasyxiv.com\/eternalbond\/de\/detail\/special_item_4.html?lng=de&rgn=de'>Eternal Bonding<\/a> with a Gold- or Platinum-Plan",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch den Besuch einer Zeremonie des <a href='http:\/\/www.finalfantasyxiv.com\/eternalbond\/de\/detail\/special_item_4.html?lng=de&rgn=de'>Ewigen Bund<\/a> mit dem Gold- oder Platin-Plan.",
         "method_description_ja": null
     },
     {
@@ -1002,10 +1001,10 @@
     {
         "id": "118",
         "name": "Wind-up Louisoix",
-        "method": null,
-        "method_description_en": null,
+        "method": "Achievement Rewards",
+        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1040'>Out Of A Bind I<\/a>. Complete the Final Coil of Bahamut.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1040'>Am Ende Der Schatten I<\/a>. 1 Mal Verschlungene Schatten von Bahamut - Finale erfolgreich abgeschlossen.",
         "method_description_ja": null
     },
     {
@@ -1029,10 +1028,10 @@
     {
         "id": "122",
         "name": "Enkidu",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/20030'>Battle In The Big Keep<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20030'>Revanche In Den Ruinen<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1083,19 +1082,19 @@
     {
         "id": "128",
         "name": "Chocobo Chick Courier",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained as pre-order bonus for 'Final Fantasy XIV - Heavensward'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Vorbesteller-Bonus f\u00fcr 'Final Fantasy XIV - Heavensward'.",
         "method_description_ja": null
     },
     {
         "id": "129",
         "name": "Wind-up Kain",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - Heavensward Colletors Edition' or the upgrade of the standard edition in the mogry station.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - Heavensward Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
         "method_description_ja": null
     },
     {
@@ -1137,10 +1136,10 @@
     {
         "id": "134",
         "name": "Unicolt",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/34'>The Vault<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/34'>Erzbasilika<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1155,73 +1154,73 @@
     {
         "id": "136",
         "name": "Atrophied Atomos",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31199'>Atrophied Atomos<\/a> by alchemist.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31199'>Mini-Atomos<\/a> vom Alchemist hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "137",
         "name": "Owlet",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/35'>The Fractal Continuum<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/35'>Die Fraktal-Kontinuum<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "138",
         "name": "Ugly Duckling",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/33'>Neverreap<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/33'>Nimmerreich<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "139",
         "name": "Gaelikitten",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/37'>Sohm Al<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/37'>Sohm Al<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "140",
         "name": "Clockwork Barrow",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31199'>Clockwork Barrow<\/a> by carpenter.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31199'>Aufzieh-Schubkarre<\/a> vom Zimmerer hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "141",
         "name": "Lesser Panda",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/39'>The Aery<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/39'>Nest Des Drachen<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "142",
         "name": "Page 63",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/31'>The Great Gubal Library<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/31'>Gro\u00dfe Gubal-Bibliothek<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "143",
         "name": "Iron Dwarf",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31043'>Iron Dwarf<\/a> by armorer.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31043'>Eisenzwerg<\/a> vom Plattner hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -1245,19 +1244,19 @@
     {
         "id": "146",
         "name": "Gestahl",
-        "method": null,
-        "method_description_en": null,
+        "method": "Retainer Ventures",
+        "method_description_en": "Can be obtained by Waterside Exploration XVIII.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XVIII eines Fischer-Gehilfen.",
         "method_description_ja": null
     },
     {
         "id": "147",
         "name": "Steam-powered Gobwalker G-VII",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31044'>Steam-powered Gobwalker G-VII<\/a> by armorer.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31044'>Dampf-Stampfer<\/a> vom Plattner hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -1290,19 +1289,19 @@
     {
         "id": "151",
         "name": "Peridot Carbuncle",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE EMERALD]'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE EMERALD]'.",
         "method_description_ja": null
     },
     {
         "id": "152",
         "name": "Heliodor Carbuncle",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE TOPAZ]'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE TOPAZ]'.",
         "method_description_ja": null
     },
     {
@@ -1317,10 +1316,10 @@
     {
         "id": "155",
         "name": "Set Of Primogs",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'BEFORE THE FALL: FINAL FANTASY XIV Original Soundtrack [Music Disc]'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'BEFORE THE FALL: FINAL FANTASY XIV Original Soundtrack [Music Disc]'.",
         "method_description_ja": null
     },
     {
@@ -1335,19 +1334,19 @@
     {
         "id": "157",
         "name": "Paissa Brat",
-        "method": null,
-        "method_description_en": null,
+        "method": "Treasure Hunt",
+        "method_description_en": "Treasure Hunt Reward from a <a href='http:\/\/xivdb.com\/item\/12243'>Timeworn Dragonskin Map<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Belohnung aus einer <a href='http:\/\/de.xivdb.com\/item\/12243'>Vergilbte Drachenleder-Karte<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "158",
         "name": "Wind-up Illuminatus",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31292'>Wind-up Illuminatus<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31292'>Indigohand-Puppe<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -1362,64 +1361,64 @@
     {
         "id": "160",
         "name": "Wind-up Echidna",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in the extra Treasure Coffer at the Endboss in <a href='http:\/\/xivdb.com\/instance\/30029'>The Void Ark<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Extra Truhe beim Endboss in <a href='http:\/\/de.xivdb.com\/instance\/30029'>Nichts-Arche<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "161",
         "name": "Wind-up Relm",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY\u00ae XIV: HEAVENSWARD\u2122 The Art of Ishgard -Stone and Steel- [Art Book]'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY\u00ae XIV: HEAVENSWARD\u2122 The Art of Ishgard -Stone and Steel- [Art Book]'.",
         "method_description_ja": null
     },
     {
         "id": "162",
         "name": "Hunting Hawk",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Can be found in a silver\/gold treasure in 'Diadem'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich in einer Silbernen-\/Goldenenschatztruhe im 'Diadem'.",
         "method_description_ja": null
     },
     {
         "id": "163",
         "name": "Shalloweye",
-        "method": null,
-        "method_description_en": null,
+        "method": "Achievement Rewards",
+        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1382'>A Load Of Verminion II<\/a>. Win 50 Lord of Verminion player battle (RP) matches.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1382'>K\u00e4mpfer Der Trabanten II<\/a>. 50 Duelle gegen Spieler (um RP) beim Kampf der Trabanten gewonnen.",
         "method_description_ja": null
     },
     {
         "id": "164",
         "name": "Penguin Prince",
-        "method": null,
-        "method_description_en": null,
+        "method": "Achievement Rewards",
+        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1385'>The Road Of Verminion I<\/a>. Complete 4 different Lord of Verminion tournaments with double digit victories.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1385'>Gro\u00dffeldherr Der Kleinen I<\/a>. Bei vier Kampf der Trabanten-Turnieren je mindestens 10 Siege errungen und die Verg\u00fctung daf\u00fcr erhalten.",
         "method_description_ja": null
     },
     {
         "id": "165",
         "name": "Clockwork Twintania",
-        "method": null,
-        "method_description_en": null,
+        "method": "Achievement Rewards",
+        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1380'>Challenge Accepted<\/a>. Complete the first 24 Verminion Challenges.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1380'>Kraft Des Trabantierens<\/a>. Alle Trainingsabschnitte im Kampf der Trabanten abgeschlossen.",
         "method_description_ja": null
     },
     {
         "id": "166",
         "name": "Korpokkur Kid",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/41'>Saint Mocianne's Arboretum<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/41'>Sankt Mocianne-Arboretum<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1434,37 +1433,37 @@
     {
         "id": "168",
         "name": "Wind-up Ifrit",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31293'>Wind-up Ifrit<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31293'>Mini-Ifrit<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "169",
         "name": "Wind-up Garuda",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31471'>Wind-up Garuda<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31471'>Mini-Garuda<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "170",
         "name": "Wind-up Titan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31472'>Wind-up Titan<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31472'>Mini-Titan<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "171",
         "name": "Wind-up Leviathan",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31473'>Wind-up Leviathan<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31473'>Mini-Leviathan<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -1506,10 +1505,10 @@
     {
         "id": "176",
         "name": "Faustlet",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30037'>Alexander - The Burden Of The Son (Savage)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30037'>Alexander - Last Des Sohnes (episch)<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1524,55 +1523,55 @@
     {
         "id": "178",
         "name": "Calca",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in <a href='xivdb.com\/instance\/43'>The Antitower<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/43'>Antiturm<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "179",
         "name": "Brina",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in <a href='xivdb.com\/instance\/43'>The Antitower<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/43'>Antiturm<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "180",
         "name": "Morpho",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in <a href='xivdb.com\/instance\/42'>The Lost City Of Amdapor (Hard)<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/42'>Historisches Amdapor (schwer)<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "181",
         "name": "Poro Roggo",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67768'>The Word Of The Mother<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67768'>Zwiesprache Mit Dem Planeten<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "182",
         "name": "Spoony Bard",
-        "method": null,
-        "method_description_en": null,
+        "method": "Promotions",
+        "method_description_en": "Obtained by redeeming a code through purchasing the 'Heavensward: Final Fantasy XIV Original Soundtrack'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'Heavensward: Final Fantasy XIV Original Soundtrack'.",
         "method_description_ja": null
     },
     {
         "id": "183",
         "name": "Fenrir Pup",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Random drop after PvP Match in 'The Feast'.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Zuf\u00e4llige Belohnung am Ende eines PvP Spiels in 'The Feast'.",
         "method_description_ja": null
     },
     {
@@ -1587,19 +1586,19 @@
     {
         "id": "185",
         "name": "Wind-up Ramuh",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31859'>Wind-up Ramuh<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31859'>Mini-Ramuh<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
         "id": "186",
         "name": "Wind-up Shiva",
-        "method": null,
-        "method_description_en": null,
+        "method": "Crafting",
+        "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31860'>Wind-up Shiva<\/a> by weaver.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31860'>Mini-Shiva<\/a> vom Weber hergestellt werden.",
         "method_description_ja": null
     },
     {
@@ -1614,10 +1613,10 @@
     {
         "id": "188",
         "name": "Magic Bucket",
-        "method": null,
-        "method_description_en": null,
+        "method": "Gathering",
+        "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/spot\/40206'>South Banepool<\/a> in Coerthas Western Highlands.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=10406'>S\u00fcdlicher Bannpfuhl<\/a> im Westliches Hochland von Coerthas.",
         "method_description_ja": null
     },
     {
@@ -1632,10 +1631,10 @@
     {
         "id": "191",
         "name": "Wind-up Cheerleader",
-        "method": null,
-        "method_description_en": null,
+        "method": "Misc. Methods",
+        "method_description_en": "Can be purchased for 150,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Kann f\u00fcr 150.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00f6hlen-Pier<\/a> gekauft werden.",
         "method_description_ja": null
     },
     {
@@ -1650,19 +1649,19 @@
     {
         "id": "193",
         "name": "Wind-up Aymeric",
-        "method": null,
-        "method_description_en": null,
+        "method": "Quest Rewards",
+        "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67783'>Litany Of Peace<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67783'>Das Ende Eines Langen Weges<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "195",
         "name": "Wind-up Calofisteri",
-        "method": null,
-        "method_description_en": null,
+        "method": "Dungeons & Trials",
+        "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/30038'>The Weeping City Of Mhach<\/a>.",
         "method_description_fr": null,
-        "method_description_de": null,
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30038'>Die Stadt Der Tr\u00e4nen<\/a>.",
         "method_description_ja": null
     },
     {
