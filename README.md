@@ -11,8 +11,24 @@ This site has following features:
   - Showing which minions or mounts are missing
   - Show where to find them
   - Multi language support (will show most of the informations in all languages ffxiv exists)
+  - Browser as charakter to compare to other players
+  - Check which minions or mounts in your free company are missing
  
 Currently we under development and we will be happy if we get some help at translation all texts to frence or japanies.
+
+### Setup Guide:
+
+   1. Clone the repository to your webserver with 'git clone https://github.com/Ley21/ffxiv_minions.git'
+   2. Create a copy of config.php.sample and rename it to config.php.
+   3. Setup the config.php with a empty database, username and password and if your site will be ssl, and a secret key.
+   4. After setup config.php configure you webserver like descipted below.
+   5. For the first time call 
+      ```
+      'BASEURL/caller/init_database.php?update=true&type=minions&last=LAST_NUMBER&readonly=true&key=YOURSECRETKEY' => Import minions from xivdb
+      'BASEURL/caller/init_database.php?update=true&type=mounts&last=LAST_NUMBER&readonly=true&key=YOURSECRETKEY' => Import mounts from xivdb
+      'BASEURL/caller/init_database.php?update=true&readonly=true&key=YOURSECRETKEY' => Import methodes from json files.
+      ```
+   6. Now the site ist initialized and you can use it on your server.
 
 ### Webserver Configuration
 
@@ -35,11 +51,11 @@ location / {
 ```
 
 ### Version
-pre-pre-pre-alpha v0.00001
+v0.1 beta
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+FFXIV Collection uses a number of open source projects to work properly:
 
 * [bootstrap] - CSS Framework
 * [medoo] - MySql php framework
@@ -47,12 +63,7 @@ Dillinger uses a number of open source projects to work properly:
 
 ### Todos
 
- - Free Company Sites
- - Remove completly all language dependent texts
- - Complete minions.json
- - Tests on nginx
- - Update all charakters
- - Nice looking website
+ - Release on reddit
  - ...
 
 License
