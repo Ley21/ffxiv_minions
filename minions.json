@@ -48,27 +48,27 @@
         "id": "6",
         "name": "Mammet #003L",
         "method": "Achievement Rewards",
-        "method_description_en": "Complete Hunting Log for The Maelstrom. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/736'>Bump On A Log: Maelstrom<\/a>. Complete all Maelstrom entries in the hunting log.",
         "method_description_fr": null,
-        "method_description_de": "Vervollst\u00e4ndige das Bestarium des Mahlstroms. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/736'>Bestienj\u00e4ger: Mahlstrom<\/a>. Alle Eintr\u00e4ge f\u00fcr den Mahlstrom im Bestiarium erledigt.",
         "method_description_ja": null
     },
     {
         "id": "7",
         "name": "Mammet #003G",
         "method": "Achievement Rewards",
-        "method_description_en": "Complete Hunting Log for the Order of the Twin Adder. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/736'>Bump On A Log: Order Of The Twin Adder<\/a>. Complete all Order of the Twin Adder entries in the hunting log.",
         "method_description_fr": null,
-        "method_description_de": "Vervollst\u00e4ndige das Bestarium der Bruderschaft der Morgenviper. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/736'>Bestienj\u00e4ger: Bruderschaft<\/a>. Alle Eintr\u00e4ge f\u00fcr die Bruderschaft der Morgenviper im Bestiarium erledigt.",
         "method_description_ja": null
     },
     {
         "id": "8",
         "name": "Mammet #003U",
         "method": "Achievement Rewards",
-        "method_description_en": "Complete Hunting Log for The Immortal Flames. Achievement Rewards can be claimed from <a href='http:\/\/xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/736'>Bump On A Log: Immortal Flames<\/a>. Complete all Immortal Flames entries in the hunting log.",
         "method_description_fr": null,
-        "method_description_de": "Vervollst\u00e4ndige das Bestarium der Legion der Unsterblichen. Belohnungen aus Errungenschaften k\u00f6nnen bei <a href='http:\/\/de.xivdb.com\/npc\/1008145\/Jonathas'>Jonathas<\/a>. abgeholt werden.",
+        "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/736'>Bestienj\u00e4ger: Legion<\/a>. Alle Eintr\u00e4ge f\u00fcr die Legion der Unsterblichen im Bestiarium erledigt.",
         "method_description_ja": null
     },
     {
@@ -354,7 +354,7 @@
         "id": "40",
         "name": "Fledgling Apkallu",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/929'>Out Of Sight Out Of Mind<\/a>. Complete entries 1-80 in your sightseeing log.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/929'>Out Of Sight Out Of Mind<\/a>. Complete entries 1-80 in your sightseeing log.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/929'>Weltenbummler<\/a>. Die sehenswerten Orte 001-080 aus dem Eorzea Incognita entdeckt.",
         "method_description_ja": null
@@ -615,7 +615,7 @@
         "id": "75",
         "name": "Princely Hatchling",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/859'>Leaving A Good Impression II<\/a>. Receive 50 player commendations.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/859'>Leaving A Good Impression II<\/a>. Receive 50 player commendations.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/859'>Einen Guten Eindruck Hinterlassen II<\/a>. 50 Ehrungen zum wertvollsten Spieler erhalten.",
         "method_description_ja": null
@@ -714,45 +714,45 @@
         "id": "86",
         "name": "Onion Prince",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=52'>here<\/a>.",
+        "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=52'>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=52'>hier<\/a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=52'>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "87",
         "name": "Eggplant Knight",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=47'>here<\/a>.",
+        "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=47'>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=47'>hier<\/a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=47'>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "88",
         "name": "Garlic Jester",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=44'>here<\/a>.",
+        "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=44'>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=44'>hier<\/a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=44'>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "89",
         "name": "Tomato King",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=50'>here<\/a>.",
+        "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=50'>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=50'>hier<\/a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=50'>hier<\/a>.",
         "method_description_ja": null
     },
     {
         "id": "90",
         "name": "Mandragora Queen",
         "method": "Gardening",
-        "method_description_en": "Can be obtained by cross breeding of two seeds in an garden of a house. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=45'>here<\/a>.",
+        "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=45'>here<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen in einem Beet eines Hauses. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=45'>hier<\/a>.",
+        "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=45'>hier<\/a>.",
         "method_description_ja": null
     },
     {
@@ -849,9 +849,9 @@
         "id": "101",
         "name": "Puff Of Darkness",
         "method": "Dungeons & Trials",
-        "method_description_en": "Found in the Treasure Coffer of the last boss in <a href='http:\/\/xivdb.com\/instance\/30020'>The World of Darkness<\/a>.",
+        "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30020'>The World of Darkness<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Aus der Schatzkiste beim letzten Gegner in <a href='http:\/\/de.xivdb.com\/instance\/30020'>Die Welt der Dunkelheit<\/a>.",
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30020'>Die Welt der Dunkelheit<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1002,7 +1002,7 @@
         "id": "118",
         "name": "Wind-up Louisoix",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1040'>Out Of A Bind I<\/a>. Complete the Final Coil of Bahamut.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1040'>Out Of A Bind I<\/a>. Complete the Final Coil of Bahamut.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1040'>Am Ende Der Schatten I<\/a>. 1 Mal Verschlungene Schatten von Bahamut - Finale erfolgreich abgeschlossen.",
         "method_description_ja": null
@@ -1362,9 +1362,9 @@
         "id": "160",
         "name": "Wind-up Echidna",
         "method": "Dungeons & Trials",
-        "method_description_en": "Found in the extra Treasure Coffer at the Endboss in <a href='http:\/\/xivdb.com\/instance\/30029'>The Void Ark<\/a>.",
+        "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30029'>The Void Ark<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Extra Truhe beim Endboss in <a href='http:\/\/de.xivdb.com\/instance\/30029'>Nichts-Arche<\/a>.",
+        "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30029'>Nichts-Arche<\/a>.",
         "method_description_ja": null
     },
     {
@@ -1389,7 +1389,7 @@
         "id": "163",
         "name": "Shalloweye",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1382'>A Load Of Verminion II<\/a>. Win 50 Lord of Verminion player battle (RP) matches.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1382'>A Load Of Verminion II<\/a>. Win 50 Lord of Verminion player battle (RP) matches.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1382'>K\u00e4mpfer Der Trabanten II<\/a>. 50 Duelle gegen Spieler (um RP) beim Kampf der Trabanten gewonnen.",
         "method_description_ja": null
@@ -1398,7 +1398,7 @@
         "id": "164",
         "name": "Penguin Prince",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1385'>The Road Of Verminion I<\/a>. Complete 4 different Lord of Verminion tournaments with double digit victories.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1385'>The Road Of Verminion I<\/a>. Complete 4 different Lord of Verminion tournaments with double digit victories.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1385'>Gro\u00dffeldherr Der Kleinen I<\/a>. Bei vier Kampf der Trabanten-Turnieren je mindestens 10 Siege errungen und die Verg\u00fctung daf\u00fcr erhalten.",
         "method_description_ja": null
@@ -1407,7 +1407,7 @@
         "id": "165",
         "name": "Clockwork Twintania",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1380'>Challenge Accepted<\/a>. Complete the first 24 Verminion Challenges.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1380'>Challenge Accepted<\/a>. Complete the first 24 Verminion Challenges.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1380'>Kraft Des Trabantierens<\/a>. Alle Trainingsabschnitte im Kampf der Trabanten abgeschlossen.",
         "method_description_ja": null
@@ -1616,7 +1616,7 @@
         "method": "Gathering",
         "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/spot\/40206'>South Banepool<\/a> in Coerthas Western Highlands.",
         "method_description_fr": null,
-        "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=10406'>S\u00fcdlicher Bannpfuhl<\/a> im Westliches Hochland von Coerthas.",
+        "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=40206'>S\u00fcdlicher Bannpfuhl<\/a> im Westliches Hochland von Coerthas geangelt werden.",
         "method_description_ja": null
     },
     {
@@ -1632,9 +1632,9 @@
         "id": "191",
         "name": "Wind-up Cheerleader",
         "method": "Misc. Methods",
-        "method_description_en": "Can be purchased for 150,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
+        "method_description_en": "Can be purchased for 15,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
         "method_description_fr": null,
-        "method_description_de": "Kann f\u00fcr 150.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00f6hlen-Pier<\/a> gekauft werden.",
+        "method_description_de": "Kann f\u00fcr 15.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00f6hlen-Pier<\/a> gekauft werden.",
         "method_description_ja": null
     },
     {

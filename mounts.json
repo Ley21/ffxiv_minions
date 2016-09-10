@@ -104,7 +104,7 @@
         "name": "Gilded Magitek Armor",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/862'>Everybody's Darling<\/a>, for recieved 500 player commendations.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/862'>Everybody's Darling<\/a>, for recieved 500 player commendations.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/862'>Hans Dampf In Allen Gassen<\/a>, f\u00fcr das erhalten von 500 Ehrungen zum wertvollsten Spieler.",
         "method_description_ja": null
@@ -194,7 +194,7 @@
         "name": "Warlion",
         "can_fly": "0",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/921'>But Somebody's Gotta Do It (Paladin)<\/a>. Completing 200 high-level full party duties as a paladin.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/921'>But Somebody's Gotta Do It (Paladin)<\/a>. Completing 200 high-level full party duties as a paladin.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/921'>Aber Einer Muss Ihn Machen (Paladin)<\/a>. Abschlie\u00dfen von 200 hochstufigen vollen Trupp (acht Spieler) Inhalten als Paladin.",
         "method_description_ja": null
@@ -204,7 +204,7 @@
         "name": "Warbear",
         "can_fly": "0",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/924'>But Somebody's Gotta Do It (Warrior)<\/a>. Completing 200 high-level full party duties as a warrior.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/924'>But Somebody's Gotta Do It (Warrior)<\/a>. Completing 200 high-level full party duties as a warrior.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/924'>Aber Einer Muss Ihn Machen (Krieger)<\/a>. Abschlie\u00dfen von 200 hochstufigen vollen Trupp (acht Spieler) Inhalten als Krieger.",
         "method_description_ja": null
@@ -234,7 +234,7 @@
         "name": "Storm Warsteed",
         "can_fly": "0",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/939'>A Line In The Storm IV<\/a>. Winning 100 frontline matches for the Maelstrom.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/939'>A Line In The Storm IV<\/a>. Winning 100 frontline matches for the Maelstrom.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/939'>Triumph Des Meeres IV<\/a>. An der Front 100 Siege f\u00fcr den Mahlstrom erringen.",
         "method_description_ja": null
@@ -244,7 +244,7 @@
         "name": "Serpent Warsteed",
         "can_fly": "0",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/945'>A Line In The Glade IV<\/a>. Winning 100 frontline matches for the Order of the Twin Adder.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/945'>A Line In The Glade IV<\/a>. Winning 100 frontline matches for the Order of the Twin Adder.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/945'>Triumph Des Waldes IV<\/a>. An der Front 100 Siege f\u00fcr die Bruderschaft der Morgenviper erringen.",
         "method_description_ja": null
@@ -254,7 +254,7 @@
         "name": "Flame Warsteed",
         "can_fly": "0",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/951'>A Line In The Sand IV<\/a>. Winning 100 frontline matches for the Immortal Flames.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/951'>A Line In The Sand IV<\/a>. Winning 100 frontline matches for the Immortal Flames.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/951'>Triumph Der W\u00fcste IV<\/a>. An der Front 100 Siege f\u00fcr die Legion der Unsterblichen erringen.",
         "method_description_ja": null
@@ -304,7 +304,7 @@
         "name": "Parade Chocobo",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1036'>Leaving A Better Impression II<\/a>. Receive 3,000 player commendations.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1036'>Leaving A Better Impression II<\/a>. Receive 3,000 player commendations.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1036'>Einen Besseren Eindruck Hinterlassen II<\/a>. 3.000 Ehrungen zum wertvollsten Spieler erhalten.",
         "method_description_ja": null
@@ -344,7 +344,7 @@
         "name": "Logistics System",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1132'>Behind Enemy Lines I<\/a>. Guide any of the three Grand Companies to a total of 200 Frontline victories.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1132'>Behind Enemy Lines I<\/a>. Guide any of the three Grand Companies to a total of 200 Frontline victories.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1132'>Sieg Auf Ganzer Linie<\/a>. Einen der drei Stadtstaaten zu 200 Siegen an der Front gef\u00fchrt.",
         "method_description_ja": null
@@ -414,7 +414,7 @@
         "name": "War Panther",
         "can_fly": "0",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1195'>But Somebody's Gotta Do It (Dark Knight)<\/a>. Completing 200 high-level full party duties as a dark knight.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1195'>But Somebody's Gotta Do It (Dark Knight)<\/a>. Completing 200 high-level full party duties as a dark knight.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1195'>Aber Einer Muss Ihn Machen (Dunkelritter)<\/a>. Abschlie\u00dfen von 200 hochstufigen vollen Trupp (acht Spieler) Inhalten als Dunkelritter.",
         "method_description_ja": null
@@ -564,7 +564,7 @@
         "name": "Gloria-class Airship",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1444'>You Are What You Eat IV<\/a>. Triumph in 200 matches at the Feast.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1444'>You Are What You Eat IV<\/a>. Triumph in 200 matches at the Feast.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1444'>Ein Gefundenes Fressen IV<\/a>. 200 K\u00e4mpfe in 'The Feast' gewonnen.",
         "method_description_ja": null
@@ -584,7 +584,7 @@
         "name": "Astrope",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1604'>I Hope Mentor Will Notice Me VI<\/a>. Complete 2,000 duties via Duty Roulette: Mentor.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1604'>I Hope Mentor Will Notice Me VI<\/a>. Complete 2,000 duties via Duty Roulette: Mentor.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1604'>Sch\u00fctzenhilfe VI<\/a>. 2.000 Inhalte \u00fcber Zufallsinhalt: Mentor abgeschlossen.",
         "method_description_ja": null
@@ -594,7 +594,7 @@
         "name": "Fat Moogle",
         "can_fly": "1",
         "method": "Mogry Shop Purchase",
-        "method_description_en": "Purchasable from the Mog Station for all charakters.",
+        "method_description_en": "Purchasable from the Mog Station for all characters.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr alle Charaktere.",
         "method_description_ja": null
@@ -614,7 +614,7 @@
         "name": "Whisper-go",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1573'>You Must Needs Befriend Them All<\/a> during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1573'>You Must Needs Befriend Them All<\/a> during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1573'>Multimedailleur<\/a> w\u00e4hrend des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null
@@ -634,7 +634,7 @@
         "name": "Aerodynamics System",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1563'>In A Blaze Of Glory V<\/a>. Guide any of the three Grand Companies to a total of 100 Fields of Glory victories.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1563'>In A Blaze Of Glory V<\/a>. Guide any of the three Grand Companies to a total of 100 Fields of Glory victories.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1563'>Ehre Wem Ehre Geb\u00fchrt V<\/a>. Einen der drei Stadtstaaten zu 100 Siegen auf dem Feld der Ehre gef\u00fchrt.",
         "method_description_ja": null
@@ -654,7 +654,7 @@
         "name": "Whisper A-go-go",
         "can_fly": "1",
         "method": "Achievement Rewards",
-        "method_description_en": "Reward for obtain the achievement <a href='http:\/\/xivdb.com\/achievement\/1539'>More Inventory Slots, Please<\/a> during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
+        "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1539'>More Inventory Slots, Please<\/a> during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
         "method_description_fr": null,
         "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1539'>Kuriosit\u00e4ten Einer Fremden Welt<\/a> w\u00e4hrend des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
         "method_description_ja": null

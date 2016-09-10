@@ -2,7 +2,7 @@
 
     $language_texts = array();
     
-    $language_texts['title'] = array("en"=>"FFXIV Collections","fr"=>"","de"=>"FFXIV Collections","ja"=>"");
+    $language_texts['title'] = array("en"=>"FFXIV Collector","fr"=>"","de"=>"FFXIV Collector","ja"=>"");
     $language_texts['subtitle'] = array("en"=>"Minions & Mounts Collection Site","fr"=>"","de"=>"Begleiter & Reittiere Sammlerseite","ja"=>"");
     $language_texts['home'] = array("en"=>"Home","fr"=>"","de"=>"Startseite","ja"=>"");
     $language_texts['ranking'] = array("en"=>"Ranking","fr"=>"","de"=>"Rangliste","ja"=>"");
@@ -68,7 +68,7 @@
         array(),
         "de"=>
         array("Alle","Gil","MGP","Allagische Steine","Staatstaler",
-            "Mogry Shop","Dungeons & Prüfungen","Handwerken","Sammeln","Gärtnern",
+            "Mogry Shop","Dungeons & Prüfungen","Handwerken","Sammeln","Gartenbau",
             "Errungenschafts Belohnung","FATE Belohnung","Auftrags Belohnung","Saisonale Belohnung",
             "Veteranen Belohnung","Schatzkarten","Schatzkarten Dungeon","Hohe Jagd","Aktionen",
             "Gehilfen Erkundung","Sonstige Methoden"),
