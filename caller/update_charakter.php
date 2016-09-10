@@ -10,7 +10,8 @@
     $server = $_GET["server"];
     
     if($numbers == "true"){
-        $players = $database->select("players",["id"],"WHERE DATE_SUB(CURDATE(),INTERVAL 14 DAY) >= last_update_date");
+        $condition = $all == true ? "" : "WHERE DATE_SUB(CURDATE(),INTERVAL 14 DAY) >= last_update_date";
+        $players = $database->select("players",["id"],$condition);
         foreach ($players as $player) {
             echo "<a>".$player['id']."</a></br>";
             
