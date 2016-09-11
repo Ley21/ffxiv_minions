@@ -624,6 +624,7 @@
         }
     }
     
+    
     function read_write_methode($table,$file,$readOnly){
         global $database;
         $logs;
@@ -660,12 +661,77 @@
             $list = $table == "mounts" ?  ["id","name","can_fly","method","method_description_en","method_description_fr",
                 "method_description_de","method_description_ja"] : ["id","name","method","method_description_en","method_description_fr",
                 "method_description_de","method_description_ja"];
+                
             //Save the database in the file / update new minions to file
             $minions = $database->select($table,$list);
             $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
             file_put_contents($file, $json_informations);
         }
         $logs .= "The methodes for table '$table' have been updated.</br></br>";
+        return $logs;
+    }
+    
+    function read_write_methode_new($table,$file,$readOnly){
+        global $database;
+        $logs;
+        
+        $method_table = $table."_method";
+        //Read local file
+        if(file_exists($file)){
+            $json = file_get_contents($file);
+            $read_collectables = json_decode($json);
+            
+            //$missing = 0;
+            //Update mehtode from local file
+            foreach($read_collectables as $coll){
+                $logs .= "-> $table - $coll->id updated.</br>";
+                
+
+                if($table == "mounts"){
+                    $database->update($table,["can_fly" => $coll->can_fly],["AND"=>["m_id[=]"=>$coll->id,"method[=]"=>$j_method]]);
+                }
+                foreach($coll->methodes as $j_method){
+                    $logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
+                    $data = ["m_id" => $coll->id,"method" => $j_method->method,
+                        "method_description_en" => $j_method->method_description_en,
+                        "method_description_fr" => $j_method->method_description_fr,
+                        "method_description_de" => $j_method->method_description_de,
+                        "method_description_ja" => $j_method->method_description_ja];
+                    $method = $database->get($method_table,["method"],["m_id[=]"=>$coll->id]);
+                    if(empty($method)){
+                        $database->insert($method_table,$data);
+                    }else{
+                        $database->update($method_table,$data,["AND"=>["m_id[=]"=>$coll->id,"method[=]"=>$j_method->method]]);
+                    }
+                }
+                if(empty($coll->methodes)){
+                    $missing++;
+                }
+            }
+            $logs .= "===> $table is missing '$missing' methods.</br>";
+        }
+        else{
+            $logs .= "File '$file' does not exists. Could not import methodes.</br>";
+        }
+        
+        if(!$readOnly){
+            $columns = $table == "minions" ?  ["id","name"] : ["id","name","can_fly"];
+            $objects = $database->select($table,$columns);
+            $methodes = array();
+            foreach($objects as $obj){
+                $obj_methodes = $database->select($method_table,["method","method_description_en",
+                        "method_description_fr","method_description_de","method_description_ja"],["m_id[=]"=>$obj["id"]]);
+                $obj_methodes = $obj_methodes ? $obj_methodes : array("method"=>null,"method_description_en"=>null,
+                        "method_description_fr"=>null,"method_description_de"=>null,"method_description_ja"=>null);
+                $method = $table == "minions" ? array("id"=>$obj["id"],"name"=>$obj["name"],"methodes"=>$obj_methodes) 
+                            : array("id"=>$obj["id"],"name"=>$obj["name"],"can_fly" => $obj["can_fly"],"methodes"=>$obj_methodes) ;
+                $methodes[] = $method;
+            }
+            $json_informations = json_encode($methodes,JSON_PRETTY_PRINT);
+            file_put_contents($file, $json_informations);  
+        }
+        
+        $logs .= "The methodes for table '$method_table' have been updated.</br></br>";
         return $logs;
     }
 ?>

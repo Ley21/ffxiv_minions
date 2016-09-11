@@ -24,11 +24,6 @@ $database->query("CREATE TABLE minions (
         description_fr TEXT NOT NULL,
         description_de TEXT NOT NULL,
         description_ja TEXT NOT NULL,
-        method VARCHAR(100),
-        method_description_en TEXT,
-        method_description_fr TEXT,
-        method_description_de TEXT,
-        method_description_ja TEXT,
         PRIMARY KEY ( id )
         );");
         
@@ -46,11 +41,6 @@ $database->query("CREATE TABLE mounts (
         description_de TEXT NOT NULL,
         description_ja TEXT NOT NULL,
         can_fly tinyint(1),
-        method VARCHAR(100),
-        method_description_en TEXT,
-        method_description_fr TEXT,
-        method_description_de TEXT,
-        method_description_ja TEXT,
         PRIMARY KEY ( id )
         );");
 $database->query("CREATE TABLE players (
@@ -85,6 +75,28 @@ $database->query("CREATE TABLE player_mounts (
         FOREIGN KEY (p_id) REFERENCES players(id),
         FOREIGN KEY (m_id) REFERENCES mounts(id)
         );");
+        
+$database->query("CREATE TABLE minions_method (
+        m_id INT NOT NULL,
+        method VARCHAR(100),
+        method_description_en TEXT,
+        method_description_fr TEXT,
+        method_description_de TEXT,
+        method_description_ja TEXT,
+        primary key (m_id, method),
+        FOREIGN KEY (m_id) REFERENCES minions(id)
+        );");
+        
+$database->query("CREATE TABLE mounts_method (
+        m_id INT NOT NULL,
+        method VARCHAR(100),
+        method_description_en TEXT,
+        method_description_fr TEXT,
+        method_description_de TEXT,
+        method_description_ja TEXT,
+        primary key (m_id, method),
+        FOREIGN KEY (m_id) REFERENCES mounts(id)
+        );");
 $updateMinions = $_GET["update"];
 
 if ($updateMinions) {
@@ -112,8 +124,10 @@ if ($updateMinions) {
 		}
 	}
 
-	echo read_write_methode("minions","../minions.json",$_GET["readonly"]);
-	echo read_write_methode("mounts","../mounts.json",$_GET["readonly"]);
+	//echo read_write_methode("minions","../minions.json",$_GET["readonly"]);
+	//echo read_write_methode("mounts","../mounts.json",$_GET["readonly"]);
+	echo read_write_methode_new("minions","../minions.json",$_GET["readonly"]);
+	echo read_write_methode_new("mounts","../mounts.json",$_GET["readonly"]);
 }
 exit;
 ?>
