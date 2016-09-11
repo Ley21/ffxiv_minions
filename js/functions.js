@@ -190,18 +190,18 @@ function browserView(){
             if ( $( "#mount_"+i ).length ) {
              var in_array = $.inArray(m_id,obj.mounts);
              if(in_array > -1){
-                 $("#mount_"+i).addClass( "success");
+                 $("[id='mount_"+i+"']").addClass( "success");
              }
              else{
-                 $("#mount_"+i).addClass( "danger");
+                 $("[id='mount_"+i+"']").addClass( "danger");
              }
             }
-            if ( $( "#minion_"+i ).length ) {
+            if ( $("[id='minion_"+i+"']" ).length ) {
              if($.inArray(m_id,obj.minions) > -1){
-                 $("#minion_"+i).addClass( "success");
+                 $("[id='minion_"+i+"']").addClass( "success");
              }
              else{
-                 $("#minion_"+i).addClass( "danger");
+                 $("[id='minion_"+i+"']").addClass( "danger");
              }
             }
         }

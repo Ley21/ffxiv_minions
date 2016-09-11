@@ -89,6 +89,7 @@
         
         
         $(document).ready(function() {
+            browserView()
             var pathArray = window.location.pathname.split( '/' );
             var data = decodeURIComponent(window.location.search.substring(1));
             var last = pathArray[pathArray.length - 1];
@@ -342,7 +343,8 @@ echo "</center>";
     </div>
       <footer style="background-color:rgba(255, 255, 255, 0.5);" class="rounded">
         </br>
-    <p class="text-center">FFXIV Collections: © 2016 Andreas Spuling</p>
+    <p class="text-center">FFXIV Collector: © 2016 Andreas Spuling</p>
+    <p class="text-center"><a href='/char?lang=en&id=2215586'>Ley Sego</a> on Shiva</p>
     <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     
   </footer>
