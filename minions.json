@@ -724,6 +724,13 @@
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIII eines Minenarbeiter-Gehilfen oder eines Gehilfen mit einer Kampfklasse.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
             }
         ]
     },
@@ -958,6 +965,13 @@
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20\/Brayflox's+Longstop+(Hard)'>Br\u00fcllvolx' Langrast (schwer)<\/a>.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
             }
         ]
     },
@@ -1174,6 +1188,13 @@
         "name": "Nutkin",
         "methodes": [
             {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Hunt",
                 "method_description_en": "Treasure Hunt Reward from a <a href='http:\/\/xivdb.com\/item\/8156'>Unhidden Leather Map<\/a>.",
                 "method_description_fr": null,
@@ -1373,6 +1394,13 @@
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/26\/The+Sunken+Temple+Of+Qarn+(Hard)'>The Sunken Temple Of Qarn (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/26\/The+Sunken+Temple+Of+Qarn+(Hard)'>Versunkener Tempel Von Qarn (schwer)<\/a>.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1647,6 +1675,13 @@
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/34'>Erzbasilika<\/a>.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
             }
         ]
     },
@@ -1686,6 +1721,13 @@
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/35'>Die Fraktal-Kontinuum<\/a>.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
             }
         ]
     },
@@ -1699,6 +1741,13 @@
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/33'>Nimmerreich<\/a>.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
             }
         ]
     },
@@ -1711,6 +1760,13 @@
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/37'>Sohm Al<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/37'>Sohm Al<\/a>.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1738,6 +1794,13 @@
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/39'>Nest Des Drachen<\/a>.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
             }
         ]
     },
@@ -1750,6 +1813,13 @@
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/31'>The Great Gubal Library<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/31'>Gro\u00dfe Gubal-Bibliothek<\/a>.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1927,6 +1997,13 @@
         "id": "157",
         "name": "Paissa Brat",
         "methodes": [
+            {
+                "method": "Treasure Dungeons",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
             {
                 "method": "Treasure Hunt",
                 "method_description_en": "Treasure Hunt Reward from a <a href='http:\/\/xivdb.com\/item\/12243'>Timeworn Dragonskin Map<\/a>.",

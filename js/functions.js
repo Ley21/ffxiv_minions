@@ -1,7 +1,7 @@
 var languageTexts = 
 {
-    'update_message': {en:"Charakter will be update from lodestone",fr:"",de:"Der Charakter wird vom Lodestone aktuallisiert",ja:""},
-    'load_char_message':{en:"Loading Charakter",fr:"",de:"Charakter wird geladen",ja:""},
+    'update_message': {en:"Character will be update from lodestone",fr:"",de:"Der Charakter wird vom Lodestone aktuallisiert",ja:""},
+    'load_char_message':{en:"Loading Character",fr:"",de:"Charakter wird geladen",ja:""},
     'load_ranking':{en:"Loading Ranking",fr:"",de:"Rangliste wird geladen",ja:""},
     'load_freecompany':{en:"Loading Free Company Ranking",fr:"",de:"Freie Gesellschafts Rangliste wird geladen",ja:""},
     'load_minions':{en:"Loading Minions",fr:"",de:"Begleiter werden geladen",ja:""},

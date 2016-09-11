@@ -31,7 +31,9 @@
         return $title;
     }
     
-    function create_table($title,$sql_data,$type){
+    function create_table($title,$sql_data,$type,$methodName=""){
+        global $database;
+        
         $lang = get_lang();
         $count = count($sql_data);
         $table = '<div class="panel panel-primary">
@@ -52,44 +54,58 @@
 
         $table .= "<tbody>";
         foreach($sql_data as $minion_data){
-            $name = ucwords($minion_data['name_'.$lang]);
             $m_id = $minion_data['id'];
+            $condition = empty($methodName) || $methodName == "All" ? ["m_id[=]"=>$m_id]: ["AND"=>["m_id[=]"=>$m_id,"method[=]"=>$methodName]];
+            $obj_methodes = $database->select($type == "minion" ? "minions_method" : "mounts_method",
+                "*",$condition);
+            
+            $name = ucwords($minion_data['name_'.$lang]);
+            
             $icon_url = $minion_data['icon_url'];
             $patch = $minion_data['patch'];
+            $rowspan = empty($obj_methodes) ? 1 : count($obj_methodes);
             
-            $methode_lang = $minion_data['method_description_'.get_lang()];
-            $methode = empty($methode_lang) ? $minion_data['method_description_en'] : $methode_lang;
-                
-            $methode_name = $minion_data['method'] ;
-            if(!empty($methode_name)){
-                $methodes_en = get_language_text("methodes","en");
-                $m_index = array_search($methode_name,$methodes_en);
-                $methode_name = get_language_text("methodes")[$m_index];
-            }
+            
             $dom_id = $type."_".$m_id;
-            $table .= "<tr id='$dom_id'>";
-            $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
-            $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
-            
-            $table .= "<td class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
-            $table .= "<td class='shrink'>$patch</td>";
-            if($type == "mount"){
-                $can_fly =  $minion_data['can_fly'];
-                if($can_fly == 0){
-                    $can_fly = get_language_text("no");
-                }
-                elseif($can_fly == 1){
-                    $can_fly = get_language_text("yes");
-                }
-                else{
-                    $can_fly = get_language_text("unknown");
-                }
+            $method_count = 0;
+            foreach($obj_methodes as $method){
+                $table .= "<tr id='$dom_id'>";
+                $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
+                $table .= "<td name='icon' class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
                 
-                $table .= "<td class='shrink'>$can_fly</td>";
+                $table .=  "<td name='title' class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
+                $table .=  "<td name='patch' class='shrink'>$patch</td>";
+                if($type == "mount"){
+                    $can_fly =  $minion_data['can_fly'];
+                    if($can_fly == 0){
+                        $can_fly = get_language_text("no");
+                    }
+                    elseif($can_fly == 1){
+                        $can_fly = get_language_text("yes");
+                    }
+                    else{
+                        $can_fly = get_language_text("unknown");
+                    }
+                    
+                    $table .= "<td  class='shrink'>$can_fly</td>";
+                }
+            
+                
+                $method_lang = $method['method_description_'.get_lang()];
+                $method_desc = empty($method_lang) ? $method['method_description_en'] : $method_lang;
+                $method_name = $method['method'] ;
+                if(!empty($method_name)){
+                    $methodes_en = get_language_text("methodes","en");
+                    $m_index = array_search($method_name,$methodes_en);
+                    $method_name = get_language_text("methodes")[$m_index];
+                }
+                $table .= "<td class='shrink'>$method_name</td>";
+                $table .= "<td class='expand'>$method_desc</td>";
+                $table .= "</tr>";
+                $method_count++;
             }
-            $table .= "<td class='shrink'>$methode_name</td>";
-            $table .= "<td class='expand'>$methode</td>";
-            $table .= "</tr>";
+            
+            
         }
         $table .= "</tbody></table></div>
         </div>";
@@ -398,7 +414,7 @@
         $class = $type."_methode";
         foreach($methodes as $i=>$methode){
             $mehtod_en = $methodes_en[$i];
-            $count = $database->count($type,["method[=]"=>$mehtod_en]);
+            $count = $database->count($type."_method",["method[=]"=>$mehtod_en]);
             if($count > 0 || $mehtod_en == "All"){
                 $methode_get = urlencode ($mehtod_en);
                 $dropdown .= "<li><a id='$methode_get' class='$class'>$methode</a></li>";
@@ -624,7 +640,7 @@
         }
     }
     
-    
+    /*
     function read_write_methode($table,$file,$readOnly){
         global $database;
         $logs;
@@ -670,7 +686,7 @@
         $logs .= "The methodes for table '$table' have been updated.</br></br>";
         return $logs;
     }
-    
+    */
     function read_write_methode_new($table,$file,$readOnly){
         global $database;
         $logs;
@@ -697,7 +713,7 @@
                         "method_description_fr" => $j_method->method_description_fr,
                         "method_description_de" => $j_method->method_description_de,
                         "method_description_ja" => $j_method->method_description_ja];
-                    $method = $database->get($method_table,["method"],["m_id[=]"=>$coll->id]);
+                    $method = $database->get($method_table,["method"],["AND"=>["m_id[=]"=>$coll->id,"method[=]"=>$j_method->method]]);
                     if(empty($method)){
                         $database->insert($method_table,$data);
                     }else{
