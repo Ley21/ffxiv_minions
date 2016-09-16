@@ -22,13 +22,9 @@ Currently we under development and we will be happy if we get some help at trans
    2. Create a copy of config.php.sample and rename it to config.php.
    3. Setup the config.php with a empty database, username and password and if your site will be ssl, and a secret key.
    4. After setup config.php configure you webserver like descipted below.
-   5. For the first time call 
-      ```
-      'BASEURL/caller/init_database.php?update=true&type=minions&last=LAST_NUMBER&readonly=true&key=YOURSECRETKEY' => Import minions from xivdb
-      'BASEURL/caller/init_database.php?update=true&type=mounts&last=LAST_NUMBER&readonly=true&key=YOURSECRETKEY' => Import mounts from xivdb
-      'BASEURL/caller/init_database.php?update=true&readonly=true&key=YOURSECRETKEY' => Import methodes from json files.
-      ```
-   6. Now the site ist initialized and you can use it on your server.
+   5. For the first start open the main page and click on 'Update' in the footer. 
+   6. Enter your secret key, select read methodes and click on update.
+   7. After some time the site will be finish. After reload all minions and mounts will be on the page.
 
 ### Webserver Configuration
 
