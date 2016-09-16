@@ -646,53 +646,97 @@
         }
     }
     
-    /*
-    function read_write_methode($table,$file,$readOnly){
+    function create_database(){
         global $database;
-        $logs;
-        //Read local file
-        $json = file_get_contents($file);
-        $read_collectables = json_decode($json);
         
-        $missing = 0;
-        //Update mehtode from local file
-        foreach($read_collectables as $coll){
-            $logs .= "-> $table - $coll->id updated.</br>";
-            $logs .= "--> Methode: $coll->method || Desciption: - $coll->method_description_en.</br>";
-            $data = $table == "mounts" ? [
-                "method" => $coll->method,
-                "can_fly" => $coll->can_fly,
-                "method_description_en" => $coll->method_description_en,
-                "method_description_fr" => $coll->method_description_fr,
-                "method_description_de" => $coll->method_description_de,
-                "method_description_ja" => $coll->method_description_ja] :
-                    [
-                "method" => $coll->method,
-                "method_description_en" => $coll->method_description_en,
-                "method_description_fr" => $coll->method_description_fr,
-                "method_description_de" => $coll->method_description_de,
-                "method_description_ja" => $coll->method_description_ja];
-            $database->update($table,$data,["id[=]"=>$coll->id]);
-            if(empty($coll->method)){
-                $missing++;
-            }
-        }
-        $logs .= "===> $table is missing '$missing' methods.</br>";
-        if(!$readOnly){
-            $logs .= "</br>Write database to file.</br";
-            $list = $table == "mounts" ?  ["id","name","can_fly","method","method_description_en","method_description_fr",
-                "method_description_de","method_description_ja"] : ["id","name","method","method_description_en","method_description_fr",
-                "method_description_de","method_description_ja"];
+        $database->query("CREATE TABLE minions (
+            id INT NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            icon_url VARCHAR(255) NOT NULL,
+            patch VARCHAR(50) NOT NULL,
+            name_en VARCHAR(100) NOT NULL,
+            name_fr VARCHAR(100) NOT NULL,
+            name_de VARCHAR(100) NOT NULL,
+            name_ja VARCHAR(100) NOT NULL,
+            description_en TEXT NOT NULL,
+            description_fr TEXT NOT NULL,
+            description_de TEXT NOT NULL,
+            description_ja TEXT NOT NULL,
+            PRIMARY KEY ( id )
+            );");
+        
+        $database->query("CREATE TABLE mounts (
+            id INT NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            icon_url VARCHAR(255) NOT NULL,
+            patch VARCHAR(50) NOT NULL,
+            name_en VARCHAR(100) NOT NULL,
+            name_fr VARCHAR(100) NOT NULL,
+            name_de VARCHAR(100) NOT NULL,
+            name_ja VARCHAR(100) NOT NULL,
+            description_en TEXT NOT NULL,
+            description_fr TEXT NOT NULL,
+            description_de TEXT NOT NULL,
+            description_ja TEXT NOT NULL,
+            can_fly tinyint(1),
+            PRIMARY KEY ( id )
+            );");
+        $database->query("CREATE TABLE players (
+            id INT NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            world VARCHAR(50) NOT NULL,
+            title VARCHAR(100) ,
+            portrait VARCHAR(250) NOT NULL,
+            race VARCHAR(50) NOT NULL,
+            clan VARCHAR(50) NOT NULL,
+            gender VARCHAR(50) NOT NULL,
+            nameday VARCHAR(200) NOT NULL,
+            guardian VARCHAR(100) NOT NULL,
+            grandCompany VARCHAR(50) ,
+            freeCompany VARCHAR(100),
+            freeCompanyId VARCHAR(30),
+            last_update_date DATE NOT NULL,
+            PRIMARY KEY ( id )
+            );");
+        $database->query("CREATE TABLE player_minion (
+            p_id INT NOT NULL,
+            m_id INT NOT NULL,
+            primary key (p_id, m_id),
+            FOREIGN KEY (p_id) REFERENCES players(id),
+            FOREIGN KEY (m_id) REFERENCES minions(id)
+            );");
                 
-            //Save the database in the file / update new minions to file
-            $minions = $database->select($table,$list);
-            $json_informations = json_encode($minions,JSON_PRETTY_PRINT);
-            file_put_contents($file, $json_informations);
-        }
-        $logs .= "The methodes for table '$table' have been updated.</br></br>";
-        return $logs;
+        $database->query("CREATE TABLE player_mounts (
+            p_id INT NOT NULL,
+            m_id INT NOT NULL,
+            primary key (p_id, m_id),
+            FOREIGN KEY (p_id) REFERENCES players(id),
+            FOREIGN KEY (m_id) REFERENCES mounts(id)
+            );");
+                
+        $database->query("CREATE TABLE minions_method (
+            m_id INT NOT NULL,
+            method VARCHAR(100),
+            method_description_en TEXT,
+            method_description_fr TEXT,
+            method_description_de TEXT,
+            method_description_ja TEXT,
+            primary key (m_id, method),
+            FOREIGN KEY (m_id) REFERENCES minions(id)
+            );");
+                
+        $database->query("CREATE TABLE mounts_method (
+            m_id INT NOT NULL,
+            method VARCHAR(100),
+            method_description_en TEXT,
+            method_description_fr TEXT,
+            method_description_de TEXT,
+            method_description_ja TEXT,
+            primary key (m_id, method),
+            FOREIGN KEY (m_id) REFERENCES mounts(id)
+            );");
     }
-    */
+    
     function read_write_methode_new($table,$file,$readOnly){
         global $database;
         $logs;
