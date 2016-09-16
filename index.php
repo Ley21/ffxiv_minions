@@ -152,6 +152,38 @@
               }
           });
         });
+        $(document).on('show.bs.modal','#updateDB', function () {
+          var modal = $(this);
+          var body = modal.find('.modal-body');
+          basicAjaxCall("update_database.php","",function(data){},get_language_text("get_latest_ids"),body,"post");
+          
+        })
+        $(document).on('click','#update_button', function () {
+          var modal = $('#updateDB');
+          var body = modal.find('.modal-body');
+          var key = $('#key').val();
+          var update = $('#update').is(':checked');
+          
+          if(update == true){
+            var minion_id = parseInt($('#minion_id').text());
+            async_database_update(minion_id,"minion","update_minions");
+            
+            var mount_id = parseInt($('#mount_id').text());
+            async_database_update(mount_id,"mount","update_mounts");
+          }
+          var method_update = $('#method_update').is(':checked');
+          var readonly = $('#readonly').is(':checked');
+          if(method_update){
+            async_call(function(){
+              basicAjaxCall("update_database.php","key="+key+"&update=true&method_update="+method_update+"&readonly="+readonly,
+                function(data){},get_language_text("read_methodes"),body,"post");
+            },function(){});
+            
+          }
+          
+          
+          
+        })
         
         
         
@@ -341,10 +373,28 @@ echo "</center>";
 ?>
     </div>
     </div>
+<div id="updateDB" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Update database from xivdb</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" id="update_button" class="btn btn-primary">Update</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
       <footer style="background-color:rgba(255, 255, 255, 0.5);" class="rounded">
         </br>
     <p class="text-center">FFXIV Collector: © 2016 Andreas Spuling</p>
     <p class="text-center"><a href='/char?lang=en&id=2215586'>Ley Sego</a> on Shiva</p>
+    <p class="text-center"><a data-toggle="modal" data-target="#updateDB">Update</a> - </p>
     <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     
   </footer>

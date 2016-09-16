@@ -6,6 +6,10 @@ var languageTexts =
     'load_freecompany':{en:"Loading Free Company Ranking",fr:"",de:"Freie Gesellschafts Rangliste wird geladen",ja:""},
     'load_minions':{en:"Loading Minions",fr:"",de:"Begleiter werden geladen",ja:""},
     'load_mounts':{en:"Loading Mounts",fr:"",de:"Reittiere werden geladen",ja:""},
+    'get_latest_ids':{en:"Getting last ids for collector objects...",fr:"",de:"Lade die letzen Ids für die Objekte...",ja:""},
+    'update_minions':{en:"Updating minions in database",fr:"",de:"Begleiter in der Datenbank werden aktuallisiert",ja:""},
+    'update_mounts':{en:"Updating mounts in database",fr:"",de:"Reittiere in der Datenbank werden aktuallisiert",ja:""},
+    'read_methodes':{en:"Read methodes from json file and update them in database.",fr:"",de:"Lese die Methoden aus der JSON Datei und aktuallisiere die Datenbank.",ja:""},
 };
 
 function get_language_text(key){
@@ -90,33 +94,42 @@ function loadMounts(submit) {
     ajaxCall("mounts","get_mounts.php",submit,function(data){},get_language_text("load_mounts"));
 }
 
-function loadingMessage(customMessage = ""){
-    $('#content').html("<p><center><img src='img/gears.gif'><h2>"+customMessage+"</h2></center></p>");
+function loadingMessage(customMessage = "",object = null){
+    object = object != null ? object :  $("#content");
+    object.html("<p><center><img src='img/gears.gif'><h2>"+customMessage+"</h2></center></p>");
+}
+
+function basicAjaxCall(url,submitData,func,customMessage = "",object = null,type = 'get',async = true){
+    object = object != null ? object :  $("#content");
+    object.html("");
+    if(customMessage != null){
+        loadingMessage(customMessage,object);
+    }
+    $.ajax
+    ({ 
+      url: "handler/"+url,
+      data: submitData,
+      type: type,
+      async: async,
+      success: function(data)
+      {
+         object.html(data);
+         func(data);
+      }
+    });
 }
 
 function ajaxCall(baseurl,url,submitData,func,customMessage = ""){
-    $('#content').html("");
-    if(customMessage != null){
-        loadingMessage(customMessage);
-    }
-  $.ajax
-  ({ 
-      url: "handler/"+url,
-      data: submitData,
-      type: 'get',
-      success: function(data)
-      {
-        
-         $('#content').html(data);
-         func(data);
-         pushUrl(baseurl,submitData);
-         $('.table').DataTable();
-         XIVDBTooltips.initialize();
-         id = getCookie("player_id");
-         set_char(id == "");
-         browserView();
-      }
-  });
+    
+    basicAjaxCall(url,submitData,function(data){
+        func(data);
+        pushUrl(baseurl,submitData);
+        $('.table').DataTable();
+        XIVDBTooltips.initialize();
+        var id = getCookie("player_id");
+        set_char(id == "");
+        browserView();
+    },customMessage);
 }
 
 function addCharButton(){
@@ -237,6 +250,20 @@ function getMinionsMounts(){
     return json;
 }
 
+function async_database_update(last_id,type,text_title){
+    var modal = $('#updateDB');
+    var body = modal.find('.modal-body');
+    var key = $('#key').val();
+    async_call(function(){
+        var loops = parseInt((last_id / 50),10);
+        for(var i = 0; i  <= loops;i++){
+            var id = 1 + (i * 50);
+            basicAjaxCall("update_database.php","key="+key+"&update=true&"+type+"="+id,
+                function(data){},get_language_text(text_title)+": "+id+" - "+(id + 50),body,"post",false);
+        }
+    },function(){});
+}
+
 function set_char(shoulSet){
     var lang = getUrlParameter("lang");
     var my_char, not_my_char;
@@ -277,4 +304,11 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+
+function async_call(fn, callback) {
+    setTimeout(function() {
+        fn();
+        callback();
+    }, 0);
 }

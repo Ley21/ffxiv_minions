@@ -538,6 +538,12 @@
         }
     }
 
+    function get_last_id($type){
+        $json = file_get_contents("https://api.xivdb.com/search?one=$type");
+        $obj = json_decode($json);
+        return $obj->$type->results[0]->id;
+    }
+    
     function insert_update_minion($id){
         global $database;
         $json = file_get_contents("https://api.xivdb.com/minion/$id");
