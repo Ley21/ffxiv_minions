@@ -45,6 +45,12 @@
     $language_texts['my_char'] = array("en"=>"Charakter","fr"=>"","de"=>"Charakter","ja"=>"");
     $language_texts['not_my_char'] = array("en"=>"This is not my charakter","fr"=>"","de"=>"Das ist nicht mein Charakter","ja"=>"");
     $language_texts['update_char'] = array("en"=>"Update Charakter","fr"=>"","de"=>"Update Charakter","ja"=>"");
+    $language_texts['select_type'] = array("en"=>"Select a type:","fr"=>"","de"=>"Wähle einen Type:","ja"=>"");
+    $language_texts['select_name'] = array("en"=>"Select the name:","fr"=>"","de"=>"Wähle den Namen:","ja"=>"");
+    $language_texts['select_existing_method'] = array("en"=>"Select existing method:","fr"=>"","de"=>"Wähle eine existierende Methode:","ja"=>"");
+    $language_texts['select_new_method'] = array("en"=>"Select new method:","fr"=>"","de"=>"Wähle eine neue Methode:","ja"=>"");
+    $language_texts['thanks_request'] = array("en"=>"Thank you for your change request.","fr"=>"","de"=>"Vielen Dank für die Änderungsanfrage.","ja"=>"");
+    
     
     $language_texts['gender'] = array("en"=>"Gender","fr"=>"","de"=>"Geschlecht","ja"=>"");
     $language_texts['female'] = array("en"=>"Female ♀","fr"=>"","de"=>"Weiblich ♀","ja"=>"");

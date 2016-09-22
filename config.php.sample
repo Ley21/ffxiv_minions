@@ -6,6 +6,15 @@
     
     $ssl = true;
     $external_key = "KEY_FOR_ALL_CALLER_OPERATIONS";
+    $mail_config = [
+            "smtpserver" => 'SMTP_SERVER_ADDRESS',
+            "mailaddress" =>"MAIL_ADDRESS",
+            "username" => 'SMTP_LOGIN',
+            "password" => 'SMTP_PASSWORD',
+            "port" => 25,
+            "secure" => 'tls'
+        ];
+    $activate_mail = true;
     
     // Initialize
     $database = new medoo([

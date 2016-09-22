@@ -10,6 +10,7 @@ var languageTexts =
     'update_minions':{en:"Updating minions in database",fr:"",de:"Begleiter in der Datenbank werden aktuallisiert",ja:""},
     'update_mounts':{en:"Updating mounts in database",fr:"",de:"Reittiere in der Datenbank werden aktuallisiert",ja:""},
     'read_methodes':{en:"Read methodes from json file and update them in database.",fr:"",de:"Lese die Methoden aus der JSON Datei und aktuallisiere die Datenbank.",ja:""},
+    'request_change':{en:".",fr:"",de:"Lese die Methoden aus der JSON Datei und aktuallisiere die Datenbank.",ja:""},
 };
 
 function get_language_text(key){

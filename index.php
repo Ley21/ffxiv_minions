@@ -155,9 +155,16 @@
         $(document).on('show.bs.modal','#updateDB', function () {
           var modal = $(this);
           var body = modal.find('.modal-body');
-          basicAjaxCall("update_database.php","",function(data){},get_language_text("get_latest_ids"),body,"post");
+          basicAjaxCall("update_database.php","",function(data){},get_language_text("get_latest_ids"),body);
           
-        })
+        });
+        
+        $(document).on('show.bs.modal','#request', function () {
+          var modal = $(this);
+          var body = modal.find('.modal-body');
+          basicAjaxCall("request_change.php",getLangData(),function(data){},"",body);
+        });
+        
         $(document).on('click','#update_button', function () {
           var modal = $('#updateDB');
           var body = modal.find('.modal-body');
@@ -185,6 +192,40 @@
           
         })
         
+        $(document).on("change",'#type',function(){
+          update_request_modal(false);
+          
+        });
+        $(document).on("change",'#obj_name',function(){
+          update_request_modal(false);
+        });
+        $(document).on("change",'#method',function(){
+          update_request_modal(false);
+        });
+        $(document).on("change",'#new_method',function(){
+          update_request_modal(false);
+        });
+        $(document).on('click','#send_button', function () {
+          update_request_modal(true);
+        });
+        
+        function update_request_modal(send){
+          var modal = $('#request');
+          var body = modal.find('.modal-body');
+          
+          var type = $('#type').val() === undefined ? "": $('#type').val() ;
+          var obj_name = $('#obj_name').val() === undefined || $('#obj_name').val() == null ? "": $('#obj_name').val() ;
+          var method = $('#method').val() == "" ? $('#new_method').val() : $('#method').val();
+          method = method === undefined ? "" : method;
+          var method_description_en = $('#method_description_en').val();
+          var method_description_fr = $('#method_description_fr').val();
+          var method_description_de = $('#method_description_de').val();
+          var method_description_ja = $('#method_description_ja').val();
+          var submit = getLangData()+"&send="+send+"&type="+type+"&obj_name="+obj_name+"&method="+method
+            +"&method_description_en="+method_description_en+"&method_description_fr="+method_description_fr
+            +"&method_description_de="+method_description_de+"&method_description_ja="+method_description_ja;
+          basicAjaxCall("request_change.php",submit,function(data){},"",body,"post");
+        }
         
         
     </script> 
@@ -390,11 +431,29 @@ echo "</center>";
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<div id="request" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Request a change for an object</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" id="send_button" class="btn btn-primary">Send</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
       <footer style="background-color:rgba(255, 255, 255, 0.5);" class="rounded">
         </br>
     <p class="text-center">FFXIV Collector: © 2016 Andreas Spuling</p>
     <p class="text-center"><a href='/char?lang=en&id=2215586'>Ley Sego</a> on Shiva</p>
-    <p class="text-center"><a data-toggle="modal" data-target="#updateDB">Update</a> - </p>
+    <p class="text-center"><a data-toggle="modal" data-target="#updateDB">Update</a> - <a data-toggle="modal" data-target="#request">Request Change</a></p>
     <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
     
   </footer>

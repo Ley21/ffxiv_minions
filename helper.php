@@ -4,7 +4,8 @@
     $random_id = 0;
     
     function get_lang(){
-        $lang = empty($_GET["lang"]) ? "en" : $_GET["lang"];
+        $lang = empty($_GET["lang"]) ? $_POST["lang"] : $_GET["lang"];
+        $lang = empty($lang) ? "en" : $lang;
         return $lang;
     }
     
@@ -13,6 +14,12 @@
         
         $languageObject = $language_texts[$name][empty($lang) ? get_lang():$lang];
         return empty($languageObject) ? $language_texts[$name]["en"] : $languageObject;
+    }
+    
+    function get_language_method($method){
+        $methodes_en = get_language_text("methodes","en");
+        $index = array_search($method,$methodes_en);
+        return get_language_text("methodes")[$index];
     }
     
     function get_title_language_text($title){
@@ -29,6 +36,14 @@
             return $translated_title;
         }
         return $title;
+    }
+    
+    function get_list_of($type){
+        global $database;
+        
+        $objects = $database->select($type,["name", "name_".get_lang()],["ORDER"=>"name_".get_lang()]);
+        return $objects;
+        
     }
     
     function create_table($title,$sql_data,$type,$methodName=""){
@@ -798,6 +813,39 @@
         }
         
         $logs .= "The methodes for table '$method_table' have been updated.</br></br>";
+        return $logs;
+    }
+    
+    function send_mail($subject,$message){
+        global $mail_config,$activate_mail;
+        $logs ='';
+        if($activate_mail){
+            $mail = new PHPMailer;
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = $mail_config['smtpserver'];  // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = $mail_config['username'];                 // SMTP username
+            $mail->Password = $mail_config['password'];                           // SMTP password
+            $mail->SMTPSecure = $mail_config['secure'];                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = $mail_config['port'];                                    // TCP port to connect to
+            $mail->setFrom($mail_config['mailaddress'], 'FFXIV Collector Page');
+            $mail->addAddress($mail_config['mailaddress']);
+            $mail->isHTML(true);                                  // Set email format to HTML
+            
+            $mail->Subject = $subject;
+            //$mail->Body    = $message;
+            $mail->MsgHTML($message);
+            
+            if(!$mail->send()) {
+                $logs .= 'Message could not be sent.';
+                $logs .= 'Mailer Error: ' . $mail->ErrorInfo;
+            } else {
+                $logs .= 'Message has been sent';
+            }
+        }
+        else{
+            $logs .= "Mail feature is not activated";
+        }
         return $logs;
     }
 ?>

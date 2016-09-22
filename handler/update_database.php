@@ -57,10 +57,15 @@ if(!$tables_exits){
 
 echo "Last minion id: '<a id='minion_id'>$last_minion_id</a>'</br>";
 echo "Last mount id: '<a id ='mount_id'>$last_mount_id</a>'</br>";
-echo "Key: <input id='key' value='$key'></input></br>";
-echo "Update minions and mounts: <input type='checkbox' id='update' $minion_checked></input></br>";
-echo "Read methodes: <input type='checkbox' id='method_update' $methode_update_checked></input></br>";
-echo "Write json file: <input type='checkbox' id='readonly' $readonly_checked></input></br>";
+echo "<div class='form-group'>";
+echo "<label for='key'>Key:</label>";
+echo "<input type='text' class='form-control' id='key' value='$key'></input>";
+echo "<label for='update'>";
+echo "<input class='form-control'  type='checkbox' id='update' $minion_checked></input>Update minions and mounts</label></br>";
+echo "<label for='method_update'>";
+echo "<input class='form-control' type='checkbox' id='method_update' $methode_update_checked></input>Read methodes</label></br>";
+echo "<label for='readonly'>";
+echo "<input class='form-control' type='checkbox' id='readonly' $readonly_checked></input>Write json file</label></br>";
 
 
 ?>
