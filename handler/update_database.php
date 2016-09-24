@@ -4,7 +4,10 @@ require_once "../config.php";
 require_once "../helper.php";
 
 header("Content-Type: text/html; charset=utf-8");
-
+if($key != $external_key || empty($key)){
+    echo "You are not authorised to do this action.";
+    exit;
+}
 $tables_exits = $database->query('SELECT 1 FROM minions LIMIT 1;') != false;
 
 $last_minion_id = get_last_id("minions");
