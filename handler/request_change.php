@@ -2,7 +2,6 @@
     require_once "../config.php";
     require_once "../helper.php";
     require_once "../language.php";
-    require_once "../finediff-code.php";
     
     
     if($_POST["send"] == "true"){
