@@ -27,11 +27,11 @@
             "method_description_ja"=>$_POST["method_description_ja"]);
         $after_json = json_encode($obj_array,JSON_PRETTY_PRINT);
         
-        $html .= "Befor:</br>";
-        $html .= $befor_json;
-        $html .= "</br>";
-        $html .= "After:</br>";
-        $html .= $after_json;
+        $html .= "Befor:</br></br>";
+        $html .= "<p>$befor_json</p>";
+        $html .= "</br></br></br>";
+        $html .= "After:</br></br>";
+        $html .= "<p>$after_json</p>";
         
         send_mail("[REQUEST] Change for '$type' with id '$id' and name '$object_name'.",$html);
         
