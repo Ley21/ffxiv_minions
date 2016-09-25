@@ -33,7 +33,7 @@
         $html .= "After:</br></br>";
         $html .= "<p>$after_json</p>";
         
-        send_mail("[REQUEST] Change for '$type' with id '$id' and name '$object_name'.",$html);
+        send_mail("[REQUEST] Change for '$type' with id '$id' and name '$object_name'.",str_replace("\/","/",$html));
         
         echo get_language_text("thanks_request");
         exit;
