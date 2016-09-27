@@ -926,7 +926,7 @@
     {
         "id": "98",
         "name": "Sophic Lanner",
-        "can_fly": null,
+        "can_fly": "1",
         "methodes": [
             {
                 "method": null,
@@ -940,7 +940,7 @@
     {
         "id": "100",
         "name": "Black Pegasus",
-        "can_fly": null,
+        "can_fly": "1",
         "methodes": [
             {
                 "method": null,
@@ -954,7 +954,7 @@
     {
         "id": "101",
         "name": "Arrhidaeus",
-        "can_fly": null,
+        "can_fly": "1",
         "methodes": [
             {
                 "method": null,
