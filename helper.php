@@ -156,7 +156,7 @@
                 $can_fly = get_language_text("unknown");
             }
             
-            $table .= "<td  class='shrink'>$can_fly</td>";
+            $row .= "<td  class='shrink'>$can_fly</td>";
         }
         
         $method_name = get_language_text("unknown");
