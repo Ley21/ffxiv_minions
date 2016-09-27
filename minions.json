@@ -2692,113 +2692,131 @@
     {
         "id": "214",
         "name": "Namingway",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "215",
         "name": "Toy Alexander",
         "methodes": [
-			{
-				"method": "Dungeons & Trials",
-				"method_description_en": "Found in Final Boss Treasure Coffer in <a href='https:\/\/xivdb.com\/instance\/30042'>Alexander - The Soul Of The Creator<\/a>.",
-				"method_description_fr": null,
-				"method_description_de": "Endboss-Schatzkiste in <a href='https:\/\/de.xivdb.com\/instance\/30042'>Alexander - Seele des Sch\u00f6pfers<\/a>.",
-				"method_description_ja": null
-			}
-		]
+            {
+                "method": "Dungeons & Trials",
+                "method_description_en": "Found in Final Boss Treasure Coffer in <a href='https:\/\/xivdb.com\/instance\/30042'>Alexander - The Soul Of The Creator<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='https:\/\/de.xivdb.com\/instance\/30042'>Alexander - Seele des Sch\u00f6pfers<\/a>.",
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "216",
         "name": "Shaggy Shoat",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "217",
         "name": "Dress-up Thancred",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "218",
         "name": "Dress-up Alisaie",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "219",
         "name": "Wind-up Edda",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "221",
         "name": "Wind-up Rikku",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "222",
         "name": "Wind-up Lulu",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "224",
         "name": "Wind-up Moenbryda",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     },
     {
         "id": "225",
         "name": "Continental Eye",
-        "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+        "methodes": [
+            {
+                "method": null,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
     }
 ]
