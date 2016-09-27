@@ -405,6 +405,7 @@ foreach($patches as $patch) {
 
 sort($floatPatches);
 $lastPatch = number_format(end($floatPatches) , 2, ".", "");
+$lastPatch = (float)$lastPatch;
 $latest_minions = $database->select("minions", "*", ["patch[=]" => $lastPatch]);
 $latest_mounts = $database->select("mounts", "*", ["patch[=]" => $lastPatch]);
 echo "<center>";
