@@ -110,6 +110,7 @@ function basicAjaxCall(url,submitData,func,customMessage = "",object = null,type
     ({ 
       url: "handler/"+url,
       data: submitData,
+      context: document.body,
       type: type,
       async: async,
       success: function(data)
@@ -127,8 +128,10 @@ function ajaxCall(baseurl,url,submitData,func,customMessage = ""){
         pushUrl(baseurl,submitData);
         //$( "#table_mount" ).DataTable();
         //$( "#table_minion" ).DataTable();
+        $(window).triggerHandler("DOMContentLoaded");
         $('.table').DataTable();
-        XIVDBTooltips.initialize();
+        //XIVDBTooltips.initialize();
+        
         var id = getCookie("player_id");
         set_char(id == "");
         browserView();
