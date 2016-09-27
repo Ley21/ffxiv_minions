@@ -59,9 +59,10 @@
         $patch = get_language_text("patch");
         $can_fly = get_language_text("can_fly");
         $method = get_language_text("method");
+        $table_id = "table_".$type;
         
         $description = get_language_text("description");
-        $table .= "<table class='table table-striped'>
+        $table .= "<table class='table table-striped' id='$table_id'>
                     <thead><tr><th>$icon</th><th>$name</th><th>$patch</th>";
         $table .= $type == "mount" ? "<th>$can_fly</th>":"";
         $table .= "<th>$method</th><th>$description</th></tr></thead>";

@@ -125,6 +125,8 @@ function ajaxCall(baseurl,url,submitData,func,customMessage = ""){
     basicAjaxCall(url,submitData,function(data){
         func(data);
         pushUrl(baseurl,submitData);
+        //$( "#table_mount" ).DataTable();
+        //$( "#table_minion" ).DataTable();
         $('.table').DataTable();
         XIVDBTooltips.initialize();
         var id = getCookie("player_id");
@@ -228,6 +230,8 @@ function browserView(){
         $("#user").css("display","none");
     }
 }
+
+
 
 function getMinionsMounts(){
     var minions = [];
