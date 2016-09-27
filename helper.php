@@ -853,8 +853,8 @@
             foreach($objects as $obj){
                 $obj_methodes = $database->select($method_table,["method","method_description_en",
                         "method_description_fr","method_description_de","method_description_ja"],["m_id[=]"=>$obj["id"]]);
-                $obj_methodes = $obj_methodes ? $obj_methodes : array("method"=>null,"method_description_en"=>null,
-                        "method_description_fr"=>null,"method_description_de"=>null,"method_description_ja"=>null);
+                $obj_methodes = $obj_methodes ? $obj_methodes : array(array("method"=>null,"method_description_en"=>null,
+                        "method_description_fr"=>null,"method_description_de"=>null,"method_description_ja"=>null));
                 $method = $table == "minions" ? array("id"=>$obj["id"],"name"=>$obj["name"],"methodes"=>$obj_methodes) 
                             : array("id"=>$obj["id"],"name"=>$obj["name"],"can_fly" => $obj["can_fly"],"methodes"=>$obj_methodes) ;
                 $methodes[] = $method;
