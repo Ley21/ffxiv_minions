@@ -2704,12 +2704,12 @@
         "id": "215",
         "name": "Toy Alexander",
         "methodes": {
-            "method": null,
-            "method_description_en": null,
-            "method_description_fr": null,
-            "method_description_de": null,
-            "method_description_ja": null
-        }
+			"method": "Dungeons & Trials",
+			"method_description_en": "Found in Final Boss Treasure Coffer in <a href='https://xivdb.com/instance/30042'>Alexander - The Soul Of The Creator</a>.",
+			"method_description_fr": "",
+			"method_description_de": "Endboss-Schatzkiste in <a href='https://de.xivdb.com/instance/30042'>Alexander - Seele des Sch\u00f6pfers</a>.",
+			"method_description_ja": ""
+		}
     },
     {
         "id": "216",
