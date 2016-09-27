@@ -628,7 +628,7 @@
             
         }
         else{
-            $xivdb_icon = $database->quote("https://xivdb.com".$obj->xivdb_icon);
+            $xivdb_icon = $database->quote($obj->icon2);
             
             $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
@@ -675,7 +675,7 @@
             //echo "Minion with number '$number' does not exists.";
         }
         else{
-            $xivdb_icon = $database->quote("https://xivdb.com".$obj->xivdb_icon);
+            $xivdb_icon = $database->quote($obj->icon2);
             
             $db_id = $database->get("mounts",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
