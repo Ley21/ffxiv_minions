@@ -19,12 +19,16 @@
             $befor_json = json_encode($obj_method,JSON_PRETTY_PRINT);
         }
         
+        $desc_en = $_POST["method_description_en"];
+        $desc_fr = $_POST["method_description_fr"];
+        $desc_de = $_POST["method_description_de"];
+        $desc_ja = $_POST["method_description_ja"];
         
         $obj_array = array("method"=>$_POST["method"],
-            "method_description_en"=>$_POST["method_description_en"],
-            "method_description_fr"=>$_POST["method_description_fr"],
-            "method_description_de"=>$_POST["method_description_de"],
-            "method_description_ja"=>$_POST["method_description_ja"]);
+            "method_description_en"=>empty($desc_en) ? null : $desc_en,
+            "method_description_fr"=>empty($desc_fr) ? null : $desc_fr,
+            "method_description_de"=>empty($desc_de) ? null : $desc_de,
+            "method_description_ja"=>empty($desc_ja) ? null : $desc_ja);
         $after_json = json_encode($obj_array,JSON_PRETTY_PRINT);
         
         $html .= "Befor:</br></br>";
@@ -33,7 +37,7 @@
         $html .= "After:</br></br>";
         $html .= "<p>$after_json</p>";
         
-        send_mail("[REQUEST] Change for '$type' with id '$id' and name '$object_name'.",str_replace("\/","/",$html));
+        send_mail("[REQUEST] Change for '$type' with id '$id' and name '$object_name'.",$html);
         
         echo get_language_text("thanks_request");
         exit;
