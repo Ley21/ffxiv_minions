@@ -216,7 +216,7 @@
           
           var type = $('#type').val() === undefined ? "": $('#type').val() ;
           var obj_name = $('#obj_name').val() === undefined || $('#obj_name').val() == null ? "": $('#obj_name').val() ;
-          var method = $('#method').val() == "" ? $('#new_method').val() : $('#method').val();
+          var method = $('#method').val() === undefined ? $('#new_method').val() : $('#method').val();
           method = method === undefined ? "" : method;
           var method_description_en = $('#method_description_en').val();
           var method_description_fr = $('#method_description_fr').val();
