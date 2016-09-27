@@ -922,5 +922,41 @@
                 "method_description_ja": null
             }
         ]
+    },
+    {
+        "id": "98",
+        "name": "Sophic Lanner",
+        "can_fly": null,
+        "methodes": {
+            "method": null,
+            "method_description_en": null,
+            "method_description_fr": null,
+            "method_description_de": null,
+            "method_description_ja": null
+        }
+    },
+    {
+        "id": "100",
+        "name": "Black Pegasus",
+        "can_fly": null,
+        "methodes": {
+            "method": null,
+            "method_description_en": null,
+            "method_description_fr": null,
+            "method_description_de": null,
+            "method_description_ja": null
+        }
+    },
+    {
+        "id": "101",
+        "name": "Arrhidaeus",
+        "can_fly": null,
+        "methodes": {
+            "method": null,
+            "method_description_en": null,
+            "method_description_fr": null,
+            "method_description_de": null,
+            "method_description_ja": null
+        }
     }
 ]
