@@ -83,7 +83,13 @@
             
             $dom_id = $type."_".$m_id;
             $method_count = 0;
-            foreach($obj_methodes as $method){
+            if(empty($obj_methodes)){
+                $table .=create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$type == "mount" ? $minion_data['can_fly'] : 0);
+            }
+            else{
+                foreach($obj_methodes as $method){
+                    $table .= create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$type == "mount" ? $minion_data['can_fly'] : 0,$method);
+                /*
                 $table .= "<tr id='$dom_id'>";
                 $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
                 $table .= "<td name='icon' class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
@@ -117,14 +123,58 @@
                 $table .= "<td class='shrink'>$method_name</td>";
                 $table .= "<td class='expand'>$method_desc</td>";
                 $table .= "</tr>";
-                $method_count++;
+                */
+                    $method_count++;
+                }
             }
+            
             
             
         }
         $table .= "</tbody></table></div>
         </div>";
         return $table;
+    }
+    
+    function create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$can_fly,$method = null){
+        $lang = get_lang();
+        $row = "";
+        $row .= "<tr id='$dom_id'>";
+        $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
+        $row .= "<td name='icon' class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
+        
+        $row .=  "<td name='title' class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
+        $row .=  "<td name='patch' class='shrink'>$patch</td>";
+        if($type == "mount"){
+            if($can_fly == 0){
+                $can_fly = get_language_text("no");
+            }
+            elseif($can_fly == 1){
+                $can_fly = get_language_text("yes");
+            }
+            else{
+                $can_fly = get_language_text("unknown");
+            }
+            
+            $table .= "<td  class='shrink'>$can_fly</td>";
+        }
+        
+        $method_name = get_language_text("unknown");
+        $method_desc = "";
+        if($method != null){
+            $method_lang = $method['method_description_'.get_lang()];
+            $method_desc = empty($method_lang) ? $method['method_description_en'] : $method_lang;
+            $method_name = $method['method'] ;
+            if(!empty($method_name)){
+                $methodes_en = get_language_text("methodes","en");
+                $m_index = array_search($method_name,$methodes_en);
+                $method_name = get_language_text("methodes")[$m_index];
+            }
+        }
+        $row .= "<td class='shrink'>$method_name</td>";
+        $row .= "<td class='expand'>$method_desc</td>";
+        $row .= "</tr>";
+        return $row;
     }
     
     function create_ranking($type = "",$fc = ""){
