@@ -803,7 +803,7 @@
             );");
     }
     
-    function read_write_methode_new($table,$file,$readOnly){
+    function read_write_methode_new($table,$file,$readonly){
         global $database;
         $logs;
         
@@ -846,7 +846,7 @@
             $logs .= "File '$file' does not exists. Could not import methodes.</br>";
         }
         
-        if(!$readOnly){
+        if($readonly == "false"){
             $columns = $table == "minions" ?  ["id","name"] : ["id","name","can_fly"];
             $objects = $database->select($table,$columns);
             $methodes = array();

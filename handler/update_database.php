@@ -65,7 +65,7 @@ echo "<input class='form-control'  type='checkbox' id='update' $minion_checked><
 echo "<label for='method_update'>";
 echo "<input class='form-control' type='checkbox' id='method_update' $methode_update_checked></input>Read methodes</label></br>";
 echo "<label for='readonly'>";
-echo "<input class='form-control' type='checkbox' id='readonly' $readonly_checked></input>Write json file</label></br>";
+echo "<input class='form-control' type='checkbox' id='readonly' $readonly_checked></input>Readonly json file</label></br>";
 
 
 ?>
