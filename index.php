@@ -202,12 +202,15 @@
         });
         $(document).on("change",'#method',function(){
           update_request_modal(false);
+          $("#send_button").removeClass("disabled");
         });
         $(document).on("change",'#new_method',function(){
           update_request_modal(false);
+          $("#send_button").removeClass("disabled");
         });
         $(document).on('click','#send_button', function () {
           update_request_modal(true);
+          $(this).addClass("disabled");
         });
         
         function update_request_modal(send){
@@ -446,7 +449,7 @@ echo "</center>";
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" id="send_button" class="btn btn-primary">Send</button>
+        <button type="button" id="send_button" class="btn btn-primary disabled">Send</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
