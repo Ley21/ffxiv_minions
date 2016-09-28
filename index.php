@@ -28,7 +28,7 @@
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <script src="js/functions.js"></script>
     <script type='text/javascript'>
-        
+        var XIVDBTooltips;
         var valid = getUrlParameter("lang") === undefined || getUrlParameter("lang") == "en";
         var xivdb_tooltip_base_url = valid  ? 'https://xivdb.com' : 'https://'+getUrlParameter("lang")+".xivdb.com";
         var xivdb_tooltips =
@@ -49,7 +49,7 @@
             seturlicon: false
         };
     </script>
-    <script src="http://xivdb.com/tooltips.js"></script>
+    <script src="https://xivdb.com/tooltips.js"></script>
     <script type='text/javascript'>
 
         
@@ -123,7 +123,7 @@
         });
         $(document).on('draw.dt','.table', function () {
             
-            //XIVDBTooltips.initialize();
+            XIVDBTooltips.initialize();
             browserView();
         } );
         

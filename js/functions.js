@@ -50,8 +50,8 @@ function updateCharakter(id){
     loadingMessage(get_language_text("update_message"));
     $.ajax
     ({ 
-      url: "caller/update_charakter.php",
-      data: "id="+id,
+      url: "handler/charakter.php",
+      data: "id="+id+"&show=false",
       type: 'get',
       success: function(data)
       {
