@@ -123,7 +123,7 @@
         });
         $(document).on('draw.dt','.table', function () {
             
-            XIVDBTooltips.initialize();
+            XIVDBTooltips.get();
             browserView();
         } );
         

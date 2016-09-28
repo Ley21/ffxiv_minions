@@ -126,12 +126,7 @@ function ajaxCall(baseurl,url,submitData,func,customMessage = ""){
     basicAjaxCall(url,submitData,function(data){
         func(data);
         pushUrl(baseurl,submitData);
-        //$( "#table_mount" ).DataTable();
-        //$( "#table_minion" ).DataTable();
-        $(window).triggerHandler("DOMContentLoaded");
         $('.table').DataTable();
-        //XIVDBTooltips.initialize();
-        
         var id = getCookie("player_id");
         set_char(id == "");
         browserView();
