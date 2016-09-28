@@ -929,10 +929,10 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20042'>Containment Bay P1T6 (Extreme)<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20042'>Zenit Der G\u00f6tter - Sophia<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -957,10 +957,10 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "method_description_en": "Drop in the treasure coffer in the raid <a href='http:\/\/xivdb.com\/instance\/30046'>Alexander - The Soul Of The Creator (Savage)<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Garantierte Beute in der Schatztruhe in dem Raid <a href='http:\/\/de.xivdb.com\/instance\/30046'>Alexander - Seele des Sch\u00f6pfers (episch)<\/a>.",
                 "method_description_ja": null
             }
         ]

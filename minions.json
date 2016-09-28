@@ -2720,10 +2720,10 @@
         "name": "Shaggy Shoat",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/46'>Xelphatol<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/46'>Xelphatol<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -2733,10 +2733,10 @@
         "name": "Dress-up Thancred",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
                 "method_description_ja": null
             }
         ]
@@ -2772,10 +2772,10 @@
         "name": "Wind-up Rikku",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Promotions",
+                "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Las Vegas.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Las Vegas.",
                 "method_description_ja": null
             }
         ]
@@ -2785,10 +2785,10 @@
         "name": "Wind-up Lulu",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Promotions",
+                "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Tokyo.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Tokyo.",
                 "method_description_ja": null
             }
         ]
@@ -2798,10 +2798,10 @@
         "name": "Wind-up Moenbryda",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Quest Rewards",
+                "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67886'>An Ending To Mark A New Beginning<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67886'>Wege In Die Zukunft<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -2811,10 +2811,10 @@
         "name": "Continental Eye",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Seasonal Rewards",
+                "method_description_en": "Reward for the Special Event <a href=''>All Saints Wake 2016<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Belohnung des Events: <a href='h'>Allerschutzheiligen 2016<\/a>.",
                 "method_description_ja": null
             }
         ]

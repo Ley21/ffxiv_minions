@@ -820,7 +820,7 @@
                 
 
                 if($table == "mounts"){
-                    $database->update($table,["can_fly" => $coll->can_fly],["AND"=>["m_id[=]"=>$coll->id,"method[=]"=>$j_method]]);
+                    $database->update($table,["can_fly" => $coll->can_fly],["id[=]"=>$coll->id]);
                 }
                 foreach($coll->methodes as $j_method){
                     $logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
