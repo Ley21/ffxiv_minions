@@ -2812,9 +2812,9 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
-                "method_description_en": "Reward for the Special Event <a href=''>All Saints Wake 2016<\/a>.",
+                "method_description_en": "Reward for the Special Event <a href='http://eu.finalfantasyxiv.com/lodestone/special/2016/All_Saints_Wake/'>All Saints Wake 2016<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Belohnung des Events: <a href='h'>Allerschutzheiligen 2016<\/a>.",
+                "method_description_de": "Belohnung des Events: <a href='http://de.finalfantasyxiv.com/lodestone/special/2016/All_Saints_Wake/'>Allerschutzheiligen 2016<\/a>.",
                 "method_description_ja": null
             }
         ]
