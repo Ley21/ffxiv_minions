@@ -2746,10 +2746,10 @@
         "name": "Dress-up Alisaie",
         "methodes": [
             {
-                "method": null,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
                 "method_description_ja": null
             }
         ]
