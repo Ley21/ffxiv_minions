@@ -2758,13 +2758,7 @@
         "id": "219",
         "name": "Wind-up Edda",
         "methodes": [
-            {
-                "method": null,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
-                "method_description_ja": null
-            }
+            { "method": "Misc. Methods", "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon", "method_description_fr": null, "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz II' aus Palast der Toten.", "method_description_ja": null }
         ]
     },
     {
