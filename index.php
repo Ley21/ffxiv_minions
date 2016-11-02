@@ -251,9 +251,9 @@ $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$ba
 
 ?>
 <div class="row">
-<div class="col-md-1"></div>
+<div class="col-md-1"> </div>
 <div class="col-md-10"><center>
-<div class="container" style="background-color:rgba(255, 255, 255, 0.5);">
+<div id='container' class="container-fluid" style="background-color:rgba(255, 255, 255, 0.5);">
 
           <p class="text-center">
 
