@@ -93,7 +93,7 @@
             echo get_col_row(get_language_text("title_char")."</br>",$p_title);
         }
         echo get_col_row(get_language_text("race"),$p_race);
-        //echo get_col_row(get_language_text("gender"),get_language_text($p_gender));
+        echo get_col_row(get_language_text("gender"),get_language_text($p_gender));
         echo get_col_row(get_language_text("grandCompany"),$p_gc);
         echo get_col_row(get_language_text("freeCompany"),"<a id='$p_fc_id' class='freeCompany'>$p_fc</a>");
         $gl_rank = create_char_ranking($p_id);

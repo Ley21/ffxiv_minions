@@ -56,6 +56,7 @@ FFXIV Collection uses a number of open source projects to work properly:
 * [bootstrap] - CSS Framework
 * [medoo] - MySql php framework
 * [lodestone-api] - Lodestone parsing api
+* [phpmailer] - Php Mail API
 
 ### Todos
 
@@ -69,3 +70,4 @@ License
    [bootstrap]: <https://github.com/twbs/bootstrap>
    [medoo]: <https://github.com/catfan/Medoo>
    [lodestone-api]: <https://github.com/viion/XIVPads-LodestoneAPI>
+   [phpmailer]: <https://github.com/PHPMailer/PHPMailer>
