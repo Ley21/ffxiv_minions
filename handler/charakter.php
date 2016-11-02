@@ -11,8 +11,9 @@
     $update = $_GET["update_mode"] == "true" ? true : false;
     if($update){
         $player_id = $database->get('players',
-            "id","WHERE `last_update_date` < DATE_SUB( NOW( ) , INTERVAL 14 DAY)");
+            "id","WHERE last_update_date < DATE_SUB( NOW( ) , INTERVAL 14 DAY)");
         //var_dump($database->log());
+        //var_dump($player_id);
         if($player_id == null){
             echo "Finish.";
             exit;
