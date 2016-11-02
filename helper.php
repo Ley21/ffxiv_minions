@@ -282,7 +282,7 @@
         $name = ucwords($player['name']);
         $world = ucwords($player['world']);
         $date_diff = date_diff(date_create($player['last_update_date']), date_create(date("Y-m-d")));
-        $last_sync_date = empty($player['last_update_date']) || $date_diff->d > 7 
+        $last_sync_date = empty($player['last_update_date']) || $date_diff->d > 14 
             ? $last_sync_date_button : $player['last_update_date'];
         $row = "<td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td>";
 
