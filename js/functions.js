@@ -100,6 +100,10 @@ function loadingMessage(customMessage = "",object = null){
     object.html("<p><center><img src='img/gears.gif'><h2>"+customMessage+"</h2></center></p>");
 }
 
+function loadFaq(submit) {
+    ajaxCall("faq","faq.php",submit,function(data){});
+}
+
 function basicAjaxCall(url,submitData,func,customMessage = "",object = null,type = 'get',async = true){
     object = object != null ? object :  $("#content");
     object.html("");

@@ -92,5 +92,21 @@
             "Immortal Flames"=>"Legion der Unsterblichen"),
         "ja"=>array());
         
+        
+        
+    $language_texts['question_1'] = array("en"=>"How can I find out which minions/mounts I'm missing?",
+                    "fr"=>"","de"=>"Wie kann ich herausfinden welche Begleiter/Reittiere mir noch fehlen?","ja"=>"");
+    $language_texts['answer_1'] = array("en"=>"To find out which minions/mounts our missing, enter your character name into the search box and select your server. On the page in the last two tables you can see what your missing.","fr"=>"",
+        "de"=>"Um heraus zu finden welche Begleiter/Reittiere dir fehlen, gebe deinen Charakter Namen im Suchfeld ein und wähle deinen Server. Dort wird dann in den unteren Tabellen angezeigt was dir noch fehlt.","ja"=>"");
+    
+    $language_texts['question_2'] = array("en"=>"How can I compare my minions/mounts with an other character?",
+                    "fr"=>"","de"=>"Wie kann ich vergleichen welche Begleiter/Reittier ich noch nicht habe, die ein andere Charakter hat?","ja"=>"");
+    $language_texts['answer_2'] = array("en"=>"On our chrakter page select the green button. After this you can browser to an other character and will see all missing minions/mounts marked red.","fr"=>"",
+        "de"=>"Hier für musst du auf deiner Charakter Seite den Grünnen Knopf drücken. Wenn du danach auf der Seite eines anderen Chrakters bist, werden dir alle Begleiter/Reittier die du nicht besitzt als rot angezeigt.","ja"=>"");
+
+    $language_texts['question_3'] = array("en"=>"I found an error on the page, how can I write a request??",
+                    "fr"=>"","de"=>"Ich habe einen Fehler gefunden, wie kann ich diesen melden?","ja"=>"");
+    $language_texts['answer_3'] = array("en"=>"To request a change, click on 'Request Change' in the footer. There you can select the minion/mount and fix the error or add missing information. You can also write an issue on <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> or make a pull-request.","fr"=>"",
+        "de"=>"Um einen Fehler zu melden kannst du unten auf der Seite auf 'Request Change' klicken. Dort wählst du Begleiter/Reittier aus und kannst dort den Fehler verbessern bzw. fehlende einträge Ergänzen. Natürlich kann man auch einen Issue auf <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> schreiben bzw. einen Pull-Request aufmachen.","ja"=>"");
 
 ?>

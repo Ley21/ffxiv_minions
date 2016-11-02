@@ -86,7 +86,9 @@
           var p_id = getCookie("player_id");
           loadCharakter(p_id);
         });
-        
+        $(document).on("click",'#faq',function(){
+          loadFaq(getLangData());
+        });
         
         $(document).ready(function() {
             browserView()
@@ -114,6 +116,9 @@
             }
             else if (last == "freeCompany"){
               loadFreeCompany(data);
+            }
+            else if (last == "faq"){
+              loadFaq(data);
             }
             else{
               pushUrl("",getLangData());
@@ -299,7 +304,7 @@ echo get_language_text("home"); ?></a>
           ?>
         </ul>
       </li>
-      <!--<li><a id="ranking"><?php //echo get_language_text("ranking"); ?></a></li>-->
+      <li><a id='faq'>FAQ</a></li>
       </ul>
         <form id="char_search" class="navbar-form navbar-left form-inline" action="charakter.php" method="get">
       <div class="form-group">
