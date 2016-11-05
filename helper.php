@@ -249,7 +249,7 @@
     
     function crate_ranking_table($ranking,$type = ""){
         $table = "";
-        $nr = 0;
+        $nr = 1;
         $count_befor = $ranking[0][0];
         foreach($ranking as $rank){
             $count_key = $rank[0];
