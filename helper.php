@@ -249,16 +249,15 @@
     
     function crate_ranking_table($ranking,$type = ""){
         $table = "";
-        $nr = 1;
+        $nr = 0;
         $count_befor = $ranking[0][0];
         foreach($ranking as $rank){
-            $count_key = $rank[0];
-			$table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
+            $count_key = $rank[0];			
             if($count_befor != $count_key){
                 $nr++;
                 $count_befor = $count_key;
             }
-            
+            $table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
             
         } 
         return $table;
