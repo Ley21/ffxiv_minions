@@ -253,12 +253,13 @@
         $count_befor = $ranking[0][0];
         foreach($ranking as $rank){
             $count_key = $rank[0];
+			$table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
             if($count_befor != $count_key){
                 $nr++;
                 $count_befor = $count_key;
             }
             
-            $table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
+            
         } 
         return $table;
     }
