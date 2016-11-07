@@ -219,8 +219,8 @@
         
         $players = $database->select("players",["id","name","world","last_update_date"],empty($world) ? "" : ["world[=]"=>$world] );
         $ranking = get_ranking_players($players,$type);
-        $nr = 1;
-        $count_befor = $ranking[0][0];
+        $nr = 0;
+        $count_befor = 0;
         foreach($ranking as $rank){
             $count_key = $rank[0];
             if($count_befor != $count_key){
