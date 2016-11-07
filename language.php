@@ -104,9 +104,15 @@
     $language_texts['answer_2'] = array("en"=>"On our character page select the green button. After this you check another character's page and you will see all missing minions/mounts marked red.","fr"=>"",
         "de"=>"Hierfür musst du auf deiner Charakterseite den grünen Knopf drücken. Wenn du danach auf der Seite eines anderen Chrakters bist, werden dir alle Begleiter/Reittiere, die du nicht besitzt, als rot angezeigt.","ja"=>"");
 
-    $language_texts['question_3'] = array("en"=>"I found an error on the page. How can I report it?",
+    $language_texts['question_3'] = array("en"=>"How often will a character be updated?",
+                    "fr"=>"","de"=>"Wie oft wird ein Charakter aktuallierst?","ja"=>"");
+    $language_texts['answer_3'] = array("en"=>"Currently a charakter can be updated by open the page (one time a day). If no one will open the page of an character, all characters which are older then 14 days will updated automaticly.","fr"=>"",
+        "de"=>"Aktuell wird ein Charakter jedes Mal aktuallisiert wenn dessen Seite aufgerufen wird (einmal pro Tag). Sollte die Seite eines Charakters innerhalb von 14 Tagen von keinem aufgerufen werden, wird diese automatisch aktuallisert.","ja"=>"");
+
+
+    $language_texts['question_4'] = array("en"=>"I found an error on the page. How can I report it?",
                     "fr"=>"","de"=>"Ich habe einen Fehler gefunden. Wie kann ich diesen melden?","ja"=>"");
-    $language_texts['answer_3'] = array("en"=>"To request a change, click on 'Request Change' in the footer. There you can select the minion/mount and fix the error or add missing information. You can also write an issue on <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> or make a pull-request.","fr"=>"",
+    $language_texts['answer_4'] = array("en"=>"To request a change, click on 'Request Change' in the footer. There you can select the minion/mount and fix the error or add missing information. You can also write an issue on <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> or make a pull-request.","fr"=>"",
         "de"=>"Um einen Fehler zu melden, kannst du unten auf der Seite auf 'Request Change' klicken. Dort wählst du Begleiter/Reittiere aus und kannst dort den Fehler verbessern bzw. fehlende Einträge ergänzen. Natürlich kann man auch einen Issue auf <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> schreiben bzw. einen Pull-Request aufmachen.","ja"=>"");
 
 ?>
