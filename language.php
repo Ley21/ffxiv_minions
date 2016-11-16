@@ -10,7 +10,7 @@
     $language_texts['search'] = array("en"=>"Search","fr"=>"","de"=>"Suchen","ja"=>"");
     $language_texts['dropdown_minions'] = array("en"=>"Minions","fr"=>"","de"=>"Begleiter","ja"=>"");
     $language_texts['dropdown_mounts'] = array("en"=>"Mounts","fr"=>"","de"=>"Reittiere","ja"=>"");
-    $language_texts['charakter'] = array("en"=>"Charakter","fr"=>"","de"=>"Charakter","ja"=>"");
+    $language_texts['charakter'] = array("en"=>"Character","fr"=>"","de"=>"Charakter","ja"=>"");
     
     $language_texts['latest_minions'] = array("en"=>"Latest Minions","fr"=>"","de"=>"Neuste Begleiter","ja"=>"");
     $language_texts['latest_mounts'] = array("en"=>"Latest Mounts","fr"=>"","de"=>"Neuste Reittiere","ja"=>"");
