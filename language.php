@@ -74,7 +74,7 @@
         array("Tout","Achat en Gil","Achat en PGS","Achat en Mémoquartz","Achat auprès des GC",
 				"Achat de la Station Mog","Donjons et Défis","Artisanat","Récolte","Jardinage",
 				"Récompense de Haut Fait","Récompense d'Aléa","Récompense de quête","Récompense d'événement saisonnier",
-				"Récompense de vétérans","Chasse aux trésors","Coffres de donjons","Chasse aux monstres","Promotions"
+				"Récompense de vétérans","Chasse aux trésors","Coffres de donjons","Chasse aux monstres","Promotions",
 				"Expéditions de servants","Méthodes diverses"),
         "de"=>
         array("Alle","Gil","MGP","Allagische Steine","Staatstaler",
