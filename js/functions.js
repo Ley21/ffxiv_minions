@@ -258,10 +258,10 @@ function browserView() {
                 var in_array = $.inArray(m_id, obj.mounts);
                 var mount = $("[id='mount_" + i + "']");
                 mount.toggleClass(function(){
-                    if($( this ).hasClass("active")){
-                        return "";
-                    }else if(in_array > -1){
+                    if(in_array > -1){
                         return "success";
+                    }else if($( this ).hasClass("active")){
+                        return "";
                     }else{
                         return "danger";
                     }
@@ -270,10 +270,10 @@ function browserView() {
             if ($("[id='minion_" + i + "']").length) {
                 var minion = $("[id='minion_" + i + "']");
                 minion.toggleClass(function(){
-                    if($( this ).hasClass("active")){
-                        return "";
-                    }else if($.inArray(m_id, obj.minions) > -1){
+                    if($.inArray(m_id, obj.minions) > -1){
                         return "success";
+                    }else if($( this ).hasClass("active")){
+                        return "";
                     }else{
                         return "danger";
                     }
