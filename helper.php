@@ -458,6 +458,19 @@
         return $dropdown;
     }
     
+    function get_methodes(){
+        //global $database;
+        $methodes = get_language_text("methodes");
+        $methodes_en = get_language_text("methodes","en");
+        $methodes_array = array();
+        foreach($methodes as $i=>$methode){
+            $mehtod_en = $methodes_en[$i];
+            $methode_get = urlencode ($mehtod_en);
+            $methodes_array[] = array('name' => $methode, 'id' => $methode_get);
+        }
+        return $methodes_array;
+    }
+    
     function insert_update_charakter_by_id($id){
         //Get charakter from lodestone
         $api = new Viion\Lodestone\LodestoneAPI();
