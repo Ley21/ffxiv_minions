@@ -89,6 +89,7 @@
             WHERE player_mounts.p_id=$p_id)");
     
         $lodestone_lang = get_lang() == "ja" ? "jp" : get_lang();
+        $lodestone_lang = $lodestone_lang == "en" ? "eu" : $lodestone_lang;
         $charakter_link = "http://$lodestone_lang.finalfantasyxiv.com/lodestone/character/$p_id";
         
         

@@ -105,7 +105,8 @@
     function create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$can_fly,$method = null){
         $lang = get_lang();
         $row = "";
-        $row .= "<tr id='$dom_id'>";
+        $tr_class = $method['available'] ? "" : "active text-muted";
+        $row .= "<tr id='$dom_id' class='$tr_class'>";
         $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
         $row .= "<td name='icon' class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
         
@@ -130,13 +131,16 @@
         if($method != null){
             $method_lang = $method['method_description_'.get_lang()];
             $method_desc = empty($method_lang) ? $method['method_description_en'] : $method_lang;
-            $method_name = $method['method'] ;
+            $method_name = $method['method'];
             if(!empty($method_name)){
                 $methodes_en = get_language_text("methodes","en");
                 $m_index = array_search($method_name,$methodes_en);
                 $method_name = get_language_text("methodes")[$m_index];
+                
+                $method_name .= $method['available'] ? "" : "(N\A)";
             }
         }
+        
         $row .= "<td class='shrink'>$method_name</td>";
         $row .= "<td class='expand'>$method_desc</td>";
         $row .= "</tr>";
@@ -748,6 +752,7 @@
         $database->query("CREATE TABLE minions_method (
             m_id INT NOT NULL,
             method VARCHAR(100),
+            available tinyint(1),
             method_description_en TEXT,
             method_description_fr TEXT,
             method_description_de TEXT,
@@ -759,6 +764,7 @@
         $database->query("CREATE TABLE mounts_method (
             m_id INT NOT NULL,
             method VARCHAR(100),
+            available tinyint(1),
             method_description_en TEXT,
             method_description_fr TEXT,
             method_description_de TEXT,
@@ -789,7 +795,8 @@
                 }
                 foreach($coll->methodes as $j_method){
                     $logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
-                    $data = ["m_id" => $coll->id,"method" => $j_method->method,
+                    $data = ["m_id" => $coll->id,"available"=>$j_method->available,
+                        "method" => $j_method->method,
                         "method_description_en" => $j_method->method_description_en,
                         "method_description_fr" => $j_method->method_description_fr,
                         "method_description_de" => $j_method->method_description_de,
@@ -816,9 +823,9 @@
             $objects = $database->select($table,$columns);
             $methodes = array();
             foreach($objects as $obj){
-                $obj_methodes = $database->select($method_table,["method","method_description_en",
+                $obj_methodes = $database->select($method_table,["method","available","method_description_en",
                         "method_description_fr","method_description_de","method_description_ja"],["m_id[=]"=>$obj["id"]]);
-                $obj_methodes = $obj_methodes ? $obj_methodes : array(array("method"=>null,"method_description_en"=>null,
+                $obj_methodes = $obj_methodes ? $obj_methodes : array(array("method"=>null,"available"=>0,"method_description_en"=>null,
                         "method_description_fr"=>null,"method_description_de"=>null,"method_description_ja"=>null));
                 $method = $table == "minions" ? array("id"=>$obj["id"],"name"=>$obj["name"],"methodes"=>$obj_methodes) 
                             : array("id"=>$obj["id"],"name"=>$obj["name"],"can_fly" => $obj["can_fly"],"methodes"=>$obj_methodes) ;

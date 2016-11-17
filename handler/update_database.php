@@ -20,6 +20,19 @@ if($_POST['update']){
     else{
         if(!$tables_exits){
             create_database();
+        }else{
+            //Update Table for avalible
+            $result = $database->query("SELECT * FROM information_schema.COLUMNS 
+                WHERE TABLE_SCHEMA = 'minions' AND TABLE_NAME = 'mounts_method' AND COLUMN_NAME = 'available'")->fetchAll();
+            if(empty($result)){
+                $database->query("ALTER TABLE `mounts_method` ADD `available` TINYINT( 1 ) NOT NULL AFTER `method`");
+            }
+            
+            $result = $database->query("SELECT * FROM information_schema.COLUMNS 
+                WHERE TABLE_SCHEMA = 'minions' AND TABLE_NAME = 'minions_method' AND COLUMN_NAME = 'available'")->fetchAll();
+            if(empty($result)){
+                $database->query("ALTER TABLE `minions_method` ADD `available` TINYINT( 1 ) NOT NULL AFTER `method`");
+            }
         }
         $minion_id = $_POST['minion'];
         $mount_id = $_POST['mount'];

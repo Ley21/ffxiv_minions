@@ -5,6 +5,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 2,400 gil from <a href='http:\/\/xivdb.com\/npc\/1001787\/Bango+Zango'>Bango Zango<\/a>, <a href='http:\/\/xivdb.com\/npc\/1004417\/Roarich'>Roarich<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001276\/Maisenta'>Maisenta<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 2.400 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1001787\/Bango+Zango'>Bango Zango<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1004417\/Roarich'>Roarich<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001276\/Maisenta'>Maisenta<\/a>.",
@@ -18,6 +19,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 2,400 gil from <a href='http:\/\/xivdb.com\/npc\/1001787\/Bango+Zango'>Bango Zango<\/a>, <a href='http:\/\/xivdb.com\/npc\/1004417\/Roarich'>Roarich<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001276\/Maisenta'>Maisenta<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 2.400 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1001787\/Bango+Zango'>Bango Zango<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1004417\/Roarich'>Roarich<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001276\/Maisenta'>Maisenta<\/a>.",
@@ -31,6 +33,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 2,400 gil from <a href='http:\/\/xivdb.com\/npc\/1001787\/Bango+Zango'>Bango Zango<\/a>, <a href='http:\/\/xivdb.com\/npc\/1004417\/Roarich'>Roarich<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001276\/Maisenta'>Maisenta<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 2.400 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1001787\/Bango+Zango'>Bango Zango<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1004417\/Roarich'>Roarich<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001276\/Maisenta'>Maisenta<\/a>.",
@@ -44,6 +47,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "0",
                 "method_description_en": "Obtained as pre-order bonus for ARR.",
                 "method_description_fr": null,
                 "method_description_de": "Vorbesteller-Bonus f\u00fcr ARR.",
@@ -57,6 +61,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained from purchasing and registering a Collector's Edition (ARR) or upgrade to Collector's Edition (ARR) via Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Registrierung einer Collector's Edition (ARR) oder durch das Upgrade zur Collector's Edition via Mogry-Station.",
@@ -70,6 +75,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/736'>Bump On A Log: Maelstrom<\/a>. Complete all Maelstrom entries in the hunting log.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/736'>Bestienj\u00e4ger: Mahlstrom<\/a>. Alle Eintr\u00e4ge f\u00fcr den Mahlstrom im Bestiarium erledigt.",
@@ -83,6 +89,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/736'>Bump On A Log: Order Of The Twin Adder<\/a>. Complete all Order of the Twin Adder entries in the hunting log.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/736'>Bestienj\u00e4ger: Bruderschaft<\/a>. Alle Eintr\u00e4ge f\u00fcr die Bruderschaft der Morgenviper im Bestiarium erledigt.",
@@ -96,6 +103,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/736'>Bump On A Log: Immortal Flames<\/a>. Complete all Immortal Flames entries in the hunting log.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/736'>Bestienj\u00e4ger: Legion<\/a>. Alle Eintr\u00e4ge f\u00fcr die Legion der Unsterblichen im Bestiarium erledigt.",
@@ -109,6 +117,7 @@
         "methodes": [
             {
                 "method": "GC Purchase",
+                "available": "1",
                 "method_description_en": "Buy for 20,000 Storm Seals under the Officer Rank from The Maelstrom.",
                 "method_description_fr": null,
                 "method_description_de": "20.000 Flotten-Taler als Offizier beim Mahlstrom.",
@@ -122,6 +131,7 @@
         "methodes": [
             {
                 "method": "GC Purchase",
+                "available": "1",
                 "method_description_en": "Buy for 20,000 Serpent Seals under the Officer Rank from the Order of the Twin Adder.",
                 "method_description_fr": null,
                 "method_description_de": "20.000 Bruderschafts-Taler als Offizier bei der Bruderschaft der Morgenviper.",
@@ -135,6 +145,7 @@
         "methodes": [
             {
                 "method": "GC Purchase",
+                "available": "1",
                 "method_description_en": "Buy for 20,000 Flame Seals under the Officer Rank with The Immortal Flames.",
                 "method_description_fr": null,
                 "method_description_de": "20.000 Legions-Taler als Offizier bei der Legion der Unsterblichen.",
@@ -148,6 +159,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/5\/The+Aurum+Vale'>The Aurum Vale<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/5\/The+Aurum+Vale'>Goldklamm<\/a>.",
@@ -161,6 +173,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Purchased from Chachamun (X22 Y21 - Eastern Thanalan) for 2,400 gil. Only if you successfully complete the FATE-Chain 'Attack On Highbridge'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei Chachamun (X22 Y21 - \u00d6stliches Thanalan) f\u00fcr 2.400 Gil. Allerdings nur wenn der Ketten-FATE 'Schlacht um Hohenbr\u00fcck' erfolgreich war.",
@@ -174,6 +187,7 @@
         "methodes": [
             {
                 "method": "FATE Rewards",
+                "available": "1",
                 "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/218\/Lazy+For+You'>Lazy For You<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/218\/Lazy+For+You'>Undank Des Faulen<\/a> Gold.",
@@ -187,6 +201,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66266\/Occupational+Hazards'>Occupational Hazards<\/a>. It requires prerequisite <a href='http:\/\/xivdb.com\/quest\/66265\/No+Guts,+No+Glory'>No Guts, No Glory<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/xivdb.com\/quest\/66266\/Occupational+Hazards'>Ruin\u00f6se Plagegeister<\/a>. Die Quest wird durch die Vor-Quest <a href='http:\/\/de.xivdb.com\/quest\/66265\/No+Guts,+No+Glory'>Flussfischer<\/a> freigeschaltet.",
@@ -200,6 +215,7 @@
         "methodes": [
             {
                 "method": "Treasure Hunt",
+                "available": "1",
                 "method_description_en": "Treasure Hunt Reward from <a href='http:\/\/xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Timeworn Peisteskin Map<\/a>, <a href='http:\/\/xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Timeworn Dragonskin Map<\/a>..",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung aus <a href='http:\/\/de.xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Vergilbten Basiliskenleder-Karten<\/a>, <a href='http:\/\/de.xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Vergilbten Drachenleder-Karten<\/a>.",
@@ -213,6 +229,7 @@
         "methodes": [
             {
                 "method": "Tomestone Purchase",
+                "available": "1",
                 "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> for 7 Allagan Tomestone of Poetics.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie.",
@@ -226,6 +243,7 @@
         "methodes": [
             {
                 "method": "FATE Rewards",
+                "available": "1",
                 "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Go,+Go,+Gorgimera<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/647\/Go,+Go,+Gorgimera'>Etwas Von Allem<\/a> Gold.",
@@ -239,6 +257,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66827\/Curiosity+Killed+The+Coeurl'>Curiosity Killed The Coeurl<\/a>. It requires prerequisite <a href='http:\/\/xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Like Cats And Dogs<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66827\/Curiosity+Killed+The+Coeurl'>Die Unschuld Der Jugend<\/a>. Die Quest wird durch die Vor-Quest <a href='http:\/\/de.xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Krieg Der Raubtiere<\/a> freigeschaltet.",
@@ -252,6 +271,7 @@
         "methodes": [
             {
                 "method": "MGP Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 20,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 20.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
@@ -265,6 +285,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66038\/Her+Last+Vow'>Her Last Vow<\/a> (Hildibrand Quest).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66038\/Her+Last+Vow'>Ruin\u00f6se Revanche<\/a> (Hildibrand Quest).",
@@ -278,6 +299,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1469'>Gravel Golem<\/a> by goldsmith.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1469'>Kiesgolem<\/a> vom Goldschmied hergestellt werden.",
@@ -291,6 +313,7 @@
         "methodes": [
             {
                 "method": "Treasure Hunt",
+                "available": "1",
                 "method_description_en": "Can be found in a treasure of a 'Timeworn Boarskin Map'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Schatzkiste aus einer 'Vergilbte Keilerleder-Karte'.",
@@ -304,6 +327,7 @@
         "methodes": [
             {
                 "method": "Gathering",
+                "available": "1",
                 "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/?spot=10406'>The Salt Strand<\/a> in Lower La Noscea.",
                 "method_description_fr": null,
                 "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=10406'>Salzstrand<\/a> im Unteren La Noscea geangelt werden.",
@@ -317,6 +341,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Purchased from Boughbury Trader (X21 Y16 - South Shroud) for 2,400 gil. Only if you successfully complete the FATE <a href='http:\/\/xivdb.com\/fate\/160\/Clearing+The+Hive'>Clearing The Hive<\/a>",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei Astlfinger H\u00e4ndler (X21 Y16 - S\u00fcdwald) f\u00fcr 2.400 Gil. Allerdings nur wenn der FATE <a href='http:\/\/de.xivdb.com\/fate\/160\/Clearing+The+Hive'>Das Nest S\u00e4ubern<\/a> erfolgreich war.",
@@ -330,6 +355,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Purchased from Junkmonger Nonoroon (X11 Y24 - Upper La Noscea) for 2,400 gil. At least if he is not taking a stroll around. Oh btw. he won't sell anything while walking.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei Nonoroon (X11 Y24 - Oberes La Noscea) f\u00fcr 2.400 Gil, wenn er nicht gerade einen Spaziergang macht.",
@@ -343,6 +369,7 @@
         "methodes": [
             {
                 "method": "Treasure Hunt",
+                "available": "1",
                 "method_description_en": "Can be found in a treasure of a 'Timeworn Toadskin Map'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Schatzkiste aus einer 'Vergilbte Kr\u00f6tenleder-Karte'.",
@@ -356,6 +383,7 @@
         "methodes": [
             {
                 "method": "Tomestone Purchase",
+                "available": "1",
                 "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> for 7 Allagan Tomestone of Poetics.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie.",
@@ -369,6 +397,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1384'>Wind-up Dullahan<\/a> by armorer.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1384'>Mechanischer Dullahan<\/a> vom Plattner hergestellt werden.",
@@ -382,6 +411,7 @@
         "methodes": [
             {
                 "method": "Gathering",
+                "available": "1",
                 "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/?spot=30304'>The Burning Wall<\/a> in Eastern Thanalan.",
                 "method_description_fr": null,
                 "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=30304'>Feuerwall<\/a> im \u00d6stlichen Thanalan geangelt werden.",
@@ -395,6 +425,7 @@
         "methodes": [
             {
                 "method": "FATE Rewards",
+                "available": "1",
                 "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/quest\/66364\/The+Eyes+Have+It'>The Eyes Have It<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/quest\/66364\/The+Eyes+Have+It'>Spannende Aussichten<\/a> Gold.",
@@ -408,6 +439,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66722\/You're+Gonna+Carry+That'>You're Gonna Carry That<\/a> (Main Scenario Quest Lv. 50).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66722\/You're+Gonna+Carry+That'>Tatarus Sieben Sachen<\/a> (Hauptszenario Quest Lv. 50).",
@@ -421,6 +453,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66558\/Zombies+Are+People+Too'>Zombies Are People Too<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66558\/Zombies+Are+People+Too'>Love Me Sabotender<\/a>.",
@@ -434,6 +467,7 @@
         "methodes": [
             {
                 "method": "FATE Rewards",
+                "available": "1",
                 "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/335\/It's+Not+Lupus'>It's Not Lupus<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/335\/It's+Not+Lupus'>Krabbe XXL<\/a> Gold.",
@@ -447,6 +481,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66826\/Man's+Best+Fiend'>Man's Best Fiend<\/a>. It requires prerequisite <a href='http:\/\/xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Like Cats And Dogs<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66826\/Man's+Best+Fiend'>Wolfshundb\u00e4ndiger<\/a>. Die Quest wird durch die Vor-Quest <a href='http:\/\/de.xivdb.com\/quest\/66825\/Like+Cats+And+Dogs'>Krieg Der Raubtiere<\/a> freigeschaltet.",
@@ -460,6 +495,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 90 cumulative days (3 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 90 aktive Abo-Tage (3 Monate).",
@@ -473,6 +509,7 @@
         "methodes": [
             {
                 "method": "Tomestone Purchase",
+                "available": "1",
                 "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> for 7 Allagan Tomestone of Poetics.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/de.xivdb.com\/npc\/1008119\/Auriana'>Auriana<\/a> f\u00fcr 7 Allagische Steine der Poesie.",
@@ -486,6 +523,7 @@
         "methodes": [
             {
                 "method": "Gathering",
+                "available": "1",
                 "method_description_en": "Can be obtained by gather from an Unspoiled Node in Eastern Thanalan at 9:00 AM EZ by a Miner.",
                 "method_description_fr": null,
                 "method_description_de": "Kann von einer Unendeckten Abbaustelle im \u00d6stlichen Thanalan um 9:00 EZ als Minenarbeiter abgebaut werden.",
@@ -499,6 +537,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1385'>Wind-up Aldgoat<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1385'>Steinbock-Stofftier<\/a> vom Weber hergestellt werden.",
@@ -512,6 +551,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/929'>Out Of Sight Out Of Mind<\/a>. Complete entries 1-80 in your sightseeing log.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/929'>Weltenbummler<\/a>. Die sehenswerten Orte 001-080 aus dem Eorzea Incognita entdeckt.",
@@ -525,6 +565,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66386\/It+Was+A+Very+Good+Year'>It Was A Very Good Year<\/a> (Main Scenario Quest Lv. 33).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66386\/It+Was+A+Very+Good+Year'>Wandelndes Biotop<\/a> (Hauptszenario Quest Lv. 33).",
@@ -538,6 +579,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/10\/The+Wanderer's+Palace'>The Wanderer's Palace<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/10\/The+Wanderer's+Palace'>Palast Des Wanderers<\/a>.",
@@ -551,6 +593,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1468'>Model Vanguard<\/a> by goldsmith.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1468'>Aufzieh-Frontbrecher<\/a> vom Goldschmied hergestellt werden.",
@@ -564,6 +607,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/14\/Amdapor+Keep'>Amdapor Keep<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/14\/Amdapor+Keep'>Die Ruinen Von Amdapor<\/a>.",
@@ -577,6 +621,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67021\/Thwack-a-Mole'>Thwack-a-Mole<\/a> (Delivery Moogle Quest).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67021\/Thwack-a-Mole'>Hau Den Mull!<\/a> (Mogry-Post Quests).",
@@ -589,7 +634,16 @@
         "name": "Tender Lamb",
         "methodes": [
             {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Heavensturn Event 2015<\/a>. From Wednesday, December 31, 2014 to Wednesday, January 14, 2015. Currently only available at Mog Station",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/Heavensturn\/'>Himmelswende 2015<\/a>. Von Mittwoch, den 31.12.2014 bis Mittwoch, den 14.1.2015. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
@@ -603,6 +657,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/18\/Copperbell+Mines+(Hard)'>Copperbell+Mines+(Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/18\/Copperbell+Mines+(Hard)'>Kupferglocken-Mine (schwer)<\/a>.",
@@ -616,6 +671,7 @@
         "methodes": [
             {
                 "method": "Gathering",
+                "available": "1",
                 "method_description_en": "Can be obtained by gather from an Unspoiled Node in East Shroud at 9:00 PM EZ by a Botanik.",
                 "method_description_fr": null,
                 "method_description_de": "Kann von einer Unendeckten Abbaustelle im Ostwald um 21:00 EZ als G\u00e4rtner abgebaut werden.",
@@ -629,6 +685,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 450 cumulative days (15 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 450 aktive Abo-Tage (15 Monate).",
@@ -642,6 +699,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Sylph Bast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -655,6 +713,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 30 cumulative days (1 month).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 30 aktive Abo-Tage (1 Monat).",
@@ -668,6 +727,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/66043\/The+Gridanian+Envoy'>The Gridanian Envoy<\/a>, <a href='http:\/\/xivdb.com\/quest\/66064\/The+Ul'dahn+Envoy'>The Ul'dahn Envoy<\/a> or <a href='http:\/\/xivdb.com\/quest\/66082\/The+Lominsan+Envoy'>The Lominsan Envoy<\/a> (Main Scenario Quest Lv. 14).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/66043\/The+Gridanian+Envoy'>Die Stimme Des Waldes<\/a>, <a href='http:\/\/de.xivdb.com\/quest\/66064\/The+Ul'dahn+Envoy'>Die Stimme Der W\u00fcste<\/a> oder <a href='http:\/\/de.xivdb.com\/quest\/66082\/The+Lominsan+Envoy'>Die Stimme Des Meeres<\/a> (Hauptszenario Quest Lv. 14).",
@@ -681,6 +741,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1383'>Wind-up Qiqirn<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1383'>Qiqirn-Stofftier<\/a> vom Weber hergestellt werden.",
@@ -694,6 +755,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 60 cumulative days (2 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 60 aktive Abo-Tage (2 Monate).",
@@ -707,6 +769,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'BEFORE METEOR - FINAL FANTASY XIV ORIGINAL SOUNDTRACK'.",
@@ -720,6 +783,7 @@
         "methodes": [
             {
                 "method": "Retainer Ventures",
+                "available": "1",
                 "method_description_en": "Can be obtained by Field \/ Highland Exploration XIII.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIII eines Minenarbeiter-Gehilfen oder eines Gehilfen mit einer Kampfklasse.",
@@ -727,6 +791,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -740,6 +805,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (schwer)<\/a>.",
@@ -753,6 +819,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Amalj'aa. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -766,6 +833,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -779,6 +847,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Kobold Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Kobolde. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -792,6 +861,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Sahagin Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sahagin. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -805,6 +875,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Theres_Golems_in_Those_Hills\/'>Breaking Brick Mountains<\/a>. From Tuesday, Jan. 21 - Mon. February 3, 2014.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Theres_Golems_in_Those_Hills\/'>Harte Steine, weiche Birnen<\/a>. Von Dienstag, den 21.1.2014 bis Montag, den 3.2.2014",
@@ -818,6 +889,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/That_Old_Black_Magic\/'>That Old Black Magic<\/a>. From Tuesday, Jan. 21 - Mon. February 3, 2014.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/That_Old_Black_Magic\/'>Der schwarze D\u00e4mon<\/a>. Von Dienstag, den 21.1.2014 bis Montag, den 3.2.2014",
@@ -830,10 +902,19 @@
         "name": "Wind-up Edvya",
         "methodes": [
             {
-                "method": "Seasonal Rewards",
-                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Little Ladies' Day Event 2014<\/a>. From Friday, February 28, 2014 to Thursday, March 13, 2014. Currently only available at Mog Station",
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
-                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Prinzessinnentag 2014<\/a>. Von Freitag, den 28.02.2014 bis Donnerstag, den 13.03.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Seasonal Rewards",
+                "available": "0",
+                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Little Ladies' Day Event 2014<\/a>. From Friday, February 28, 2014 to Thursday, March 13, 2014.",
+                "method_description_fr": null,
+                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/Little_Ladies_Day\/'>Prinzessinnentag 2014<\/a>. Von Freitag, den 28.02.2014 bis Donnerstag, den 13.03.2014.",
                 "method_description_ja": null
             }
         ]
@@ -844,6 +925,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Can be purchased by exchanged a 'Elexir' at the NPC at (X:12 Y:36) in Western La Noscea.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines 'Elexirs' bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
@@ -857,6 +939,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/7559'>Plush Cushion<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/7559'>Sitzkissen<\/a> vom Weber hergestellt werden.",
@@ -870,6 +953,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 180 cumulative days (6 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 180 aktive Abo-Tage (6 Monate).",
@@ -883,6 +967,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 270 cumulative days (9 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 270 aktive Abo-Tage (9 Monate).",
@@ -896,6 +981,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/859'>Leaving A Good Impression II<\/a>. Receive 50 player commendations.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/859'>Einen Guten Eindruck Hinterlassen II<\/a>. 50 Ehrungen zum wertvollsten Spieler erhalten.",
@@ -909,6 +995,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 360 cumulative days (12 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 360 aktive Abo-Tage (12 Monate).",
@@ -922,6 +1009,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 360 cumulative days (12 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 360 aktive Abo-Tage (12 Monate).",
@@ -935,6 +1023,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'Final Fantasy 14 - A Realm Reborn Original Soundtrack'.",
@@ -948,6 +1037,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - A Real Reborn Colletors Edition' or the upgrade of the standard edition in the mogry station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - A Real Reborn Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
@@ -961,6 +1051,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/20\/Brayflox's+Longstop+(Hard)'>Brayflox's Longstop (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20\/Brayflox's+Longstop+(Hard)'>Br\u00fcllvolx' Langrast (schwer)<\/a>.",
@@ -968,6 +1059,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -981,6 +1073,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/1941'>Magic Broom<\/a> by carpenter.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1941'>Zauberbesen<\/a> vom Zimmerer hergestellt werden.",
@@ -994,6 +1087,7 @@
         "methodes": [
             {
                 "method": "Monster Hunt",
+                "available": "1",
                 "method_description_en": "Purchased with 500 Allied Seals from your GC affiliated Hunt Bill Master. (<a href='http:\/\/xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Maelstrom<\/a>, <a href='http:\/\/xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Order of the Twin Adder<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Immortal Flames<\/a>)",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 500 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
@@ -1007,6 +1101,7 @@
         "methodes": [
             {
                 "method": "MGP Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 10,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 10.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
@@ -1020,6 +1115,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 630 cumulative days (21 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 630 aktive Abo-Tage (21 Monate).",
@@ -1033,6 +1129,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 540 cumulative days (18 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 540 aktive Abo-Tage (18 Monate).",
@@ -1046,6 +1143,7 @@
         "methodes": [
             {
                 "method": "Gardening",
+                "available": "1",
                 "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=52'>here<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=52'>hier<\/a>.",
@@ -1059,6 +1157,7 @@
         "methodes": [
             {
                 "method": "Gardening",
+                "available": "1",
                 "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=47'>here<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=47'>hier<\/a>.",
@@ -1072,6 +1171,7 @@
         "methodes": [
             {
                 "method": "Gardening",
+                "available": "1",
                 "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=44'>here<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=44'>hier<\/a>.",
@@ -1085,6 +1185,7 @@
         "methodes": [
             {
                 "method": "Gardening",
+                "available": "1",
                 "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=50'>here<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=50'>hier<\/a>.",
@@ -1098,6 +1199,7 @@
         "methodes": [
             {
                 "method": "Gardening",
+                "available": "1",
                 "method_description_en": "Can be obtained by cross-breeding of two seeds in a house-garden. Look for details <a href='http:\/\/ffxivgardening.com\/seed-details.php?SeedID=45'>here<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das Kreuzen zweier Samen an einem Haus-Beet. Details <a href='http:\/\/de.ffxivgardening.com\/seed-details.php?SeedID=45'>hier<\/a>.",
@@ -1111,6 +1213,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1124,6 +1227,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/30011\/Syrcus+Tower'>Syrcus Tower<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30011\/Syrcus+Tower'>Kristallturm - Der Syrcus-Turm<\/a>.",
@@ -1137,6 +1241,7 @@
         "methodes": [
             {
                 "method": "Monster Hunt",
+                "available": "1",
                 "method_description_en": "Purchased with 440 Allied Seals from your GC affiliated Hunt Bill Master. (<a href='http:\/\/xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Maelstrom<\/a>, <a href='http:\/\/xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Order of the Twin Adder<\/a> or <a href='http:\/\/xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Immortal Flames<\/a>)",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 440 Jagdabzeichen bei dem Jagdmeister deiner Staatlichen Gesellschaft. (<a href='http:\/\/de.xivdb.com\/npc\/1009552\/Hunt+Billmaster'>Mahlstrom<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1009152\/Hunt+Billmaster'>Bruderschaft der Morgenvieper<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1001379\/Hunt+Billmaster'>Legion der Unsterblichen<\/a>)",
@@ -1150,6 +1255,7 @@
         "methodes": [
             {
                 "method": "Retainer Ventures",
+                "available": "1",
                 "method_description_en": "Can be obtained by Field Exploration XIV.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV eines Gehilfen mit einer Kampfklasse.",
@@ -1163,6 +1269,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/2070'>Nana Bear<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/2070'>Nana-Stoffb\u00e4r<\/a> vom Weber hergestellt werden.",
@@ -1176,6 +1283,7 @@
         "methodes": [
             {
                 "method": "Retainer Ventures",
+                "available": "1",
                 "method_description_en": "Can be obtained by Field Exploration XIV\/XVIII.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV\/XVIII eines Minenarbeiter-Gehilfen.",
@@ -1189,6 +1297,7 @@
         "methodes": [
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1196,6 +1305,7 @@
             },
             {
                 "method": "Treasure Hunt",
+                "available": "1",
                 "method_description_en": "Treasure Hunt Reward from a <a href='http:\/\/xivdb.com\/item\/8156'>Unhidden Leather Map<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung aus einer <a href='http:\/\/de.xivdb.com\/item\/8156'>Unversteckte Lederkarte<\/a>.",
@@ -1209,6 +1319,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1222,6 +1333,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1235,6 +1347,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/2070'>Model Magitek Bit<\/a> by blacksmith.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/2137'>Aufzieh-Magitek-Drohne<\/a> vom Grobschmied hergestellt werden.",
@@ -1248,6 +1361,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30020'>The World of Darkness<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30020'>Die Welt der Dunkelheit<\/a>.",
@@ -1261,6 +1375,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/23\/Hullbreaker+Isle'>Hullbreaker Isle<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/23\/Hullbreaker+Isle'>Schiffbrecher-Insel<\/a>.",
@@ -1274,6 +1389,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1287,6 +1403,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/20026\/The+Dragon's+Neck'>The Dragon's Neck<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20026\/The+Dragon's+Neck'>Das Drachenhals-Kolosseum<\/a>.",
@@ -1299,7 +1416,16 @@
         "name": "Hoary The Snowman",
         "methodes": [
             {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Starlight Celebration 2014<\/a>. From Thursday, December 18, 2014 to Wednesday, December 31, 2014. Currently only available at Mog Station",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2014\/The_Starlight_Celebration\/'>Sternlichtfest 2014<\/a>. Von Donnerstag, den 18.12.2014 bis Mittwoch, den 31.12.2014. Momentan nur durch die Mogry-Station erh\u00e4ltlich.",
@@ -1313,6 +1439,7 @@
         "methodes": [
             {
                 "method": "MGP Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 20,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 20.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
@@ -1326,6 +1453,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1339,6 +1467,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1352,6 +1481,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1365,6 +1495,7 @@
         "methodes": [
             {
                 "method": "Retainer Ventures",
+                "available": "1",
                 "method_description_en": "Can be obtained by Waterside Exploration XIV.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV eines Fischer-Gehilfen.",
@@ -1378,6 +1509,7 @@
         "methodes": [
             {
                 "method": "Retainer Ventures",
+                "available": "1",
                 "method_description_en": "Can be obtained by Woodland Exploration XIV.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XIV eines G\u00e4rtner-Gehilfen.",
@@ -1391,6 +1523,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/26\/The+Sunken+Temple+Of+Qarn+(Hard)'>The Sunken Temple Of Qarn (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/26\/The+Sunken+Temple+Of+Qarn+(Hard)'>Versunkener Tempel Von Qarn (schwer)<\/a>.",
@@ -1398,6 +1531,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1411,6 +1545,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV: A Realm Reborn The Art of Eorzea - Another Dawn -'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV: A Realm Reborn The Art of Eorzea - Another Dawn -'.",
@@ -1424,6 +1559,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV: A REALM REBORN [Delivery Moogle]'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV: A REALM REBORN [Delivery Moogle]'.",
@@ -1437,6 +1573,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Can be obtained by desynthese of an <a href='http:\/\/xivdb.com\/item\/8761'>Ninja Betta<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Desynthese eines <a href='http:\/\/de.xivdb.com\/item\/8761'>Ninja-Kampffisch<\/a>.",
@@ -1450,6 +1587,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Obtained by visiting a Ceremony of <a href='http:\/\/www.finalfantasyxiv.com\/eternalbond\/de\/detail\/special_item_4.html?lng=de&rgn=de'>Eternal Bonding<\/a> with a Gold- or Platinum-Plan",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch den Besuch einer Zeremonie des <a href='http:\/\/www.finalfantasyxiv.com\/eternalbond\/de\/detail\/special_item_4.html?lng=de&rgn=de'>Ewigen Bund<\/a> mit dem Gold- oder Platin-Plan.",
@@ -1463,6 +1601,7 @@
         "methodes": [
             {
                 "method": "MGP Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 10,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 10.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
@@ -1476,6 +1615,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1040'>Out Of A Bind I<\/a>. Complete the Final Coil of Bahamut.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1040'>Am Ende Der Schatten I<\/a>. 1 Mal Verschlungene Schatten von Bahamut - Finale erfolgreich abgeschlossen.",
@@ -1489,6 +1629,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/65902\/The+Rising+Chorus'>The Rising Chorus<\/a>. (First time completing <a href='http:\/\/xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>The Keeper Of The Lake<\/a>)",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/65902\/The+Rising+Chorus'>Der H\u00fcter Erwacht<\/a>. (Nach dem ersten Abschlie\u00dfen von <a href='http:\/\/de.xivdb.com\/instance\/32\/The+Keeper+Of+The+Lake'>H\u00fcter Des Sees<\/a>)",
@@ -1502,6 +1643,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1515,6 +1657,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/20030'>Battle In The Big Keep<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/20030'>Revanche In Den Ruinen<\/a>.",
@@ -1528,6 +1671,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Sylph Bast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
@@ -1541,6 +1685,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Amalj'aa. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
@@ -1554,6 +1699,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
@@ -1567,6 +1713,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Kobold Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Kobolde. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
@@ -1580,6 +1727,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Sahagin Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sahagin. Erh\u00e4ltlich f\u00fcr 25.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
@@ -1593,6 +1741,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "0",
                 "method_description_en": "Obtained as pre-order bonus for 'Final Fantasy XIV - Heavensward'.",
                 "method_description_fr": null,
                 "method_description_de": "Vorbesteller-Bonus f\u00fcr 'Final Fantasy XIV - Heavensward'.",
@@ -1606,6 +1755,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - Heavensward Colletors Edition' or the upgrade of the standard edition in the mogry station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - Heavensward Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
@@ -1619,6 +1769,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67140\/In+Search+Of+Iceheart'>In Search Of Iceheart<\/a> (Main Scenario Quest Lv. 51).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/xivdb.com\/quest\/67140\/In+Search+Of+Iceheart'>In Search Of Iceheart<\/a> (Hauptszenario Quest Lv. 51).",
@@ -1632,6 +1783,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1645,6 +1797,7 @@
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable from the Mog Station.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
@@ -1658,6 +1811,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67184\/A+Difference+Of+Opinion'>A Difference Of Opinion<\/a> (Main Scenario Quest Lv. 57).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67184\/A+Difference+Of+Opinion'>Mit Eigenen Waffen<\/a> (Hauptszenario Quest Lv. 57).",
@@ -1671,6 +1825,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/34'>The Vault<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/34'>Erzbasilika<\/a>.",
@@ -1678,6 +1833,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1691,6 +1847,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Vanu Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Vanu. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -1704,6 +1861,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31199'>Atrophied Atomos<\/a> by alchemist.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31199'>Mini-Atomos<\/a> vom Alchemist hergestellt werden.",
@@ -1717,6 +1875,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/35'>The Fractal Continuum<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/35'>Die Fraktal-Kontinuum<\/a>.",
@@ -1724,6 +1883,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1737,6 +1897,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/33'>Neverreap<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/33'>Nimmerreich<\/a>.",
@@ -1744,6 +1905,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1757,6 +1919,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/37'>Sohm Al<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/37'>Sohm Al<\/a>.",
@@ -1764,6 +1927,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1777,6 +1941,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/30981'>Clockwork Barrow<\/a> by carpenter.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/30981'>Aufzieh-Schubkarre<\/a> vom Zimmerer hergestellt werden.",
@@ -1790,6 +1955,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/39'>The Aery<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/39'>Nest Des Drachen<\/a>.",
@@ -1797,6 +1963,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1810,6 +1977,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/31'>The Great Gubal Library<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/31'>Gro\u00dfe Gubal-Bibliothek<\/a>.",
@@ -1817,6 +1985,7 @@
             },
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -1830,6 +1999,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31043'>Iron Dwarf<\/a> by armorer.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31043'>Eisenzwerg<\/a> vom Plattner hergestellt werden.",
@@ -1843,6 +2013,7 @@
         "methodes": [
             {
                 "method": "Monster Hunt",
+                "available": "1",
                 "method_description_en": "Purchased with 400 Clan Hunt Seals from <a href='http:\/\/xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 400 Centurio-Abzeichen bei <a href='http:\/\/de.xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
@@ -1855,7 +2026,16 @@
         "name": "Wind-up Iceheart",
         "methodes": [
             {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>The Rising<\/a>. From Thursday, August 27, 2015 to Monday, September 7, 2015.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>Fest der Wiedergeburt<\/a> Ab Donnerstag, dem 27.08.2015 bis Montag, dem 07.09.2015.",
@@ -1869,6 +2049,7 @@
         "methodes": [
             {
                 "method": "Retainer Ventures",
+                "available": "1",
                 "method_description_en": "Can be obtained by Waterside Exploration XVIII.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XVIII eines Fischer-Gehilfen.",
@@ -1882,6 +2063,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31044'>Steam-powered Gobwalker G-VII<\/a> by armorer.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31044'>Dampf-Stampfer<\/a> vom Plattner hergestellt werden.",
@@ -1895,6 +2077,7 @@
         "methodes": [
             {
                 "method": "Monster Hunt",
+                "available": "1",
                 "method_description_en": "Purchased with 400 Clan Hunt Seals from <a href='http:\/\/xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 400 Centurio-Abzeichen bei <a href='http:\/\/de.xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
@@ -1908,6 +2091,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67649\/Do+It+For+Gilly'>Do It For Gilly<\/a> (Main Scenario Quest Lv. 60).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67649\/Do+It+For+Gilly'>Zur\u00fcck Auf Den Rechten Weg<\/a> (Hauptszenario Quest Lv. 60).",
@@ -1920,7 +2104,16 @@
         "name": "Wind-up Yugiri",
         "methodes": [
             {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>The Rising<\/a>. From Thursday, August 27, 2015 to Monday, September 7, 2015.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/The_Rising\/'>Fest der Wiedergeburt 2015<\/a> Ab Donnerstag, dem 27.08.2015 bis Montag, dem 07.09.2015.",
@@ -1934,6 +2127,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE EMERALD]'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE EMERALD]'.",
@@ -1947,6 +2141,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE TOPAZ]'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY XIV ONLINE PLUSH [CARBUNCLE TOPAZ]'.",
@@ -1960,6 +2155,7 @@
         "methodes": [
             {
                 "method": "FATE Rewards",
+                "available": "1",
                 "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/855\/On+Dangerous+Ground'>On Dangerous Ground<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate\/855\/On+Dangerous+Ground'>Wider Die Eigene Natur<\/a> Gold.",
@@ -1973,6 +2169,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'BEFORE THE FALL: FINAL FANTASY XIV Original Soundtrack [Music Disc]'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'BEFORE THE FALL: FINAL FANTASY XIV Original Soundtrack [Music Disc]'.",
@@ -1986,6 +2183,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
@@ -1999,6 +2197,7 @@
         "methodes": [
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -2006,6 +2205,7 @@
             },
             {
                 "method": "Treasure Hunt",
+                "available": "1",
                 "method_description_en": "Treasure Hunt Reward from a <a href='http:\/\/xivdb.com\/item\/12243'>Timeworn Dragonskin Map<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung aus einer <a href='http:\/\/de.xivdb.com\/item\/12243'>Vergilbte Drachenleder-Karte<\/a>.",
@@ -2019,6 +2219,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31292'>Wind-up Illuminatus<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31292'>Indigohand-Puppe<\/a> vom Weber hergestellt werden.",
@@ -2031,7 +2232,16 @@
         "name": "Pumpkin Butler",
         "methodes": [
             {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/All_Saints_Wake\/'>All Saints Wake<\/a>. From Thursday, October 22, 2015 to Wednesday, November 4, 2015.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/All_Saints_Wake\/'>Allerschutzheiligen<\/a> Von Donnerstag, den 22.10.2015 bis Mittwoch, den 04.11.2015.",
@@ -2045,6 +2255,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30029'>The Void Ark<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30029'>Nichts-Arche<\/a>.",
@@ -2058,6 +2269,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY\u00ae XIV: HEAVENSWARD\u2122 The Art of Ishgard -Stone and Steel- [Art Book]'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY\u00ae XIV: HEAVENSWARD\u2122 The Art of Ishgard -Stone and Steel- [Art Book]'.",
@@ -2071,6 +2283,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Can be found in a silver\/gold treasure in 'Diadem'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich in einer Silbernen-\/Goldenenschatztruhe im 'Diadem'.",
@@ -2084,6 +2297,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1382'>A Load Of Verminion II<\/a>. Win 50 Lord of Verminion player battle (RP) matches.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1382'>K\u00e4mpfer Der Trabanten II<\/a>. 50 Duelle gegen Spieler (um RP) beim Kampf der Trabanten gewonnen.",
@@ -2097,6 +2311,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1385'>The Road Of Verminion I<\/a>. Complete 4 different Lord of Verminion tournaments with double digit victories.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1385'>Gro\u00dffeldherr Der Kleinen I<\/a>. Bei vier Kampf der Trabanten-Turnieren je mindestens 10 Siege errungen und die Verg\u00fctung daf\u00fcr erhalten.",
@@ -2110,6 +2325,7 @@
         "methodes": [
             {
                 "method": "Achievement Rewards",
+                "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1380'>Challenge Accepted<\/a>. Complete the first 24 Verminion Challenges.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1380'>Kraft Des Trabantierens<\/a>. Alle Trainingsabschnitte im Kampf der Trabanten abgeschlossen.",
@@ -2123,6 +2339,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/41'>Saint Mocianne's Arboretum<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/41'>Sankt Mocianne-Arboretum<\/a>.",
@@ -2136,6 +2353,7 @@
         "methodes": [
             {
                 "method": "Veteran Rewards",
+                "available": "1",
                 "method_description_en": "Veteran Reward for subscribing for 960 cumulative days (32 months).",
                 "method_description_fr": null,
                 "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 960 aktive Abo-Tage (32 Monate).",
@@ -2149,6 +2367,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31293'>Wind-up Ifrit<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31293'>Mini-Ifrit<\/a> vom Weber hergestellt werden.",
@@ -2162,6 +2381,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31471'>Wind-up Garuda<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31471'>Mini-Garuda<\/a> vom Weber hergestellt werden.",
@@ -2175,6 +2395,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31472'>Wind-up Titan<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31472'>Mini-Titan<\/a> vom Weber hergestellt werden.",
@@ -2188,6 +2409,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31473'>Wind-up Leviathan<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31473'>Mini-Leviathan<\/a> vom Weber hergestellt werden.",
@@ -2201,6 +2423,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Vanu Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Vanu. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (Verbundenheit Rang 'Solidarisch').",
@@ -2214,6 +2437,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67699\/As+Goes+Light,+So+Goes+Darkness'>As Goes Light, So Goes Darkness<\/a> (Main Scenario Quest Lv. 60).",
                 "method_description_fr": null,
                 "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67699\/As+Goes+Light,+So+Goes+Darkness'>Licht Und Dunkel<\/a> (Hauptszenario Quest Lv. 60).",
@@ -2227,6 +2451,7 @@
         "methodes": [
             {
                 "method": "MGP Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 30,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 30.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
@@ -2240,6 +2465,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Kr\u00e4mer<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
@@ -2253,6 +2479,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30037'>Alexander - The Burden Of The Son (Savage)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30037'>Alexander - Last Des Sohnes (episch)<\/a>.",
@@ -2266,6 +2493,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/The_Rising\/'>The Rising<\/a>. From Saturday, August 27, 2016 to Monday, September 12, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/The_Rising\/'>Fest der Wiedergeburt<\/a> Von Samstag, den 27.08.2016 bis Montag, den 12.09.2016.",
@@ -2279,6 +2507,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='xivdb.com\/instance\/43'>The Antitower<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/43'>Antiturm<\/a>.",
@@ -2292,6 +2521,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='xivdb.com\/instance\/43'>The Antitower<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/43'>Antiturm<\/a>.",
@@ -2305,6 +2535,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='xivdb.com\/instance\/42'>The Lost City Of Amdapor (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/42'>Historisches Amdapor (schwer)<\/a>.",
@@ -2318,6 +2549,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67768'>The Word Of The Mother<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67768'>Zwiesprache Mit Dem Planeten<\/a>.",
@@ -2331,6 +2563,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'Heavensward: Final Fantasy XIV Original Soundtrack'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'Heavensward: Final Fantasy XIV Original Soundtrack'.",
@@ -2344,6 +2577,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Random drop after PvP Match in 'The Feast'.",
                 "method_description_fr": null,
                 "method_description_de": "Zuf\u00e4llige Belohnung am Ende eines PvP Spiels in 'The Feast'.",
@@ -2357,6 +2591,7 @@
         "methodes": [
             {
                 "method": "Gil Purchase",
+                "available": "1",
                 "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbauch<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
@@ -2370,6 +2605,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31859'>Wind-up Ramuh<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31859'>Mini-Ramuh<\/a> vom Weber hergestellt werden.",
@@ -2383,6 +2619,7 @@
         "methodes": [
             {
                 "method": "Crafting",
+                "available": "1",
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31860'>Wind-up Shiva<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31860'>Mini-Shiva<\/a> vom Weber hergestellt werden.",
@@ -2396,6 +2633,7 @@
         "methodes": [
             {
                 "method": "MGP Purchase",
+                "available": "1",
                 "method_description_en": "Purchasable for 10,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich f\u00fcr 10.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
@@ -2409,6 +2647,7 @@
         "methodes": [
             {
                 "method": "Gathering",
+                "available": "1",
                 "method_description_en": "Can be fished at <a href='http:\/\/en.ff14angler.com\/spot\/40206'>South Banepool<\/a> in Coerthas Western Highlands.",
                 "method_description_fr": null,
                 "method_description_de": "Kann am <a href='http:\/\/de.ff14angler.com\/?spot=40206'>S\u00fcdlicher Bannpfuhl<\/a> im Westliches Hochland von Coerthas geangelt werden.",
@@ -2422,6 +2661,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/45\/Hullbreaker+Isle+(Hard)'>Hullbreaker Isle (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/45\/Hullbreaker+Isle+(Hard)'>Schiffbrecher-Insel (schwer)<\/a>.",
@@ -2435,6 +2675,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Can be purchased for 15,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Kann f\u00fcr 15.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00f6hlen-Pier<\/a> gekauft werden.",
@@ -2448,6 +2689,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/The_Rising\/'>The Rising<\/a>. From Saturday, August 27, 2016 to Monday, September 12, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/The_Rising\/'>Fest der Wiedergeburt<\/a> Von Samstag, den 27.08.2016 bis Montag, den 12.09.2016.",
@@ -2461,6 +2703,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67783'>Litany Of Peace<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67783'>Das Ende Eines Langen Weges<\/a>.",
@@ -2474,6 +2717,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/30038'>The Weeping City Of Mhach<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30038'>Die Stadt Der Tr\u00e4nen<\/a>.",
@@ -2487,6 +2731,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 3 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4tlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherben<\/a>. (Palast Der Toten)",
@@ -2500,6 +2745,7 @@
         "methodes": [
             {
                 "method": "Treasure Dungeons",
+                "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
@@ -2513,6 +2759,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 3 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 3 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherben<\/a>. (Palast Der Toten)",
@@ -2526,6 +2773,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2539,6 +2787,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2552,6 +2801,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2565,6 +2815,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2578,6 +2829,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2591,6 +2843,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2604,6 +2857,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2617,6 +2871,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2630,6 +2885,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2643,6 +2899,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2656,6 +2913,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2669,6 +2927,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2682,6 +2941,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
@@ -2695,6 +2955,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'Encyclopaedia Eorzea - The World of Final Fantasy XIV'",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'Encyclopaedia Eorzea - The World of Final Fantasy XIV'.",
@@ -2708,6 +2969,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='https:\/\/xivdb.com\/instance\/30042'>Alexander - The Soul Of The Creator<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='https:\/\/de.xivdb.com\/instance\/30042'>Alexander - Seele des Sch\u00f6pfers<\/a>.",
@@ -2721,6 +2983,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
+                "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/46'>Xelphatol<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/46'>Xelphatol<\/a>.",
@@ -2734,6 +2997,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
@@ -2747,6 +3011,7 @@
         "methodes": [
             {
                 "method": "Misc. Methods",
+                "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
@@ -2758,7 +3023,14 @@
         "id": "219",
         "name": "Wind-up Edda",
         "methodes": [
-            { "method": "Misc. Methods", "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon", "method_description_fr": null, "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz II' aus Palast der Toten.", "method_description_ja": null }
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz II' aus Palast der Toten.",
+                "method_description_ja": null
+            }
         ]
     },
     {
@@ -2767,6 +3039,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Las Vegas.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Las Vegas.",
@@ -2780,6 +3053,7 @@
         "methodes": [
             {
                 "method": "Promotions",
+                "available": "1",
                 "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Tokyo.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Tokyo.",
@@ -2793,6 +3067,7 @@
         "methodes": [
             {
                 "method": "Quest Rewards",
+                "available": "1",
                 "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67886'>An Ending To Mark A New Beginning<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67886'>Wege In Die Zukunft<\/a>.",
@@ -2806,9 +3081,10 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
-                "method_description_en": "Reward for the Special Event <a href='http://eu.finalfantasyxiv.com/lodestone/special/2016/All_Saints_Wake/'>All Saints Wake 2016<\/a>.",
+                "available": "0",
+                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/All_Saints_Wake\/'>All Saints Wake 2016<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Belohnung des Events: <a href='http://de.finalfantasyxiv.com/lodestone/special/2016/All_Saints_Wake/'>Allerschutzheiligen 2016<\/a>.",
+                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/All_Saints_Wake\/'>Allerschutzheiligen 2016<\/a>.",
                 "method_description_ja": null
             }
         ]
