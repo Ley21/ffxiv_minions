@@ -60,7 +60,7 @@
         $p_name = ucwords($player_entry["name"]);
         $p_world = $player_entry["world"];
         $p_server = ucwords($player_entry["world"]);
-        $p_title = get_title_language_text($player_entry["title"]);
+        $p_title = empty($player_entry["title"]) ? $player_entry["title"] : get_title_language_text($player_entry["title"]);
         $p_race = $player_entry["race"];
         $p_gc = get_language_text("gc_names")[$player_entry["grandCompany"]];
         $p_fc = $player_entry["freeCompany"];
