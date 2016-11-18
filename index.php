@@ -27,11 +27,18 @@ $smarty->assign('char_search_placeholder',get_language_text("char_search_placeho
 $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
 
+$lastPatch = get_latest_patch();
+
+$latest_minions = $database->select("minions", "*", ["patch[=]" => $lastPatch]);
+$content = create_table(get_language_text("latest_minions"), $latest_minions,"minion");
+
+$latest_mounts = $database->select("mounts", "*", ["patch[=]" => $lastPatch]);
+
+$content .= create_table(get_language_text("latest_mounts"), $latest_mounts,"mount");
 
 
+$smarty->assign("content",$content);
 
-$smarty->assign("content","");
-
-$smarty->display('template/index.tpl', $data);
+$smarty->display('template/index.tpl');
 
 ?>

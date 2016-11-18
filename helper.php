@@ -46,62 +46,88 @@
         
     }
     
+    function get_latest_patch(){
+        global $database;
+        $patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
+        $floatPatches = array();
+        
+        foreach($patches as $patch) {
+        	$version = $patch['patch'];
+        	$float = floatval($version);
+        	array_push($floatPatches, $float);
+        }
+        
+        sort($floatPatches);
+        $lastPatch = number_format(end($floatPatches) , 2, ".", "");
+        $lastPatch = (float)$lastPatch;
+        return $lastPatch;
+    }
+    
     function create_table($title,$sql_data,$type,$methodName=""){
         global $database;
         
+        $smarty = new Smarty();
+        $smarty->assign('tableTitle', $title);
+        $smarty->assign('tableCount', count($sql_data));
+        $smarty->assign('tableHeadIconTitle', get_language_text("icon"));
+        $smarty->assign('tableHeadNameTitle', get_language_text("name"));
+        $smarty->assign('tableHeadPatchTitle', get_language_text("patch"));
+        $smarty->assign('tableHeadCanFlyTitle', $type == "moun" ? get_language_text("can_fly"):"");
+        $smarty->assign('tableHeadMethodTitle', get_language_text("method"));
+        $smarty->assign('tableHeadDescriptionTitle', get_language_text("description"));
+        $smarty->assign('tableId', "table_".$type);
+        
+        
         $lang = get_lang();
-        $count = count($sql_data);
-        $table = '<div class="panel panel-primary">
-        <div class="panel-heading"><h4><b>'.$title.": $count".'</b></h4></div>
-        <div class="panel-body">';
-        $icon = get_language_text("icon");
-        $name = get_language_text("name");
-        $patch = get_language_text("patch");
-        $can_fly = get_language_text("can_fly");
-        $method = get_language_text("method");
-        $table_id = "table_".$type;
+        $objects = array();
         
-        $description = get_language_text("description");
-        $table .= "<table class='table table-striped' id='$table_id'>
-                    <thead><tr><th>$icon</th><th>$name</th><th>$patch</th>";
-        $table .= $type == "mount" ? "<th>$can_fly</th>":"";
-        $table .= "<th>$method</th><th>$description</th></tr></thead>";
-        
-
-        $table .= "<tbody>";
         foreach($sql_data as $minion_data){
             $m_id = $minion_data['id'];
+            $dom_id = $type."_".$m_id;
+            $name = ucwords($minion_data['name_'.$lang]);
+            $icon_url = $minion_data['icon_url'];
+            $patch = $minion_data['patch'];
+            $can_fly = !empty($minion_data['can_fly']) ? 
+                ($minion_data['can_fly'] == 0 ? get_language_text("no") : get_language_text("yes")) 
+                : get_language_text("unknown");
+            
+            $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
+            $url = "$base_url/$type/$m_id";
+            
             $condition = empty($methodName) || $methodName == "All" ? ["m_id[=]"=>$m_id]: ["AND"=>["m_id[=]"=>$m_id,"method[=]"=>$methodName]];
             $obj_methodes = $database->select($type == "minion" ? "minions_method" : "mounts_method",
                 "*",$condition);
             
-            $name = ucwords($minion_data['name_'.$lang]);
             
-            $icon_url = $minion_data['icon_url'];
-            $patch = $minion_data['patch'];
-            $rowspan = empty($obj_methodes) ? 1 : count($obj_methodes);
-            
-            
-            $dom_id = $type."_".$m_id;
-            $method_count = 0;
             if(empty($obj_methodes)){
-                $table .=create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$type == "mount" ? $minion_data['can_fly'] : 0);
+                $objects[] = array('id'=>$dom_id,'class'=>"",'url'=>$url,
+                    'icon'=>$icon_url,'name'=>$name,'patch'=>$patch,
+                    'canFly'=>$can_fly,'method'=>get_language_text("unknown"),
+                    'methodDesc'=>"");
             }
             else{
                 foreach($obj_methodes as $method){
-                    $table .= create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$type == "mount" ? $minion_data['can_fly'] : 0,$method);
-                    $method_count++;
+                    $methodes_en = get_language_text("methodes","en");
+                    $m_index = array_search($method['method'],$methodes_en);
+                    $method_name = get_language_text("methodes")[$m_index];
+                    $method_name .= $method['available'] ? "" : "(N\A)";
+                    $methodDesc = $method['method_description_'.$lang];
+                    $methodDesc = empty($methodDesc) ? $method['method_description_en'] : $methodDesc;
+                    $class = $method['available'] ? "" : "active text-muted";
+                    
+                    $objects[] = array('id'=>$dom_id,'class'=>$class,'url'=>$url,
+                        'icon'=>$icon_url,'name'=>$name,'patch'=>$patch,
+                        'canFly'=>$can_fly,'method'=>$method_name,
+                        'methodDesc'=>$methodDesc);
                 }
             }
             
-            
-            
         }
-        $table .= "</tbody></table></div>
-        </div>";
-        return $table;
+        $smarty->assign('objects', $objects);
+        return $smarty->fetch('template/table.tpl');
     }
     
+    /*
     function create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$can_fly,$method = null){
         $lang = get_lang();
         $row = "";
@@ -146,6 +172,7 @@
         $row .= "</tr>";
         return $row;
     }
+    */
     
     function create_ranking($type = "",$fc = ""){
         global $database;
