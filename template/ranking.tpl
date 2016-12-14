@@ -1,3 +1,23 @@
+{if $search}
+<b>{$search_minion}</b>
+<form class='form-inline'>
+<select class='form-control' id='find_minion'>
+<option value=''>---------</option>
+{foreach $minions as $minion}
+<option value='{$minion.id}'>{$minion.name}</option>
+{/foreach}
+</select></form></br>
+
+<b>{$search_mount}</b>
+<form class='form-inline'>
+<select class='form-control' id='find_mount'>
+<option value=''>---------</option>
+{foreach $mounts as $mount}
+<option value='{$mount.id}'>{$mount.name}</option>
+{/foreach}
+</select></form></br>
+{/if}
+
 <table class='table table-condensed'>
     <thead>
         <tr>

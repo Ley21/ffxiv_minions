@@ -154,8 +154,25 @@
         
         
         if(!empty($fc)){
+            $smarty->assign('search',true);
+            $minions = $database->select("minions",["id","name_".get_lang()],"ORDER BY "."name_".get_lang());
+            $mounts = $database->select("mounts",["id","name_".get_lang()],"ORDER BY "."name_".get_lang());
+            
+            $smarty->assign('search_minion',get_language_text("has_minion"));
+            $smarty->assign('search_mount',get_language_text("has_mount"));
+            
+            $minions = array_map(function($obj){
+                return array("id"=>$obj['id'],"name"=>$obj["name_".get_lang()]);
+            },$minions);
+            $mounts = array_map(function($obj){
+                return array("id"=>$obj['id'],"name"=>$obj["name_".get_lang()]);
+            },$mounts);
+            
+            
+            $smarty->assign('minions',$minions);
+            $smarty->assign('mounts',$mounts);
             $missing_ranking_players = get_missing_player_ranking_rows($fc);
-            //var_dump($missing_ranking_players);
+            
         }
         foreach($missing_ranking_players as $player){
             array_push($ranking,$player);    
