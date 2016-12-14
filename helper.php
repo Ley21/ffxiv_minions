@@ -172,11 +172,11 @@
             $smarty->assign('minions',$minions);
             $smarty->assign('mounts',$mounts);
             $missing_ranking_players = get_missing_player_ranking_rows($fc);
-            
+            foreach($missing_ranking_players as $player){
+                array_push($ranking,$player);    
+            }
         }
-        foreach($missing_ranking_players as $player){
-            array_push($ranking,$player);    
-        }
+        
         
         
         $smarty->assign('players', $ranking);
