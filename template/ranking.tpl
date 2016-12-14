@@ -1,4 +1,3 @@
-
 <table class='table table-condensed'>
     <thead>
         <tr>
@@ -20,7 +19,9 @@
     <tbody>
         {foreach $players as $player}
         <tr class='active' id='{$player.id}'>
-            <td>{$player.nr}</td><td><a onclick='loadCharakter({$player.id})'>{$player.name}</a></td><td>{$player.world}</td>
+            <td>{$player.nr}</td>
+            <td><a onclick='loadCharakter({$player.id})'>{$player.name}</a></td>
+            <td>{$player.world}</td>
             {if $type eq "minions"}
             <td>{$player.minions}</td>
             {elseif $type eq "mounts"}
@@ -32,10 +33,7 @@
             {/if}
             <td>
                 {if $player.old}
-                    <button class='btn btn-info' onclick='updateCharakter({$player.id})'>{$syncBtnText}</button>
-                {else}
-                    {$player.sync}
-                {/if}
+                <button class='btn btn-info' onclick='updateCharakter({$player.id})'>{$syncBtnText}</button> {else} {$player.sync} {/if}
             </td>
         </tr>
         {/foreach}

@@ -525,6 +525,8 @@
         return $obj->$type->results[0]->id;
     }
     
+    
+    
     function insert_update_minion($id){
         global $database;
         $json = file_get_contents("https://api.xivdb.com/minion/$id");
