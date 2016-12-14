@@ -1,6 +1,7 @@
 <?php
     require_once "config.php";
     require_once "language.php";
+    
     $random_id = 0;
     
     function get_lang(){
@@ -63,8 +64,15 @@
         return $lastPatch;
     }
     
-    function create_table($title,$sql_data,$type,$methodName=""){
+    function create_table($title,$type,$latestPatch=false,$methodName=""){
         global $database;
+        
+        $condition = empty($methodName) ? "" : ["method[=]"=>$methodName];
+        $condition = $latestPatch ? ["patch[=]" => get_latest_patch()] : $condition;
+        
+        $sql_data = $database->select($type."s",
+            ["[>]".$type."s_method"=>["id"=>"m_id"]],
+            "*", $condition);
         
         $smarty = new Smarty();
         $smarty->assign('tableTitle', $title);
@@ -124,74 +132,44 @@
             
         }
         $smarty->assign('objects', $objects);
-        return $smarty->fetch('template/table.tpl');
+        return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/table.tpl');
     }
-    
-    /*
-    function create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$can_fly,$method = null){
-        $lang = get_lang();
-        $row = "";
-        $tr_class = $method['available'] ? "" : "active text-muted";
-        $row .= "<tr id='$dom_id' class='$tr_class'>";
-        $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
-        $row .= "<td name='icon' class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
-        
-        $row .=  "<td name='title' class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
-        $row .=  "<td name='patch' class='shrink'>$patch</td>";
-        if($type == "mount"){
-            if($can_fly == 0){
-                $can_fly = get_language_text("no");
-            }
-            elseif($can_fly == 1){
-                $can_fly = get_language_text("yes");
-            }
-            else{
-                $can_fly = get_language_text("unknown");
-            }
-            
-            $row .= "<td  class='shrink'>$can_fly</td>";
-        }
-        
-        $method_name = get_language_text("unknown");
-        $method_desc = "";
-        if($method != null){
-            $method_lang = $method['method_description_'.get_lang()];
-            $method_desc = empty($method_lang) ? $method['method_description_en'] : $method_lang;
-            $method_name = $method['method'];
-            if(!empty($method_name)){
-                $methodes_en = get_language_text("methodes","en");
-                $m_index = array_search($method_name,$methodes_en);
-                $method_name = get_language_text("methodes")[$m_index];
-                
-                $method_name .= $method['available'] ? "" : "(N\A)";
-            }
-        }
-        
-        $row .= "<td class='shrink'>$method_name</td>";
-        $row .= "<td class='expand'>$method_desc</td>";
-        $row .= "</tr>";
-        return $row;
-    }
-    */
     
     function create_ranking($type = "",$fc = ""){
         global $database;
         
-        $table = crate_ranking_header($type);
-        $players = $database->select("players",["id","name","world","last_update_date"],
-            empty($fc) ? "" : ["freeCompanyId"=>$fc]);
-        $ranking = get_ranking_players($players,$type);
-        $table .= crate_ranking_table($ranking,$type);
-        if(!empty($fc)){
-            $table .= get_missing_player_ranking_rows($fc);
-        }
-        $table .= '</table>';
+        $smarty = new Smarty();
+        $smarty->assign('tableHeaderNr', get_language_text("nr"));
+        $smarty->assign('tableHeaderName', get_language_text("name"));
+        $smarty->assign('tableHeaderWorld', get_language_text("world"));
+        $smarty->assign('tableHeaderCountMinions', get_language_text("minions"));
+        $smarty->assign('tableHeaderCountMounts', get_language_text("mounts"));
+        $smarty->assign('tableHeaderCountAll', get_language_text("all"));
+        $smarty->assign('tableHeaderLastSync', get_language_text("last_synced"));
+        $smarty->assign('type',$type);
+        $smarty->assign('syncBtnText',get_language_text("update_char"));
         
-        return $table;
+        $ranking = get_ranking_players($type,$fc);
+        
+        
+        
+        if(!empty($fc)){
+            $missing_ranking_players = get_missing_player_ranking_rows($fc);
+            //var_dump($missing_ranking_players);
+        }
+        foreach($missing_ranking_players as $player){
+            array_push($ranking,$player);    
+        }
+        
+        
+        $smarty->assign('players', $ranking);
+        return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/ranking.tpl');
     }
     
-    function get_ranking_players($players,$type = ""){
+    function get_ranking_players($type = "",$fc=""){
         global $database;
+        $players = $database->select("players",["id","name","world","last_update_date"],
+            empty($fc) ? "" : ["freeCompanyId"=>$fc]);
         $ranking = array();
         foreach($players as $player){
             $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
@@ -214,36 +192,46 @@
             
         }
         arsort($ranking);
-        return $ranking;
+        
+        $ordered_ranking = array();
+        $befor = 0;
+        $nr = 1;
+        foreach($ranking as $rank_arr){
+            $rank = $rank_arr[1];
+            $date_diff = date_diff(date_create($rank->player['last_update_date']), date_create(date("Y-m-d")));
+            $old = $date_diff->days >= 14;
+            
+            $ordered_ranking[] = array("nr"=>$nr,"id"=>$rank->player['id'],
+                "name"=>ucwords($rank->player['name']),"world"=>ucfirst($rank->player['world']),
+                "minions"=>$rank->minions,"mounts"=>$rank->mounts,"all"=>$rank->all,
+                "sync"=>$rank->player['last_update_date'],"old"=>$old);
+            if($befor != $rank_arr[0]){
+                $befor = $rank_arr[0];
+                $nr++;
+            }
+        }
+        return $ordered_ranking;
     }
     
-    function crate_ranking_header($type = ""){
-        $nr = get_language_text("nr");
-        $name = get_language_text("name");
-        $world = get_language_text("world");
-        $number_minions = get_language_text("number_minions");
-        $number_mounts = get_language_text("number_mounts");
-        $number_all = get_language_text("number_all");
-        $last_sync_title = get_language_text("last_synced");
-        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th>";
-
-        switch($type){
-            case "minions":
-                $table .= "<th>$number_minions</th>";
-                break;
-            case "mounts":
-                $table .= "<th>$number_mounts</th>";
-                break;
-            default:
-                $table .= "<th>$number_minions</th>";
-                $table .= "<th>$number_mounts</th>";
-                $table .= "<th>$number_all</th>";
-                break;
-                
+    function get_missing_player_ranking_rows($fc){
+        global $database;
+        
+        $api = new Viion\Lodestone\LodestoneAPI();
+        $freeCompany = $api->Search->Freecompany($fc,true);
+        
+        $rows = array();
+        foreach($freeCompany->members as $member){
+            $in_table = $database->has("players", ["AND"=>["freeCompanyId"=>$fc,"id"=>$member["id"]]]);
+            if(!$in_table){
+                $rows[] = array("nr"=>"999","id"=>$member["id"],
+                    "name"=>ucwords($member["name"]),"world"=>ucfirst($member["world"]),
+                    "minions"=>"?","mounts"=>"?","all"=>"?",
+                    "sync"=>"","old"=>true);
+            }
         }
-        $table .= "<th>$last_sync_title</th></tr></thead>";
-        return $table;
+        return $rows;
     }
+    
     
     function get_ranking_of_player($id,$world = "",$type=""){
         global $database;
@@ -278,89 +266,7 @@
         return $cell;
     }
     
-    function crate_ranking_table($ranking,$type = ""){
-        $table = "";
-        $nr = 0;
-        $count_befor = $ranking[0][0];
-        foreach($ranking as $rank){
-            $count_key = $rank[0];			
-            if($count_befor != $count_key){
-                $nr++;
-                $count_befor = $count_key;
-            }
-            $table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
-            
-        } 
-        return $table;
-    }
     
-    function create_ranking_row($nr,$player,$rank = null,$type =""){
-        $p_id = $player['id'];
-        $row = "<tr class='active' id='$p_id'>";
-
-        $row .= create_inner_ranking_row($nr,$player,$rank,$type);
-        $row .= "</tr>";
-        return $row;
-    }
-    
-    function create_inner_ranking_row($nr,$player,$rank = null,$type =""){
-        $p_id = $player['id'];
-        $last_sync_date_button = "<button class='btn btn-info' onclick='updateCharakter($p_id)'>".get_language_text("update_char")."</button>";
-        if($rank == null){
-            $rank = array(0,(object)array("all"=>0,"minions"=>0,"mounts"=>0,"player"=>$player));
-        }
-        
-        $name = ucwords($player['name']);
-        $world = ucwords($player['world']);
-        $date_diff = date_diff(date_create($player['last_update_date']), date_create(date("Y-m-d")));
-        $last_sync_date = empty($player['last_update_date']) || $date_diff->d > 14 
-            ? $last_sync_date_button : $player['last_update_date'];
-        $row = "<td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td>";
-
-        switch($type){
-            case "minions":
-                $count_minions = $rank[1]->minions;
-                $row .= "<td>$count_minions</td>";
-                break;
-            case "mounts":
-                $count_mounts = $rank[1]->mounts;
-                $row .= "<td>$count_mounts</td>";
-                break;
-            default:
-                $count_minions = $rank[1]->minions;
-                $count_mounts = $rank[1]->mounts;
-                $count_all = $rank[1]->all;
-                $row .= "<td>$count_minions</td>";
-                $row .= "<td>$count_mounts</td>";
-                $row .= "<td>$count_all</td>";
-                break;
-        }
-        $row .= "<td>$last_sync_date</td>";
-        return $row;
-    }
-    
-    function get_missing_player_ranking_rows($fc){
-        global $database;
-        
-        
-        $api = new Viion\Lodestone\LodestoneAPI();
-        $freeCompany = $api->Search->Freecompany($fc,true);
-        
-        $rows = "";
-        foreach($freeCompany->members as $member){
-            $in_table = $database->has("players", ["AND"=>["freeCompanyId"=>$fc,"id"=>$member["id"]]]);
-            if(!$in_table){
-                //$character = $api->Search->Character($member["id"]);
-                $player = array(
-                    "id"=>$member["id"],
-                    "name"=>$member["name"],
-                    "world"=>$member["world"],
-                    "last_update_date"=>"");
-                $rows .= create_ranking_row("999",$player);
-            }
-        }
-        return $rows;
-    }
     
     function get_rarest_object($id,$table){
         global $database;

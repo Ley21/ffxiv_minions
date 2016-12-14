@@ -7,8 +7,8 @@ require_once "language.php";
 $lang = get_lang();
 $actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=" . get_lang();
 
+//Init index page with informations
 $smarty = new Smarty();
-
 
 $smarty->assign('title', get_language_text("title"));
 $smarty->assign('lang', $lang);
@@ -27,18 +27,18 @@ $smarty->assign('char_search_placeholder',get_language_text("char_search_placeho
 $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
 
+//Get latest patch number from database
 $lastPatch = get_latest_patch();
 
-$latest_minions = $database->select("minions", "*", ["patch[=]" => $lastPatch]);
-$content = create_table(get_language_text("latest_minions"), $latest_minions,"minion");
+//Get latest minions/mounts
+$content = create_table(get_language_text("latest_minions"), "minion",true);
 
-$latest_mounts = $database->select("mounts", "*", ["patch[=]" => $lastPatch]);
+$content .= create_table(get_language_text("latest_mounts"), "mount",true);
 
-$content .= create_table(get_language_text("latest_mounts"), $latest_mounts,"mount");
-
-
+//Add latest minions/mounts to content
 $smarty->assign("content",$content);
 
+//Show index
 $smarty->display('template/index.tpl');
 
 ?>

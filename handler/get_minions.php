@@ -8,16 +8,8 @@
     
     $index = array_search($methode,$methodes_en);
     
-    if($methode == "All"){
-        $minions = $database->select("minions", "*","");
-    }
-    else{
-        
-        $minions = $database->select("minions",["[>]minions_method"=>["id"=>"m_id"]], "*",["method[=]"=>$methode]);
-    }
-    
     $title = get_language_text("methodes")[$index];
-    echo "<center>";
-    echo create_table($title,$minions,"minion",$methode);
-    echo "</center>";
+    
+    echo create_table($title,"minion",false,$methode);
+
 ?>
