@@ -11,6 +11,10 @@ $last_minion_id = get_last_id("minions");
 $last_mount_id = get_last_id("mounts");
 
 $key = $_POST['key'];
+$update = $_POST['update'];
+$methodes = $_POST['method_update'];
+$readonly = $_POST['readonly'];
+
 if($_POST['update']){
     
     if($key != $external_key || empty($key)){
@@ -50,8 +54,7 @@ if($_POST['update']){
             }
         }
         
-        if($_POST['method_update']){
-            $readonly = $_POST["readonly"];
+        if($methodes){
             read_write_methode_new("minions","../minions.json",$readonly);
 	        read_write_methode_new("mounts","../mounts.json",$readonly);
 	        
@@ -60,25 +63,27 @@ if($_POST['update']){
     }
 }
 
-$methode_update_checked = $_POST['method_update'] ? "checked" : "";
-$readonly_checked = $_POST['readonly']  || empty($_POST['readonly']) ? "" : "checked";
-$minion_checked = !empty($_POST['minion']) || !$_POST['update']? "checked" : "";
 
 if(!$tables_exits){
     echo "<b>THE DATABASE WAS NOT FILLED WITH TABLES CURRENTLY - ON UPDATE THE TABLES WILL BE CREATED</b></br></br>";
 }
 
-echo "Last minion id: '<a id='minion_id'>$last_minion_id</a>'</br>";
-echo "Last mount id: '<a id ='mount_id'>$last_mount_id</a>'</br>";
-echo "<div class='form-group'>";
-echo "<label for='key'>Key:</label>";
-echo "<input type='text' class='form-control' id='key' value='$key'></input>";
-echo "<label for='update'>";
-echo "<input class='form-control'  type='checkbox' id='update' $minion_checked></input>Update minions and mounts</label></br>";
-echo "<label for='method_update'>";
-echo "<input class='form-control' type='checkbox' id='method_update' $methode_update_checked></input>Read methodes</label></br>";
-echo "<label for='readonly'>";
-echo "<input class='form-control' type='checkbox' id='readonly' $readonly_checked></input>Readonly json file</label></br>";
+$smarty = new Smarty();
+$smarty->assign('title', array(
+    'last_minion_id'=>"Last Minion XIVDB ID",
+    'last_mount_id'=>"Last Mount XIVDB ID",
+    'key'=>"Key",
+    'update'=>"Update minions & mounts",
+    'methodes'=>"Update methodes",
+    'readonly'=>"Dont update json file"));
+$smarty->assign('last_minion_id', $last_minion_id);
+$smarty->assign('last_mount_id', $last_mount_id);
 
+$smarty->assign('update', !empty($_POST['minion']) || !empty($_POST['mount']));
+$smarty->assign('methodes', empty($methodes) ? true : $methodes);
+$smarty->assign('readonly', empty($readonly) ? true : $readonly);
 
+$smarty->assign('key', $key);
+
+$smarty->display('../template/admin.tpl');
 ?>

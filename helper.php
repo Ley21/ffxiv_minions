@@ -334,25 +334,6 @@
         return $rarest;
     }
     
-    
-    function create_dropdown_menu($type){
-        global $database;
-        $methodes = get_language_text("methodes");
-        $methodes_en = get_language_text("methodes","en");
-        //var_dump($methodes);
-        $dropdown = "";
-        $class = $type."_methode";
-        foreach($methodes as $i=>$methode){
-            $mehtod_en = $methodes_en[$i];
-            $count = $database->count($type."_method",["method[=]"=>$mehtod_en]);
-            if($count > 0 || $mehtod_en == "All"){
-                $methode_get = urlencode ($mehtod_en);
-                $dropdown .= "<li><a id='$methode_get' class='$class'>$methode</a></li>";
-            }
-        }
-        return $dropdown;
-    }
-    
     function get_methodes($table){
         global $database;
         
