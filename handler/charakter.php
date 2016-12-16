@@ -91,7 +91,8 @@
             'gender'=>ucwords($player_entry["gender"]),
             'rank'=>$rank);
             
-        
+        $player_data["minions_count"] = get_count("player_minion",$player_data['id']);
+        $player_data["mounts_count"] = get_count("player_mounts",$player_data['id']);
         
         
         $player_data["minions"] = get_player_collectables("minions","player_minion",$player_data['id']);

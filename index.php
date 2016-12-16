@@ -17,7 +17,7 @@ $smarty->assign('home',get_language_text("home"));
 $smarty->assign('homelink',$actual_link);
 $smarty->assign('dropdown_minions',get_language_text("dropdown_minions"));
 $smarty->assign('dropdown_mounts',get_language_text("dropdown_mounts"));
-$smarty->assign("methodes",get_methodes());
+$smarty->assign("methodes",array('minion'=>get_methodes("minions"),'mount'=>get_methodes("mounts")));
 $smarty->assign('ranking',get_language_text("ranking"));
 $smarty->assign('all',get_language_text("all"));
 $smarty->assign('minions',get_language_text("minions"));

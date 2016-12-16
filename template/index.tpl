@@ -63,7 +63,7 @@
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           {$dropdown_minions}<span class="caret"></span></a>
                                             <ul class="dropdown-menu">
-                                                {foreach $methodes as $method} {strip}
+                                                {foreach $methodes.minion as $method} {strip}
                                                 <li><a id='{$method.id}' class='minions_methode'>{$method.name}</a>
                                                 </li>
                                                 {/strip} {/foreach}
@@ -76,7 +76,7 @@
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           {$dropdown_mounts}<span class="caret"></span></a>
                                             <ul class="dropdown-menu">
-                                                {foreach $methodes as $method} {strip}
+                                                {foreach $methodes.mount as $method} {strip}
                                                 <li><a id='{$method.id}' class='mounts_methode'>{$method.name}</a>
                                                 </li>
                                                 {/strip} {/foreach}

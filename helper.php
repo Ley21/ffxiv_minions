@@ -305,7 +305,10 @@
         return $obj_arr;
     }
     
-    
+    function get_count($table,$id){
+        global $database;
+        return $database->count($table,["p_id[=]"=>$id]);
+    }
     
     function get_rarest_object($id){
         global $database;
@@ -350,16 +353,24 @@
         return $dropdown;
     }
     
-    function get_methodes(){
-        //global $database;
+    function get_methodes($table){
+        global $database;
+        
+        $methodes_db = $database->query("SELECT DISTINCT method FROM ".$table."_method")->fetchAll();
+        $methodes_db = array_map(function($elm){
+            return $elm['method'];
+        },$methodes_db);
         $methodes = get_language_text("methodes");
         $methodes_en = get_language_text("methodes","en");
         $methodes_array = array();
         foreach($methodes as $i=>$methode){
             $mehtod_en = $methodes_en[$i];
             $methode_get = urlencode ($mehtod_en);
-            $methodes_array[] = array('name' => $methode, 'id' => $methode_get);
+            if(in_array($mehtod_en,$methodes_db) || $mehtod_en == "All"){
+                $methodes_array[] = array('name' => $methode, 'id' => $methode_get);
+            }
         }
+        
         return $methodes_array;
     }
     
