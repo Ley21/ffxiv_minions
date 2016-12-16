@@ -334,6 +334,12 @@
         return $rarest;
     }
     
+    function get_method_lang($method_en){
+        $methodes_en = get_language_text("methodes","en");
+        $index = array_search($method_en,$methodes_en);
+        return get_language_text("methodes")[$index];
+    }
+    
     function get_methodes($table){
         global $database;
         

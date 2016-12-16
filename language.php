@@ -100,6 +100,9 @@
             "Immortal Flames"=>"Legion der Unsterblichen"),
         "ja"=>array());
         
+    $language_texts['question'] = array("en"=>"Question",
+                    "fr"=>"",
+					"de"=>"Frage","ja"=>"");    
         
         
     $language_texts['question_1'] = array("en"=>"How can I find out which minions/mounts I'm missing?",

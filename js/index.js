@@ -171,11 +171,19 @@ $(document).on('click', '#update_button', function() {
 })
 
 $(document).on("change", '#type', function() {
+    if($('#type').val() == "question"){
+        $("#send_button").removeClass("disabled");
+    }else{
+        $("#send_button").addClass("disabled");
+    }
     update_request_modal(false);
-
+    
+    
+    
 });
-$(document).on("change", '#obj_name', function() {
+$(document).on("change", '#id', function() {
     update_request_modal(false);
+    $("#send_button").removeClass("disabled");
 });
 $(document).on("change", '#method', function() {
     update_request_modal(false);
@@ -195,15 +203,17 @@ function update_request_modal(send) {
     var body = modal.find('.modal-body');
 
     var type = $('#type').val() === undefined ? "" : $('#type').val();
-    var obj_name = $('#obj_name').val() === undefined || $('#obj_name').val() == null ? "" : $('#obj_name').val();
-    var method = $('#method').val() === undefined ? $('#new_method').val() : $('#method').val();
+    var question = $('#question').val() === undefined ? "" : $('#question').val();
+    var id = $('#id').val() === undefined || $('#id').val() == null ? "" : $('#id').val();
+    var method = $('#method').val() === undefined  || $('#method').val() == "" ? $('#new_method').val() : $('#method').val();
     method = method === undefined ? "" : method;
     var method_description_en = $('#method_description_en').val();
     var method_description_fr = $('#method_description_fr').val();
     var method_description_de = $('#method_description_de').val();
     var method_description_ja = $('#method_description_ja').val();
-    var submit = getLangData() + "&send=" + send + "&type=" + type + "&obj_name=" + obj_name + "&method=" + method +
+    var submit = getLangData() + "&send=" + send + "&type=" + type + "&id=" + id + "&method=" + method +
         "&method_description_en=" + method_description_en + "&method_description_fr=" + method_description_fr +
-        "&method_description_de=" + method_description_de + "&method_description_ja=" + method_description_ja;
+        "&method_description_de=" + method_description_de + "&method_description_ja=" + method_description_ja+
+        "&question="+question;
     basicAjaxCall("request_change.php", submit, function(data) {}, "", body, "post");
 }
