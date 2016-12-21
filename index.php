@@ -38,6 +38,10 @@ $content .= create_table(get_language_text("latest_mounts"), "mount",true);
 //Add latest minions/mounts to content
 $smarty->assign("content",$content);
 
+$count_today = $database->query("SELECT COUNT( * ) FROM players WHERE DATE( last_update_date ) = DATE( NOW( ) )")->fetchAll()[0][0];
+
+$smarty->assign("count_today",$count_today);
+
 //Show index
 $smarty->display('template/index.tpl');
 

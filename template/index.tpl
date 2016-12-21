@@ -242,7 +242,9 @@
                             </br>
                             <p class="text-center">FFXIV Collector: © 2016 Andreas Spuling (<a href='/char?id=2215586'>Ley Sego</a> on Shiva)</p>
                             <p class="text-center">Project on GitHub <a href='https://github.com/Ley21/ffxiv_minions'>Ley21/ffxiv_minions</a>.</p>
-                            <p class="text-center"><a data-toggle="modal" data-target="#updateDB">Update</a> - <a data-toggle="modal" data-target="#request">Request Change</a>
+                            <p class="text-center">
+                                <a data-toggle="modal" data-target="#updateDB">Update</a> - <a data-toggle="modal" data-target="#request">Request Change</a> - Today updated characters: {$count_today}
+                            
                             </p>
                             <p class="text-center">FINAL FANTASY is a registered trademark of Square Enix Holdings Co., Ltd.</br>FINAL FANTASY XIV © 2010-2016 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
 
