@@ -1,6 +1,7 @@
 <?php
     require_once "config.php";
     require_once "language.php";
+    
     $random_id = 0;
     
     function get_lang(){
@@ -46,125 +47,153 @@
         
     }
     
-    function create_table($title,$sql_data,$type,$methodName=""){
+    function get_latest_patch(){
+        global $database;
+        $patches = $database->query("SELECT DISTINCT patch FROM minions")->fetchAll();
+        $floatPatches = array();
+        
+        foreach($patches as $patch) {
+        	$version = $patch['patch'];
+        	$float = floatval($version);
+        	array_push($floatPatches, $float);
+        }
+        
+        sort($floatPatches);
+        $lastPatch = number_format(end($floatPatches) , 2, ".", "");
+        $lastPatch = (float)$lastPatch;
+        return $lastPatch;
+    }
+    
+    function create_table($title,$type,$latestPatch=false,$methodName="",$condition = ""){
         global $database;
         
+        if(empty($condition)){
+            $condition = empty($methodName) || $methodName == "All" ? "" : ["method[=]"=>$methodName];
+            $condition = $latestPatch ? ["patch[=]" => get_latest_patch()] : $condition;
+        }
+        
+        $sql_data = $database->select($type."s",
+            ["[>]".$type."s_method"=>["id"=>"m_id"]],
+            "*", $condition);
+        
+        $smarty = new Smarty();
+        $smarty->assign('tableTitle', $title);
+        $smarty->assign('tableCount', count($sql_data));
+        $smarty->assign('tableHeadIconTitle', get_language_text("icon"));
+        $smarty->assign('tableHeadNameTitle', get_language_text("name"));
+        $smarty->assign('tableHeadPatchTitle', get_language_text("patch"));
+        $smarty->assign('tableHeadCanFlyTitle', $type == "moun" ? get_language_text("can_fly"):"");
+        $smarty->assign('tableHeadMethodTitle', get_language_text("method"));
+        $smarty->assign('tableHeadDescriptionTitle', get_language_text("description"));
+        $smarty->assign('tableId', "table_".$type);
+        
+        
         $lang = get_lang();
-        $count = count($sql_data);
-        $table = '<div class="panel panel-primary">
-        <div class="panel-heading"><h4><b>'.$title.": $count".'</b></h4></div>
-        <div class="panel-body">';
-        $icon = get_language_text("icon");
-        $name = get_language_text("name");
-        $patch = get_language_text("patch");
-        $can_fly = get_language_text("can_fly");
-        $method = get_language_text("method");
-        $table_id = "table_".$type;
+        $objects = array();
         
-        $description = get_language_text("description");
-        $table .= "<table class='table table-striped' id='$table_id'>
-                    <thead><tr><th>$icon</th><th>$name</th><th>$patch</th>";
-        $table .= $type == "mount" ? "<th>$can_fly</th>":"";
-        $table .= "<th>$method</th><th>$description</th></tr></thead>";
-        
-
-        $table .= "<tbody>";
         foreach($sql_data as $minion_data){
             $m_id = $minion_data['id'];
+            $dom_id = $type."_".$m_id;
+            $name = ucwords($minion_data['name_'.$lang]);
+            $icon_url = $minion_data['icon_url'];
+            $patch = $minion_data['patch'];
+            $can_fly = !empty($minion_data['can_fly']) ? 
+                ($minion_data['can_fly'] == 0 ? get_language_text("no") : get_language_text("yes")) 
+                : get_language_text("unknown");
+            
+            $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
+            $url = "$base_url/$type/$m_id";
+            
             $condition = empty($methodName) || $methodName == "All" ? ["m_id[=]"=>$m_id]: ["AND"=>["m_id[=]"=>$m_id,"method[=]"=>$methodName]];
             $obj_methodes = $database->select($type == "minion" ? "minions_method" : "mounts_method",
                 "*",$condition);
             
-            $name = ucwords($minion_data['name_'.$lang]);
             
-            $icon_url = $minion_data['icon_url'];
-            $patch = $minion_data['patch'];
-            $rowspan = empty($obj_methodes) ? 1 : count($obj_methodes);
-            
-            
-            $dom_id = $type."_".$m_id;
-            $method_count = 0;
             if(empty($obj_methodes)){
-                $table .=create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$type == "mount" ? $minion_data['can_fly'] : 0);
+                $objects[] = array('id'=>$dom_id,'class'=>"",'url'=>$url,
+                    'icon'=>$icon_url,'name'=>$name,'patch'=>$patch,
+                    'canFly'=>$can_fly,'method'=>get_language_text("unknown"),
+                    'methodDesc'=>"");
             }
             else{
                 foreach($obj_methodes as $method){
-                    $table .= create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$type == "mount" ? $minion_data['can_fly'] : 0,$method);
-                    $method_count++;
+                    $methodes_en = get_language_text("methodes","en");
+                    $m_index = array_search($method['method'],$methodes_en);
+                    $method_name = get_language_text("methodes")[$m_index];
+                    $method_name .= $method['available'] ? "" : "(N\A)";
+                    $methodDesc = $method['method_description_'.$lang];
+                    $methodDesc = empty($methodDesc) ? $method['method_description_en'] : $methodDesc;
+                    $class = $method['available'] ? "" : "active text-muted";
+                    
+                    $objects[] = array('id'=>$dom_id,'class'=>$class,'url'=>$url,
+                        'icon'=>$icon_url,'name'=>$name,'patch'=>$patch,
+                        'canFly'=>$can_fly,'method'=>$method_name,
+                        'methodDesc'=>$methodDesc);
                 }
             }
             
-            
-            
         }
-        $table .= "</tbody></table></div>
-        </div>";
-        return $table;
-    }
-    
-    function create_table_row($type,$m_id,$name,$patch,$dom_id,$icon_url,$can_fly,$method = null){
-        $lang = get_lang();
-        $row = "";
-        $tr_class = $method['available'] ? "" : "active text-muted";
-        $row .= "<tr id='$dom_id' class='$tr_class'>";
-        $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://$lang.xivdb.com";
-        $row .= "<td name='icon' class='shrink'><a href='$base_url/$type/$m_id'><img class='media-object' src=$icon_url></a></td>";
-        
-        $row .=  "<td name='title' class='shrink'><a href='$base_url/$type/$m_id'>$name</a></td>";
-        $row .=  "<td name='patch' class='shrink'>$patch</td>";
-        if($type == "mount"){
-            if($can_fly == 0){
-                $can_fly = get_language_text("no");
-            }
-            elseif($can_fly == 1){
-                $can_fly = get_language_text("yes");
-            }
-            else{
-                $can_fly = get_language_text("unknown");
-            }
-            
-            $row .= "<td  class='shrink'>$can_fly</td>";
-        }
-        
-        $method_name = get_language_text("unknown");
-        $method_desc = "";
-        if($method != null){
-            $method_lang = $method['method_description_'.get_lang()];
-            $method_desc = empty($method_lang) ? $method['method_description_en'] : $method_lang;
-            $method_name = $method['method'];
-            if(!empty($method_name)){
-                $methodes_en = get_language_text("methodes","en");
-                $m_index = array_search($method_name,$methodes_en);
-                $method_name = get_language_text("methodes")[$m_index];
-                
-                $method_name .= $method['available'] ? "" : "(N\A)";
-            }
-        }
-        
-        $row .= "<td class='shrink'>$method_name</td>";
-        $row .= "<td class='expand'>$method_desc</td>";
-        $row .= "</tr>";
-        return $row;
+        $smarty->assign('objects', $objects);
+        return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/table.tpl');
     }
     
     function create_ranking($type = "",$fc = ""){
         global $database;
         
-        $table = crate_ranking_header($type);
-        $players = $database->select("players",["id","name","world","last_update_date"],
-            empty($fc) ? "" : ["freeCompanyId"=>$fc]);
-        $ranking = get_ranking_players($players,$type);
-        $table .= crate_ranking_table($ranking,$type);
-        if(!empty($fc)){
-            $table .= get_missing_player_ranking_rows($fc);
-        }
-        $table .= '</table>';
+        $smarty = new Smarty();
+        $smarty->assign('tableHeaderNr', get_language_text("nr"));
+        $smarty->assign('tableHeaderName', get_language_text("name"));
+        $smarty->assign('tableHeaderWorld', get_language_text("world"));
+        $smarty->assign('tableHeaderCountMinions', get_language_text("minions"));
+        $smarty->assign('tableHeaderCountMounts', get_language_text("mounts"));
+        $smarty->assign('tableHeaderCountAll', get_language_text("all"));
+        $smarty->assign('tableHeaderLastSync', get_language_text("last_synced"));
+        $smarty->assign('type',$type);
+        $smarty->assign('syncBtnText',get_language_text("update_char"));
         
-        return $table;
+        $ranking = get_ranking_players($type,$fc);
+        
+        
+        
+        if(!empty($fc)){
+            $smarty->assign('search',true);
+            $minions = $database->select("minions",["id","name_".get_lang()],"ORDER BY "."name_".get_lang());
+            $mounts = $database->select("mounts",["id","name_".get_lang()],"ORDER BY "."name_".get_lang());
+            
+            $smarty->assign('search_minion',get_language_text("has_minion"));
+            $smarty->assign('search_mount',get_language_text("has_mount"));
+            
+            $minions = array_map(function($obj){
+                return array("id"=>$obj['id'],"name"=>$obj["name_".get_lang()]);
+            },$minions);
+            $mounts = array_map(function($obj){
+                return array("id"=>$obj['id'],"name"=>$obj["name_".get_lang()]);
+            },$mounts);
+            
+            
+            $smarty->assign('minions',$minions);
+            $smarty->assign('mounts',$mounts);
+            $missing_ranking_players = get_missing_player_ranking_rows($fc);
+            foreach($missing_ranking_players as $player){
+                array_push($ranking,$player);    
+            }
+        }
+        
+        
+        
+        $smarty->assign('players', $ranking);
+        return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/ranking.tpl');
     }
     
-    function get_ranking_players($players,$type = ""){
+    function get_ranking_players($type = "",$fc="",$world=""){
         global $database;
+        $condition = empty($fc) ? "" : ["freeCompanyId"=>$fc];
+        if(!empty($world)){
+            $condition = empty($condition) ? ['world'=>$world] : ['AND'=>[$condition,'world'=>$world]];
+        }
+        $players = $database->select("players",["id","name","world","last_update_date"],
+            $condition);
+            
         $ranking = array();
         foreach($players as $player){
             $count_minions = $database->count("player_minion",["p_id[=]"=>$player["id"]]);
@@ -187,275 +216,149 @@
             
         }
         arsort($ranking);
-        return $ranking;
-    }
-    
-    function crate_ranking_header($type = ""){
-        $nr = get_language_text("nr");
-        $name = get_language_text("name");
-        $world = get_language_text("world");
-        $number_minions = get_language_text("number_minions");
-        $number_mounts = get_language_text("number_mounts");
-        $number_all = get_language_text("number_all");
-        $last_sync_title = get_language_text("last_synced");
-        $table = "<table class='table table-condensed'><thead><tr><th>$nr</th><th>$name</th><th>$world</th>";
-
-        switch($type){
-            case "minions":
-                $table .= "<th>$number_minions</th>";
-                break;
-            case "mounts":
-                $table .= "<th>$number_mounts</th>";
-                break;
-            default:
-                $table .= "<th>$number_minions</th>";
-                $table .= "<th>$number_mounts</th>";
-                $table .= "<th>$number_all</th>";
-                break;
-                
-        }
-        $table .= "<th>$last_sync_title</th></tr></thead>";
-        return $table;
-    }
-    
-    function get_ranking_of_player($id,$world = "",$type=""){
-        global $database;
         
-        $players = $database->select("players",["id","name","world","last_update_date"],empty($world) ? "" : ["world[=]"=>$world] );
-        $ranking = get_ranking_players($players,$type);
-        $nr = 0;
-        $count_befor = 0;
-        foreach($ranking as $rank){
-            $count_key = $rank[0];
-            if($count_befor != $count_key){
-                $nr++;
-                $count_befor = $count_key;
-            }
+        $ordered_ranking = array();
+        $befor = 0;
+        $nr = 1;
+        foreach($ranking as $rank_arr){
+            $rank = $rank_arr[1];
+            $date_diff = date_diff(date_create($rank->player['last_update_date']), date_create(date("Y-m-d")));
+            $old = $date_diff->days >= 14;
             
-            if($rank[1]->player['id'] == $id){
-                return $nr;
-            }
-        } 
-    }
-    
-    function create_char_ranking($id,$world = ""){
-        $cell = "";
-        $gl_rank_all = get_ranking_of_player($id,$world);
-        $gl_rank_minion = get_ranking_of_player($id,$world,"minions");
-        $gl_rank_mounts = get_ranking_of_player($id,$world,"mounts");
-        $cell .= "<b>".get_language_text("all").":</b> ".$gl_rank_all;
-        $cell .= "</br>";
-        $cell .= "<b>".get_language_text("minions").":</b> ".$gl_rank_minion;
-        $cell .= "</br>";
-        $cell .= "<b>".get_language_text("mounts").":</b> ".$gl_rank_mounts;
-        return $cell;
-    }
-    
-    function crate_ranking_table($ranking,$type = ""){
-        $table = "";
-        $nr = 0;
-        $count_befor = $ranking[0][0];
-        foreach($ranking as $rank){
-            $count_key = $rank[0];			
-            if($count_befor != $count_key){
+            $ordered_ranking[] = array("nr"=>$nr,"id"=>$rank->player['id'],
+                "name"=>ucwords($rank->player['name']),"world"=>ucfirst($rank->player['world']),
+                "minions"=>$rank->minions,"mounts"=>$rank->mounts,"all"=>$rank->all,
+                "sync"=>$rank->player['last_update_date'],"old"=>$old);
+            if($befor != $rank_arr[0]){
+                $befor = $rank_arr[0];
                 $nr++;
-                $count_befor = $count_key;
             }
-            $table .= create_ranking_row($nr,$rank[1]->player,$rank,$type);
-            
-        } 
-        return $table;
-    }
-    
-    function create_ranking_row($nr,$player,$rank = null,$type =""){
-        $p_id = $player['id'];
-        $row = "<tr class='active' id='$p_id'>";
-
-        $row .= create_inner_ranking_row($nr,$player,$rank,$type);
-        $row .= "</tr>";
-        return $row;
-    }
-    
-    function create_inner_ranking_row($nr,$player,$rank = null,$type =""){
-        $p_id = $player['id'];
-        $last_sync_date_button = "<button class='btn btn-info' onclick='updateCharakter($p_id)'>".get_language_text("update_char")."</button>";
-        if($rank == null){
-            $rank = array(0,(object)array("all"=>0,"minions"=>0,"mounts"=>0,"player"=>$player));
         }
-        
-        $name = ucwords($player['name']);
-        $world = ucwords($player['world']);
-        $date_diff = date_diff(date_create($player['last_update_date']), date_create(date("Y-m-d")));
-        $last_sync_date = empty($player['last_update_date']) || $date_diff->d > 14 
-            ? $last_sync_date_button : $player['last_update_date'];
-        $row = "<td>$nr</td><td><a onclick='loadCharakter($p_id)'>$name</a></td><td>$world</td>";
-
-        switch($type){
-            case "minions":
-                $count_minions = $rank[1]->minions;
-                $row .= "<td>$count_minions</td>";
-                break;
-            case "mounts":
-                $count_mounts = $rank[1]->mounts;
-                $row .= "<td>$count_mounts</td>";
-                break;
-            default:
-                $count_minions = $rank[1]->minions;
-                $count_mounts = $rank[1]->mounts;
-                $count_all = $rank[1]->all;
-                $row .= "<td>$count_minions</td>";
-                $row .= "<td>$count_mounts</td>";
-                $row .= "<td>$count_all</td>";
-                break;
-        }
-        $row .= "<td>$last_sync_date</td>";
-        return $row;
+        return $ordered_ranking;
     }
     
     function get_missing_player_ranking_rows($fc){
         global $database;
         
-        
         $api = new Viion\Lodestone\LodestoneAPI();
         $freeCompany = $api->Search->Freecompany($fc,true);
         
-        $rows = "";
+        $rows = array();
         foreach($freeCompany->members as $member){
             $in_table = $database->has("players", ["AND"=>["freeCompanyId"=>$fc,"id"=>$member["id"]]]);
             if(!$in_table){
-                //$character = $api->Search->Character($member["id"]);
-                $player = array(
-                    "id"=>$member["id"],
-                    "name"=>$member["name"],
-                    "world"=>$member["world"],
-                    "last_update_date"=>"");
-                $rows .= create_ranking_row("999",$player);
+                $rows[] = array("nr"=>"999","id"=>$member["id"],
+                    "name"=>ucwords($member["name"]),"world"=>ucfirst($member["world"]),
+                    "minions"=>"?","mounts"=>"?","all"=>"?",
+                    "sync"=>"","old"=>true);
             }
         }
         return $rows;
     }
     
-    function get_rarest_object($id,$table){
+    function get_ranking_of_player($id,$world = "",$type="all"){
         global $database;
-        $result = $database->query("SELECT COUNT( p_id ),m_id FROM $table GROUP BY m_id ORDER BY COUNT( p_id ) ASC")->fetchAll();
-        foreach($result as $obj){
-            if($database->has($table,["AND"=>["p_id"=>$id,"m_id"=>$obj['m_id']]])){
-                return $obj['m_id'];
+        
+        $ranking = get_ranking_players($type == "all"? "":$type,"",$world);
+        
+        $nr = 1;
+        $count_befor = 0;
+        foreach($ranking as $rank){
+            if($rank['id'] == $id){
+                return $nr;
+            }
+            $count = $rank[$type];
+            if($count_befor != $count){
+                $nr++;
+                $count_befor = $count;
+            }
+            
+            
+        } 
+    }
+    
+    function create_char_ranking($id,$world = ""){
+        $gl_rank_all = get_ranking_of_player($id,$world);
+        $gl_rank_minion = get_ranking_of_player($id,$world,"minions");
+        $gl_rank_mounts = get_ranking_of_player($id,$world,"mounts");
+        $rank = array('all'=>$gl_rank_all,'minions'=>$gl_rank_minion,'mounts'=>$gl_rank_mounts);
+        
+        return $rank;
+    }
+    
+    function get_player_collectables($table,$con_table,$player_id){
+        global $database;
+        $obj_arr = array();
+        $elements = $database->select($table, 
+            ["[>]".$con_table => ["id" => "m_id"]],"*",
+            ["$con_table.p_id[=]"=>$player_id]);
+        $lang = get_lang() == "en" ? "":get_lang().".";
+        $type = $table == "minions" ? "minion" : "mount";
+        foreach($elements as $elem){
+            $obj_arr[] = array(
+                'id'=>$elem['id'],
+                'name'=>$elem['name_'.get_lang()],
+                'xivdb'=>"https://".$lang."xivdb.com/$type/".$elem['id'],
+                'icon'=>$elem['icon_url']);
+        }  
+        
+        return $obj_arr;
+    }
+    
+    function get_count($table,$id){
+        global $database;
+        return $database->count($table,["p_id[=]"=>$id]);
+    }
+    
+    function get_rarest_object($id){
+        global $database;
+        
+        $rarest = array();
+        $lang = get_lang() == "en" ? "":get_lang().".";
+        foreach(array("minion","mount") as $type){
+            $table = $type == "mount" ? "player_".$type."s" : "player_".$type; 
+            $result = $database->query("SELECT COUNT( p_id ),m_id FROM $table GROUP BY m_id ORDER BY COUNT( p_id ) ASC")->fetchAll();
+            foreach($result as $obj){
+                if($database->has($table,["AND"=>["p_id"=>$id,"m_id"=>$obj['m_id']]])){
+                    $elem = $database->get($type."s","*",["id[=]"=>$obj['m_id']]);
+                    $rarest[$type] = array(
+                        'id'=>$elem['id'],
+                        'name'=>$elem['name_'.get_lang()],
+                        'xivdb'=>"https://".$lang."xivdb.com/$type/".$elem['id'],
+                        'icon'=>$elem['icon_url']);
+                        break;
+                }
             }
         }
+        
+        return $rarest;
     }
     
-    function create_rarest_thumbnail($id){
+    function get_method_lang($method_en){
+        $methodes_en = get_language_text("methodes","en");
+        $index = array_search($method_en,$methodes_en);
+        return get_language_text("methodes")[$index];
+    }
+    
+    function get_methodes($table){
         global $database;
-        global $random_id;
-        $random_id_tag = "div_".$random_id;
-        $random_id++;
-        $title = get_language_text("rarest");
-        $thumbnail = '<div class="panel panel-primary">
-        <div class="panel-heading" data-toggle="collapse" data-target="#'.$random_id_tag.'" aria-expanded="true" aria-controls="'.$random_id_tag.'"><h4><b>'.
-        $title.'</b></h4></div>
-        <div class="panel-body">';
-        $thumbnail .= '<div class="collapse  in" id="'.$random_id_tag.'">';
         
-        $minion_id = get_rarest_object($id,"player_minion");
-        $mount_id = get_rarest_object($id,"player_mounts");
-        
-        $table = '<div class="media">';
-        $table .= '<div>';
-        
-        $minion = $database->get("minions","*",["id[=]"=>$minion_id]);
-        $minion_name = ucwords($minion['name']);
-        $minion_icon_url = $minion['icon_url'];
-        $minion_thumbnail .= create_thumbnail_link("minion",$minion_id,$minion_name,$minion_icon_url);
-        
-        $table .= $minion_thumbnail;
-        $table .= "</div>";
-        $table .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px; padding-left:2em">';
-        $table .= "<h4>  $minion_name</h4>";
-        $table .= "</div></div>";
-        
-        $table .= '<div class="media">';
-        $table .= '<div >';
-        
-        $mount = $database->get("mounts","*",["id[=]"=>$mount_id]);
-        $mount_name = ucwords($mount['name']);
-        $mount_icon_url = $mount['icon_url'];
-        $mount_thumbnail .= create_thumbnail_link("mount",$mount_id,$mount_name,$mount_icon_url);
-        
-        $table .= $mount_thumbnail;
-        $table .= "</div>";
-        $table .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px; padding-left:2em">';
-        $table .= "<h4>  $mount_name</h4></div></div>";
-        
-        $thumbnail .= $table;
-        $thumbnail .= '</div>';
-        $thumbnail .= "</div></div>";
-        return $thumbnail;
-    }
-    
-    function create_thumbnail_link($type,$id,$name,$url,$remove_div = false){
-        $thumbnail = "";
-        $dom_id = $type."_".$id;
-        $lang = get_lang();
-        $lang = $lang == "en" ? "" : $lang.".";
-        
-        $thumbnail .= $remove_div ? "" :'<div class="col-xs-0 col-md-2" style="width:auto; padding:0px">';
-        $thumbnail .= "<a  id='$dom_id' href='https://".$lang."xivdb.com/$type/$id' class='thumbnail' >";
-        $thumbnail .= "<img class='media-object' alt='$name' src=$url >";
-        $thumbnail .= "</a>";
-        $thumbnail .= $remove_div ? "" :"</div>";
-        return $thumbnail;
-    }
-    
-    function create_thumbnail($title,$sql_data,$type){
-        global $random_id;
-        $random_id_tag = "div_".$random_id;
-        $random_id++;
-        $count = count($sql_data);
-        $thumbnail = '<div class="panel panel-primary">
-        <div class="panel-heading" data-toggle="collapse" data-target="#'.$random_id_tag.'" aria-expanded="true" aria-controls="'.$random_id_tag.'"><h4><b>'.
-        $title.": $count".'</b></h4></div>
-        <div class="panel-body">';
-        $thumbnail .= '<div class="collapse  in" id="'.$random_id_tag.'">';
-        $count = 0;
-        foreach($sql_data as $minion_data){
-            
-            $count++;
-            $name = ucwords($minion_data['name']);
-            $m_id = $minion_data['id'];
-            $icon_url = $minion_data['icon_url'];
-            $description = $minion_data['description'];
-            $thumbnail .= create_thumbnail_link($type,$m_id,$name,$icon_url);
-            /*
-            $dom_id = $type."_".$m_id;
-            $thumbnail .= '<div class="col-xs-0 col-md-2" style="width:auto; padding:0px">';
-            $thumbnail .= "<a  id='$dom_id' href='https://xivdb.com/$type/$m_id' class='thumbnail' >";
-            $thumbnail .= "<img class='media-object' alt='$name' src=$icon_url >";
-            $thumbnail .= "</a>";
-            $thumbnail .= "</div>";
-            */
-        }
-        $thumbnail .= '</div>';
-        $thumbnail .= "</div></div>";
-        return $thumbnail;
-    }
-    
-    function create_dropdown_menu($type){
-        global $database;
+        $methodes_db = $database->query("SELECT DISTINCT method FROM ".$table."_method")->fetchAll();
+        $methodes_db = array_map(function($elm){
+            return $elm['method'];
+        },$methodes_db);
         $methodes = get_language_text("methodes");
         $methodes_en = get_language_text("methodes","en");
-        //var_dump($methodes);
-        $dropdown = "";
-        $class = $type."_methode";
+        $methodes_array = array();
         foreach($methodes as $i=>$methode){
             $mehtod_en = $methodes_en[$i];
-            $count = $database->count($type."_method",["method[=]"=>$mehtod_en]);
-            if($count > 0 || $mehtod_en == "All"){
-                $methode_get = urlencode ($mehtod_en);
-                $dropdown .= "<li><a id='$methode_get' class='$class'>$methode</a></li>";
+            $methode_get = urlencode ($mehtod_en);
+            if(in_array($mehtod_en,$methodes_db) || $mehtod_en == "All"){
+                $methodes_array[] = array('name' => $methode, 'id' => $methode_get);
             }
         }
-        return $dropdown;
+        
+        return $methodes_array;
     }
     
     function insert_update_charakter_by_id($id){
@@ -578,6 +481,15 @@
         $obj = json_decode($json);
         return $obj->$type->results[0]->id;
     }
+    
+    
+    function get_lodestone_link($id){
+        $lodestone_lang = get_lang() == "ja" ? "jp" : get_lang();
+        $lodestone_lang = $lodestone_lang == "en" ? "eu" : $lodestone_lang;
+        $charakter_link = "http://$lodestone_lang.finalfantasyxiv.com/lodestone/character/$id";
+        return $charakter_link;
+    }
+    
     
     function insert_update_minion($id){
         global $database;

@@ -1,3 +1,0 @@
-#!/bin/bash
-git pull
-curl MAIN_URL/caller/init_database.php?update=true&readonly=true

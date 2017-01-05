@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Viion\\Lodestone\\' => array($vendorDir . '/viion/xivpads-lodestoneapi/src'),
+    'Dwoo\\' => array($vendorDir . '/dwoo/dwoo/lib/Dwoo'),
     '' => array($vendorDir . '/viion/xivpads-lodestoneapi/src'),
 );

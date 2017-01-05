@@ -7,123 +7,102 @@
     if($_POST["send"] == "true"){
         $html = "";
         $type = $_POST['type'];
-        $object_name = $_POST['obj_name'];
-        $method_name = $_POST['method'];
-        $id = $database->get($type,"id",["name[=]"=>$object_name]);
         
-        $befor_json = "";
-        if($database->has($type."_method","method",["AND" => ["m_id[=]"=>$id,"method[=]"=>$method_name]])){
-            $obj_method = $database->select($type."_method",["method","method_description_en",
-                        "method_description_fr","method_description_de","method_description_ja"],
-                        ["AND" => ["m_id[=]"=>$id,"method[=]"=>$method_name]])[0];
-            $befor_json = json_encode($obj_method,JSON_PRETTY_PRINT);
+        if($type == "question"){
+            send_mail("[REQUEST] Question.",$_POST['question']);
+            echo get_language_text("thanks_request");
+            exit;
         }
+        else{
         
-        $desc_en = $_POST["method_description_en"];
-        $desc_fr = $_POST["method_description_fr"];
-        $desc_de = $_POST["method_description_de"];
-        $desc_ja = $_POST["method_description_ja"];
-        
-        $obj_array = array("method"=>$_POST["method"],
-            "method_description_en"=>empty($desc_en) ? null : $desc_en,
-            "method_description_fr"=>empty($desc_fr) ? null : $desc_fr,
-            "method_description_de"=>empty($desc_de) ? null : $desc_de,
-            "method_description_ja"=>empty($desc_ja) ? null : $desc_ja);
-        $after_json = json_encode($obj_array,JSON_PRETTY_PRINT);
-        
-        $html .= "Befor:</br></br>";
-        $html .= "<p>$befor_json</p>";
-        $html .= "</br></br></br>";
-        $html .= "After:</br></br>";
-        $html .= "<p>$after_json</p>";
-        
-        send_mail("[REQUEST] Change for '$type' with id '$id' and name '$object_name'.",$html);
-        
-        echo get_language_text("thanks_request");
-        exit;
+            $id = $_POST['id'];
+            $method_name = $_POST['method'];
+            //$id = $database->get($type,"id",["name[=]"=>$object_name]);
+            
+            $befor_json = "";
+            if($database->has($type."_method","method",["AND" => ["m_id[=]"=>$id,"method[=]"=>$method_name]])){
+                $obj_method = $database->select($type."_method",["method","method_description_en",
+                            "method_description_fr","method_description_de","method_description_ja"],
+                            ["AND" => ["m_id[=]"=>$id,"method[=]"=>$method_name]])[0];
+                $befor_json = json_encode($obj_method,JSON_PRETTY_PRINT);
+            }
+            
+            $desc_en = $_POST["method_description_en"];
+            $desc_fr = $_POST["method_description_fr"];
+            $desc_de = $_POST["method_description_de"];
+            $desc_ja = $_POST["method_description_ja"];
+            
+            $obj_array = array("method"=>$_POST["method"],
+                "method_description_en"=>empty($desc_en) ? null : $desc_en,
+                "method_description_fr"=>empty($desc_fr) ? null : $desc_fr,
+                "method_description_de"=>empty($desc_de) ? null : $desc_de,
+                "method_description_ja"=>empty($desc_ja) ? null : $desc_ja);
+            $after_json = json_encode($obj_array,JSON_PRETTY_PRINT);
+            
+            $html .= "Befor:</br></br>";
+            $html .= "<p>$befor_json</p>";
+            $html .= "</br></br></br>";
+            $html .= "After:</br></br>";
+            $html .= "<p>$after_json</p>";
+            
+            send_mail("[REQUEST] Change for '$type' with id '$id'.",$html);
+            
+            echo get_language_text("thanks_request");
+            exit;
+        }
     }
     else{
     
-        $html = "";
+        $smarty = new Smarty();
+        $smarty->assign('title', array(
+            'type'=>get_language_text("select_type"),
+            'selectName'=>get_language_text("select_name"),
+            'mounts'=>get_language_text("mounts"),
+            'minions'=>get_language_text("minions"),
+            'question'=>get_language_text("question"),
+            'existingMethod'=>get_language_text("select_existing_method"),
+            'newMethod'=>get_language_text("select_new_method"),
+            'desc'=>get_language_text("method")));
         $type = $_POST['type'];
-        $minion_selected = $type == "minions"?"selected":"";
-        $mount_selected = $type == "mounts"?"selected":"";
-        
-        $html .= "<div class='form-group'>";
-        $html .= "<label for='type'>".get_language_text("select_type")."</label>";
-        $html .= "<select class='form-control' id='type'>";
-        $html .= "<option value=''>----------</option>";
-        $html .= "<option value='minions' $minion_selected>".get_language_text("minions")."</option>";
-        $html .= "<option value='mounts' $mount_selected>".get_language_text("mounts")."</option>";
-        $html .= "</select>";
-        $html .= "<label for='obj_name'>".get_language_text("select_name")."</label>";
-        $html .= "<select class='form-control' id='obj_name'>";
-        $object_name = $_POST["obj_name"];
-        if(!empty($type)){
-            $objects = get_list_of($type);
-            $html .= "<option value=''>----------</option>";
-            //var_dump($objects);
-            foreach($objects as $obj){
-                $column = "name_".get_lang();
-                $value = $obj['name'];
-                $selected = $value == $object_name ? "selected":"";
-                $text = $obj[$column];
-                $html .= "<option value='$value' $selected>$text</option>";
-            }
+        $smarty->assign('type',$type);
+        if($type == "minions" || $type == "mounts"){
+            $result = $database->select($type,["id","name_".get_lang()],"ORDER BY name_".get_lang());
+            $objects = array_map(function($obj){
+                return array('id'=>$obj['id'],'name'=>$obj["name_".get_lang()]);
+            },$result);
             
+            $smarty->assign($type,$objects);
         }
-        $html .= "</select>";
-        
-        
-        if(!empty($object_name)){
-            $id = $database->get($type,"id",["name[=]"=>$object_name]);
-            $method_name = $_POST["method"];
+        $id = $_POST['id'];
+        $smarty->assign('id',$id);
+        if(!empty($id)){
+            $methodes = array();
             
-            if($database->has($type."_method",["m_id[=]"=>$id])){
-                $html .= "<label for='method'>".get_language_text("select_existing_method")."</label>";
-                $html .= "<select class='form-control' id='method'>";
-                $html .= "<option value=''>----------</option>";
-                $methodes = $database->select($type."_method","method",["m_id[=]"=>$id]);
-                foreach($methodes as $method){
-                    $method_text = get_language_method($method);
-                    $selected = $method_name == $method ? "selected" : "";
-                    $html .= "<option value='$method' $selected>$method_text</option>";            }
-                $html .= "</select>";
-            }
-            $html .= "<label for='new_method'>".get_language_text("select_new_method")."</label>";
-            $html .= "<select class='form-control' id='new_method'>";
-            $html .= "<option value=''>----------</option>";
+            $methoeds_db = $database->select($type."_method","method",["m_id[=]"=>$id]);
+            $methodes['exist'] = array_map(function($method){
+                return array('en'=>$method,'name'=>get_method_lang($method));
+            },$methoeds_db);
             
             foreach(get_language_text("methodes","en") as $method){
-                if(!$database->has($type."_method",["AND" => ["m_id[=]"=>$id,"method[=]"=>$method]])){
-                    $method_text = get_language_method($method);
-                    $selected = $method_name == $method ? "selected" : "";
-                    $html .= "<option value='$method' $selected>$method_text</option>";
+                if(!in_array($method,$methoeds_db) && $method != "All"){
+                    $methodes['new'][] = array('en'=>$method,'name'=>get_method_lang($method)); ;
                 }
             }
-            $html .= "</select>";
-            
-            if(!empty($method_name)){
-                if($database->has($type."_method",["AND" => ["m_id[=]"=>$id,"method[=]"=>$method_name]])){
-                    $obj = $database->select($type."_method","*",["AND" => ["m_id[=]"=>$id,"method[=]"=>$method_name]])[0];
-                    $value_en = $obj["method_description_en"];
-                    $value_fr = $obj["method_description_fr"];
-                    $value_de = $obj["method_description_de"];
-                    $value_ja = $obj["method_description_ja"];
-                }
-                $html .= "<label for='method_description_en'>".get_language_text("method","en")."[en]:</label>";
-                $html .= "<textarea class='form-control' id='method_description_en' rows='4' cols='50'>$value_en</textarea>";
-                $html .= "<label for='method_description_fr'>".get_language_text("method","fr")."[fr]:</label>";
-                $html .= "<textarea class='form-control' id='method_description_fr' rows='4' cols='50'>$value_fr</textarea>";
-                $html .= "<label for='method_description_de'>".get_language_text("method","de")."[de]:</label>";
-                $html .= "<textarea class='form-control' id='method_description_de' rows='4' cols='50'>$value_de</textarea>";
-                $html .= "<label for='method_description_ja'>".get_language_text("method","ja")."[ja]:</label>";
-                $html .= "<textarea class='form-control' id='method_description_ja' rows='4' cols='50'>$value_ja</textarea>";
-            }
+            $smarty->assign('methodes',$methodes);
         }
-    
-        $html .= "</div>";
-        echo $html;
+        
+        $method = $_POST['method'];
+        $method_obj = array('name'=>$method);
+        if(!empty($method)){
+            $method_db = $database->get($type."_method","*",["AND"=>["m_id[=]"=>$id,"method[=]"=>$method]]);
+            $method_obj['desc_en'] = $method_db['method_description_en'];
+            $method_obj['desc_fr'] = $method_db['method_description_fr'];
+            $method_obj['desc_de'] = $method_db['method_description_de'];
+            $method_obj['desc_ja'] = $method_db['method_description_ja'];
+        }
+        $smarty->assign('method',$method_obj);
+        $smarty->display('../template/request.tpl');
+        
         exit;
     }
 ?>
