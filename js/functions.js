@@ -2,7 +2,7 @@ var languageTexts = {
     'update_message': {
         en: "Character will be update from lodestone",
         fr: "",
-        de: "Der Charakter wird vom Lodestone aktuallisiert",
+        de: "Der Charakter wird vom Lodestone aktualisiert",
         ja: ""
     },
     'load_char_message': {
