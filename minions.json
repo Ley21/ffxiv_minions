@@ -834,9 +834,9 @@
             {
                 "method": "Gil Purchase",
                 "available": "1",
-                "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
-                "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
+                "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
                 "method_description_ja": null
             }
         ]
