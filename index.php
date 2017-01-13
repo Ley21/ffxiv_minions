@@ -26,6 +26,7 @@ $smarty->assign('search',get_language_text("search"));
 $smarty->assign('char_search_placeholder',get_language_text("char_search_placeholder"));
 $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
+$smarty->assign("startpage",true);
 
 //Get latest patch number from database
 $lastPatch = get_latest_patch();

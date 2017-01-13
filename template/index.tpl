@@ -192,6 +192,22 @@
 
                         <div class="rounded_row">
                             <div id="content" style="padding:20px">
+                                {if $startpage}
+                                <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h4><b>News</b></h4>
+                                </div>
+                                <div class="panel-body text-left">
+                                    <ul>
+                                        <li><b>2017-01-13</b>
+                                            <ul>
+                                                <li>We are planning to add a feature to also show Triple Triad cards and orchestrion rolls on this page. Issue <a href="https://github.com/Ley21/ffxiv_minions/issues/8">#8</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                                {/if}
                                 {$content}
                             </div>
                         </div>
