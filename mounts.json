@@ -863,6 +863,21 @@
         ]
     },
     {
+        "id": "81",
+        "name": "Flying Cumulus",
+        "can_fly": null,
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "82",
         "name": "Original Fat Chocobo",
         "can_fly": "1",
@@ -998,6 +1013,36 @@
         ]
     },
     {
+        "id": "95",
+        "name": "Goten",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1771'>Fatal Feast<\/a>, emerge victorious in 30 Feast matches while using a title received from the disreputable priest.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1771'>Fatales Fest<\/a>, f\u00fcr 30 Siege in „The Feast“ mit einem Garo-Titel.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "96",
+        "name": "Ginga",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1772'>Frontline Fury<\/a>, emerge victorious in 10 Frontline campaigns while using a title received from the disreputable priest.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1772'>Furiose Front<\/a>, f\u00fcr 10 Siege an der PvP-Front mit einem Garo-Titel errungen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "98",
         "name": "Sophic Lanner",
         "can_fly": "1",
@@ -1038,6 +1083,81 @@
                 "method_description_en": "Drop in the treasure coffer in the raid <a href='http:\/\/xivdb.com\/instance\/30046'>Alexander - The Soul Of The Creator (Savage)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Garantierte Beute in der Schatztruhe in dem Raid <a href='http:\/\/de.xivdb.com\/instance\/30046'>Alexander - Seele des Sch\u00f6pfers (episch)<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "102",
+        "name": "Raigo",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1773'>Furious Fatalities<\/a>, emerge victorious in a combination of 60 Frontline campaigns and Feast matches while using a title received from the disreputable priest.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1773'>Furioser Fatalismus<\/a>, f\u00fcr 60 Siege in „The Feast“ oder an der PvP-Front mit einem Garo-Titel errungen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "104",
+        "name": "Demonic Lanner",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20044'>Containment Bay Z1T9 (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20044'>Zenit Der Götter - Zurvan.",
+                "method_description_ja": nullpp
+            }
+        ]
+    },
+    {
+        "id": "105",
+        "name": "Firebird",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the quest <a href='http:\/\/xivdb.com\/quest\/67086'>Der König Der Lüfte<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Quest <a href='http:\/\/de.xivdb.com\/quest\/67086'>Fiery Wings, Fiery Hearts<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "106",
+        "name": "Eggshilaration System",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "110",
+        "name": "Archon Throne",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "MGP Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable for 750,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 750.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
                 "method_description_ja": null
             }
         ]

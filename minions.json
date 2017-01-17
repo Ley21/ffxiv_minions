@@ -926,9 +926,9 @@
             {
                 "method": "Misc. Methods",
                 "available": "1",
-                "method_description_en": "Can be purchased by exchanged a 'Elexir' at the NPC at (X:12 Y:36) in Western La Noscea.",
+                "method_description_en": "Can be purchased by exchanged a <a href='http://xivdb.com/item/4559/elixier'>Elexier</a> at the NPC at (X:12 Y:36) in Western La Noscea.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines 'Elexirs' bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
+                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http://de.xivdb.com/item/4559/elixier'>Elixir<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
                 "method_description_ja": null
             }
         ]
@@ -3034,6 +3034,20 @@
         ]
     },
     {
+        "id": "220",
+        "name": "Wind-up Yuna",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Frankfurt.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Frankfurt.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "221",
         "name": "Wind-up Rikku",
         "methodes": [
@@ -3085,6 +3099,132 @@
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/All_Saints_Wake\/'>All Saints Wake 2016<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/All_Saints_Wake\/'>Allerschutzheiligen 2016<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "226",
+        "name": "Bullpup",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "227",
+        "name": "Angel Of Mercy",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "228",
+        "name": "Wind-up Estinien",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "230",
+        "name": "Gigi",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "231",
+        "name": "Anima",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "232",
+        "name": "Wind-up Scathach",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/30047'>Dun Scaith<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30047'>Dun Scaith<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "233",
+        "name": "Wind-up Nidhogg",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "235",
+        "name": "Wind-up Ohl Deeh",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Allied' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbauch<\/a> (Ab Verbundenheitsgrad 'Verbündet').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "236",
+        "name": "Wind-up Moon",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be purchased by exchanged a <a href='http://xivdb.com/item/4560'>Hi-Elexir</a> at the NPC at (X:12 Y:36) in Western La Noscea.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http://de.xivdb.com/item/4560/elixier'>Super-Elixier<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
                 "method_description_ja": null
             }
         ]
