@@ -926,9 +926,9 @@
             {
                 "method": "Misc. Methods",
                 "available": "1",
-                "method_description_en": "Can be purchased by exchanged a <a href='http://xivdb.com/item/4559/elixier'>Elexier</a> at the NPC at (X:12 Y:36) in Western La Noscea.",
+                "method_description_en": "Can be purchased by exchanged a <a href='http:\/\/xivdb.com\/item\/4559\/elixier'>Elexier<\/a> at the NPC at (X:12 Y:36) in Western La Noscea.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http://de.xivdb.com/item/4559/elixier'>Elixir<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
+                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http:\/\/de.xivdb.com\/item\/4559\/elixier'>Elixir<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
                 "method_description_ja": null
             }
         ]
@@ -3210,7 +3210,7 @@
                 "available": "1",
                 "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
-                "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbauch<\/a> (Ab Verbundenheitsgrad 'Verbündet').",
+                "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 30.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbauch<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
                 "method_description_ja": null
             }
         ]
@@ -3222,9 +3222,9 @@
             {
                 "method": "Misc. Methods",
                 "available": "1",
-                "method_description_en": "Can be purchased by exchanged a <a href='http://xivdb.com/item/4560'>Hi-Elexir</a> at the NPC at (X:12 Y:36) in Western La Noscea.",
+                "method_description_en": "Can be purchased by exchanged a <a href='http:\/\/xivdb.com\/item\/4560'>Hi-Elexir<\/a> at the NPC at (X:12 Y:36) in Western La Noscea.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http://de.xivdb.com/item/4560/elixier'>Super-Elixier<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
+                "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http:\/\/de.xivdb.com\/item\/4560\/elixier'>Super-Elixier<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
                 "method_description_ja": null
             }
         ]
