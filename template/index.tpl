@@ -180,6 +180,9 @@
                                         </select>
                                     </form>
                                     <form class="navbar-form navbar-right form-inline">
+                                        <button id="loginBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" >Login</button>
+                                    </form>
+                                    <form class="navbar-form navbar-right form-inline">
                                         <button type="button" class="btn btn-primary" id="user" style="display: none;">
                                             <span class="glyphicon glyphicon-user" aria-hidden="true" /> {$my_char}
                                         </button>
@@ -199,6 +202,11 @@
                                 </div>
                                 <div class="panel-body text-left">
                                     <ul>
+                                        <li><b>2017-01-17</b>
+                                            <ul>
+                                                <li>Minions and Mounts for 3.5 were added. Also the all currently known methodes. I will update in the page next days and weeks if I see somethink new on reddi.</li>
+                                            </ul>
+                                        </li>
                                         <li><b>2017-01-13</b>
                                             <ul>
                                                 <li>We are planning to add a feature to also show Triple Triad cards and orchestrion rolls on this page. Issue <a href="https://github.com/Ley21/ffxiv_minions/issues/8">#8</a></li>
@@ -231,6 +239,26 @@
                             </div>
                             <!-- /.modal-dialog -->
                         </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" >
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Login Dialog</h4>
+                              </div>
+                              <div class="modal-body" id="login_body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
                         <!-- /.modal -->
 
                         <div id="request" class="modal fade" tabindex="-1" role="dialog">
@@ -275,6 +303,8 @@
 
 
     </div>
+    
+    
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
