@@ -825,7 +825,7 @@
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
-                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20036'>The Minstrel's Ballad: Thordan's Reign<\/a>. Can also be purchased for 99 'Heavens' Ward Helm Fragment' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20036'>The Minstrel's Ballad: Thordan's Reign<\/a>. Can also be purchased for 99 'Heavens Ward Helm Fragment' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20036'>Heldenlied Von Thordans Fall<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Azurgarden-Helmfragment' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
                 "method_description_ja": null
@@ -840,9 +840,9 @@
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
-                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20038'>Containment Bay S1T7 (Extreme)<\/a>.",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20038'>Containment Bay S1T7 (Extreme)<\/a>. Can also be purchased for 99 'Fiend Totem' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20038'>Zenit Der G\u00f6tter - Sephirot<\/a>.",
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20038'>Zenit Der G\u00f6tter - Sephirot<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Sephirot-Totem' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -960,9 +960,9 @@
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
-                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20040'>The Minstrel's Ballad: Nidhogg's Rage<\/a>.",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20040'>The Minstrel's Ballad: Nidhogg's Rage<\/a>. Can also be purchased for 99 'Horde Totem' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20040'>Das Lied Von Nidhoggs Letztem Ruf<\/a>.",
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20040'>Das Lied Von Nidhoggs Letztem Ruf<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Horden-Totem' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1125,9 +1125,9 @@
             {
                 "method": "Quest Rewards",
                 "available": "1",
-                "method_description_en": "Obtained by completing the quest <a href='http:\/\/xivdb.com\/quest\/67086'>Der K\u00f6nig Der L\u00fcfte<\/a>.",
+                "method_description_en": "Obtained by completing the quest <a href='http:\/\/xivdb.com\/quest\/67086'>Fiery Wings, Fiery Hearts<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Quest <a href='http:\/\/de.xivdb.com\/quest\/67086'>Fiery Wings, Fiery Hearts<\/a>.",
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Quest <a href='http:\/\/de.xivdb.com\/quest\/67086'>Der K\u00f6nig Der L\u00fcfte<\/a>.",
                 "method_description_ja": null
             }
         ]

@@ -204,7 +204,7 @@
                                     <ul>
                                         <li><b>2017-01-17</b>
                                             <ul>
-                                                <li>Minions and Mounts for 3.5 were added. Also the all currently known methodes. I will update in the page next days and weeks if I see somethink new on reddi.</li>
+                                                <li>Update Minions and Mounts for 3.5.</br>Missing informations will be updated during the next days/weeks, if I see something new on reddit.</li>
                                             </ul>
                                         </li>
                                         <li><b>2017-01-13</b>
