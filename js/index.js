@@ -198,6 +198,17 @@ $(document).on('click', '#send_button', function() {
     $(this).addClass("disabled");
 });
 
+$(document).on('click', '#loginBtn', function() {
+    $.ajax({
+        url: "login/main_login.php",
+        context: document.body,
+        success: function(data) {
+            $("#login_body").html(data);
+        }
+    });
+    
+});
+
 function update_request_modal(send) {
     var modal = $('#request');
     var body = modal.find('.modal-body');
