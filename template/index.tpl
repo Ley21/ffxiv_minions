@@ -92,6 +92,12 @@
                                                 <li><a id='minions' class='ranking_dropdown'>{$minions}</a>
                                                 </li>
                                                 <li><a id='mounts' class='ranking_dropdown'>{$mounts}</a>
+                                                <li role="separator" class="divider"></li>
+                                                <li class="dropdown-header">{$rarity}</li>
+                                                </li>
+                                                <li><a id='rarity_all' class='ranking_dropdown'>{$all}</a>
+                                                <li><a id='rarity_minions' class='ranking_dropdown'>{$minions}</a>
+                                                <li><a id='rarity_mounts' class='ranking_dropdown'>{$mounts}</a>
                                                 </li>
                                             </ul>
                                         </li>

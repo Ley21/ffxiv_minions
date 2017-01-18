@@ -63,6 +63,9 @@
     $language_texts['no'] = array("en"=>"No","fr"=>"Non","de"=>"Nein","ja"=>"");
     
     $language_texts['rarest'] = array("en"=>"Rarest Collectable","fr"=>"Collectibles les plus rares","de"=>"Seltenste Sammlerstücke","ja"=>"");
+    $language_texts['rarity'] = array("en"=>"Rarity","fr"=>"","de"=>"Seltenheit","ja"=>"");
+    $language_texts['percent'] = array("en"=>"Percent","fr"=>"","de"=>"Prozent","ja"=>"");
+    $language_texts['count'] = array("en"=>"Count","fr"=>"","de"=>"Anzahl","ja"=>"");
     
     $language_texts['methodes'] = array (
         "en"=>

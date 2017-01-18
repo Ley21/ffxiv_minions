@@ -22,6 +22,7 @@ $smarty->assign('ranking',get_language_text("ranking"));
 $smarty->assign('all',get_language_text("all"));
 $smarty->assign('minions',get_language_text("minions"));
 $smarty->assign('mounts',get_language_text("mounts"));
+$smarty->assign('rarity',get_language_text("rarity"));
 $smarty->assign('search',get_language_text("search"));
 $smarty->assign('char_search_placeholder',get_language_text("char_search_placeholder"));
 $smarty->assign($lang."_select","selected='selected'");

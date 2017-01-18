@@ -3,6 +3,11 @@
     require_once "../helper.php";
     
     $type = $_GET["type"];
-    echo create_ranking($type);
+    if(strpos($type, "rarity") === false){
+        echo create_ranking($type);
+    }
+    else{
+        echo create_object_ranking($type);
+    }
 
 ?>
