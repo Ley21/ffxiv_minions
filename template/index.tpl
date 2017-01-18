@@ -179,9 +179,9 @@
                                             <option value="ja" {$ja_select}>日本語</option>
                                         </select>
                                     </form>
-                                    <form class="navbar-form navbar-right form-inline">
+                                    <!--<form class="navbar-form navbar-right form-inline">
                                         <button id="loginBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" >Login</button>
-                                    </form>
+                                    </form>-->
                                     <form class="navbar-form navbar-right form-inline">
                                         <button type="button" class="btn btn-primary" id="user" style="display: none;">
                                             <span class="glyphicon glyphicon-user" aria-hidden="true" /> {$my_char}
@@ -240,7 +240,7 @@
                             <!-- /.modal-dialog -->
                         </div>
                         
-                        <!-- Modal -->
+                        <!-- Modal 
                         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" >
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -257,7 +257,7 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div>-->
                         
                         <!-- /.modal -->
 
