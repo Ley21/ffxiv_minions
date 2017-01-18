@@ -15,20 +15,12 @@ class ComposerStaticInita47a09cfc3ea482b73188d43b38f148f
         array (
             'Viion\\Lodestone\\' => 16,
         ),
-        'D' => 
-        array (
-            'Dwoo\\' => 5,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Viion\\Lodestone\\' => 
         array (
             0 => __DIR__ . '/..' . '/viion/xivpads-lodestoneapi/src',
-        ),
-        'Dwoo\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/dwoo/dwoo/lib/Dwoo',
         ),
     );
 
