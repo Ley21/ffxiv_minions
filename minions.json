@@ -3150,11 +3150,11 @@
         "name": "Gigi",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67908'>If I Could Turn Back Time<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67908'>Nobody Is Perfect - Außer Hildi<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3164,11 +3164,11 @@
         "name": "Anima",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67934'>Body And Soul<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67934'>Es Lebe Der Kommerz<\/a>.",
                 "method_description_ja": null
             }
         ]
