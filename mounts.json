@@ -1063,6 +1063,14 @@
         "can_fly": "1",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Gold-trimmed Sack' found in Deep Dungeon - The Palace of Dead.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz IV' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Misc. Methods",
                 "available": "1",
                 "method_description_en": "Can be obtained with an 'Gold-trimmed Sack' found in Deep Dungeon",

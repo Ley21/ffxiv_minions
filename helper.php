@@ -133,6 +133,7 @@
             }
             
         }
+        $objects = array_map("unserialize", array_unique(array_map("serialize", $objects)));
         $smarty->assign('objects', $objects);
         return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/table.tpl');
     }

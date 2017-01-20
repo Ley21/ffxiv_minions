@@ -72,19 +72,19 @@
         array("All","Gil Purchase","MGP Purchase","Tomestone Purchase","GC Purchase",
             "Mogry Shop Purchase","Dungeons & Trials","Crafting","Gathering","Gardening",
             "Achievement Rewards","FATE Rewards","Quest Rewards","Seasonal Rewards",
-            "Veteran Rewards","Treasure Hunt","Treasure Dungeons","Monster Hunt","Promotions",
+            "Veteran Rewards","Treasure Hunt","Treasure Dungeons","Deep Dungeon","Monster Hunt","Promotions",
             "Retainer Ventures","Misc. Methods"),
         "fr"=>
         array("Tout","Achat en Gil","Achat en PGS","Achat en Mémoquartz","Achat auprès des GC",
 				"Achat de la Station Mog","Donjons et Défis","Artisanat","Récolte","Jardinage",
 				"Récompense de Haut Fait","Récompense d'Aléa","Récompense de quête","Récompense d'événement saisonnier",
-				"Récompense de vétérans","Chasse aux trésors","Coffres de donjons","Chasse aux monstres","Promotions",
+				"Récompense de vétérans","Chasse aux trésors","Coffres de donjons","Donjon sans fond","Chasse aux monstres","Promotions",
 				"Expéditions de servants","Méthodes diverses"),
         "de"=>
         array("Alle","Gil","MGP","Allagische Steine","Staatstaler",
             "Mogry Shop","Dungeons & Prüfungen","Handwerken","Sammeln","Gartenbau",
             "Errungenschafts Belohnung","FATE Belohnung","Auftrags Belohnung","Saisonale Belohnung",
-            "Veteranen Belohnung","Schatzkarten","Schatzkarten Dungeon","Hohe Jagd","Aktionen",
+            "Veteranen Belohnung","Schatzkarten","Schatzkarten Dungeon","Tiefes Gewölbe","Hohe Jagd","Aktionen",
             "Gehilfen Erkundung","Sonstige Methoden"),
         "ja"=>
         array());

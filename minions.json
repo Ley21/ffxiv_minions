@@ -214,6 +214,22 @@
         "name": "Bluebird",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Hunt",
                 "available": "1",
                 "method_description_en": "Treasure Hunt Reward from <a href='http:\/\/xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Timeworn Peisteskin Map<\/a>, <a href='http:\/\/xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Timeworn Dragonskin Map<\/a>..",
@@ -312,6 +328,22 @@
         "name": "Wind-up Tonberry",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Hunt",
                 "available": "1",
                 "method_description_en": "Can be found in a treasure of a 'Timeworn Boarskin Map'.",
@@ -367,6 +399,22 @@
         "id": "27",
         "name": "Tiny Bulb",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
             {
                 "method": "Treasure Hunt",
                 "available": "1",
@@ -782,6 +830,14 @@
         "name": "Minute Mindflayer",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Retainer Ventures",
                 "available": "1",
                 "method_description_en": "Can be obtained by Field \/ Highland Exploration XIII.",
@@ -804,11 +860,27 @@
         "name": "Tight-beaked Parrot",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (schwer)<\/a>.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1049,6 +1121,14 @@
         "id": "80",
         "name": "Baby Opo-opo",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -1296,6 +1376,14 @@
         "name": "Nutkin",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Dungeons",
                 "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
@@ -1521,6 +1609,14 @@
         "id": "112",
         "name": "Mummy's Little Mummy",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -1824,6 +1920,14 @@
         "name": "Unicolt",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/34'>The Vault<\/a>.",
@@ -1874,6 +1978,14 @@
         "name": "Owlet",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/35'>The Fractal Continuum<\/a>.",
@@ -1896,6 +2008,14 @@
         "name": "Ugly Duckling",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/33'>Neverreap<\/a>.",
@@ -1917,6 +2037,14 @@
         "id": "139",
         "name": "Gaelikitten",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -1954,6 +2082,14 @@
         "name": "Lesser Panda",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/39'>The Aery<\/a>.",
@@ -1975,6 +2111,14 @@
         "id": "142",
         "name": "Page 63",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -2195,6 +2339,14 @@
         "id": "157",
         "name": "Paissa Brat",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Treasure Dungeons",
                 "available": "1",
@@ -3024,6 +3176,14 @@
         "name": "Wind-up Edda",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz II' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Misc. Methods",
                 "available": "1",
                 "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon",
@@ -3154,7 +3314,7 @@
                 "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67908'>If I Could Turn Back Time<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67908'>Nobody Is Perfect - Außer Hildi<\/a>.",
+                "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67908'>Nobody Is Perfect - Au\u00dfer Hildi<\/a>.",
                 "method_description_ja": null
             }
         ]
