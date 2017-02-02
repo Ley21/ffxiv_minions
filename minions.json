@@ -3282,11 +3282,11 @@
         "name": "Angel Of Mercy",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Seasonal Rewards",
+                "available": "1",
+                "method_description_en": "Can be obtained from House Valentione Maid during the Special Event <a href='http://eu.finalfantasyxiv.com/lodestone/special/2017/Valentiones_Day/'>Valentione's Day 2017<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann beim Dienstmädchen[p] Des Hauses Valention für 2.400 Gil während des Saisonalen <a href='http://de.finalfantasyxiv.com/lodestone/special/2017/Valentiones_Day/'>Ereignis Valentiontag 2017</a>.",
                 "method_description_ja": null
             }
         ]
