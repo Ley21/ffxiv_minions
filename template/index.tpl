@@ -32,7 +32,7 @@
     <script src="https://xivdb.com/tooltips.js"></script>
 </head>
 
-<body style="background-image:url(img/background_2.jpg);background-repeat:no-repeat;background-attachment:fixed">
+<body style="background-image:url(img/background_3.jpg);background-repeat:no-repeat;background-attachment:fixed">
 
     <div class="row">
         <div class="col-md-1"> </div>
