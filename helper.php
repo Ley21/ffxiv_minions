@@ -772,8 +772,12 @@
                 if($table == "mounts"){
                     $database->update($table,["can_fly" => $coll->can_fly],["id[=]"=>$coll->id]);
                 }
+                /*if(empty($coll->methodes) 
+                    || count($coll->methodes) != $database->count($method_table,["m_id[=]"=>$coll->id])){
+                    $database->delete($method_table,["m_id[=]"=>$coll->id]);
+                }*/
                 foreach($coll->methodes as $j_method){
-                    $logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
+                    //$logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
                     $data = ["m_id" => $coll->id,"available"=>$j_method->available,
                         "method" => $j_method->method,
                         "method_description_en" => $j_method->method_description_en,
@@ -786,9 +790,6 @@
                     }else{
                         $database->update($method_table,$data,["AND"=>["m_id[=]"=>$coll->id,"method[=]"=>$j_method->method]]);
                     }
-                }
-                if(empty($coll->methodes)){
-                    $missing++;
                 }
             }
             $logs .= "===> $table is missing '$missing' methods.</br>";

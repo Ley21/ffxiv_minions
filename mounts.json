@@ -1156,6 +1156,36 @@
         ]
     },
     {
+        "id": "108",
+        "name": "Lone Hellhound",
+        "can_fly": null,
+        "methodes": [
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 3 of 'The Feast' in solo ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezielle Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-100 in der Solo Wertung.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "109",
+        "name": "Pack Hellhound",
+        "can_fly": null,
+        "methodes": [
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 3 of 'The Feast' in group ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezielle Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-100 in der Gruppen Wertung.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "110",
         "name": "Archon Throne",
         "can_fly": "1",
