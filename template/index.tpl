@@ -32,7 +32,7 @@
     <script src="https://xivdb.com/tooltips.js"></script>
 </head>
 
-<body style="background-image:url(img/background_2.jpg);background-repeat:no-repeat;background-attachment:fixed">
+<body style="background-image:url(img/background_3.jpg);background-repeat:no-repeat;background-attachment:fixed">
 
     <div class="row">
         <div class="col-md-1"> </div>
@@ -92,6 +92,12 @@
                                                 <li><a id='minions' class='ranking_dropdown'>{$minions}</a>
                                                 </li>
                                                 <li><a id='mounts' class='ranking_dropdown'>{$mounts}</a>
+                                                <li role="separator" class="divider"></li>
+                                                <li class="dropdown-header">{$rarity}</li>
+                                                </li>
+                                                <li><a id='rarity_all' class='ranking_dropdown'>{$all}</a>
+                                                <li><a id='rarity_minions' class='ranking_dropdown'>{$minions}</a>
+                                                <li><a id='rarity_mounts' class='ranking_dropdown'>{$mounts}</a>
                                                 </li>
                                             </ul>
                                         </li>

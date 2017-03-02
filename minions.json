@@ -214,6 +214,22 @@
         "name": "Bluebird",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Hunt",
                 "available": "1",
                 "method_description_en": "Treasure Hunt Reward from <a href='http:\/\/xivdb.com\/item\/6692\/Timeworn+Peisteskin+Map'>Timeworn Peisteskin Map<\/a>, <a href='http:\/\/xivdb.com\/item\/12243\/Timeworn+Dragonskin+Map'>Timeworn Dragonskin Map<\/a>..",
@@ -312,6 +328,22 @@
         "name": "Wind-up Tonberry",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Hunt",
                 "available": "1",
                 "method_description_en": "Can be found in a treasure of a 'Timeworn Boarskin Map'.",
@@ -367,6 +399,22 @@
         "id": "27",
         "name": "Tiny Bulb",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
+                "method_description_ja": null
+            },
             {
                 "method": "Treasure Hunt",
                 "available": "1",
@@ -782,6 +830,14 @@
         "name": "Minute Mindflayer",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Retainer Ventures",
                 "available": "1",
                 "method_description_en": "Can be obtained by Field \/ Highland Exploration XIII.",
@@ -804,11 +860,27 @@
         "name": "Tight-beaked Parrot",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (Hard)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/28\/Sastasha+(Hard)'>Sastasha (schwer)<\/a>.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55001\/The+Aquapolis'>Aquapolis<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1049,6 +1121,14 @@
         "id": "80",
         "name": "Baby Opo-opo",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -1296,6 +1376,14 @@
         "name": "Nutkin",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Dungeons",
                 "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
@@ -1521,6 +1609,14 @@
         "id": "112",
         "name": "Mummy's Little Mummy",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -1824,6 +1920,14 @@
         "name": "Unicolt",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/34'>The Vault<\/a>.",
@@ -1874,6 +1978,14 @@
         "name": "Owlet",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/35'>The Fractal Continuum<\/a>.",
@@ -1896,6 +2008,14 @@
         "name": "Ugly Duckling",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/33'>Neverreap<\/a>.",
@@ -1917,6 +2037,14 @@
         "id": "139",
         "name": "Gaelikitten",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -1954,6 +2082,14 @@
         "name": "Lesser Panda",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Dungeons & Trials",
                 "available": "1",
                 "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/39'>The Aery<\/a>.",
@@ -1975,6 +2111,14 @@
         "id": "142",
         "name": "Page 63",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Dungeons & Trials",
                 "available": "1",
@@ -2195,6 +2339,14 @@
         "id": "157",
         "name": "Paissa Brat",
         "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Bronze-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz I' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
             {
                 "method": "Treasure Dungeons",
                 "available": "1",
@@ -2680,6 +2832,14 @@
                 "method_description_fr": null,
                 "method_description_de": "Kann f\u00fcr 15.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00f6hlen-Pier<\/a> gekauft werden.",
                 "method_description_ja": null
+            },
+            {
+                "method": "PvP",
+                "available": "1",
+                "method_description_en": "Can be purchased for 15,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Kann f\u00fcr 15.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00f6hlen-Pier<\/a> gekauft werden.",
+                "method_description_ja": null
             }
         ]
     },
@@ -3024,6 +3184,14 @@
         "name": "Wind-up Edda",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon - The Palace of Dead",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz II' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Misc. Methods",
                 "available": "1",
                 "method_description_en": "Can be obtained with an 'Iron-trimmed Sack' found in Deep Duingeon",
@@ -3122,11 +3290,11 @@
         "name": "Angel Of Mercy",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Seasonal Rewards",
+                "available": "0",
+                "method_description_en": "Can be obtained from House Valentione Maid during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2017\/Valentiones_Day\/'>Valentione's Day 2017<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann beim Dienstm\u00e4dchen[p] Des Hauses Valention f\u00fcr 2.400 Gil w\u00e4hrend des Saisonalen <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2017\/Valentiones_Day\/'>Ereignis Valentiontag 2017<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3146,6 +3314,20 @@
         ]
     },
     {
+        "id": "229",
+        "name": "Wind-up Hraesvelgr",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY\u00ae XIV: HEAVENSWARD\u2122 The Art of Ishgard -The Scars of War- [Art Book]'.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'FINAL FANTASY\u00ae XIV: HEAVENSWARD\u2122 The Art of Ishgard -The Scars of War- [Art Book]'.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "230",
         "name": "Gigi",
         "methodes": [
@@ -3154,7 +3336,7 @@
                 "available": "1",
                 "method_description_en": "Complete the quest <a href='http:\/\/xivdb.com\/quest\/67908'>If I Could Turn Back Time<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67908'>Nobody Is Perfect - Außer Hildi<\/a>.",
+                "method_description_de": "Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67908'>Nobody Is Perfect - Au\u00dfer Hildi<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3202,6 +3384,28 @@
         ]
     },
     {
+        "id": "234",
+        "name": "Hellpup",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1749'>Mama Said Knock You Out III<\/a>. Record 300 KOs in the Feast.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1749'>Das Haut Dich Um III<\/a>. 300 Gegner bei \u201eThe Feast\u201c besiegt.",
+                "method_description_ja": null
+            },
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-10. in the season 3 of 'The Feast' in solo ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezielle Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-10 in der Solo Wertung.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "235",
         "name": "Wind-up Ohl Deeh",
         "methodes": [
@@ -3225,6 +3429,28 @@
                 "method_description_en": "Can be purchased by exchanged a <a href='http:\/\/xivdb.com\/item\/4560'>Hi-Elexir<\/a> at the NPC at (X:12 Y:36) in Western La Noscea.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Abgabe eines <a href='http:\/\/de.xivdb.com\/item\/4560\/elixier'>Super-Elixier<a> bei einem NPC im Westlichen La Noscea (X:12 Y:36)",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "240",
+        "name": "Faepup",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1754'>How Can I Help III<\/a>. Record 300 assists in the Feast.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1754'>Ich War Dabei III<\/a>. 300 Mal einen Sieg \u00fcber einen Gegner bei \u201eThe Feast\u201c unterst\u00fctzt.",
+                "method_description_ja": null
+            },
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-10. in the season 3 of 'The Feast' in group ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezielle Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-10 in der Gruppen Wertung.",
                 "method_description_ja": null
             }
         ]

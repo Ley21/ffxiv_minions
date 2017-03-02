@@ -1063,6 +1063,14 @@
         "can_fly": "1",
         "methodes": [
             {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Gold-trimmed Sack' found in Deep Dungeon - The Palace of Dead.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz IV' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Misc. Methods",
                 "available": "1",
                 "method_description_en": "Can be obtained with an 'Gold-trimmed Sack' found in Deep Dungeon",
@@ -1143,6 +1151,36 @@
                 "method_description_en": null,
                 "method_description_fr": null,
                 "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "108",
+        "name": "Lone Hellhound",
+        "can_fly": null,
+        "methodes": [
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 3 of 'The Feast' in solo ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezielle Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-100 in der Solo Wertung.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "109",
+        "name": "Pack Hellhound",
+        "can_fly": null,
+        "methodes": [
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 3 of 'The Feast' in group ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezielle Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-100 in der Gruppen Wertung.",
                 "method_description_ja": null
             }
         ]

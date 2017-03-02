@@ -133,8 +133,75 @@
             }
             
         }
+        $objects = array_map("unserialize", array_unique(array_map("serialize", $objects)));
         $smarty->assign('objects', $objects);
         return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/table.tpl');
+    }
+    
+    function create_object_ranking($type = ""){
+        global $database;
+        
+        $smarty = new Smarty();
+        $smarty->assign('tableHeaderNr', get_language_text("nr"));
+        $smarty->assign('tableHeaderName', get_language_text("name"));
+        $smarty->assign('tableHeaderPercent', get_language_text("percent"));
+        $smarty->assign('tableHeaderCount', get_language_text("count"));
+        
+        $type = split("_", $type)[1];
+        $count_players = $database->count("players");
+        $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://".get_lang().".xivdb.com";
+            
+        
+        switch($type){
+            case "all":
+                $minions = get_rarity_objects("minions","player_minion");
+                $mounts = get_rarity_objects("mounts","player_mounts");
+                $result = array_merge($minions,$mounts);
+                
+                
+                function custom_sort($a,$b) {
+                    return $a['number']>$b['number'];
+                }
+                
+                usort($result, "custom_sort");
+                break;
+            case "minions":
+                $result = get_rarity_objects($type,"player_minion");
+                break;
+            case "mounts":
+                $result = get_rarity_objects($type,"player_mounts");
+                break;
+        }
+        $count_befor = $result[0]['number'];
+        $nr = 1;
+        $objects = array_map(function($obj) use (&$count_befor,&$count_players,&$nr){
+                if($count_befor != $obj['number']){
+                    $nr++;
+                }
+                return array(
+                    "nr"=>$nr,
+                    "id" => $obj['id'],
+                    "name"=>$obj['name_'.get_lang()],
+                    "icon"=> $obj['icon_url'],
+                    "type" => rtrim($obj["type"], "s"),
+                    "link" => $base_url."/".$obj["type"]."/".$obj['id'],
+                    "percent" => ($obj['number']  == 0 ? 0 : round(( $obj['number'] / $count_players * 100 ),2))." %",
+                    "count" => $obj['number']);
+            }, $result);
+        $smarty->assign('objects', $objects);
+        return $smarty->fetch($_SERVER['DOCUMENT_ROOT'].'/template/ranking_rarity.tpl');
+    }
+    
+    function get_rarity_objects($table, $player_table){
+        global $database;
+        $result = $database->query("SELECT COUNT( ".$player_table.".p_id ) AS number, ".$table.".* 
+            FROM ".$player_table." RIGHT JOIN $table ON $player_table.m_id = ".$table.".id 
+            GROUP BY ".$table.".id ORDER BY number ASC ")->fetchAll();
+        $result = array_map(function($obj) use (&$table){
+                $obj["type"] = $table == "mounts" ? "mount" : "minion";
+                return $obj;
+            }, $result);
+        return $result;
     }
     
     function create_ranking($type = "",$fc = ""){
@@ -705,8 +772,12 @@
                 if($table == "mounts"){
                     $database->update($table,["can_fly" => $coll->can_fly],["id[=]"=>$coll->id]);
                 }
+                /*if(empty($coll->methodes) 
+                    || count($coll->methodes) != $database->count($method_table,["m_id[=]"=>$coll->id])){
+                    $database->delete($method_table,["m_id[=]"=>$coll->id]);
+                }*/
                 foreach($coll->methodes as $j_method){
-                    $logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
+                    //$logs .= "--> Methode: $j_method->method || Desciption: - $j_method->method_description_en.</br>";
                     $data = ["m_id" => $coll->id,"available"=>$j_method->available,
                         "method" => $j_method->method,
                         "method_description_en" => $j_method->method_description_en,
@@ -719,9 +790,6 @@
                     }else{
                         $database->update($method_table,$data,["AND"=>["m_id[=]"=>$coll->id,"method[=]"=>$j_method->method]]);
                     }
-                }
-                if(empty($coll->methodes)){
-                    $missing++;
                 }
             }
             $logs .= "===> $table is missing '$missing' methods.</br>";
