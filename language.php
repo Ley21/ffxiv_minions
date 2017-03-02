@@ -137,4 +137,28 @@
 					"fr"=>"Pour demander un changement, cliquez sur 'Demande de changement' dans le pied de page. Ici vous pouvez choisir la mascotte/monture et réparer l'erreur ou ajouter l'information manquante. Vous pouvez aussi écrire un ticket sur <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> ou faire une demande de pull.",
 					"de"=>"Um einen Fehler zu melden, kannst du unten auf der Seite auf 'Request Change' klicken. Dort wählst du Begleiter/Reittiere aus und kannst dort den Fehler verbessern bzw. fehlende Einträge ergänzen. Natürlich kann man auch einen Issue auf <a href='https://github.com/Ley21/ffxiv_minions'>GitHub</a> schreiben bzw. einen Pull-Request aufmachen.","ja"=>"");
 
+
+//Login
+
+    $language_texts['loginHeader'] = array("en"=>"Login Dialog",
+                    "fr"=>"",
+					"de"=>"Login Dialog","ja"=>"");    
+    $language_texts['username'] = array("en"=>"Username",
+                    "fr"=>"",
+					"de"=>"Benutzername","ja"=>"");   
+    $language_texts['password'] = array("en"=>"Password",
+                    "fr"=>"",
+					"de"=>"Passwort","ja"=>"");   
+    $language_texts['cancel'] = array("en"=>"Cancel",
+                    "fr"=>"",
+					"de"=>"Abbrechen","ja"=>"");   
+    $language_texts['login'] = array("en"=>"Login",
+                    "fr"=>"",
+					"de"=>"Login","ja"=>"");  
+	$language_texts['login_warning_text']= array("en"=>"Username or password are incorrect.",
+                    "fr"=>"",
+					"de"=>"Benutzername oder Passwort sind falsch.","ja"=>"");  
+	$language_texts['login_success_text']= array("en"=>"You successfully logged in.",
+                    "fr"=>"",
+					"de"=>"Sie haben sich erfolgreich eingeloggt.","ja"=>""); 
 ?>

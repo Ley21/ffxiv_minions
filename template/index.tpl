@@ -185,9 +185,14 @@
                                             <option value="ja" {$ja_select}>日本語</option>
                                         </select>
                                     </form>
-                                    <!--<form class="navbar-form navbar-right form-inline">
-                                        <button id="loginBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal" >Login</button>
-                                    </form>-->
+                                    <form class="navbar-form navbar-right form-inline">
+                                        {if $loggedIn}
+                                        <button id="logout" type="button" class="btn btn-primary">Logout</button>
+                                        {else}
+                                        <button id="loginBtn" type="button" class="btn btn-primary" 
+                                            data-toggle="modal" data-target="#loginModal" >Login</button>
+                                        {/if}
+                                    </form>
                                     <form class="navbar-form navbar-right form-inline">
                                         <button type="button" class="btn btn-primary" id="user" style="display: none;">
                                             <span class="glyphicon glyphicon-user" aria-hidden="true" /> {$my_char}
@@ -251,24 +256,13 @@
                             <!-- /.modal-dialog -->
                         </div>
                         
-                        <!-- Modal 
+                        <!-- Modal -->
                         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" >
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel">Login Dialog</h4>
+                          <div class="modal-dialog" role="document" >
+                              <div class="modal-content" id="login_body">
                               </div>
-                              <div class="modal-body" id="login_body">
-                                ...
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
-                            </div>
                           </div>
-                        </div>-->
+                        </div>
                         
                         <!-- /.modal -->
 

@@ -199,15 +199,40 @@ $(document).on('click', '#send_button', function() {
 });
 
 $(document).on('click', '#loginBtn', function() {
-    $.ajax({
-        url: "login/main_login.php",
-        context: document.body,
-        success: function(data) {
-            $("#login_body").html(data);
-        }
-    });
-    
+    basicAjaxCall("login.php", getLangData(), function(data) {},"",$("#login_body"));
+
 });
+
+$(document).on('click', '#login', function() {
+    var username = $("#username").val();
+    var password = $("#password").val();
+    var loginData = "username="+username+"&"+"password="+password;
+    //alert(loginData);
+    basicAjaxCall("login.php", getLangData()+"&"+loginData, function(data) 
+    {
+        var id = getCookie("login_user_id");
+        if(id != ""){
+            var url = window.location.href;
+            window.history.pushState("object or string", "", url);
+            location.reload();
+        }
+    },"",$("#login_body"),"post");
+    
+
+});
+
+$(document).on('click', '#logout', function() {
+    
+    basicAjaxCall("logout.php", getLangData(), function(data) 
+    {
+        var url = window.location.href;
+        window.history.pushState("object or string", "", url);
+        location.reload();
+    },"",$("#login_body"),"post");
+    
+
+});
+
 
 function update_request_modal(send) {
     var modal = $('#request');

@@ -851,6 +851,26 @@
         }
         return $logs;
     }
+    
+    //User handling functions
+    function check_login($username,$password){
+        global $database;
+        $db_password = $database->get("users","password",["username"=>$username]);
+        if(password_verify($password,$db_password)){
+            return $database->get("users","id",["username"=>$username]);
+        }else{
+            return 0;
+        }
+    }
+    
+    function set_login_cookie($id){
+        setcookie("login_user_id",$id,time() + (86400 * 30), "/");
+    }
+    
+    function remove_login_cookie(){
+        setcookie("login_user_id", "", time()-3600,'/');
+    }
+    
 ?>
         
         
