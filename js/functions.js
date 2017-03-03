@@ -180,6 +180,7 @@ function ajaxCall(baseurl, url, submitData, func, customMessage = "") {
         func(data);
         pushUrl(baseurl, submitData);
         $('.table').DataTable();
+        $('[data-toggle="tooltip"]').tooltip();
         var id = getCookie("player_id");
         set_char(id == "");
         browserView();
