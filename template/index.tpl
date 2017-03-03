@@ -185,6 +185,7 @@
                                             <option value="ja" {$ja_select}>日本語</option>
                                         </select>
                                     </form>
+<<<<<<< HEAD
                                     <form class="navbar-form navbar-right form-inline">
                                         {if $loggedIn}
                                         <button id="logout" type="button" class="btn btn-primary">Logout</button>
@@ -193,6 +194,8 @@
                                             data-toggle="modal" data-target="#loginModal" >Login</button>
                                         {/if}
                                     </form>
+=======
+>>>>>>> master
                                     <form class="navbar-form navbar-right form-inline">
                                         <button type="button" class="btn btn-primary" id="user" style="display: none;">
                                             <span class="glyphicon glyphicon-user" aria-hidden="true" /> {$my_char}
@@ -256,6 +259,7 @@
                             <!-- /.modal-dialog -->
                         </div>
                         
+<<<<<<< HEAD
                         <!-- Modal -->
                         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" >
                           <div class="modal-dialog" role="document" >
@@ -265,6 +269,8 @@
                         </div>
                         
                         <!-- /.modal -->
+=======
+>>>>>>> master
 
                         <div id="request" class="modal fade" tabindex="-1" role="dialog">
                             <div class="modal-dialog" role="document">
@@ -289,7 +295,7 @@
                         <!-- /.modal -->
                         <footer style="background-color:rgba(255, 255, 255, 0.5);" class="rounded">
                             </br>
-                            <p class="text-center">FFXIV Collector: © 2016 Andreas Spuling (<a href='/char?id=2215586'>Ley Sego</a> on Shiva)</p>
+                            <p class="text-center">FFXIV Collector: © 2016-2017 Andreas Heyert (<a href='/char?id=2215586'>Ley Sego</a> on Shiva)</p>
                             <p class="text-center">Project on GitHub <a href='https://github.com/Ley21/ffxiv_minions'>Ley21/ffxiv_minions</a>.</p>
                             <p class="text-center">
                                 <a data-toggle="modal" data-target="#updateDB">Update</a> - <a data-toggle="modal" data-target="#request">Request Change</a> - Today updated characters: {$count_today}
