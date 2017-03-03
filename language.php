@@ -160,7 +160,16 @@
 	$language_texts['login_warning_text']= array("en"=>"Username or password are incorrect.",
                     "fr"=>"",
 					"de"=>"Benutzername oder Passwort sind falsch.","ja"=>"");  
+	$language_texts['signup_warning_text']= array("en"=>"Your account has not been activated. Pls use the activation link in the mail, or contact the Support (support@ffxivcollector.com).",
+                    "fr"=>"",
+					"de"=>"Ihr Konto wurde noch nicht aktiviert. Bitte verwende den Link aus der Email um das Konto zu aktivieren. Bei Problemen bitte kontaktiere den Support über (support@ffxivcollector.com).","ja"=>"");
 	$language_texts['login_success_text']= array("en"=>"You successfully logged in.",
                     "fr"=>"",
 					"de"=>"Sie haben sich erfolgreich eingeloggt.","ja"=>""); 
+$language_texts['activation_success']= array("en"=>"Yout account successfully activated.",
+                    "fr"=>"",
+					"de"=>"Ihr Konto wurde erfolgreich aktiviert.","ja"=>""); 
+	$language_texts['activation_failed']= array("en"=>"Your account could not be actived. Pls contact the support (support@ffxivcollector.com).",
+                    "fr"=>"",
+					"de"=>"Ihr Konto nicht aktiviert werden. Bitte kontaktiere den Support (support@ffxivcollector.com).","ja"=>"");
 ?>

@@ -15,13 +15,14 @@
     
     if(!empty($username) && !empty($password)){
         $id = check_login($username,$password);
-        if($id != 0){
+        if($id == -1){
+            $smarty->assign("warning",get_language_text("signup_warning_text"));
+            $smarty->display('../template/login.tpl');
+        }elseif($id != 0){
             set_login_cookie($id);
-            
             $smarty->assign("success",get_language_text("login_success_text"));
             $smarty->display('../template/loggedIn.tpl');
             $lang = get_lang();
-            
             
         }else{
             $smarty->assign("warning",get_language_text("login_warning_text"));
