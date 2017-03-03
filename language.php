@@ -66,6 +66,8 @@
     $language_texts['rarity'] = array("en"=>"Rarity","fr"=>"","de"=>"Seltenheit","ja"=>"");
     $language_texts['percent'] = array("en"=>"Percent","fr"=>"","de"=>"Prozent","ja"=>"");
     $language_texts['count'] = array("en"=>"Count","fr"=>"","de"=>"Anzahl","ja"=>"");
+    $language_texts['user'] = array("en"=>"User","fr"=>"","de"=>"Benutzer","ja"=>"");
+    $language_texts['signup'] = array("en"=>"Sign up","fr"=>"","de"=>"Registrieren","ja"=>"");
     
     $language_texts['methodes'] = array (
         "en"=>

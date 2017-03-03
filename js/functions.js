@@ -188,10 +188,8 @@ function ajaxCall(baseurl, url, submitData, func, customMessage = "") {
 
 function addCharButton() {
     var name = getCookie("player_name");
-    var html = '<span class="glyphicon glyphicon-user" aria-hidden="true"/> ';
-    html += name;
     $("#user").css("display", "inline");
-    $("#user").html(html);
+    $("#user").html(name);
 
 }
 

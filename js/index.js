@@ -203,7 +203,7 @@ $(document).on('click', '#loginBtn', function() {
 
 });
 
-$(document).on('click', '#login', function() {
+function login(){
     var username = $("#username").val();
     var password = $("#password").val();
     var loginData = "username="+username+"&"+"password="+password;
@@ -217,9 +217,12 @@ $(document).on('click', '#login', function() {
             location.reload();
         }
     },"",$("#login_body"),"post");
-    
+}
 
+$(document).on('click', '#login', function() {
+    login();
 });
+   
 
 $(document).on('click', '#logout', function() {
     

@@ -186,17 +186,24 @@
                                         </select>
                                     </form>
                                     <form class="navbar-form navbar-right form-inline">
-                                        {if $loggedIn}
-                                        <button id="logout" type="button" class="btn btn-primary">Logout</button>
-                                        {else}
-                                        <button id="loginBtn" type="button" class="btn btn-primary" 
-                                            data-toggle="modal" data-target="#loginModal" >Login</button>
-                                        {/if}
-                                    </form>
-                                    <form class="navbar-form navbar-right form-inline">
-                                        <button type="button" class="btn btn-primary" id="user" style="display: none;">
-                                            <span class="glyphicon glyphicon-user" aria-hidden="true" /> {$my_char}
-                                        </button>
+                                        <div class="btn-group">
+                                          <button type="button" class="btn btn-primary" disabled><span class="glyphicon glyphicon-user" aria-hidden="true"/> <b>{$user}</b></button>
+                                          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only"></span>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a id="user" style="display: none;">{$my_char}</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            {if $loggedIn}
+                                            <li><a id="logout">Logout</a></li>
+                                            {else}
+                                            <li><a id="loginBtn" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                            <li><a id="signup" data-toggle="modal" data-target="#signupModal">{$signup}</a></li>
+                                            {/if}
+                                          </ul>
+                                        </div>
+                                        
                                     </form>
                                 </div>
                                 <!-- /.navbar-collapse -->
