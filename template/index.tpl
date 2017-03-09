@@ -205,11 +205,16 @@
                                 </div>
                                 <div class="panel-body text-left">
                                     <ul>
+										<li><b>2017-03-09</b>
+                                            <ul>
+                                                <li>Update minions and mounts for 3.55b.</li>
+                                            </ul>
+                                        </li>
 										<li><b>2017-02-28</b>
                                             <ul>
                                                 <li>Update minions and mounts for 3.55a.</li>
                                             </ul>
-                                        </li
+                                        </li>
                                         <li><b>2017-01-17</b>
                                             <ul>
                                                 <li>Update Minions and Mounts for 3.5.</br>Missing informations will be updated during the next days/weeks, if I see something new on reddit.</li>
