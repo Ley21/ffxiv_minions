@@ -865,7 +865,7 @@
     {
         "id": "81",
         "name": "Flying Cumulus",
-        "can_fly": null,
+        "can_fly": "0",
         "methodes": [
             {
                 "method": null,
@@ -1158,7 +1158,7 @@
     {
         "id": "108",
         "name": "Lone Hellhound",
-        "can_fly": null,
+        "can_fly": "0",
         "methodes": [
             {
                 "method": "PvP",
@@ -1173,7 +1173,7 @@
     {
         "id": "109",
         "name": "Pack Hellhound",
-        "can_fly": null,
+        "can_fly": "0",
         "methodes": [
             {
                 "method": "PvP",

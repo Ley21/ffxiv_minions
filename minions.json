@@ -2822,6 +2822,20 @@
         ]
     },
     {
+        "id": "190",
+        "name": "Baby Brachiosaur",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "191",
         "name": "Wind-up Cheerleader",
         "methodes": [
@@ -2867,6 +2881,20 @@
                 "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67783'>Litany Of Peace<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67783'>Das Ende Eines Langen Weges<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "194",
+        "name": "Pegasus Colt",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
