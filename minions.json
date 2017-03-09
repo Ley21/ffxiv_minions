@@ -2826,11 +2826,11 @@
         "name": "Baby Brachiosaur",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Random drop for complete a FATE with Brachiosaur boss in Diadem.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Zufällige Belohnung für den Abschluss eines Fates mit dem Brachiosaurus Monsters.",
                 "method_description_ja": null
             }
         ]
@@ -2890,11 +2890,11 @@
         "name": "Pegasus Colt",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 50 'Brass Sky Pirate Spoil' from <a href='http:\/\/xivdb.com\/npc\/1016261'>Spoils Collector<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 50 'Messing-Piratenandenken' bei <a href='http:\/\/de.xivdb.com\/npc\/1016261'>Andenkenh\u00e4ndlerin<\/a>.",
                 "method_description_ja": null
             }
         ]
