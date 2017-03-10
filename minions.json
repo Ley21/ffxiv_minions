@@ -2828,9 +2828,9 @@
             {
                 "method": "Misc. Methods",
                 "available": "1",
-                "method_description_en": "Random drop for complete a FATE with Brachiosaur boss in Diadem.",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http://xivdb.com/fate/968'>Secret Of The Lost Legend</a> in Diadem.",
                 "method_description_fr": null,
-                "method_description_de": "Zufällige Belohnung für den Abschluss eines Fates mit dem Brachiosaurus Monsters.",
+                "method_description_de": "Zufällige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http://de.xivdb.com/fate/968'>Geheimnis Der Verschollenen Legende</a> im Diadem.",
                 "method_description_ja": null
             }
         ]
