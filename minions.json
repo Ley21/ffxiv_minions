@@ -3434,11 +3434,11 @@
         "name": "Wind-up Nidhogg",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained by redeeming a code through purchasing the 'THE FAR EDGE OF FATE: FINAL FANTASY XIV Original Soundtrack'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'THE FAR EDGE OF FATE: FINAL FANTASY XIV Original Soundtrack'.",
                 "method_description_ja": null
             }
         ]
