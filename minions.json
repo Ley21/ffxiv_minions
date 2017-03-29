@@ -590,6 +590,14 @@
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/1385'>Steinbock-Stofftier<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
+            },
+            {
+                "method": "Diadem FATE Rewards",
+                "available": "1",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http:\/\/xivdb.com\/fate\/1035'>Where's The Beef<\/a> in Diadem.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http:\/\/de.xivdb.com\/fate\/1035'>Aufgebrachte Herde<\/a> im Diadem.",
+                "method_description_ja": null
             }
         ]
     },
@@ -2348,6 +2356,14 @@
                 "method_description_ja": null
             },
             {
+                "method": "Diadem FATE Rewards",
+                "available": "1",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http:\/\/xivdb.com\/fate\/1074'>Purple Haze<\/a> in Diadem.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http:\/\/de.xivdb.com\/fate\/1074'>Der Gro\u00dfe Purpurwurm Nimmersatt<\/a> im Diadem.",
+                "method_description_ja": null
+            },
+            {
                 "method": "Treasure Dungeons",
                 "available": "1",
                 "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55001\/The+Aquapolis'>The Aquapolis<\/a>.",
@@ -2433,6 +2449,14 @@
         "id": "162",
         "name": "Hunting Hawk",
         "methodes": [
+            {
+                "method": "Diadem FATE Rewards",
+                "available": "1",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http:\/\/xivdb.com\/fate\/1094'>On The Inside<\/a> in Diadem.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http:\/\/de.xivdb.com\/fate\/1094'>Die Schlitzer Vom Diadem<\/a> im Diadem.",
+                "method_description_ja": null
+            },
             {
                 "method": "Misc. Methods",
                 "available": "1",
@@ -2565,6 +2589,14 @@
                 "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/31473'>Wind-up Leviathan<\/a> by weaver.",
                 "method_description_fr": null,
                 "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/31473'>Mini-Leviathan<\/a> vom Weber hergestellt werden.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Diadem FATE Rewards",
+                "available": "1",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http:\/\/xivdb.com\/fate\/971'>Embrace Of The Serpent<\/a> in Diadem.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http:\/\/de.xivdb.com\/fate\/971'>T\u00f6dliche Umarmung<\/a> im Diadem.",
                 "method_description_ja": null
             }
         ]
@@ -2822,6 +2854,20 @@
         ]
     },
     {
+        "id": "190",
+        "name": "Baby Brachiosaur",
+        "methodes": [
+            {
+                "method": "Diadem FATE Rewards",
+                "available": "1",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http:\/\/xivdb.com\/fate\/968'>Secret Of The Lost Legend<\/a> in Diadem.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http:\/\/de.xivdb.com\/fate\/968'>Geheimnis Der Verschollenen Legende<\/a> im Diadem.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "191",
         "name": "Wind-up Cheerleader",
         "methodes": [
@@ -2867,6 +2913,28 @@
                 "method_description_en": "Complete the main story quest <a href='http:\/\/xivdb.com\/quest\/67783'>Litany Of Peace<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/67783'>Das Ende Eines Langen Weges<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "194",
+        "name": "Pegasus Colt",
+        "methodes": [
+            {
+                "method": "Diadem FATE Rewards",
+                "available": "1",
+                "method_description_en": "Random drop direct to inventory after completing the FATE <a href='http:\/\/xivdb.com\/fate\/1050'>Blood Wings<\/a> in Diadem.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Belohnung direkt ins Inventar nach dem erfolgreichen Abschluss des FATEs <a href='http:\/\/de.xivdb.com\/fate\/1050'>Sanfte Gewalt<\/a> im Diadem.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 50 'Brass Sky Pirate Spoil' from <a href='http:\/\/xivdb.com\/npc\/1016261'>Spoils Collector<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 50 'Messing-Piratenandenken' bei <a href='http:\/\/de.xivdb.com\/npc\/1016261'>Andenkenh\u00e4ndlerin<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3374,11 +3442,11 @@
         "name": "Wind-up Nidhogg",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained by redeeming a code through purchasing the 'THE FAR EDGE OF FATE: FINAL FANTASY XIV Original Soundtrack'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch das einl\u00f6sen eines Codes aus dem 'THE FAR EDGE OF FATE: FINAL FANTASY XIV Original Soundtrack'.",
                 "method_description_ja": null
             }
         ]

@@ -78,7 +78,7 @@
         
         $smarty = new Smarty();
         $smarty->assign('tableTitle', $title);
-        $smarty->assign('tableCount', count($sql_data));
+        $smarty->assign('tableCount', count(unique_multidim_array($sql_data,"id")));
         $smarty->assign('tableHeadIconTitle', get_language_text("icon"));
         $smarty->assign('tableHeadNameTitle', get_language_text("name"));
         $smarty->assign('tableHeadPatchTitle', get_language_text("patch"));
@@ -578,7 +578,9 @@
         }
         else{
             $xivdb_icon = $database->quote($obj->icon2);
-            
+            if(endsWith($xivdb_icon,"noicon.png")){
+                return;
+            }
             $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
                 $database->insert("minions",[
@@ -625,7 +627,9 @@
         }
         else{
             $xivdb_icon = $database->quote($obj->icon2);
-            
+            if(endsWith($xivdb_icon,"noicon.png")){
+                return;
+            }
             $db_id = $database->get("mounts",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
                 $database->insert("mounts",[
@@ -851,6 +855,7 @@
         }
         return $logs;
     }
+
     
     //User handling functions
     function check_login($username,$password){
@@ -894,6 +899,31 @@
         
     }
     
+
+	function unique_multidim_array($array, $key) {
+		$temp_array = array();
+		$i = 0;
+		$key_array = array();
+	   
+		foreach($array as $val) {
+			if (!in_array($val[$key], $key_array)) {
+				$key_array[$i] = $val[$key];
+				$temp_array[$i] = $val;
+			}
+			$i++;
+		}
+		return $temp_array;
+	} 
+	
+	function endsWith($haystack, $needle)
+    {
+        $length = strlen($needle);
+        if ($length == 0) {
+            return true;
+        }
+    
+        return (substr($haystack, -$length) === $needle);
+    }
 ?>
         
         
