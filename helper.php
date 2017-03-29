@@ -578,7 +578,9 @@
         }
         else{
             $xivdb_icon = $database->quote($obj->icon2);
-            
+            if(endsWith($xivdb_icon,"noicon.png")){
+                return;
+            }
             $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
                 $database->insert("minions",[
@@ -625,7 +627,9 @@
         }
         else{
             $xivdb_icon = $database->quote($obj->icon2);
-            
+            if(endsWith($xivdb_icon,"noicon.png")){
+                return;
+            }
             $db_id = $database->get("mounts",["id"],["id[=]"=>$id]);
             if(empty($db_id)){
                 $database->insert("mounts",[
@@ -865,6 +869,16 @@
 		}
 		return $temp_array;
 	} 
+	
+	function endsWith($haystack, $needle)
+    {
+        $length = strlen($needle);
+        if ($length == 0) {
+            return true;
+        }
+    
+        return (substr($haystack, -$length) === $needle);
+    }
 ?>
         
         

@@ -1111,6 +1111,21 @@
         ]
     },
     {
+        "id": "103",
+        "name": "Red Baron",
+        "can_fly": null,
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "104",
         "name": "Demonic Lanner",
         "can_fly": "1",
