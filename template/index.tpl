@@ -205,6 +205,11 @@
                                 </div>
                                 <div class="panel-body text-left">
                                     <ul>
+                                        <li><b>2017-04-10</b>
+                                        <ul>
+                                            <li>Character parsing is currently broken because of lodestone changes (<a href="http://eu.finalfantasyxiv.com/lodestone/special/update_log/">http://eu.finalfantasyxiv.com/lodestone/special/update_log/</a>).</li>
+                                        </ul>
+                                        </li>
 										<li><b>2017-03-09</b>
                                             <ul>
                                                 <li>Update minions and mounts for 3.55b.</li>
