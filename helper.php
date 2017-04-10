@@ -92,6 +92,10 @@
         $objects = array();
         
         foreach($sql_data as $minion_data){
+            //Workaround for Red Barron id=103
+            if($type == "mount" && $minion_data['id'] == "103"){
+                continue;
+            }
             $m_id = $minion_data['id'];
             $dom_id = $type."_".$m_id;
             $name = ucwords($minion_data['name_'.$lang]);
@@ -307,9 +311,9 @@
     function get_missing_player_ranking_rows($fc){
         global $database;
         
-        $api = new Viion\Lodestone\LodestoneAPI();
-        $freeCompany = $api->Search->Freecompany($fc,true);
-        
+        //$api = new Viion\Lodestone\LodestoneAPI();
+        //$freeCompany = $api->Search->Freecompany($fc,true);
+        $freeCompany = Lodestone::findFreeCompany($fc);
         $rows = array();
         foreach($freeCompany->members as $member){
             $in_table = $database->has("players", ["AND"=>["freeCompanyId"=>$fc,"id"=>$member["id"]]]);
@@ -362,6 +366,10 @@
         $lang = get_lang() == "en" ? "":get_lang().".";
         $type = $table == "minions" ? "minion" : "mount";
         foreach($elements as $elem){
+            //Workaround for Red Barron id=103
+            if($table == "mounts" && $elem['id'] == "103"){
+                continue;
+            }
             $obj_arr[] = array(
                 'id'=>$elem['id'],
                 'name'=>$elem['name_'.get_lang()],
@@ -430,17 +438,19 @@
     
     function insert_update_charakter_by_id($id){
         //Get charakter from lodestone
-        $api = new Viion\Lodestone\LodestoneAPI();
-        $character = $api->Search->Character($id);
-        
+        //$api = new Viion\Lodestone\LodestoneAPI();
+        //$character = $api->Search->Character($id);
+        $character = Lodestone::findCharacterById($id);
         return insert_update_charakter($character);
         
     }
     
     function insert_update_charakter_by_name($name,$server){
         //Get charakter from lodestone
-        $api = new Viion\Lodestone\LodestoneAPI();
-        $character = $api->Search->Character($name, $server);
+        //$api = new Viion\Lodestone\LodestoneAPI();
+        //$character = $api->Search->Character($name, $server);
+        
+        $character = Lodestone::findCharacterByNameAndServer($name,$server);
         
         return insert_update_charakter($character);
     }

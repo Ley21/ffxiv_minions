@@ -207,7 +207,8 @@
                                     <ul>
                                         <li><b>2017-04-10</b>
                                         <ul>
-                                            <li>Character parsing is currently broken because of lodestone changes (<a href="http://eu.finalfantasyxiv.com/lodestone/special/update_log/">http://eu.finalfantasyxiv.com/lodestone/special/update_log/</a>).</li>
+                                            <li>Character parsing by viion parsing api is broken because of lodestone changes (<a href="http://eu.finalfantasyxiv.com/lodestone/special/update_log/">http://eu.finalfantasyxiv.com/lodestone/special/update_log/</a>).</br>
+                                            Implement own api for lodestone parsing. Could be possible that not everything is running well. If you see any issues pls contact me over github or 'Request Change' link in footer.</li>
                                         </ul>
                                         </li>
 										<li><b>2017-03-09</b>

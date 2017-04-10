@@ -64,6 +64,12 @@
                     <div class="col-xs-3 col-sm-5 info_grid_text"><b>{$title.rank.all}:</b> {$player.rank.world.all}<br><b>{$title.rank.minions}:</b> {$player.rank.world.minions}<br><b>{$title.rank.mounts}:</b> {$player.rank.world.mounts}</div>
                     <div class="col-xs-1 col-sm-1"></div>
                 </div>
+                <div class="row">
+                    <div class="col-xs-1 col-sm-1"></div>
+                    <div class="col-xs-7 col-sm-5 info_grid"><b>{$title.sync}</b></div>
+                    <div class="col-xs-3 col-sm-5 info_grid_text">{$player.sync}</div>
+                    <div class="col-xs-1 col-sm-1"></div>
+                </div>
                 <div class="row"><button type="button" class="btn btn-success" id="char_button" style="width:83%"></button></div><br></div>
         </div>
         <div class="col-md-8">

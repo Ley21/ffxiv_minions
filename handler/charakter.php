@@ -74,7 +74,8 @@
             'owned'=>array(
                 'minions'=>get_language_text("owned_minions"),
                 'mounts'=>get_language_text("owned_mounts")),
-            'rarest'=>get_language_text('rarest'));
+            'rarest'=>get_language_text('rarest'),
+            'sync' => get_language_text('last_synced'));
                 
             
         $player_data = array('id'=>$player_entry["id"],
@@ -89,8 +90,9 @@
                 'id'=>$player_entry["freeCompanyId"],
                 'name'=>$player_entry["freeCompany"]),
             'gender'=>ucwords($player_entry["gender"]),
-            'rank'=>$rank);
-            
+            'rank'=>$rank,
+            'sync'=>$player_entry['last_update_date']);
+        
         $player_data["minions_count"] = get_count("player_minion",$player_data['id']);
         $player_data["mounts_count"] = get_count("player_mounts",$player_data['id']);
         
