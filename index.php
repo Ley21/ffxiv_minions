@@ -28,6 +28,9 @@ $smarty->assign('char_search_placeholder',get_language_text("char_search_placeho
 $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
 $smarty->assign("startpage",true);
+if(file_exists("js/piwik.js")){
+    $smarty->assign("piwikScript",'<script src="js/piwik.js"></script>');
+}
 
 //Get latest patch number from database
 $lastPatch = get_latest_patch();
