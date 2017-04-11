@@ -865,14 +865,14 @@
     {
         "id": "81",
         "name": "Flying Cumulus",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Currently only available for player with an JP Square Enix account by collect points from 7\/11 campain. JP Lodestone <a href='http:\/\/jp.finalfantasyxiv.com\/lodestone\/topics\/detail\/d81373ca6697f0ba57fa61ae270731ff1087c81b'>link<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Aktuell nur f\u00fcr Spieler mit einem japanischen Square Enix Account verf\u00fcgbar, durch das sammeln von Punkten bei der 7\/11 Kampagne. JP Lodestone <a href='http:\/\/jp.finalfantasyxiv.com\/lodestone\/topics\/detail\/d81373ca6697f0ba57fa61ae270731ff1087c81b'>link<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1163,9 +1163,9 @@
             {
                 "method": "Seasonal Rewards",
                 "available": "1",
-                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com/lodestone/special/2017/Hatching_tide'>Hatching-tide<\/a>. From Thursday, April 4, 2017 to Monday, April 17, 2017.",
+                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2017\/Hatching_tide'>Hatching-tide<\/a>. From Thursday, April 4, 2017 to Monday, April 17, 2017.",
                 "method_description_fr": null,
-                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com/lodestone/special/2017/Hatching_tide'>Wundereiersuche<\/a> Von Donnerstag, den 04.04.2017 bis Montag, den 17.04.2017.",
+                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2017\/Hatching_tide'>Wundereiersuche<\/a> Von Donnerstag, den 04.04.2017 bis Montag, den 17.04.2017.",
                 "method_description_ja": null
             }
         ]
