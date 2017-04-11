@@ -29,7 +29,7 @@
     $language_texts['patch'] = array("en"=>"Patch","fr"=>"Patch","de"=>"Patch","ja"=>"");
     $language_texts['method'] = array("en"=>"Method","fr"=>"Méthode","de"=>"Methode","ja"=>"");
     $language_texts['description'] = array("en"=>"Description","fr"=>"Description","de"=>"Beschreibung","ja"=>"");
-    $language_texts['last_synced'] = array("en"=>"Last time synced","fr"=>"Dernière fois synchronisé","de"=>"Letztes Mal syncronisiert","ja"=>"");
+    $language_texts['last_synced'] = array("en"=>"Last time synced","fr"=>"Dernière synchronisation","de"=>"Letztes Mal syncronisiert","ja"=>"");
     $language_texts['all'] = array("en"=>"All","fr"=>"Tout","de"=>"Alle","ja"=>"");
     $language_texts['minions'] = array("en"=>"Minions","fr"=>"Mascottes","de"=>"Begleiter","ja"=>"");
     $language_texts['mounts'] = array("en"=>"Mounts","fr"=>"Montures","de"=>"Reittiere","ja"=>"");
