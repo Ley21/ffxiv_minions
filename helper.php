@@ -529,28 +529,26 @@
         	"name"
         ]); 
         
-        
-        //Add all minions of an charakter to databese
+        $new_data = array();
         foreach($datas as $data)
         {
+            $new_data[$data['id']] = strtolower($data['name']);
+        }
+        
+        foreach($items as $item){
             
-            $have = false;
-            $db_minion = strtolower($data['name']);
-            $m_id = $data["id"];
-            
-            foreach($items as $item){
-                
-                $player_item = strtolower($item['name']);
-                if ($db_minion == $player_item) {
-                    
-                    $database->query("REPLACE INTO $link_table VALUES (
-                        $p_id, 
-                        $m_id);");
-                    break;
-                }
-                
+            $player_item = strtolower($item['name']);
+            $m_id = array_search($player_item,$new_data);
+            if ($m_id !== false) {
+                //echo "DB: $new_data[$m_id] - Player: $player_item";
+                $database->query("REPLACE INTO $link_table VALUES (
+                    $p_id, 
+                    $m_id);");
+            } else {
+                //echo "DB: $new_data[$m_id] - Player: $player_item</br>";
             }
         }
+        
     }
 
     function get_last_id($type){

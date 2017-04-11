@@ -132,7 +132,7 @@ class Character{
             foreach($html->find("li") as $objHtml){
                 $name = $objHtml->find("div[class=character__item_icon js__tooltip]")[0]->attr["data-tooltip"];
                 if(!empty($name)){
-                    $objects[]['name'] = $name;
+                    $objects[]['name'] = htmlspecialchars_decode($name,ENT_QUOTES);
                 }
             }
             return $objects;
