@@ -72,7 +72,8 @@ function file_get_html($url, $use_include_path = false, $context=null, $offset =
     // We DO force the tags to be terminated.
     $dom = new simple_html_dom(null, $lowercase, $forceTagsClosed, $target_charset, $stripRN, $defaultBRText, $defaultSpanText);
     // For sourceforge users: uncomment the next line and comment the retreive_url_contents line 2 lines down if it is not already done.
-    $contents = file_get_contents($url, $use_include_path, $context, $offset);
+    $contents = curl_get_file_contents($url);
+    //$contents = file_get_contents($url, $use_include_path, $context, $offset);
     // Paperg - use our own mechanism for getting the contents as we want to control the timeout.
     //$contents = retrieve_url_contents($url);
     if (empty($contents) || strlen($contents) > MAX_FILE_SIZE)
@@ -82,6 +83,18 @@ function file_get_html($url, $use_include_path = false, $context=null, $offset =
     // The second parameter can force the selectors to all be lowercase.
     $dom->load($contents, $lowercase, $stripRN);
     return $dom;
+}
+
+function curl_get_file_contents($URL)
+{
+    $c = curl_init();
+    curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($c, CURLOPT_URL, $URL);
+    $contents = curl_exec($c);
+    curl_close($c);
+
+    if ($contents) return $contents;
+        else return FALSE;
 }
 
 // get html dom from string
