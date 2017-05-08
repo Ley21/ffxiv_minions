@@ -206,6 +206,11 @@
                                 </div>
                                 <div class="panel-body text-left">
                                     <ul>
+                                        <li><b>2017-05-08</b>
+                                        <ul>
+                                            <li>Fix Issue #10 for table sorting and general table handling. Pls give me feedback if anything now dont work in tables.</li>
+                                        </ul>
+                                        </li>
                                         <li><b>2017-04-10</b>
                                         <ul>
                                             <li>Character parsing by viion parsing api is broken because of lodestone changes (<a href="http://eu.finalfantasyxiv.com/lodestone/special/update_log/">http://eu.finalfantasyxiv.com/lodestone/special/update_log/</a>).</br>
