@@ -78,8 +78,8 @@ function pushUrl(type, urlData) {
 }
 
 function loadCharakter(id) {
-    //$('#content').html("<center>Loading your Minions form database and lodestone...</center>");
-    var submit = getLangData() + "&" + "id=" + id;
+    var submit = decodeURIComponent(window.location.search.substring(1));
+    submit = updateSubmit(submit,"id",id);
     checkCharakter(submit, function(update) {
         ajaxCall("char", "charakter.php", submit, function(data) {},
             update ? get_language_text("update_message") : get_language_text("load_char_message"));
@@ -178,12 +178,48 @@ function ajaxCall(baseurl, url, submitData, func, customMessage = "") {
 
     basicAjaxCall(url, submitData, function(data) {
         func(data);
-        pushUrl(baseurl, submitData);
-        $('.table').DataTable();
+        submitData = showDataTable(baseurl,submitData);
         var id = getCookie("player_id");
         set_char(id == "");
         browserView();
+        pushUrl(baseurl, submitData);
     }, customMessage);
+}
+
+function showDataTable(baseurl,submitData){
+    pushUrl(baseurl, submitData);
+    $('#table_minion').DataTable(getDataTableParameters(baseurl,"minion_length","table_minion_length"));
+    $('#table_mount').DataTable(getDataTableParameters(baseurl,"mount_length","table_mount_length"));
+    $('#ranking').DataTable(getDataTableParameters(baseurl,"r_length","ranking_length"));
+    var submit = decodeURIComponent(window.location.search.substring(1));
+    return submit;
+}
+
+function getDataTableParameters(baseurl, lengthParam,lengthSelectName){
+    var length = getUrlParameter(lengthParam);
+    var page = getUrlParameter("page");
+    return {
+      "pageLength": length,
+      "displayStart":page*length,
+      "drawCallback": function( settings ) {
+            var length = getUrlParameter(lengthParam);
+            var submit = decodeURIComponent(window.location.search.substring(1));
+            if(length === undefined){
+                var length = $('select[name='+lengthSelectName+']').val();
+                submit += "&"+lengthParam+"="+length;
+            }
+            submit = updateSubmit(submit,lengthParam,$('select[name='+lengthSelectName+']').val());
+            var pageInfo = $('#ranking').DataTable().page.info();
+            submit = updateSubmit(submit,"page",pageInfo.page);
+            pushUrl(baseurl, submit);
+            checkRankingSelection();
+        },
+        
+    };
+}
+
+function getTableLength(table){
+    return $('select[name=table]').val();
 }
 
 function addCharButton() {
@@ -208,6 +244,14 @@ function getUrlParameter(sParam) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
         }
     }
+}
+
+function updateSubmit(submit,parameter,value) {
+    var oldValue = parameter+"="+getUrlParameter(parameter);
+    if(!submit.includes(parameter+"=")){
+        return submit + "&" + parameter+"="+value;
+    }
+    return submit.replace(oldValue,parameter+"="+value);
 }
 
 function browserAs() {
@@ -376,4 +420,32 @@ function async_call(fn, callback) {
         fn();
         callback();
     }, 0);
+}
+
+function colorRows(type,value){
+    $("tr").removeClass("success");
+    $.ajax({
+        url: "handler/find_players.php",
+        data: type + "=" + value,
+        type: 'get',
+        success: function(data) {
+            var obj = JSON.parse(data);
+            obj.forEach(function(id) {
+                $("#" + id).addClass("success");
+            });
+        }
+    });
+}
+
+function checkRankingSelection(){
+    var value = $("#find_mount").val();
+    if(value != ""){
+        colorRows("mount",value);
+        return;
+    }
+    value = $("#find_minion").val();
+    if(value != ""){
+        colorRows("minion",value);
+        return;
+    }
 }

@@ -101,34 +101,16 @@ $(document).on("change", '#lang', function() {
 });
 
 $(document).on("change", '#find_minion', function() {
-    $("tr").removeClass("success");
     $('#find_mount').find('option:eq(0)').prop('selected', true);
-    $.ajax({
-        url: "handler/find_players.php",
-        data: "minion=" + this.value,
-        type: 'get',
-        success: function(data) {
-            var obj = JSON.parse(data);
-            obj.forEach(function(id) {
-                $("#" + id).addClass("success");
-            });
-        }
-    });
+    colorRows("minion",this.value);
 });
+
+
+
 $(document).on("change", '#find_mount', function() {
-    $("tr").removeClass("success");
+    //$("tr").removeClass("success");
     $('#find_minion').find('option:eq(0)').prop('selected', true);
-    $.ajax({
-        url: "handler/find_players.php",
-        data: "mount=" + this.value,
-        type: 'get',
-        success: function(data) {
-            var obj = JSON.parse(data);
-            obj.forEach(function(id) {
-                $("#" + id).addClass("success");
-            });
-        }
-    });
+    colorRows("mount",this.value);
 });
 $(document).on('show.bs.modal', '#updateDB', function() {
     var modal = $(this);
