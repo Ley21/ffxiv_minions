@@ -320,7 +320,7 @@
             if(!$in_table){
                 $rows[] = array("nr"=>"999","id"=>$member["id"],
                     "name"=>ucwords($member["name"]),"world"=>ucfirst($member["world"]),
-                    "minions"=>"?","mounts"=>"?","all"=>"?",
+                    "minions"=>"000","mounts"=>"000","all"=>"000",
                     "sync"=>"","old"=>true);
             }
         }
