@@ -198,9 +198,11 @@ function showDataTable(baseurl,submitData){
 function getDataTableParameters(baseurl, lengthParam,lengthSelectName){
     var length = getUrlParameter(lengthParam);
     var page = getUrlParameter("page");
+    var displayStart = length === undefined || page === undefined ? 0 : page*length;
+    length = length === undefined ? 10 : length;
     return {
-      "pageLength": length,
-      "displayStart":page*length,
+      "pageLength": parseInt(length),
+      "displayStart": displayStart,
       "drawCallback": function( settings ) {
             var length = getUrlParameter(lengthParam);
             var submit = decodeURIComponent(window.location.search.substring(1));
@@ -209,8 +211,13 @@ function getDataTableParameters(baseurl, lengthParam,lengthSelectName){
                 submit += "&"+lengthParam+"="+length;
             }
             submit = updateSubmit(submit,lengthParam,$('select[name='+lengthSelectName+']').val());
-            var pageInfo = $('#ranking').DataTable().page.info();
-            submit = updateSubmit(submit,"page",pageInfo.page);
+            try{
+                var page = $('#ranking').DataTable().page.info().page;
+                if(page !== undefined){
+                    submit = updateSubmit(submit,"page",page);
+                }
+            }
+            catch(err){}
             pushUrl(baseurl, submit);
             checkRankingSelection();
         },
@@ -439,12 +446,12 @@ function colorRows(type,value){
 
 function checkRankingSelection(){
     var value = $("#find_mount").val();
-    if(value != ""){
+    if(value != "" && value !== undefined){
         colorRows("mount",value);
         return;
     }
     value = $("#find_minion").val();
-    if(value != ""){
+    if(value != "" && value !== undefined){
         colorRows("minion",value);
         return;
     }
