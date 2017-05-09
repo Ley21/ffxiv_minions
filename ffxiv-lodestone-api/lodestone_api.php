@@ -129,10 +129,12 @@ class Character{
         $parse = function($className){
             $objects = array();
             $html = $this->html->find("div[class=$className]")[0];
-            foreach($html->find("li") as $objHtml){
-                $name = $objHtml->find("div[class=character__item_icon js__tooltip]")[0]->attr["data-tooltip"];
-                if(!empty($name)){
-                    $objects[]['name'] = htmlspecialchars_decode($name,ENT_QUOTES);
+            if(!empty($html)){
+                foreach($html->find("li") as $objHtml){
+                    $name = $objHtml->find("div[class=character__item_icon js__tooltip]")[0]->attr["data-tooltip"];
+                    if(!empty($name)){
+                        $objects[]['name'] = htmlspecialchars_decode($name,ENT_QUOTES);
+                    }
                 }
             }
             return $objects;
