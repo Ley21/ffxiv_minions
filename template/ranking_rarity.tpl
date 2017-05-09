@@ -1,5 +1,5 @@
 
-<table class='table table-condensed'>
+<table class='table table-condensed' id="ranking">
     <thead>
         <tr>
             <th>{$tableHeaderNr}</th>
