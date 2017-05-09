@@ -863,6 +863,51 @@
         }
         return $logs;
     }
+
+    
+    //User handling functions
+    function check_login($username,$password){
+        global $database;
+        $isActivated = $database->get("users","activ",["username"=>$username]);
+        if($isActivated == 0){
+            return -1;
+        }
+        $db_password = $database->get("users","password",["username"=>$username]);
+        if(password_verify($password,$db_password)){
+            return $database->get("users","id",["username"=>$username]);
+        }else{
+            return 0;
+        }
+    }
+    
+    function set_login_cookie($id){
+        setcookie("login_user_id",$id,time() + (86400 * 30), "/");
+    }
+    
+    function remove_login_cookie(){
+        setcookie("login_user_id", "", time()-3600,'/');
+    }
+    
+    function generate_signup_link($id){
+        global $database;
+        $key = $database->get("users","key",["id"=>$id]);
+        return 'http' . ($ssl ? 's' : '') . '://' ."{$_SERVER['HTTP_HOST']}/handler/activate.php?id={$id}&key={$key}";
+    }
+    
+    function validate_activation_link($id,$key){
+        global $database;
+        $db_key = $database->get("users","key",["id"=>$id]);
+        if($db_key == $key){
+            $database->update("users",["activ"=>1],["id"=>$id]);
+            echo get_language_text("activation_success");
+        }else{
+            echo get_language_text("activation_failed");
+            exit();
+        }
+        
+    }
+    
+
 	function unique_multidim_array($array, $key) {
 		$temp_array = array();
 		$i = 0;

@@ -179,6 +179,7 @@ function ajaxCall(baseurl, url, submitData, func, customMessage = "") {
     basicAjaxCall(url, submitData, function(data) {
         func(data);
         submitData = showDataTable(baseurl,submitData);
+        $('[data-toggle="tooltip"]').tooltip();
         var id = getCookie("player_id");
         set_char(id == "");
         browserView();
@@ -231,10 +232,8 @@ function getTableLength(table){
 
 function addCharButton() {
     var name = getCookie("player_name");
-    var html = '<span class="glyphicon glyphicon-user" aria-hidden="true"/> ';
-    html += name;
     $("#user").css("display", "inline");
-    $("#user").html(html);
+    $("#user").html(name);
 
 }
 

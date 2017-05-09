@@ -27,7 +27,10 @@ $smarty->assign('search',get_language_text("search"));
 $smarty->assign('char_search_placeholder',get_language_text("char_search_placeholder"));
 $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
+$smarty->assign("user",get_language_text("user"));
+$smarty->assign("signup",get_language_text("signup"));
 $smarty->assign("startpage",true);
+$smarty->assign("loggedIn",empty($_COOKIE["login_user_id"]) ? false : true);
 if(file_exists("js/piwik.js")){
     $smarty->assign("piwikScript",'<script src="js/piwik.js"></script>');
 }

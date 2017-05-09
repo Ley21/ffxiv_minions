@@ -180,6 +180,45 @@ $(document).on('click', '#send_button', function() {
     $(this).addClass("disabled");
 });
 
+$(document).on('click', '#loginBtn', function() {
+    basicAjaxCall("login.php", getLangData(), function(data) {},"",$("#login_body"));
+
+});
+
+function login(){
+    var username = $("#username").val();
+    var password = $("#password").val();
+    var loginData = "username="+username+"&"+"password="+password;
+    //alert(loginData);
+    basicAjaxCall("login.php", getLangData()+"&"+loginData, function(data) 
+    {
+        var id = getCookie("login_user_id");
+        if(id != ""){
+            var url = window.location.href;
+            window.history.pushState("object or string", "", url);
+            location.reload();
+        }
+    },"",$("#login_body"),"post");
+}
+
+$(document).on('click', '#login', function() {
+    login();
+});
+   
+
+$(document).on('click', '#logout', function() {
+    
+    basicAjaxCall("logout.php", getLangData(), function(data) 
+    {
+        var url = window.location.href;
+        window.history.pushState("object or string", "", url);
+        location.reload();
+    },"",$("#login_body"),"post");
+    
+
+});
+
+
 function update_request_modal(send) {
     var modal = $('#request');
     var body = modal.find('.modal-body');
