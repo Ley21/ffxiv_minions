@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Company Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -18,7 +18,7 @@
     {
         "id": "4",
         "name": "Goobbue",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -34,7 +34,7 @@
     {
         "id": "5",
         "name": "Legacy Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -50,7 +50,7 @@
     {
         "id": "6",
         "name": "Magitek Armor",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -66,7 +66,7 @@
     {
         "id": "8",
         "name": "Coeurl",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -82,7 +82,7 @@
     {
         "id": "9",
         "name": "Ahriman",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -98,7 +98,7 @@
     {
         "id": "15",
         "name": "Unicorn",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -114,7 +114,7 @@
     {
         "id": "18",
         "name": "Behemoth",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -130,7 +130,7 @@
     {
         "id": "19",
         "name": "Cavalry Drake",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -146,7 +146,7 @@
     {
         "id": "20",
         "name": "Laurel Goobbue",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -162,7 +162,7 @@
     {
         "id": "21",
         "name": "Gilded Magitek Armor",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -178,7 +178,7 @@
     {
         "id": "22",
         "name": "Nightmare",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -194,7 +194,7 @@
     {
         "id": "25",
         "name": "Fat Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -210,7 +210,7 @@
     {
         "id": "26",
         "name": "Cavalry Elbst",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -226,7 +226,7 @@
     {
         "id": "27",
         "name": "Bomb Palanquin",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -242,7 +242,7 @@
     {
         "id": "28",
         "name": "Aithon",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -258,7 +258,7 @@
     {
         "id": "29",
         "name": "Xanthos",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -274,7 +274,7 @@
     {
         "id": "30",
         "name": "Gullfaxi",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -290,7 +290,7 @@
     {
         "id": "31",
         "name": "Enbarr",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -306,7 +306,7 @@
     {
         "id": "32",
         "name": "Warlion",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -322,7 +322,7 @@
     {
         "id": "33",
         "name": "Warbear",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -338,7 +338,7 @@
     {
         "id": "34",
         "name": "Draught Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -354,7 +354,7 @@
     {
         "id": "35",
         "name": "Direwolf",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -370,7 +370,7 @@
     {
         "id": "36",
         "name": "Storm Warsteed",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -386,7 +386,7 @@
     {
         "id": "37",
         "name": "Serpent Warsteed",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -402,7 +402,7 @@
     {
         "id": "38",
         "name": "Flame Warsteed",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -418,7 +418,7 @@
     {
         "id": "40",
         "name": "Markab",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -434,7 +434,7 @@
     {
         "id": "41",
         "name": "Ceremony Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -450,7 +450,7 @@
     {
         "id": "42",
         "name": "Sleipnir",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -466,7 +466,7 @@
     {
         "id": "43",
         "name": "Boreas",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -482,7 +482,7 @@
     {
         "id": "44",
         "name": "Parade Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -498,7 +498,7 @@
     {
         "id": "45",
         "name": "Black Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -514,7 +514,7 @@
     {
         "id": "46",
         "name": "Adamantoise",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -530,7 +530,7 @@
     {
         "id": "47",
         "name": "Kirin",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -546,7 +546,7 @@
     {
         "id": "48",
         "name": "Logistics System",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -562,7 +562,7 @@
     {
         "id": "49",
         "name": "Fenrir",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -578,7 +578,7 @@
     {
         "id": "50",
         "name": "Midgardsormr",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -594,7 +594,7 @@
     {
         "id": "52",
         "name": "Amber Draught Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -610,7 +610,7 @@
     {
         "id": "53",
         "name": "Sanuwa",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -626,7 +626,7 @@
     {
         "id": "54",
         "name": "Griffin",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -642,7 +642,7 @@
     {
         "id": "55",
         "name": "Manacutter",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -658,7 +658,7 @@
     {
         "id": "56",
         "name": "War Panther",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -674,7 +674,7 @@
     {
         "id": "58",
         "name": "Gobwalker",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -690,7 +690,7 @@
     {
         "id": "59",
         "name": "Twintania",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -706,7 +706,7 @@
     {
         "id": "62",
         "name": "Witch's Broom",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -730,7 +730,7 @@
     {
         "id": "67",
         "name": "Pegasus",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -746,7 +746,7 @@
     {
         "id": "68",
         "name": "White Devil",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -762,7 +762,7 @@
     {
         "id": "69",
         "name": "Red Baron",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -778,7 +778,7 @@
     {
         "id": "70",
         "name": "Wyvern",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -794,7 +794,7 @@
     {
         "id": "72",
         "name": "Kongamato",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -810,7 +810,7 @@
     {
         "id": "73",
         "name": "Zu",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -826,7 +826,7 @@
     {
         "id": "74",
         "name": "Bennu",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -842,7 +842,7 @@
     {
         "id": "75",
         "name": "White Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -858,7 +858,7 @@
     {
         "id": "76",
         "name": "Rose Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -874,7 +874,7 @@
     {
         "id": "77",
         "name": "Round Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -890,7 +890,7 @@
     {
         "id": "78",
         "name": "Warring Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -906,7 +906,7 @@
     {
         "id": "80",
         "name": "Gloria-class Airship",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -922,7 +922,7 @@
     {
         "id": "81",
         "name": "Flying Cumulus",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -938,7 +938,7 @@
     {
         "id": "82",
         "name": "Original Fat Chocobo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -954,7 +954,7 @@
     {
         "id": "83",
         "name": "Astrope",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -970,7 +970,7 @@
     {
         "id": "84",
         "name": "Fat Moogle",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -986,7 +986,7 @@
     {
         "id": "86",
         "name": "Cloud Mallow",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1002,7 +1002,7 @@
     {
         "id": "87",
         "name": "Whisper-go",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1018,7 +1018,7 @@
     {
         "id": "90",
         "name": "Dark Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1034,7 +1034,7 @@
     {
         "id": "91",
         "name": "Aerodynamics System",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1050,7 +1050,7 @@
     {
         "id": "92",
         "name": "Disembodied Head",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1066,7 +1066,7 @@
     {
         "id": "94",
         "name": "Whisper A-go-go",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1082,7 +1082,7 @@
     {
         "id": "95",
         "name": "Goten",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1098,7 +1098,7 @@
     {
         "id": "96",
         "name": "Ginga",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1114,7 +1114,7 @@
     {
         "id": "98",
         "name": "Sophic Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1130,7 +1130,7 @@
     {
         "id": "100",
         "name": "Black Pegasus",
-        "sellable": null,
+        "sellable": "1",
         "can_fly": "1",
         "methodes": [
             {
@@ -1154,7 +1154,7 @@
     {
         "id": "101",
         "name": "Arrhidaeus",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1170,7 +1170,7 @@
     {
         "id": "102",
         "name": "Raigo",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1186,7 +1186,7 @@
     {
         "id": "103",
         "name": "Red Baron",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": null,
         "methodes": [
             {
@@ -1202,7 +1202,7 @@
     {
         "id": "104",
         "name": "Demonic Lanner",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1218,7 +1218,7 @@
     {
         "id": "105",
         "name": "Firebird",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1234,7 +1234,7 @@
     {
         "id": "106",
         "name": "Eggshilaration System",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {
@@ -1250,7 +1250,7 @@
     {
         "id": "108",
         "name": "Lone Hellhound",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -1266,7 +1266,7 @@
     {
         "id": "109",
         "name": "Pack Hellhound",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "0",
         "methodes": [
             {
@@ -1282,7 +1282,7 @@
     {
         "id": "110",
         "name": "Archon Throne",
-        "sellable": null,
+        "sellable": "0",
         "can_fly": "1",
         "methodes": [
             {

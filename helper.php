@@ -818,7 +818,7 @@
         }
         
         if($readonly == "false"){
-            $columns = $table == "minions" ?  ["id","name"] : ["id","name","can_fly"];
+            $columns = $table == "minions" ?  ["id","name","sellable","emotes"] : ["id","name","sellable","can_fly"];
             $objects = $database->select($table,$columns);
             $methodes = array();
             foreach($objects as $obj){

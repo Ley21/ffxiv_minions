@@ -66,8 +66,6 @@ $(document).ready(function() {
         } else {
             searchCharakter(data);
         }
-
-
     } else if (last == "ranking") {
         loadRanking(data);
     } else if (last == "minions") {
@@ -80,7 +78,8 @@ $(document).ready(function() {
         loadFaq(data);
     } else {
         pushUrl("", getLangData());
-        $('.table').DataTable();
+        //$('.table').DataTable();
+        data = showDataTable("",data);
     }
 
 });

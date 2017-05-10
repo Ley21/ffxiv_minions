@@ -221,7 +221,7 @@ function getDataTableParameters(baseurl, lengthParam,lengthSelectName){
             pushUrl(baseurl, submit);
             checkRankingSelection();
         },
-        
+        "rowsGroup": [0,1,2]
     };
 }
 

@@ -27,6 +27,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <script src="js/dataTables.rowsGroup.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/index.js"></script>
     <script src="https://xivdb.com/tooltips.js"></script>
