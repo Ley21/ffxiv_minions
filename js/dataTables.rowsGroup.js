@@ -65,7 +65,7 @@ var RowsGroup = function ( dt, columnsForGrouping )
 	dt.on('order.dt', function ( e, settings) {
 		if (!self.orderOverrideNow) {
 			self.orderOverrideNow = true;
-			self._updateOrderAndDraw()
+			//self._updateOrderAndDraw()
 		} else {
 			self.orderOverrideNow = false;
 		}
@@ -100,7 +100,8 @@ var RowsGroup = function ( dt, columnsForGrouping )
 		self.mergeCellsNeeded = true;
 	})
 
-	this._updateOrderAndDraw();
+	//this._updateOrderAndDraw();
+	this.table.draw()
 	
 /* Events sequence while Add row (also through Editor)
  * addRow() function
@@ -227,15 +228,27 @@ RowsGroup.prototype = {
 	_updateOrderAndDraw: function()
 	{
 		this.mergeCellsNeeded = true;
-		
 		var currentOrder = this.table.order();
 		currentOrder = this._getInjectedMonoSelectWorkaround(currentOrder);
-		this.order = this._getOrderWithGroupColumns(currentOrder)
-		this.table.order($.extend(true, Array(), this.order))
+		this.order = this._getOrderWithGroupColumns(currentOrder);
+		this.table.order($.extend(true, Array(), this.order));
 		this.table.draw()
 	},
 };
+function dump(obj) {
+    var out = '';
+    for (var i in obj) {
+        out += i + ": " + obj[i] + "\n";
+    }
 
+    alert(out);
+
+    // or, if you wanted to avoid alerts...
+
+    var pre = document.createElement('pre');
+    pre.innerHTML = out;
+    document.body.appendChild(pre)
+}
 
 $.fn.dataTable.RowsGroup = RowsGroup;
 $.fn.DataTable.RowsGroup = RowsGroup;

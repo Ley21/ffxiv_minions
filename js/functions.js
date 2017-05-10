@@ -195,7 +195,7 @@ function showDataTable(baseurl,submitData){
     return submit;
 }
 
-function getDataTableParameters(baseurl, lengthParam,lengthSelectName){
+function getDataTableParameters(baseurl, lengthParam,lengthSelectName,dataTableInitialize = null){
     var length = getUrlParameter(lengthParam);
     var page = getUrlParameter("page");
     var displayStart = length === undefined || page === undefined ? 0 : page*length;
@@ -221,7 +221,8 @@ function getDataTableParameters(baseurl, lengthParam,lengthSelectName){
             pushUrl(baseurl, submit);
             checkRankingSelection();
         },
-        "rowsGroup": [0,1,2]
+        "rowsGroup": [0,1,2],
+        dataTableInitialize
     };
 }
 
