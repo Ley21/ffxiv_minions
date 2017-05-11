@@ -1187,7 +1187,7 @@
         "id": "103",
         "name": "Red Baron",
         "sellable": "0",
-        "can_fly": null,
+        "can_fly": "0",
         "methodes": [
             {
                 "method": null,

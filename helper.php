@@ -565,6 +565,42 @@
         return $charakter_link;
     }
     
+    function insert_update_verminion($id,$json_data){
+        global $database;
+        
+        $db_id = $database->get("verminion",["id"],["id[=]"=>$id]);
+            
+        $data = ["id"=>$json_data->id,
+                "race"=>$json_data->race,
+                "cost" => $json_data->cost,
+                "hp" => $json_data->hp,
+                "attack" => $json_data->attack,
+                "defense"=>$json_data->defense,
+                "speed"=>$json_data->speed,
+                "skill_type"=>$json_data->minion_skill_type,
+                "skill_cost"=>$json_data->skill_cost,
+                "action_en" => $json_data->action_en,
+                "action_fr" => $json_data->action_fr,
+                "action_de" => $json_data->action_de,
+                "action_ja" => $json_data->action_ja,
+                "help_en" => $json_data->help_en,
+                "help_fr" => $json_data->help_fr,
+                "help_de" => $json_data->help_de,
+                "help_ja" => $json_data->help_ja,
+                "strength_arcana" => $json_data->strength_arcana,
+                "strength_eye" => $json_data->strength_eye,
+                "strength_gate" => $json_data->strength_gate,
+                "strength_shield" => $json_data->strength_shield,
+                "has_area_attack" => $json_data->has_area_attack];
+            
+            if(empty($db_id)){
+                $database->insert("verminion",$data);
+            }
+            else{
+                $database->update("verminion",$data,
+                    ["id[=]"=>$id]);
+            }
+    }
     
     function insert_update_minion($id){
         global $database;
@@ -579,10 +615,8 @@
         elseif($db_minion == "wind-up merlwyb" ||
             $db_minion == "wind-up kan-e" ||
             $db_minion == "wind-up raubahn"){
-            
         }
         elseif($obj->id == 68 ||$obj->id == 69 || $obj->id == 70){
-            
         }
         else{
             $xivdb_icon = $database->quote($obj->icon2);
@@ -590,11 +624,11 @@
                 return;
             }
             $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
-            if(empty($db_id)){
-                $database->insert("minions",[
-                    "id"=>$obj->id,
+            
+            $data = ["id"=>$obj->id,
                     "name"=>$obj->name,
                     "icon_url" => $xivdb_icon,
+                    "picture_url" => $database->quote($obj->icon),
                     "patch" => $patch,
                     "name_en"=>$obj->name_en,
                     "name_fr"=>$obj->name_fr,
@@ -603,23 +637,21 @@
                     "description_en" => $obj->info1_en,
                     "description_fr" => $obj->info1_fr,
                     "description_de" => $obj->info1_de,
-                    "description_ja" => $obj->info1_ja]);
+                    "description_ja" => $obj->info1_ja,
+                    "summon_en" => $obj->summon_en,
+                    "summon_fr" => $obj->summon_fr,
+                    "summon_de" => $obj->summon_de,
+                    "summon_ja" => $obj->summon_ja,
+                    "behavior" => $obj->behavior];
+            
+            if(empty($db_id)){
+                $database->insert("minions",$data);
             }
             else{
-                $database->update("minions",[
-                    "id"=>$obj->id,
-                    "name"=>$obj->name,
-                    "icon_url" => $xivdb_icon,
-                    "name_en"=>$obj->name_en,
-                    "name_fr"=>$obj->name_fr,
-                    "name_de"=>$obj->name_de,
-                    "name_ja"=>$obj->name_ja,
-                    "description_en" => $obj->info1_en,
-                    "description_fr" => $obj->info1_fr,
-                    "description_de" => $obj->info1_de,
-                    "description_ja" => $obj->info1_ja],
+                $database->update("minions",$data,
                     ["id[=]"=>$id]);
             }
+            insert_update_verminion($id,$obj);
         }
     }
     
@@ -639,11 +671,10 @@
                 return;
             }
             $db_id = $database->get("mounts",["id"],["id[=]"=>$id]);
-            if(empty($db_id)){
-                $database->insert("mounts",[
-                    "id"=>$obj->id,
+            $data = ["id"=>$obj->id,
                     "name"=>$obj->name,
                     "icon_url" => $xivdb_icon,
+                    "picture_url" => $database->quote($obj->icon),
                     "patch" => $patch,
                     "name_en"=>$obj->name_en,
                     "name_fr"=>$obj->name_fr,
@@ -652,21 +683,16 @@
                     "description_en" => $obj->info1_en,
                     "description_fr" => $obj->info1_fr,
                     "description_de" => $obj->info1_de,
-                    "description_ja" => $obj->info1_ja]);
+                    "description_ja" => $obj->info1_ja,
+                    "summon_en" => $obj->summon_en,
+                    "summon_fr" => $obj->summon_fr,
+                    "summon_de" => $obj->summon_de,
+                    "summon_ja" => $obj->summon_ja];
+            if(empty($db_id)){
+                $database->insert("mounts",$data);
             }
             else{
-                $database->update("mounts",[
-                    "id"=>$obj->id,
-                    "name"=>$obj->name,
-                    "icon_url" => $xivdb_icon,
-                    "name_en"=>$obj->name_en,
-                    "name_fr"=>$obj->name_fr,
-                    "name_de"=>$obj->name_de,
-                    "name_ja"=>$obj->name_ja,
-                    "description_en" => $obj->info1_en,
-                    "description_fr" => $obj->info1_fr,
-                    "description_de" => $obj->info1_de,
-                    "description_ja" => $obj->info1_ja],
+                $database->update("mounts",$data,
                     ["id[=]"=>$id]);
             }
         }
@@ -675,41 +701,51 @@
     function create_database(){
         global $database;
         
-        $database->query("CREATE TABLE minions (
-            id INT NOT NULL,
-            name VARCHAR(100) NOT NULL,
-            icon_url VARCHAR(255) NOT NULL,
-            patch VARCHAR(50) NOT NULL,
-            name_en VARCHAR(100) NOT NULL,
-            name_fr VARCHAR(100) NOT NULL,
-            name_de VARCHAR(100) NOT NULL,
-            name_ja VARCHAR(100) NOT NULL,
-            description_en TEXT NOT NULL,
-            description_fr TEXT NOT NULL,
-            description_de TEXT NOT NULL,
-            description_ja TEXT NOT NULL,
-            sellable tinyint(1),
-            emotes VARCHAR(100),
-            PRIMARY KEY ( id )
-            );");
+        $database->query("CREATE TABLE `minions` (
+          `id` int(11) NOT NULL,
+          `name` varchar(100) NOT NULL,
+          `icon_url` varchar(255) NOT NULL,
+          `picture_url` varchar(255) NOT NULL,
+          `patch` varchar(50) NOT NULL,
+          `name_en` varchar(100) NOT NULL,
+          `name_fr` varchar(100) NOT NULL,
+          `name_de` varchar(100) NOT NULL,
+          `name_ja` varchar(100) NOT NULL,
+          `description_en` text NOT NULL,
+          `description_fr` text NOT NULL,
+          `description_de` text NOT NULL,
+          `description_ja` text NOT NULL,
+          `summon_en` text NOT NULL,
+          `summon_fr` text NOT NULL,
+          `summon_de` text NOT NULL,
+          `summon_ja` text NOT NULL,
+          `behavior` varchar(100) NOT NULL,
+          `sellable` tinyint(1) NOT NULL DEFAULT '0',
+          PRIMARY KEY (`id`)
+        );");
         
-        $database->query("CREATE TABLE mounts (
-            id INT NOT NULL,
-            name VARCHAR(100) NOT NULL,
-            icon_url VARCHAR(255) NOT NULL,
-            patch VARCHAR(50) NOT NULL,
-            name_en VARCHAR(100) NOT NULL,
-            name_fr VARCHAR(100) NOT NULL,
-            name_de VARCHAR(100) NOT NULL,
-            name_ja VARCHAR(100) NOT NULL,
-            description_en TEXT NOT NULL,
-            description_fr TEXT NOT NULL,
-            description_de TEXT NOT NULL,
-            description_ja TEXT NOT NULL,
-            can_fly tinyint(1),
-            sellable tinyint(1),
-            PRIMARY KEY ( id )
-            );");
+        $database->query("CREATE TABLE `mounts` (
+          `id` int(11) NOT NULL,
+          `name` varchar(100) NOT NULL,
+          `icon_url` varchar(255) NOT NULL,
+          `picture_url` varchar(255) NOT NULL,
+          `patch` varchar(50) NOT NULL,
+          `can_fly` tinyint(1) NOT NULL DEFAULT '0',
+          `name_en` varchar(100) NOT NULL,
+          `name_fr` varchar(100) NOT NULL,
+          `name_de` varchar(100) NOT NULL,
+          `name_ja` varchar(100) NOT NULL,
+          `description_en` text NOT NULL,
+          `description_fr` text NOT NULL,
+          `description_de` text NOT NULL,
+          `description_ja` text NOT NULL,
+          `summon_en` text NOT NULL,
+          `summon_fr` text NOT NULL,
+          `summon_de` text NOT NULL,
+          `summon_ja` text NOT NULL,
+          `sellable` tinyint(1) NOT NULL DEFAULT '0',
+          PRIMARY KEY (`id`)
+        );");
         $database->query("CREATE TABLE players (
             id INT NOT NULL,
             name VARCHAR(100) NOT NULL,
@@ -768,6 +804,46 @@
             );");
     }
     
+    function create_verminion_table(){
+        global $database;
+        $tables_exits = $database->query('SELECT 1 FROM verminion LIMIT 1;') != false;
+        $database->query("CREATE TABLE IF NOT EXISTS `verminion` (
+          `id` int(11) NOT NULL,
+          `race` varchar(100) NOT NULL,
+          `cost` int(11) NOT NULL,
+          `hp` int(11) NOT NULL,
+          `attack` int(11) NOT NULL,
+          `defense` int(11) NOT NULL,
+          `speed` int(11) NOT NULL,
+          `skill_cost` int(11) NOT NULL,
+          `skill_type` varchar(100) NOT NULL,
+          `action_en` varchar(100) NOT NULL,
+          `action_fr` varchar(100) NOT NULL,
+          `action_de` varchar(100) NOT NULL,
+          `action_ja` varchar(100) NOT NULL,
+          `strength_arcana` tinyint(1) NOT NULL,
+          `strength_eye` tinyint(1) NOT NULL,
+          `strength_gate` tinyint(1) NOT NULL,
+          `strength_shield` tinyint(1) NOT NULL,
+          `has_area_attack` tinyint(1) NOT NULL,
+          `help_en` text NOT NULL,
+          `help_fr` text NOT NULL,
+          `help_de` text NOT NULL,
+          `help_ja` text NOT NULL,
+          PRIMARY KEY (`id`),
+          FOREIGN KEY (id) REFERENCES minions(id)
+        );");
+    }
+    
+    function update_table_structur($table,$column,$columnDataType,$afterColumn){
+        global $database;
+        $result = $database->query("SELECT * FROM information_schema.COLUMNS 
+                WHERE TABLE_NAME = '$table' AND COLUMN_NAME = '$column'")->fetchAll();
+        if(empty($result)){
+            $database->query("ALTER TABLE `$table` ADD `$column` $columnDataType NOT NULL AFTER `$afterColumn`");
+        }
+    }
+    
     function read_write_methode_new($table,$file,$readonly){
         global $database;
         $logs;
@@ -786,9 +862,6 @@
 
                 if($table == "mounts"){
                     $database->update($table,["can_fly" => $coll->can_fly],["id[=]"=>$coll->id]);
-                }
-                if($table == "minions"){
-                    $database->update($table,["emotes" => $coll->emotes],["id[=]"=>$coll->id]);
                 }
                 $database->update($table,["sellable" => $coll->sellable],["id[=]"=>$coll->id]);
                 /*if(empty($coll->methodes) 
@@ -818,7 +891,7 @@
         }
         
         if($readonly == "false"){
-            $columns = $table == "minions" ?  ["id","name","sellable","emotes"] : ["id","name","sellable","can_fly"];
+            $columns = $table == "minions" ?  ["id","name","sellable"] : ["id","name","sellable","can_fly"];
             $objects = $database->select($table,$columns);
             $methodes = array();
             foreach($objects as $obj){
@@ -826,7 +899,7 @@
                         "method_description_fr","method_description_de","method_description_ja"],["m_id[=]"=>$obj["id"]]);
                 $obj_methodes = $obj_methodes ? $obj_methodes : array(array("method"=>null,"available"=>0,"method_description_en"=>null,
                         "method_description_fr"=>null,"method_description_de"=>null,"method_description_ja"=>null));
-                $method = $table == "minions" ? array("id"=>$obj["id"],"name"=>$obj["name"],"sellable"=>$obj["sellable"],"emotes"=>$obj["emotes"],"methodes"=>$obj_methodes) 
+                $method = $table == "minions" ? array("id"=>$obj["id"],"name"=>$obj["name"],"sellable"=>$obj["sellable"],"methodes"=>$obj_methodes) 
                             : array("id"=>$obj["id"],"name"=>$obj["name"],"sellable"=>$obj["sellable"],"can_fly" => $obj["can_fly"],"methodes"=>$obj_methodes) ;
                 $methodes[] = $method;
             }

@@ -3,7 +3,6 @@
         "id": "1",
         "name": "Cherry Bomb",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -19,7 +18,6 @@
         "id": "2",
         "name": "Mammet #001",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -35,7 +33,6 @@
         "id": "3",
         "name": "Wayward Hatchling",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -51,7 +48,6 @@
         "id": "4",
         "name": "Cait Sith Doll",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -67,7 +63,6 @@
         "id": "5",
         "name": "Baby Behemoth",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -83,7 +78,6 @@
         "id": "6",
         "name": "Mammet #003L",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -99,7 +93,6 @@
         "id": "7",
         "name": "Mammet #003G",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -115,7 +108,6 @@
         "id": "8",
         "name": "Mammet #003U",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -131,7 +123,6 @@
         "id": "9",
         "name": "Storm Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "GC Purchase",
@@ -147,7 +138,6 @@
         "id": "10",
         "name": "Serpent Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "GC Purchase",
@@ -163,7 +153,6 @@
         "id": "11",
         "name": "Flame Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "GC Purchase",
@@ -179,7 +168,6 @@
         "id": "12",
         "name": "Morbol Seedling",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -195,7 +183,6 @@
         "id": "13",
         "name": "Tiny Rat",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -211,7 +198,6 @@
         "id": "14",
         "name": "Baby Bun",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "FATE Rewards",
@@ -227,7 +213,6 @@
         "id": "15",
         "name": "Chigoe Larva",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -243,7 +228,6 @@
         "id": "16",
         "name": "Bluebird",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -275,7 +259,6 @@
         "id": "17",
         "name": "Wide-eyed Fawn",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Tomestone Purchase",
@@ -291,7 +274,6 @@
         "id": "18",
         "name": "Infant Imp",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "FATE Rewards",
@@ -307,7 +289,6 @@
         "id": "19",
         "name": "Coeurl Kitten",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -323,7 +304,6 @@
         "id": "20",
         "name": "Black Coeurl",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "MGP Purchase",
@@ -339,7 +319,6 @@
         "id": "21",
         "name": "Wind-up Gentleman",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -355,7 +334,6 @@
         "id": "22",
         "name": "Gravel Golem",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -371,7 +349,6 @@
         "id": "23",
         "name": "Wind-up Tonberry",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -403,7 +380,6 @@
         "id": "24",
         "name": "Tiny Tortoise",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gathering",
@@ -419,7 +395,6 @@
         "id": "25",
         "name": "Baby Raptor",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -435,7 +410,6 @@
         "id": "26",
         "name": "Baby Bat",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -451,7 +425,6 @@
         "id": "27",
         "name": "Tiny Bulb",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -483,7 +456,6 @@
         "id": "28",
         "name": "Dust Bunny",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Tomestone Purchase",
@@ -499,7 +471,6 @@
         "id": "29",
         "name": "Wind-up Dullahan",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -515,7 +486,6 @@
         "id": "30",
         "name": "Gigantpole",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gathering",
@@ -531,7 +501,6 @@
         "id": "31",
         "name": "Pudgy Puk",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "FATE Rewards",
@@ -547,7 +516,6 @@
         "id": "32",
         "name": "Buffalo Calf",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -563,7 +531,6 @@
         "id": "33",
         "name": "Cactuar Cutting",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -579,7 +546,6 @@
         "id": "34",
         "name": "Smallshell",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "FATE Rewards",
@@ -595,7 +561,6 @@
         "id": "35",
         "name": "Wolf Pup",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -611,7 +576,6 @@
         "id": "36",
         "name": "Beady Eye",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -627,7 +591,6 @@
         "id": "37",
         "name": "Fledgling Dodo",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Tomestone Purchase",
@@ -643,7 +606,6 @@
         "id": "38",
         "name": "Coblyn Larva",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gathering",
@@ -659,7 +621,6 @@
         "id": "39",
         "name": "Wind-up Aldgoat",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -683,7 +644,6 @@
         "id": "40",
         "name": "Fledgling Apkallu",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -699,7 +659,6 @@
         "id": "41",
         "name": "Goobbue Sproutling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -715,7 +674,6 @@
         "id": "42",
         "name": "Bite-sized Pudding",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -731,7 +689,6 @@
         "id": "43",
         "name": "Model Vanguard",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -747,7 +704,6 @@
         "id": "44",
         "name": "Demon Brick",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -763,7 +719,6 @@
         "id": "45",
         "name": "Mini Mole",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -779,7 +734,6 @@
         "id": "46",
         "name": "Tender Lamb",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -803,7 +757,6 @@
         "id": "47",
         "name": "Slime Puddle",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -819,7 +772,6 @@
         "id": "48",
         "name": "Kidragora",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gathering",
@@ -835,7 +787,6 @@
         "id": "49",
         "name": "Wind-up Goblin",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -851,7 +802,6 @@
         "id": "50",
         "name": "Wind-up Sylph",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -867,7 +817,6 @@
         "id": "51",
         "name": "Wind-up Cursor",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -883,7 +832,6 @@
         "id": "52",
         "name": "Wind-up Airship",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -899,7 +847,6 @@
         "id": "53",
         "name": "Wind-up Qiqirn",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -915,7 +862,6 @@
         "id": "54",
         "name": "Black Chocobo Chick",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -931,7 +877,6 @@
         "id": "55",
         "name": "Wind-up Dalamud",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -947,7 +892,6 @@
         "id": "56",
         "name": "Minute Mindflayer",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -979,7 +923,6 @@
         "id": "57",
         "name": "Tight-beaked Parrot",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -1011,7 +954,6 @@
         "id": "58",
         "name": "Wind-up Amalj'aa",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -1027,7 +969,6 @@
         "id": "59",
         "name": "Wind-up Ixal",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -1043,7 +984,6 @@
         "id": "60",
         "name": "Wind-up Kobold",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -1059,7 +999,6 @@
         "id": "61",
         "name": "Wind-up Sahagin",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -1075,7 +1014,6 @@
         "id": "62",
         "name": "Wind-up Brickman",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -1091,7 +1029,6 @@
         "id": "63",
         "name": "Wind-up Shantotto",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -1107,7 +1044,6 @@
         "id": "64",
         "name": "Wind-up Edvya",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1131,7 +1067,6 @@
         "id": "65",
         "name": "Wind-up Sun",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -1147,7 +1082,6 @@
         "id": "66",
         "name": "Plush Cushion",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -1163,7 +1097,6 @@
         "id": "67",
         "name": "Minion Of Light",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -1179,7 +1112,6 @@
         "id": "71",
         "name": "Wind-up Leader",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -1195,7 +1127,6 @@
         "id": "75",
         "name": "Princely Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -1211,7 +1142,6 @@
         "id": "76",
         "name": "Wind-up Odin",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -1227,7 +1157,6 @@
         "id": "77",
         "name": "Wind-up Warrior Of Light",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -1243,7 +1172,6 @@
         "id": "78",
         "name": "Wind-up Bahamut",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -1259,7 +1187,6 @@
         "id": "79",
         "name": "Wind-up Moogle",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -1275,7 +1202,6 @@
         "id": "80",
         "name": "Baby Opo-opo",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -1307,7 +1233,6 @@
         "id": "81",
         "name": "Magic Broom",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -1323,7 +1248,6 @@
         "id": "82",
         "name": "Wind-up Succubus",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Monster Hunt",
@@ -1339,7 +1263,6 @@
         "id": "83",
         "name": "Zu Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "MGP Purchase",
@@ -1355,7 +1278,6 @@
         "id": "84",
         "name": "Wind-up Nanamo",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -1371,7 +1293,6 @@
         "id": "85",
         "name": "Wind-up Gilgamesh",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -1387,7 +1308,6 @@
         "id": "86",
         "name": "Onion Prince",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gardening",
@@ -1403,7 +1323,6 @@
         "id": "87",
         "name": "Eggplant Knight",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gardening",
@@ -1419,7 +1338,6 @@
         "id": "88",
         "name": "Garlic Jester",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gardening",
@@ -1435,7 +1353,6 @@
         "id": "89",
         "name": "Tomato King",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gardening",
@@ -1451,7 +1368,6 @@
         "id": "90",
         "name": "Mandragora Queen",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gardening",
@@ -1467,7 +1383,6 @@
         "id": "91",
         "name": "Wind-up Y'shtola",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1483,7 +1398,6 @@
         "id": "92",
         "name": "Wind-up Onion Knight",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -1499,7 +1413,6 @@
         "id": "93",
         "name": "Treasure Box",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Monster Hunt",
@@ -1515,7 +1428,6 @@
         "id": "94",
         "name": "Tiny Tapir",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Retainer Ventures",
@@ -1531,7 +1443,6 @@
         "id": "95",
         "name": "Nana Bear",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -1547,7 +1458,6 @@
         "id": "96",
         "name": "Miniature Minecart",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Retainer Ventures",
@@ -1563,7 +1473,6 @@
         "id": "97",
         "name": "Nutkin",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -1595,7 +1504,6 @@
         "id": "98",
         "name": "Wind-up Minfilia",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1611,7 +1519,6 @@
         "id": "99",
         "name": "Wind-up Thancred",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1627,7 +1534,6 @@
         "id": "100",
         "name": "Model Magitek Bit",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -1643,7 +1549,6 @@
         "id": "101",
         "name": "Puff Of Darkness",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -1659,7 +1564,6 @@
         "id": "102",
         "name": "Naughty Nanka",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -1675,7 +1579,6 @@
         "id": "103",
         "name": "Panda Cub",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1691,7 +1594,6 @@
         "id": "104",
         "name": "Wind-up Ultros",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -1707,7 +1609,6 @@
         "id": "105",
         "name": "Hoary The Snowman",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1731,7 +1632,6 @@
         "id": "106",
         "name": "Heavy Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "MGP Purchase",
@@ -1747,7 +1647,6 @@
         "id": "107",
         "name": "Wind-up Yda",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1763,7 +1662,6 @@
         "id": "108",
         "name": "Wind-up Papalymo",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1779,7 +1677,6 @@
         "id": "109",
         "name": "Wind-up Urianger",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1795,7 +1692,6 @@
         "id": "110",
         "name": "Fat Cat",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Retainer Ventures",
@@ -1811,7 +1707,6 @@
         "id": "111",
         "name": "Littlefoot",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Retainer Ventures",
@@ -1827,7 +1722,6 @@
         "id": "112",
         "name": "Mummy's Little Mummy",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -1859,7 +1753,6 @@
         "id": "113",
         "name": "Model Enterprise",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -1875,7 +1768,6 @@
         "id": "114",
         "name": "Wind-up Delivery Moogle",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -1891,7 +1783,6 @@
         "id": "115",
         "name": "Assassin Fry",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -1907,7 +1798,6 @@
         "id": "116",
         "name": "Demon Box",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -1923,7 +1813,6 @@
         "id": "117",
         "name": "Water Imp",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "MGP Purchase",
@@ -1939,7 +1828,6 @@
         "id": "118",
         "name": "Wind-up Louisoix",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -1955,7 +1843,6 @@
         "id": "119",
         "name": "Midgardsormr",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -1971,7 +1858,6 @@
         "id": "121",
         "name": "Doman Magpie",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -1987,7 +1873,6 @@
         "id": "122",
         "name": "Enkidu",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -2003,7 +1888,6 @@
         "id": "123",
         "name": "Wind-up Violet",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2019,7 +1903,6 @@
         "id": "124",
         "name": "Wind-up Founder",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2035,7 +1918,6 @@
         "id": "125",
         "name": "Wind-up Dezul Qualan",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2051,7 +1933,6 @@
         "id": "126",
         "name": "Wind-up Kobolder",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2067,7 +1948,6 @@
         "id": "127",
         "name": "Wind-up Sea Devil",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2083,7 +1963,6 @@
         "id": "128",
         "name": "Chocobo Chick Courier",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -2099,7 +1978,6 @@
         "id": "129",
         "name": "Wind-up Kain",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -2115,7 +1993,6 @@
         "id": "130",
         "name": "Wind-up Alphinaud",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -2131,7 +2008,6 @@
         "id": "131",
         "name": "Wind-up Alisaie",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -2147,7 +2023,6 @@
         "id": "132",
         "name": "Wind-up Tataru",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -2163,7 +2038,6 @@
         "id": "133",
         "name": "Wind-up Cid",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -2179,7 +2053,6 @@
         "id": "134",
         "name": "Unicolt",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2211,7 +2084,6 @@
         "id": "135",
         "name": "Wind-up Gundu Warrior",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2227,7 +2099,6 @@
         "id": "136",
         "name": "Atrophied Atomos",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2243,7 +2114,6 @@
         "id": "137",
         "name": "Owlet",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2275,7 +2145,6 @@
         "id": "138",
         "name": "Ugly Duckling",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2307,7 +2176,6 @@
         "id": "139",
         "name": "Gaelikitten",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2339,7 +2207,6 @@
         "id": "140",
         "name": "Clockwork Barrow",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2355,7 +2222,6 @@
         "id": "141",
         "name": "Lesser Panda",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2387,7 +2253,6 @@
         "id": "142",
         "name": "Page 63",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2419,7 +2284,6 @@
         "id": "143",
         "name": "Iron Dwarf",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2435,7 +2299,6 @@
         "id": "144",
         "name": "Griffin Hatchling",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Monster Hunt",
@@ -2451,7 +2314,6 @@
         "id": "145",
         "name": "Wind-up Iceheart",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -2475,7 +2337,6 @@
         "id": "146",
         "name": "Gestahl",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Retainer Ventures",
@@ -2491,7 +2352,6 @@
         "id": "147",
         "name": "Steam-powered Gobwalker G-VII",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2507,7 +2367,6 @@
         "id": "148",
         "name": "Behemoth Heir",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Monster Hunt",
@@ -2523,7 +2382,6 @@
         "id": "149",
         "name": "Accompaniment Node",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -2539,7 +2397,6 @@
         "id": "150",
         "name": "Wind-up Yugiri",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -2563,7 +2420,6 @@
         "id": "151",
         "name": "Peridot Carbuncle",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -2579,7 +2435,6 @@
         "id": "152",
         "name": "Heliodor Carbuncle",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -2595,7 +2450,6 @@
         "id": "154",
         "name": "Gold Rush Minecart",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "FATE Rewards",
@@ -2611,7 +2465,6 @@
         "id": "155",
         "name": "Set Of Primogs",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -2627,7 +2480,6 @@
         "id": "156",
         "name": "Wind-up Gnath",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2643,7 +2495,6 @@
         "id": "157",
         "name": "Paissa Brat",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -2683,7 +2534,6 @@
         "id": "158",
         "name": "Wind-up Illuminatus",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2699,7 +2549,6 @@
         "id": "159",
         "name": "Pumpkin Butler",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Mogry Shop Purchase",
@@ -2723,7 +2572,6 @@
         "id": "160",
         "name": "Wind-up Echidna",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -2739,7 +2587,6 @@
         "id": "161",
         "name": "Wind-up Relm",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -2755,7 +2602,6 @@
         "id": "162",
         "name": "Hunting Hawk",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Diadem FATE Rewards",
@@ -2779,7 +2625,6 @@
         "id": "163",
         "name": "Shalloweye",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -2795,7 +2640,6 @@
         "id": "164",
         "name": "Penguin Prince",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -2811,7 +2655,6 @@
         "id": "165",
         "name": "Clockwork Twintania",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -2827,7 +2670,6 @@
         "id": "166",
         "name": "Korpokkur Kid",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -2843,7 +2685,6 @@
         "id": "167",
         "name": "Wind-up Firion",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Veteran Rewards",
@@ -2859,7 +2700,6 @@
         "id": "168",
         "name": "Wind-up Ifrit",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2875,7 +2715,6 @@
         "id": "169",
         "name": "Wind-up Garuda",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2891,7 +2730,6 @@
         "id": "170",
         "name": "Wind-up Titan",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2907,7 +2745,6 @@
         "id": "171",
         "name": "Wind-up Leviathan",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -2931,7 +2768,6 @@
         "id": "172",
         "name": "Wind-up Zundu Warrior",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2947,7 +2783,6 @@
         "id": "173",
         "name": "Wind-up Haurchefant",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -2963,7 +2798,6 @@
         "id": "174",
         "name": "Wind-up Nero Tol Scaeva",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "MGP Purchase",
@@ -2979,7 +2813,6 @@
         "id": "175",
         "name": "Wind-up Vath",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -2995,7 +2828,6 @@
         "id": "176",
         "name": "Faustlet",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3011,7 +2843,6 @@
         "id": "177",
         "name": "Dress-up Y'shtola",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3027,7 +2858,6 @@
         "id": "178",
         "name": "Calca",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3043,7 +2873,6 @@
         "id": "179",
         "name": "Brina",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3059,7 +2888,6 @@
         "id": "180",
         "name": "Morpho",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3075,7 +2903,6 @@
         "id": "181",
         "name": "Poro Roggo",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -3091,7 +2918,6 @@
         "id": "182",
         "name": "Spoony Bard",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3107,7 +2933,6 @@
         "id": "183",
         "name": "Fenrir Pup",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3123,7 +2948,6 @@
         "id": "184",
         "name": "Wind-up Dragonet",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -3139,7 +2963,6 @@
         "id": "185",
         "name": "Wind-up Ramuh",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -3155,7 +2978,6 @@
         "id": "186",
         "name": "Wind-up Shiva",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Crafting",
@@ -3171,7 +2993,6 @@
         "id": "187",
         "name": "Piggy",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "MGP Purchase",
@@ -3187,7 +3008,6 @@
         "id": "188",
         "name": "Magic Bucket",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gathering",
@@ -3203,7 +3023,6 @@
         "id": "189",
         "name": "Calamari",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3219,7 +3038,6 @@
         "id": "190",
         "name": "Baby Brachiosaur",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Diadem FATE Rewards",
@@ -3235,7 +3053,6 @@
         "id": "191",
         "name": "Wind-up Cheerleader",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3259,7 +3076,6 @@
         "id": "192",
         "name": "Wind-up Krile",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3275,7 +3091,6 @@
         "id": "193",
         "name": "Wind-up Aymeric",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -3291,7 +3106,6 @@
         "id": "194",
         "name": "Pegasus Colt",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Diadem FATE Rewards",
@@ -3315,7 +3129,6 @@
         "id": "195",
         "name": "Wind-up Calofisteri",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3331,7 +3144,6 @@
         "id": "196",
         "name": "Wind-up Sasquatch",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3347,7 +3159,6 @@
         "id": "197",
         "name": "Dwarf Rabbit",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Treasure Dungeons",
@@ -3363,7 +3174,6 @@
         "id": "198",
         "name": "Hecteye",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3379,7 +3189,6 @@
         "id": "200",
         "name": "Jibanyan",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3395,7 +3204,6 @@
         "id": "201",
         "name": "Komasan",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3411,7 +3219,6 @@
         "id": "202",
         "name": "Whisper",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3427,7 +3234,6 @@
         "id": "203",
         "name": "Blizzaria",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3443,7 +3249,6 @@
         "id": "204",
         "name": "Kyubi",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3459,7 +3264,6 @@
         "id": "205",
         "name": "Komajiro",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3475,7 +3279,6 @@
         "id": "206",
         "name": "Manjimutt",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3491,7 +3294,6 @@
         "id": "207",
         "name": "Noko",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3507,7 +3309,6 @@
         "id": "208",
         "name": "Venoct",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3523,7 +3324,6 @@
         "id": "209",
         "name": "Shogunyan",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3539,7 +3339,6 @@
         "id": "210",
         "name": "Hovernyan",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3555,7 +3354,6 @@
         "id": "211",
         "name": "Robonyan F-type",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3571,7 +3369,6 @@
         "id": "212",
         "name": "USApyon",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3587,7 +3384,6 @@
         "id": "214",
         "name": "Namingway",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3603,7 +3399,6 @@
         "id": "215",
         "name": "Toy Alexander",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3619,7 +3414,6 @@
         "id": "216",
         "name": "Shaggy Shoat",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3635,7 +3429,6 @@
         "id": "217",
         "name": "Dress-up Thancred",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3651,7 +3444,6 @@
         "id": "218",
         "name": "Dress-up Alisaie",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3667,7 +3459,6 @@
         "id": "219",
         "name": "Wind-up Edda",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Deep Dungeon",
@@ -3691,7 +3482,6 @@
         "id": "220",
         "name": "Wind-up Yuna",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3707,7 +3497,6 @@
         "id": "221",
         "name": "Wind-up Rikku",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3723,7 +3512,6 @@
         "id": "222",
         "name": "Wind-up Lulu",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3739,7 +3527,6 @@
         "id": "224",
         "name": "Wind-up Moenbryda",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -3755,7 +3542,6 @@
         "id": "225",
         "name": "Continental Eye",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3771,7 +3557,6 @@
         "id": "226",
         "name": "Bullpup",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3787,7 +3572,6 @@
         "id": "227",
         "name": "Angel Of Mercy",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Seasonal Rewards",
@@ -3803,7 +3587,6 @@
         "id": "228",
         "name": "Wind-up Estinien",
         "sellable": "1",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3819,7 +3602,6 @@
         "id": "229",
         "name": "Wind-up Hraesvelgr",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3835,7 +3617,6 @@
         "id": "230",
         "name": "Gigi",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -3851,7 +3632,6 @@
         "id": "231",
         "name": "Anima",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Quest Rewards",
@@ -3867,7 +3647,6 @@
         "id": "232",
         "name": "Wind-up Scathach",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Dungeons & Trials",
@@ -3883,7 +3662,6 @@
         "id": "233",
         "name": "Wind-up Nidhogg",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Promotions",
@@ -3899,7 +3677,6 @@
         "id": "234",
         "name": "Hellpup",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -3923,7 +3700,6 @@
         "id": "235",
         "name": "Wind-up Ohl Deeh",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Gil Purchase",
@@ -3939,7 +3715,6 @@
         "id": "236",
         "name": "Wind-up Moon",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Misc. Methods",
@@ -3955,7 +3730,6 @@
         "id": "240",
         "name": "Faepup",
         "sellable": "0",
-        "emotes": "",
         "methodes": [
             {
                 "method": "Achievement Rewards",

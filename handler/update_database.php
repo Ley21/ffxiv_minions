@@ -26,17 +26,27 @@ if($_POST['update']){
             create_database();
         }else{
             //Update Table for avalible
-            $result = $database->query("SELECT * FROM information_schema.COLUMNS 
-                WHERE TABLE_SCHEMA = 'minions' AND TABLE_NAME = 'mounts_method' AND COLUMN_NAME = 'available'")->fetchAll();
-            if(empty($result)){
-                $database->query("ALTER TABLE `mounts_method` ADD `available` TINYINT( 1 ) NOT NULL AFTER `method`");
-            }
+            update_table_structur('mounts_method','available','TINYINT (1)','method');
+            update_table_structur('minions_method','available','TINYINT (1)','method');
             
-            $result = $database->query("SELECT * FROM information_schema.COLUMNS 
-                WHERE TABLE_SCHEMA = 'minions' AND TABLE_NAME = 'minions_method' AND COLUMN_NAME = 'available'")->fetchAll();
-            if(empty($result)){
-                $database->query("ALTER TABLE `minions_method` ADD `available` TINYINT( 1 ) NOT NULL AFTER `method`");
-            }
+            //Update table for sellable, minion etc., mount etc.
+            
+            create_verminion_table();
+            
+            update_table_structur("minions","sellable","TINYINT (1)","description_ja");
+            update_table_structur("minions","picture_url","varchar(255)","icon_url");
+            update_table_structur("minions","summon_ja","text","description_ja");
+            update_table_structur("minions","summon_de","text","description_ja");
+            update_table_structur("minions","summon_fr","text","description_ja");
+            update_table_structur("minions","summon_en","text","description_ja");
+            update_table_structur("minions","behavior","varchar(100)","summon_ja");
+            
+            update_table_structur("mounts","sellable","TINYINT (1)","description_ja");
+            update_table_structur("mounts","picture_url","varchar(255)","icon_url");
+            update_table_structur("mounts","summon_ja","text","description_ja");
+            update_table_structur("mounts","summon_de","text","description_ja");
+            update_table_structur("mounts","summon_fr","text","description_ja");
+            update_table_structur("mounts","summon_en","text","description_ja");
         }
         $minion_id = $_POST['minion'];
         $mount_id = $_POST['mount'];
