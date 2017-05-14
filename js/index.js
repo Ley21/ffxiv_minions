@@ -79,6 +79,7 @@ $(document).ready(function() {
     } else {
         pushUrl("", getLangData());
         //$('.table').DataTable();
+        data = updateSubmit(data,"lang",getUrlParameter("lang"));
         data = showDataTable("",data);
     }
 

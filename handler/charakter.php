@@ -40,7 +40,11 @@
             "*", ["name[=]"=> $name]);
             //Check if the last update date is longer then one day ago.
         if($player[0]['last_update_date'] != date("Y-m-d")){
-            $logs .= insert_update_charakter_by_name($name,$server);
+            $output = insert_update_charakter_by_name($name,$server);
+            if($output == null){
+                echo "<p>Could not find character $name from $server.<p>";
+                exit;
+            }
                 
         }
     }

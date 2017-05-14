@@ -451,12 +451,14 @@
         //$character = $api->Search->Character($name, $server);
         
         $character = Lodestone::findCharacterByNameAndServer($name,$server);
-        
         return insert_update_charakter($character);
     }
     
     function insert_update_charakter($character){
         global $database;
+        if($character == false){
+            return null;
+        }
         if(empty($character->id)){
             return "Could not find the charakter '$name' on server '$server'";
             exit;
