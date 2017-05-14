@@ -207,6 +207,11 @@
                                 </div>
                                 <div class="panel-body text-left">
                                     <ul>
+                                        <li><b>2017-05-14</b>
+                                        <ul>
+                                            <li>Add multi rows if the same minion is in the table. Fix find character for characters with three letters in first/second name. Thanks to mail of Bun Bun ^^.</li>
+                                        </ul>
+                                        </li>
                                         <li><b>2017-05-08</b>
                                         <ul>
                                             <li>Fix Issue #10 for table sorting and general table handling. Pls give me feedback if anything now dont work in tables.</li>
@@ -217,26 +222,6 @@
                                             <li>Character parsing by viion parsing api is broken because of lodestone changes (<a href="http://eu.finalfantasyxiv.com/lodestone/special/update_log/">http://eu.finalfantasyxiv.com/lodestone/special/update_log/</a>).</br>
                                             Implement own api for lodestone parsing. Could be possible that not everything is running well. If you see any issues pls contact me over github or 'Request Change' link in footer.</li>
                                         </ul>
-                                        </li>
-										<li><b>2017-03-09</b>
-                                            <ul>
-                                                <li>Update minions and mounts for 3.55b.</li>
-                                            </ul>
-                                        </li>
-										<li><b>2017-02-28</b>
-                                            <ul>
-                                                <li>Update minions and mounts for 3.55a.</li>
-                                            </ul>
-                                        </li>
-                                        <li><b>2017-01-17</b>
-                                            <ul>
-                                                <li>Update Minions and Mounts for 3.5.</br>Missing informations will be updated during the next days/weeks, if I see something new on reddit.</li>
-                                            </ul>
-                                        </li>
-                                        <li><b>2017-01-13</b>
-                                            <ul>
-                                                <li>We are planning to add a feature to also show Triple Triad cards and orchestrion rolls on this page. Issue <a href="https://github.com/Ley21/ffxiv_minions/issues/8">#8</a></li>
-                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
