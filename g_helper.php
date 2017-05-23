@@ -20,12 +20,15 @@
         setcookie($name, $value, time() + (86400 * $days));
     }
     function get_cookie($name){
-        $value = $_COOKIE[$name];
-        if(!isset($value)) {
-            return null;
-        } else {
-            return $value;
+        if(array_key_exists($name,$_COOKIE)){
+            $value = $_COOKIE[$name];
+            if(!isset($value)) {
+                return null;
+            } else {
+                return $value;
+            }
         }
+        return null;
     }
     
     function delete_cookie($name){
