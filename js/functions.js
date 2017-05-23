@@ -68,7 +68,7 @@ var languageTexts = {
 };
 
 function get_language_text(key) {
-    var lang = getUrlParameter("lang");
+    var lang = getLang();
     var text = languageTexts[key][lang];
     return text == "" ? languageTexts[key].en : text;
 }
@@ -118,10 +118,18 @@ function updateCharakter(id) {
 
 }
 
-function getLangData() {
-    var lang = getUrlParameter("lang");
-    lang = lang ? lang : "en"
-    return "lang=" + lang;
+function getLang(){
+    var lang = getCookie("lang");
+    if(lang == ""){
+        //setLang();
+        return "en";
+    }
+    return lang;
+}
+
+function setLang(lang = "en"){
+    setCookie("lang",lang,14);
+    //alert("Language set to "+lang);
 }
 
 function loadRanking(submit) {
@@ -151,8 +159,8 @@ function loadingMessage(customMessage = "", object = null) {
     object.html("<p><center><img src='img/gears.gif'><h2>" + customMessage + "</h2></center></p>");
 }
 
-function loadFaq(submit) {
-    ajaxCall("faq", "faq.php", submit, function(data) {});
+function loadFaq() {
+    ajaxCall("faq", "faq.php", "", function(data) {});
 }
 
 function basicAjaxCall(url, submitData, func, customMessage = "", object = null, type = 'get', async = true) {
@@ -188,6 +196,7 @@ function ajaxCall(baseurl, url, submitData, func, customMessage = "") {
 
 function showDataTable(baseurl,submitData){
     pushUrl(baseurl, submitData);
+    
     $('#table_minion').DataTable(getDataTableParameters(baseurl,"minion_length","table_minion_length"));
     $('#table_mount').DataTable(getDataTableParameters(baseurl,"mount_length","table_mount_length"));
     $('#ranking').DataTable(getDataTableParameters(baseurl,"r_length","ranking_length"));
@@ -196,32 +205,30 @@ function showDataTable(baseurl,submitData){
 }
 
 function getDataTableParameters(baseurl, lengthParam,lengthSelectName,dataTableInitialize = null){
-    var length = getUrlParameter(lengthParam);
-    var page = getUrlParameter("page");
-    var displayStart = length === undefined || page === undefined ? 0 : page*length;
-    length = length === undefined ? 10 : length;
+    //var length = getUrlParameter(lengthParam);
+    var length = getCookie(lengthParam);
+    length = IsUndefinedOrEmpty(length) ? 10 : parseInt(length);
+    
+    if(lengthParam == "r_length"){
+        var page = getCookie("page");
+        var displayStart = IsUndefinedOrEmpty(page) ? 0 : parseInt(page)*length;
+        //alert("Display start: " + displayStart);
+    }
     return {
-      "pageLength": parseInt(length),
+      "pageLength": length,
       "displayStart": displayStart,
       "drawCallback": function( settings ) {
-            var length = getUrlParameter(lengthParam);
-            var submit = decodeURIComponent(window.location.search.substring(1));
-            if(length === undefined){
-                var length = $('select[name='+lengthSelectName+']').val();
-                submit += "&"+lengthParam+"="+length;
-            }
-            submit = updateSubmit(submit,lengthParam,$('select[name='+lengthSelectName+']').val());
-            try{
+            var length = $('select[name='+lengthSelectName+']').val();
+            setCookie(lengthParam,length);
+            
+            if(lengthParam == "r_length"){
                 var page = $('#ranking').DataTable().page.info().page;
-                if(page !== undefined){
-                    submit = updateSubmit(submit,"page",page);
-                }
+                //alert("Current page: " + page);
+                setCookie("page",page,1);
             }
-            catch(err){}
-            pushUrl(baseurl, submit);
             checkRankingSelection();
         },
-        "rowsGroup": [0,1,2],
+        "rowsGroup": lengthParam == "r_length" ? null : [0,1,2],
         dataTableInitialize
     };
 }
@@ -341,8 +348,6 @@ function browserView() {
     }
 }
 
-
-
 function getMinionsMounts() {
     var minions = [];
     var mounts = [];
@@ -382,7 +387,7 @@ function async_database_update(last_id, type, text_title) {
 }
 
 function set_char(shoulSet) {
-    var lang = getUrlParameter("lang");
+    var lang = getLang();
     var my_char, not_my_char;
     switch (lang) {
         case "de":
@@ -401,7 +406,7 @@ function set_char(shoulSet) {
 
 }
 
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cname, cvalue, exdays = 14) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
@@ -456,4 +461,11 @@ function checkRankingSelection(){
         colorRows("minion",value);
         return;
     }
+}
+
+function IsUndefinedOrEmpty(value){
+    if(value === undefined || value == null || value == ""){
+        return true;
+    }
+    return false;
 }

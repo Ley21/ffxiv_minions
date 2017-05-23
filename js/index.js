@@ -6,7 +6,7 @@ var xivdb_tooltips = {
     xivdb: xivdb_tooltip_base_url,
 
     // the language the tooltips should be
-    language: getUrlParameter("lang"),
+    language: getLang(),
 
     seturlname: false,
 
@@ -21,7 +21,7 @@ $(document).on("submit", "form", function(e) {
     e.preventDefault();
     var formSubmit = $('#char_search').serialize();
 
-    searchCharakter(getLangData() + "&" + formSubmit);
+    searchCharakter(formSubmit);
 
     // document.getElementById("content").innerHTML = $.get( "charakter.php?"+formSubmit );
 
@@ -29,18 +29,18 @@ $(document).on("submit", "form", function(e) {
 });
 
 $(document).on("click", '.ranking_dropdown', function() {
-    loadRanking(getLangData() + "&type=" + this.id);
+    loadRanking("type=" + this.id);
 });
 $(document).on("click", '.freeCompany', function() {
-    loadFreeCompany(getLangData() + "&fc=" + this.id);
+    loadFreeCompany("fc=" + this.id);
 });
 
 $(document).on("click", '.minions_methode', function() {
-    loadMinions(getLangData() + "&methode=" + this.id);
+    loadMinions("methode=" + this.id);
 });
 
 $(document).on("click", '.mounts_methode', function() {
-    loadMounts(getLangData() + "&methode=" + this.id);
+    loadMounts("methode=" + this.id);
 });
 $(document).on("click", '#char_button', function() {
     browserAs();
@@ -51,7 +51,7 @@ $(document).on("click", '#user', function() {
     loadCharakter(p_id);
 });
 $(document).on("click", '#faq', function() {
-    loadFaq(getLangData());
+    loadFaq();
 });
 
 $(document).ready(function() {
@@ -77,9 +77,6 @@ $(document).ready(function() {
     } else if (last == "faq") {
         loadFaq(data);
     } else {
-        pushUrl("", getLangData());
-        //$('.table').DataTable();
-        data = updateSubmit(data,"lang",getUrlParameter("lang"));
         data = showDataTable("",data);
     }
 
@@ -91,12 +88,7 @@ $(document).on('draw.dt', '.table', function() {
 });
 
 $(document).on("change", '#lang', function() {
-
-    // window.location.search = jQuery.query.set("lang", this.value);
-
-    var url = window.location.href;
-    var newUrl = url.replace(getLangData(), "lang=" + this.value)
-    window.history.pushState("object or string", "", newUrl);
+    setLang(String(this.value));
     location.reload();
 });
 
@@ -122,7 +114,7 @@ $(document).on('show.bs.modal', '#updateDB', function() {
 $(document).on('show.bs.modal', '#request', function() {
     var modal = $(this);
     var body = modal.find('.modal-body');
-    basicAjaxCall("request_change.php", getLangData(), function(data) {}, "", body);
+    basicAjaxCall("request_change.php", "", function(data) {}, "", body);
 });
 
 $(document).on('click', '#update_button', function() {
@@ -193,7 +185,7 @@ function update_request_modal(send) {
     var method_description_fr = $('#method_description_fr').val();
     var method_description_de = $('#method_description_de').val();
     var method_description_ja = $('#method_description_ja').val();
-    var submit = getLangData() + "&send=" + send + "&type=" + type + "&id=" + id + "&method=" + method +
+    var submit = "send=" + send + "&type=" + type + "&id=" + id + "&method=" + method +
         "&method_description_en=" + method_description_en + "&method_description_fr=" + method_description_fr +
         "&method_description_de=" + method_description_de + "&method_description_ja=" + method_description_ja+
         "&question="+question;

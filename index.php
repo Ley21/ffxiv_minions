@@ -1,11 +1,13 @@
 
 <?php
+require_once "g_helper.php";
+$lang = get_lang();
 require_once "config.php";
 require_once "helper.php";
 require_once "language.php";
 
-$lang = get_lang();
-$actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}?lang=" . get_lang();
+
+$actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}";
 
 //Init index page with informations
 $smarty = new Smarty();
