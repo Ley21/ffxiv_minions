@@ -31,7 +31,8 @@ $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
 $smarty->assign("startpage",true);
 if(file_exists("js/piwik.js")){
-    $smarty->assign("piwikScript",'<script src="js/piwik.js"></script>');
+    $piwik_content = file_get_contents("js/piwik.js");
+    $smarty->assign("piwikScript",$piwik_content);
 }
 
 //Get latest patch number from database
