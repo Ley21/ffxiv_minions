@@ -7,7 +7,7 @@ require_once "helper.php";
 require_once "language.php";
 
 
-$actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$base_url}";
+$actual_link = 'http' . ($ssl ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}";
 
 //Init index page with informations
 $smarty = new Smarty();
@@ -27,6 +27,10 @@ $smarty->assign('mounts',get_language_text("mounts"));
 $smarty->assign('rarity',get_language_text("rarity"));
 $smarty->assign('search',get_language_text("search"));
 $smarty->assign('char_search_placeholder',get_language_text("char_search_placeholder"));
+$smarty->assign("en_select","");
+$smarty->assign("fr_select","");
+$smarty->assign("de_select","");
+$smarty->assign("ja_select","");
 $smarty->assign($lang."_select","selected='selected'");
 $smarty->assign("my_char",get_language_text("my_char"));
 $smarty->assign("startpage",true);
