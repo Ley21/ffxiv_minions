@@ -100,6 +100,49 @@ function searchCharakter(formData) {
     });
 }
 
+function update_fc(fc_id){
+    $.ajax({
+        url: "handler/get_characters.php",
+        data: "fc=" + fc_id,
+        type: 'get',
+        success: function(data) {
+            var players = JSON.parse(data);
+            $("tr").each(function(row){
+               if($(this).hasClass("active")){
+                   if($(this).children('td')[0].innerHTML == "999"){
+                       var id = $(this).attr('id');
+                       players.push(id);
+                   }
+               }
+            });
+            var length = players.length;
+            var current = 0;
+            for (var id in players) {
+              current++;
+                loadingMessage(get_language_text("update_message") 
+                    + "</br>"+ current + " / " + length);
+                var p_id = players[id];
+                $.ajax({
+                    url: "handler/charakter.php",
+                    data: "id=" + p_id + "&show=false",
+                    type: 'get',
+                    async: false
+                });
+            }
+            reloadRanking();
+        }
+    });
+}
+
+function reloadRanking(){
+    var submit = decodeURIComponent(window.location.search.substring(1));
+    if (submit.indexOf("fc=") > -1) {
+        loadFreeCompany(submit);
+    } else {
+        loadRanking(submit);
+    }
+}
+
 function updateCharakter(id) {
     loadingMessage(get_language_text("update_message"));
     $.ajax({
@@ -107,12 +150,7 @@ function updateCharakter(id) {
         data: "id=" + id + "&show=false",
         type: 'get',
         success: function(data) {
-            var submit = decodeURIComponent(window.location.search.substring(1));
-            if (submit.indexOf("fc=") > -1) {
-                loadFreeCompany(submit);
-            } else {
-                loadRanking(submit);
-            }
+            reloadRanking();
         }
     });
 
@@ -435,8 +473,9 @@ function async_call(fn, callback) {
     }, 0);
 }
 
-function colorRows(type,value){
+function colorRows(type,value,not = false){
     $("tr").removeClass("success");
+    $("tr").removeClass("danger");
     $.ajax({
         url: "handler/find_players.php",
         data: type + "=" + value,
@@ -446,6 +485,14 @@ function colorRows(type,value){
             obj.forEach(function(id) {
                 $("#" + id).addClass("success");
             });
+            if(not){
+                $("tr").each(function(id){
+                    if($(this).hasClass("active") && !$(this).hasClass("success")){
+                        $(this).addClass("danger");
+                    }
+                });
+                $("tr").removeClass("success");
+            }
         }
     });
 }

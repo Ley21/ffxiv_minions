@@ -94,16 +94,34 @@ $(document).on("change", '#lang', function() {
 
 $(document).on("change", '#find_minion', function() {
     $('#find_mount').find('option:eq(0)').prop('selected', true);
+    $('#not_minion').find('option:eq(0)').prop('selected', true);
+    $('#not_mount').find('option:eq(0)').prop('selected', true);
     colorRows("minion",this.value);
 });
-
-
 
 $(document).on("change", '#find_mount', function() {
     //$("tr").removeClass("success");
     $('#find_minion').find('option:eq(0)').prop('selected', true);
+    $('#not_minion').find('option:eq(0)').prop('selected', true);
+    $('#not_mount').find('option:eq(0)').prop('selected', true);
     colorRows("mount",this.value);
 });
+
+$(document).on("change", '#not_minion', function() {
+    $('#find_mount').find('option:eq(0)').prop('selected', true);
+    $('#find_minion').find('option:eq(0)').prop('selected', true);
+    $('#not_mount').find('option:eq(0)').prop('selected', true);
+    colorRows("minion",this.value,true);
+});
+
+$(document).on("change", '#not_mount', function() {
+    //$("tr").removeClass("success");
+    $('#find_minion').find('option:eq(0)').prop('selected', true);
+    $('#find_mount').find('option:eq(0)').prop('selected', true);
+    $('#not_minion').find('option:eq(0)').prop('selected', true);
+    colorRows("mount",this.value,true);
+});
+
 $(document).on('show.bs.modal', '#updateDB', function() {
     var modal = $(this);
     var body = modal.find('.modal-body');
@@ -170,6 +188,11 @@ $(document).on("change", '#new_method', function() {
 $(document).on('click', '#send_button', function() {
     update_request_modal(true);
     $(this).addClass("disabled");
+});
+
+$(document).on("click", '#update_all_fc', function() {
+    var fc_id = getUrlParameter("fc");
+    update_fc(fc_id);
 });
 
 function update_request_modal(send) {

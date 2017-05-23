@@ -41,6 +41,9 @@
     $language_texts['freeCompany'] = array("en"=>"Free Company","fr"=>"Compagnie Libre","de"=>"Freie Gesellschaft","ja"=>"");
     $language_texts['has_minion'] = array("en"=>"Which Charakter has this minion...","fr"=>"Quel personnage possède cette mascotte...","de"=>"Welcher Charakter hat diesen Begleiter...","ja"=>"");
     $language_texts['has_mount'] = array("en"=>"Which Charakter has this mount...","fr"=>"Quel personnage possède cette montures...","de"=>"Welcher Charakter hat dieses Reittier...","ja"=>"");
+    $language_texts['not_minion'] = array("en"=>"Which Charakter has NOT this minion...","fr"=>"","de"=>"Welcher Charakter hat NICHT diesen Begleiter...","ja"=>"");
+    $language_texts['not_mount'] = array("en"=>"Which Charakter has NOT this mount...","fr"=>"","de"=>"Welcher Charakter hat NICHT dieses Reittier...","ja"=>"");
+    $language_texts['update_all'] = array("en"=>"Update all","fr"=>"","de"=>"Alle Aktuallisieren","ja"=>"");
     $language_texts['gl_rank'] = array("en"=>"Global Rank","fr"=>"Rang global","de"=>"Globaler Rang","ja"=>"");
     $language_texts['w_rank'] = array("en"=>"World Rank","fr"=>"Rang du monde","de"=>"Welt Rang","ja"=>"");
     $language_texts['my_char'] = array("en"=>"Charakter","fr"=>"Personnage","de"=>"Charakter","ja"=>"");

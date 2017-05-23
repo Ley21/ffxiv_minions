@@ -229,6 +229,9 @@
             
             $smarty->assign('search_minion',get_language_text("has_minion"));
             $smarty->assign('search_mount',get_language_text("has_mount"));
+            $smarty->assign('not_minion',get_language_text("not_minion"));
+            $smarty->assign('not_mount',get_language_text("not_mount"));
+            $smarty->assign('update_all',get_language_text("update_all"));
             
             $minions = array_map(function($obj){
                 return array("id"=>$obj['id'],"name"=>$obj["name_".get_lang()]);

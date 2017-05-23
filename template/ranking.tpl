@@ -1,21 +1,51 @@
 {if $search}
-<b>{$search_minion}</b>
-<form class='form-inline'>
-<select class='form-control' id='find_minion'>
-<option value=''>---------</option>
-{foreach $minions as $minion}
-<option value='{$minion.id}'>{$minion.name}</option>
-{/foreach}
-</select></form></br>
-
-<b>{$search_mount}</b>
-<form class='form-inline'>
-<select class='form-control' id='find_mount'>
-<option value=''>---------</option>
-{foreach $mounts as $mount}
-<option value='{$mount.id}'>{$mount.name}</option>
-{/foreach}
-</select></form></br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <b>{$search_minion}</b>
+        <select class='form-control' id='find_minion'>
+        <option value=''>---------</option>
+        {foreach $minions as $minion}
+        <option value='{$minion.id}'>{$minion.name}</option>
+        {/foreach}
+        </select>
+    </div>
+    <div class="col-md-6">
+      <b>{$search_mount}</b>
+        <select class='form-control' id='find_mount'>
+        <option value=''>---------</option>
+        {foreach $mounts as $mount}
+        <option value='{$mount.id}'>{$mount.name}</option>
+        {/foreach}
+        </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <b>{$not_minion}</b>
+        <select class='form-control' id='not_minion'>
+        <option value=''>---------</option>
+        {foreach $minions as $minion}
+        <option value='{$minion.id}'>{$minion.name}</option>
+        {/foreach}
+        </select>
+    </div>
+    <div class="col-md-6">
+      <b>{$not_mount}</b>
+        <select class='form-control' id='not_mount'>
+        <option value=''>---------</option>
+        {foreach $mounts as $mount}
+        <option value='{$mount.id}'>{$mount.name}</option>
+        {/foreach}
+        </select>
+    </div>
+  </div>
+  <div class="row">
+      </br>
+      <button id="update_all_fc" type="button" class="btn btn-info">{$update_all}</button>
+  </div>
+</div>
+</br>
 {/if}
 
 <table class='table table-condensed' id="ranking">
