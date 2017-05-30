@@ -2,7 +2,6 @@
 
     // If you installed via composer, just use this code to requrie autoloader on the top of your projects.
     require 'vendor/autoload.php';
-    require 'vendor/viion/xivpads-lodestoneapi/api-autoloader.php';
     
     $ssl = true;
     $external_key = "KEY_FOR_ALL_CALLER_OPERATIONS";
