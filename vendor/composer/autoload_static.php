@@ -11,21 +11,27 @@ class ComposerStaticInita47a09cfc3ea482b73188d43b38f148f
     );
 
     public static $prefixLengthsPsr4 = array (
-        'V' => 
+        'S' => 
         array (
-            'Viion\\Lodestone\\' => 16,
+            'Symfony\\Component\\CssSelector\\' => 30,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Viion\\Lodestone\\' => 
+        'Symfony\\Component\\CssSelector\\' => 
         array (
-            0 => __DIR__ . '/..' . '/viion/xivpads-lodestoneapi/src',
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
         ),
     );
 
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/viion/xivpads-lodestoneapi/src',
+    public static $prefixesPsr0 = array (
+        'L' => 
+        array (
+            'Lodestone\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/viion/lodestone-php/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -211,7 +217,7 @@ class ComposerStaticInita47a09cfc3ea482b73188d43b38f148f
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita47a09cfc3ea482b73188d43b38f148f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita47a09cfc3ea482b73188d43b38f148f::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInita47a09cfc3ea482b73188d43b38f148f::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita47a09cfc3ea482b73188d43b38f148f::$prefixesPsr0;
             $loader->classMap = ComposerStaticInita47a09cfc3ea482b73188d43b38f148f::$classMap;
 
         }, null, ClassLoader::class);

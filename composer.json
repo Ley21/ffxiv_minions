@@ -1,10 +1,10 @@
 {
     "require": {
         "catfan/Medoo": "^1.0",
-        "viion/xivpads-lodestoneapi": "^1.0",
         "twbs/bootstrap": "^3.3",
         "phpmailer/phpmailer": "~5.2",
-        "smarty/smarty": "^3.1"
+        "smarty/smarty": "^3.1",
+        "viion/lodestone-php": "^1.3"
     }
     
 }

@@ -6,6 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Viion\\Lodestone\\' => array($vendorDir . '/viion/xivpads-lodestoneapi/src'),
-    '' => array($vendorDir . '/viion/xivpads-lodestoneapi/src'),
+    'Symfony\\Component\\CssSelector\\' => array($vendorDir . '/symfony/css-selector'),
 );

@@ -94,7 +94,7 @@
             'fc'=>array(
                 'id'=>$player_entry["freeCompanyId"],
                 'name'=>$player_entry["freeCompany"]),
-            'gender'=>ucwords($player_entry["gender"]),
+            'gender'=>get_language_text($player_entry["gender"]),
             'rank'=>$rank,
             'sync'=>$player_entry['last_update_date']);
         

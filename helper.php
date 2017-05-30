@@ -310,11 +310,11 @@
     function get_missing_player_ranking_rows($fc){
         global $database;
         
-        //$api = new Viion\Lodestone\LodestoneAPI();
-        //$freeCompany = $api->Search->Freecompany($fc,true);
-        $freeCompany = Lodestone::findFreeCompany($fc);
+        $api = new \Lodestone\Api;
+        $free_company_members = (Object)$api->getFreeCompanyMembers($fc);
+        
         $rows = array();
-        foreach($freeCompany->members as $member){
+        foreach($free_company_members->members as $member){
             $in_table = $database->has("players", ["AND"=>["freeCompanyId"=>$fc,"id"=>$member["id"]]]);
             if(!$in_table){
                 $rows[] = array("nr"=>"999","id"=>$member["id"],
@@ -437,20 +437,37 @@
     
     function insert_update_charakter_by_id($id){
         //Get charakter from lodestone
-        //$api = new Viion\Lodestone\LodestoneAPI();
-        //$character = $api->Search->Character($id);
-        $character = Lodestone::findCharacterById($id);
+        $api = new \Lodestone\Api;
+        $character = (Object)$api->getCharacter($id);
+        //$character = Lodestone::findCharacterById($id);
         return insert_update_charakter($character);
         
     }
     
     function insert_update_charakter_by_name($name,$server){
         //Get charakter from lodestone
-        //$api = new Viion\Lodestone\LodestoneAPI();
-        //$character = $api->Search->Character($name, $server);
+        $api = new \Lodestone\Api;
+
+        $server = ucwords($server);
+        $name = ucwords($name);
+        // search for characters
+        $characters = $api->searchCharacter($name, $server);
         
-        $character = Lodestone::findCharacterByNameAndServer($name,$server);
-        return insert_update_charakter($character);
+        // loop through characters
+        foreach($characters['results'] as $char) {
+            $char = (Object)$char;
+            if($char->server == $server && 
+                $char->name == $name){
+                return insert_update_charakter_by_id($char->id);
+            }
+        }
+        
+    }
+    
+    function get_freeCompany($fc_id){
+        $api = new \Lodestone\Api;
+        $fc = (Object) $api->getFreeCompany($fc_id);
+        return $fc;
     }
     
     function insert_update_charakter($character){
@@ -463,51 +480,41 @@
             exit;
         }
         $c_name = strtolower($character->name);
-        $c_world = strtolower($character->world);
+        $c_world = strtolower($character->server);
         $c_portrait = $database->quote($character->portrait);
         
-        
+        $fc = get_freeCompany($character->free_company);
+        $gc = (Object) $character->grand_company;
+        $guardian = (Object)$character->guardian;
         
         //Check if an charakter with the same id already exists
         $p_id = $database->get("players", "id", ["id" => $character->id]);
         $output;
-        if(!$player && empty($p_id)){
-            //Insert new charakter
-            $database->insert("players", [
-            	"id" => $character->id,
+        
+        $data = [
             	"name" => $c_name,
             	"world" => $c_world,
             	"title" => $character->title,
             	"portrait" => $c_portrait,
             	"race" => $character->race,
             	"clan" => $character->clan,
-            	"gender" => $character->gender,
+            	"gender" => strtolower($character->gender),
             	"nameday" => $character->nameday,
-            	"guardian" => $character->guardian,
-            	"grandCompany" => $character->grandCompany,
-            	"freeCompany" => $character->freeCompany,
-            	"freeCompanyId" => $character->freeCompanyId,
+            	"guardian" => $guardian->name,
+            	"grandCompany" => $gc->name,
+            	"freeCompany" => $fc->name,
+            	"freeCompanyId" => $character->free_company,
             	"last_update_date" => date("Y-m-d")
-            ]);
+            ];
+        if(!$player && empty($p_id)){
+            $data["id"]= $character->id;
+            //Insert new charakter
+            $database->insert("players", $data);
             $output = "New charakter '$c_name' with id '$character->id' from server '$c_world' was added to database.";
         }
         else{
             //Update existing charakter
-            $database->update("players", [
-            	"name" => $c_name,
-            	"world" => $c_world,
-            	"title" => $character->title,
-            	"portrait" => $c_portrait,
-            	"race" => $character->race,
-            	"clan" => $character->clan,
-            	"gender" => $character->gender,
-            	"nameday" => $character->nameday,
-            	"guardian" => $character->guardian,
-            	"grandCompany" => $character->grandCompany,
-            	"freeCompany" => $character->freeCompany,
-            	"freeCompanyId" => $character->freeCompanyId,
-            	"last_update_date" => date("Y-m-d")
-            ], ["id[=]"=>$character->id]);
+            $database->update("players", $data, ["id[=]"=>$character->id]);
             $output = "Charakter '$c_name' with id '$character->id' from server '$c_world' was updated.";
         }
         

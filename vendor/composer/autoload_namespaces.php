@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Lodestone\\' => array($vendorDir . '/viion/lodestone-php/src'),
 );

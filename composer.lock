@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a4d05e30b683bd1be1ed3da8299a15a",
-    "content-hash": "11da591e2636b477b40a1a70c6a40e2e",
+    "hash": "26c8aebcba9c5434576b5b9475d963b7",
+    "content-hash": "15e627635d03a77073fae16eadb89af2",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -178,6 +178,59 @@
             "time": "2016-08-07 18:46:49"
         },
         {
+            "name": "symfony/css-selector",
+            "version": "v3.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "02983c144038e697c959e6b06ef6666de759ccbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/02983c144038e697c959e6b06ef6666de759ccbc",
+                "reference": "02983c144038e697c959e6b06ef6666de759ccbc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-05-01 14:55:58"
+        },
+        {
             "name": "twbs/bootstrap",
             "version": "v3.3.7",
             "source": {
@@ -229,28 +282,27 @@
             "time": "2016-07-25 15:51:55"
         },
         {
-            "name": "viion/xivpads-lodestoneapi",
-            "version": "1.0.0",
+            "name": "viion/lodestone-php",
+            "version": "1.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/viion/XIVPads-LodestoneAPI.git",
-                "reference": "9162db98e894d455a4564ac245da08fbac0843a6"
+                "url": "https://github.com/viion/lodestone-php.git",
+                "reference": "a966e073b2abd82ffb6af69c5468d429f9debb32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/viion/XIVPads-LodestoneAPI/zipball/9162db98e894d455a4564ac245da08fbac0843a6",
-                "reference": "9162db98e894d455a4564ac245da08fbac0843a6",
+                "url": "https://api.github.com/repos/viion/lodestone-php/zipball/a966e073b2abd82ffb6af69c5468d429f9debb32",
+                "reference": "a966e073b2abd82ffb6af69c5468d429f9debb32",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "php": ">=5.4.0"
+                "php": "^7.0",
+                "symfony/css-selector": "^3.2"
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Viion\\Lodestone\\": "src/",
-                    "": "src/"
+                "psr-0": {
+                    "Lodestone\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -261,19 +313,19 @@
                 {
                     "name": "Josh Freeman",
                     "email": "josh@viion.co.uk",
-                    "homepage": "http://xivpads.com/"
+                    "homepage": "http://xivdb.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "An API for parsing lodestone data, designed and maintained by XIVPads.com and XIVDB.com",
-            "homepage": "http://github.com/viion/XIVPads-LodestoneAPI",
+            "description": "Small lodestone parser built in PHP. Relys on the XIVDB API for some data conversion.",
+            "homepage": "https://github.com/viion/lodestone-php",
             "keywords": [
-                "Final Fantasy XIV",
-                "The Lodestone",
-                "XIVDB",
-                "XIVPads",
-                "api"
+                "ffxiv",
+                "lodestone",
+                "parser",
+                "php"
             ],
-            "time": "2015-06-19 19:07:54"
+            "time": "2017-05-05 14:48:49"
         }
     ],
     "packages-dev": [],
