@@ -5,7 +5,7 @@
     $fc = $_GET["fc"];
     if(!empty($fc)){
         $players = $database->select('players',
-            "id","WHERE last_update_date < DATE_SUB( NOW( ) , INTERVAL 14 DAY) AND freeCompanyId = $fc");
+            "id","WHERE last_update_date < DATE_SUB( NOW( ) , INTERVAL 1 DAY) AND freeCompanyId = $fc");
         $json_informations = json_encode($players);
         echo $json_informations;
         exit;

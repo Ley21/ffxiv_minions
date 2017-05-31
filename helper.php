@@ -147,8 +147,10 @@
         $smarty->assign('tableHeaderPercent', get_language_text("percent"));
         $smarty->assign('tableHeaderCount', get_language_text("count"));
         
-        $type = split("_", $type)[1];
+        $type = explode("_", $type)[1];
+        
         $count_players = $database->count("players");
+        
         $base_url = get_lang() == "en" ? "https://xivdb.com" : "https://".get_lang().".xivdb.com";
             
         
