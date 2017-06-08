@@ -1,0 +1,1298 @@
+[
+    {
+        "id": "1",
+        "name": "Company Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Can be obtain by the quest <a href='http:\/\/.xivdb.com\/quest\/66238'>My Little Chocobo (Immortal Flames)<\/a> \/ <a href='http:\/\/xivdb.com\/quest\/66237'>My Little Chocobo (Maelstrom)<\/a> \/ <a href='http:\/\/xivdb.com\/quest\/66236'>My Little Chocobo (Twin Adder)<\/a> from the grand company.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Quest <a href='http:\/\/de.xivdb.com\/quest\/66238'>Mein Eigener Chocobo (Legion der Unsterblichen)<\/a> \/ <a href='http:\/\/de.xivdb.com\/quest\/66237'>Mein Eigener Chocobo (Mahlstrom)<\/a> \/ <a href='http:\/\/de.xivdb.com\/quest\/66236'>Mein Eigener Chocobo (Bruderschaft Der Morgenviper)<\/a> bei der Staatlichen Gesellschaft.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Goobbue",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "0",
+                "method_description_en": "Could be obtained by a quest from 'Wandering Minstral' in version 1.0 on level 30.",
+                "method_description_fr": null,
+                "method_description_de": "Ehemals erh\u00e4ltlich durch eine Quest vom 'Fahrenden S\u00e4nger' in Version 1.0 auf Level 30.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Legacy Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "0",
+                "method_description_en": "Exclusive for players, who did the 'Legacy Campaign' in Version 1.0.",
+                "method_description_fr": null,
+                "method_description_de": "Exklusiv f\u00fcr Spieler die bei der 'Legacy Kampagne' in Version 1.0 mitgemacht haben.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Magitek Armor",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtain by completing the main szenario quest <a href='http:\/\/xivdb.com\/quest\/66060'>The Ultimate Weapon<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss die Hauptszenario Quest <a href='http:\/\/de.xivdb.com\/quest\/66060'>Die Ultimative Waffe<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Coeurl",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - A Real Reborn Colletors Edition' or the upgrade of the standard edition in the mogry station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - A Real Reborn Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Ahriman",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Veteran Rewards",
+                "available": "1",
+                "method_description_en": "Veteran Reward for subscribing for 90 cumulative days (3 months).",
+                "method_description_fr": null,
+                "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 90 aktive Abo-Tage (3 Monate).",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Unicorn",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the quest <a href='http:\/\/xivdb.com\/quest\/65730'>Unicorn Power<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Quest <a href='http:\/\/de.xivdb.com\/quest\/65730'>Ein Einzigartiges Pferd<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Behemoth",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Veteran Rewards",
+                "available": "1",
+                "method_description_en": "Veteran Reward for subscribing for 270 cumulative days (9 months).",
+                "method_description_fr": null,
+                "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 270 aktive Abo-Tage (9 Monate).",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "name": "Cavalry Drake",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Amalj'aa. Erh\u00e4ltlich f\u00fcr 120.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "name": "Laurel Goobbue",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Sylph Bast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 120.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Gilded Magitek Armor",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/862'>Everybody's Darling<\/a>, for recieved 500 player commendations.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/862'>Hans Dampf In Allen Gassen<\/a>, f\u00fcr das erhalten von 500 Ehrungen zum wertvollsten Spieler.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Nightmare",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Can be found as a random drop in the treasure coffer of the trails <a href='http:\/\/xivdb.com\/instance\/20008'>The Bowl Of Embers (Extreme)<\/a>, <a href='http:\/\/xivdb.com\/instance\/20009'>The Navel (Extreme)<\/a> oder <a href='http:\/\/xivdb.com\/instance\/20010'>The Howling Eye (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Schatzkiste in den Pr\u00fcfungen <a href='http:\/\/de.xivdb.com\/instance\/20008'>Zenit Der G\u00f6tter - Ifrit<\/a>, <a href='http:\/\/de.xivdb.com\/instance\/20009'>Zenit Der G\u00f6tter - Titan<\/a> oder <a href='http:\/\/de.xivdb.com\/instance\/20010'>Zenit Der G\u00f6tter - Garuda<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Fat Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - A Real Reborn Colletors Edition' or the upgrade of the standard edition in the mogry station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - A Real Reborn Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "name": "Cavalry Elbst",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Sahagin Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Sahagin. Erh\u00e4ltlich f\u00fcr 120.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "name": "Bomb Palanquin",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Kobold Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Kobolde. Erh\u00e4ltlich f\u00fcr 120.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "name": "Aithon",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20008'>The Bowl Of Embers (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20008'>Zenit der G\u00f6tter - Ifrit<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "name": "Xanthos",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20010'>The Howling Eye (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20010'>Zenit der G\u00f6tter - Garuda<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "name": "Gullfaxi",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20009'>The Navel (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20009'>Zenit der G\u00f6tter - Titan<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "name": "Enbarr",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20018'>The Whorleater (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20018'>Zenit der G\u00f6tter - Leviathan<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "32",
+        "name": "Warlion",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/921'>But Somebody's Gotta Do It (Paladin)<\/a>. Completing 200 high-level full party duties as a paladin.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/921'>Aber Einer Muss Ihn Machen (Paladin)<\/a>. Abschlie\u00dfen von 200 hochstufigen vollen Trupp (acht Spieler) Inhalten als Paladin.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "33",
+        "name": "Warbear",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/924'>But Somebody's Gotta Do It (Warrior)<\/a>. Completing 200 high-level full party duties as a warrior.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/924'>Aber Einer Muss Ihn Machen (Krieger)<\/a>. Abschlie\u00dfen von 200 hochstufigen vollen Trupp (acht Spieler) Inhalten als Krieger.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "34",
+        "name": "Draught Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained by <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/friend_recruit\/'>Recruiting a friend campaine<\/a> for the recuiters, when the friend subscribes 90 days.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/friend_recruit\/'>Lade einen Freund Kampagne<\/a> f\u00fcr den Werber, wenn der geworbene Spieler 90 Tage Spielzeit abonniert hat.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "35",
+        "name": "Direwolf",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Ixal Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Sworn' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Ixal. Erh\u00e4ltlich f\u00fcr 120.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixal H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "36",
+        "name": "Storm Warsteed",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/939'>A Line In The Storm IV<\/a>. Winning 100 frontline matches for the Maelstrom.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/939'>Triumph Des Meeres IV<\/a>. An der Front 100 Siege f\u00fcr den Mahlstrom erringen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "name": "Serpent Warsteed",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/945'>A Line In The Glade IV<\/a>. Winning 100 frontline matches for the Order of the Twin Adder.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/945'>Triumph Des Waldes IV<\/a>. An der Front 100 Siege f\u00fcr die Bruderschaft der Morgenviper erringen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "name": "Flame Warsteed",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/951'>A Line In The Sand IV<\/a>. Winning 100 frontline matches for the Immortal Flames.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/951'>Triumph Der W\u00fcste IV<\/a>. An der Front 100 Siege f\u00fcr die Legion der Unsterblichen erringen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "40",
+        "name": "Markab",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20023'>The Striking Tree (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20023'>Zenit Der G\u00f6tter - Ramuh<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "41",
+        "name": "Ceremony Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Obtained by doing a Ceremony of <a href='http:\/\/www.finalfantasyxiv.com\/eternalbond\/de\/detail\/special_item_4.html?lng=de&rgn=de'>Eternal Bonding<\/a> in the Gold- or Platinum-Plan",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Zeremonie des <a href='http:\/\/www.finalfantasyxiv.com\/eternalbond\/de\/detail\/special_item_4.html?lng=de&rgn=de'>Ewigen Bund<\/a> mit dem Gold- oder Platin-Plan.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "42",
+        "name": "Sleipnir",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for all charakters.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr alle Charaktere.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "43",
+        "name": "Boreas",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20025'>Akh Afah Amphitheatre (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20025'>Zenit Der G\u00f6tter - Shiva<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "44",
+        "name": "Parade Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1036'>Leaving A Better Impression II<\/a>. Receive 3,000 player commendations.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1036'>Einen Besseren Eindruck Hinterlassen II<\/a>. 3.000 Ehrungen zum wertvollsten Spieler erhalten.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "45",
+        "name": "Black Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the main szenario quest <a href='http:\/\/xivdb.com\/quest\/67133'>Divine Intervention<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Hauptszenario Quest <a href='http:\/\/de.xivdb.com\/quest\/67133'>Das Gottesurteil<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "46",
+        "name": "Adamantoise",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "MGP Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable for 200,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 200.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "47",
+        "name": "Kirin",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the main szenario quest <a href='http:\/\/xivdb.com\/quest\/65968'>A Legend For A Legend<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Hauptszenario Quest <a href='http:\/\/de.xivdb.com\/quest\/65968'>Eine Legende F\u00fcr Eine Legende<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "48",
+        "name": "Logistics System",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1132'>Behind Enemy Lines I<\/a>. Guide any of the three Grand Companies to a total of 200 Frontline victories.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1132'>Sieg Auf Ganzer Linie<\/a>. Einen der drei Stadtstaaten zu 200 Siegen an der Front gef\u00fchrt.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "49",
+        "name": "Fenrir",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "MGP Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable for 1,000,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 1.000.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "50",
+        "name": "Midgardsormr",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the main szenario quest <a href='http:\/\/xivdb.com\/quest\/67204'>Fetters Of Lament<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Hauptszenario Quest <a href='http:\/\/de.xivdb.com\/quest\/67204'>Fesseln Der Reue<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "52",
+        "name": "Amber Draught Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 8 Gold Chocobo Feather from <a href='http:\/\/xivdb.com\/npc\/1006006'>Calamity Salvager in Ul'dah<\/a>, <a href='http:\/\/xivdb.com\/npc\/1006004'>Calamity Salvager in Old-Gridania<\/a> or <a href='http:\/\/xivdb.com\/npc\/1006005'>Calamity Salvager in Limsa Lominsa<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 8 Goldene Chocobo-Federn bei <a href='http:\/\/xivdb.com\/npc\/1006006'>Fundsachen-Verwalter in Ul'dah<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1006004'>Fundsachen-Verwalter in Alt-Gridania<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1006005'>Fundsachen-Verwalter in Limsa Lominsa<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "53",
+        "name": "Sanuwa",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Vanu Beast Tribe. Purchasable for 200,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093'>Luna Vanu<\/a> (upon reaching 'Sworn' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Vanu. Erh\u00e4ltlich f\u00fcr 200.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1016093'>Luna Vanu<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "54",
+        "name": "Griffin",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Can be obtained from buying the 'Final Fantasy XIV - Heavensward Colletors Edition' or the upgrade of the standard edition in the mogry station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Kauf der 'Final Fantasy XIV - Heavensward Colletors Edition' oder durch den Upgrade der Standard Edition in der Mogry Station.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "55",
+        "name": "Manacutter",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the main szenario quest <a href='http:\/\/xivdb.com\/quest\/67170'>Into The Aery<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Hauptszenario Quest <a href='http:\/\/de.xivdb.com\/quest\/67170'>Mit Den Augen Eines Drachen<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "56",
+        "name": "War Panther",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1195'>But Somebody's Gotta Do It (Dark Knight)<\/a>. Completing 200 high-level full party duties as a dark knight.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1195'>Aber Einer Muss Ihn Machen (Dunkelritter)<\/a>. Abschlie\u00dfen von 200 hochstufigen vollen Trupp (acht Spieler) Inhalten als Dunkelritter.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "58",
+        "name": "Gobwalker",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Drop in the treasure coffer in the raid <a href='http:\/\/xivdb.com\/instance\/30028'>Alexander - The Burden Of The Father (Savage)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Garantierte Beute in der Schatztruhe in dem Raid <a href='http:\/\/de.xivdb.com\/instance\/30028'>Alexander - Last Des Vaters (episch)<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "59",
+        "name": "Twintania",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 15 Gold Chocobo Feather from <a href='http:\/\/xivdb.com\/npc\/1006006'>Calamity Salvager in Ul'dah<\/a>, <a href='http:\/\/xivdb.com\/npc\/1006004'>Calamity Salvager in Old-Gridania<\/a> or <a href='http:\/\/xivdb.com\/npc\/1006005'>Calamity Salvager in Limsa Lominsa<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 15 Goldene Chocobo-Federn bei <a href='http:\/\/xivdb.com\/npc\/1006006'>Fundsachen-Verwalter in Ul'dah<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1006004'>Fundsachen-Verwalter in Alt-Gridania<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1006005'>Fundsachen-Verwalter in Limsa Lominsa<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "62",
+        "name": "Witch's Broom",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for one charakter.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr einen Charakter.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Seasonal Rewards",
+                "available": "0",
+                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2015\/All_Saints_Wake\/'>All Saints Wake<\/a>. From Thursday, October 22, 2015 to Wednesday, November 4, 2015.",
+                "method_description_fr": null,
+                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2015\/All_Saints_Wake\/'>Allerschutzheiligen<\/a> Von Donnerstag, den 22.10.2015 bis Mittwoch, den 04.11.2015.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "67",
+        "name": "Pegasus",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 99 'Brass Sky Pirate Spoil' from <a href='http:\/\/xivdb.com\/npc\/1016261'>Spoils Collector<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 99 'Messing-Piratenandenken' bei <a href='http:\/\/de.xivdb.com\/npc\/1016261'>Andenkenh\u00e4ndlerin<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "68",
+        "name": "White Devil",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for one charakter.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr einen Charakter.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "69",
+        "name": "Red Baron",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for one charakter.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr einen Charakter.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "70",
+        "name": "Wyvern",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Monster Hunt",
+                "available": "1",
+                "method_description_en": "Purchasable for 6 'Clan Mark Log' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 6 'Clan-J\u00e4gertagebuch' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "72",
+        "name": "Kongamato",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Vath Beast Tribe. Purchasable for 200,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Vath. Erh\u00e4ltlich f\u00fcr 200.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1016804'>Kr\u00e4mer<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "73",
+        "name": "Zu",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 1 'Iron Voyage Spoil' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>. An Iron Voyage Spoil can be obtained by a airship voyage in sector 24.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 1 'Eisen-Expeditionsandenken' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>. Eine Eisen-Expeditionsandenken kann erhalten werden durch eine Luftschiff-Erkundung im Sektor 24.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "74",
+        "name": "Bennu",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for all charakters.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr alle Charaktere.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "75",
+        "name": "White Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20034'>The Limitless Blue (Extreme)<\/a>. Can also be purchased for 99 'Expanse Totem' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20034'>Zenit Der G\u00f6tter - Bismarck<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Bismarck-Totem' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "76",
+        "name": "Rose Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20034'>Thok Ast Thok (Extreme)<\/a>. Can also be purchased for 99 'Hive Totem' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20034'>Zenit Der G\u00f6tter - Ravana<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Ravana-Totem' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "77",
+        "name": "Round Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20036'>The Minstrel's Ballad: Thordan's Reign<\/a>. Can also be purchased for 99 'Heavens Ward Helm Fragment' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20036'>Heldenlied Von Thordans Fall<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Azurgarden-Helmfragment' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "78",
+        "name": "Warring Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20038'>Containment Bay S1T7 (Extreme)<\/a>. Can also be purchased for 99 'Fiend Totem' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20038'>Zenit Der G\u00f6tter - Sephirot<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Sephirot-Totem' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "80",
+        "name": "Gloria-class Airship",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1444'>You Are What You Eat IV<\/a>. Triumph in 200 matches at the Feast.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1444'>Ein Gefundenes Fressen IV<\/a>. 200 K\u00e4mpfe in 'The Feast' gewonnen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "81",
+        "name": "Flying Cumulus",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "NA: Buying a video game product on Amazon.com for at least 19.99$. See <a href='http:\/\/na.finalfantasyxiv.com\/lodestone\/topics\/detail\/88d7bde755680b54588da68b55120b58004694f1'>link<\/a>. EU: Currently no campaine in UK\/FR.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch das Sammeln von 24 Codes von Dr. Pepper 0,33L Cola bzw. Dr. Pepper Energy 0,5L Aktionsdosen (<a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/topics\/detail\/8473e18df4fb23e680956af7e667fb773fe925fb'>Lodestone<\/a>).",
+                "method_description_ja": "Available for player with an JP Square Enix account by collect points from 7\/11 campain. JP Lodestone <a href='http:\/\/jp.finalfantasyxiv.com\/lodestone\/topics\/detail\/d81373ca6697f0ba57fa61ae270731ff1087c81b'>link<\/a>."
+            }
+        ]
+    },
+    {
+        "id": "82",
+        "name": "Original Fat Chocobo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Can be obtain by country specific campaines in sommer\/fall 2016 from Square Enix Co..",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch L\u00e4nderabh\u00e4ngige Kampagnen im Sommer\/Herbst 2016 von Square Enix Co..",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "83",
+        "name": "Astrope",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1604'>I Hope Mentor Will Notice Me VI<\/a>. Complete 2,000 duties via Duty Roulette: Mentor.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1604'>Sch\u00fctzenhilfe VI<\/a>. 2.000 Inhalte \u00fcber Zufallsinhalt: Mentor abgeschlossen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "84",
+        "name": "Fat Moogle",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for all characters.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr alle Charaktere.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "86",
+        "name": "Cloud Mallow",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Gil Purchase",
+                "available": "1",
+                "method_description_en": "Mogry Beast Tribe. Purchasable for 200,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Sworn' reputation).",
+                "method_description_fr": null,
+                "method_description_de": "Wilder Stamm: Mogrys. Erh\u00e4ltlich f\u00fcr 200.000 Gil beim <a href='http:\/\/de.xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbauch<\/a> (Ab Verbundenheitsgrad 'Solidarisch').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "87",
+        "name": "Whisper-go",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "0",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1573'>You Must Needs Befriend Them All<\/a> during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1573'>Multimedailleur<\/a> w\u00e4hrend des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "90",
+        "name": "Dark Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20040'>The Minstrel's Ballad: Nidhogg's Rage<\/a>. Can also be purchased for 99 'Horde Totem' from <a href='http:\/\/xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20040'>Das Lied Von Nidhoggs Letztem Ruf<\/a>. Auch erh\u00e4ltlich f\u00fcr 99 'Horden-Totem' bei <a href='http:\/\/de.xivdb.com\/npc\/1015578'>Bertana<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "91",
+        "name": "Aerodynamics System",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1563'>In A Blaze Of Glory V<\/a>. Guide any of the three Grand Companies to a total of 100 Fields of Glory victories.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1563'>Ehre Wem Ehre Geb\u00fchrt V<\/a>. Einen der drei Stadtstaaten zu 100 Siegen auf dem Feld der Ehre gef\u00fchrt.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "92",
+        "name": "Disembodied Head",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (Quarrymill) for 10 <a href='http:\/\/xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorran Potsherd<\/a>. (Obtainable from The Palace Of The Dead)",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich bei <a href='http:\/\/xivdb.com\/npc\/1017338\/E-Una-Kotor'>E-Una-Kotor<\/a> (M\u00fchlenbruch) f\u00fcr 10 <a href='http:\/\/de.xivdb.com\/item\/15422\/Gelmorran+Potsherd'>Gelmorra-Scherben<\/a>. (Palast Der Toten)",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "94",
+        "name": "Whisper A-go-go",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "0",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1539'>More Inventory Slots, Please<\/a> during the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. From Tuesday, July 26, 2016 to Monday, October 3, 2016.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1539'>Kuriosit\u00e4ten Einer Fremden Welt<\/a> w\u00e4hrend des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2016\/youkai-watch\/'>Yo-kai Watch<\/a>. Von Dienstag, den 26.07.2016 bis Montag, den 03.10.2016.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "95",
+        "name": "Goten",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1771'>Fatal Feast<\/a>, emerge victorious in 30 Feast matches while using a title received from the disreputable priest.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1771'>Fatales Fest<\/a>, f\u00fcr 30 Siege in \u201eThe Feast\u201c mit einem Garo-Titel.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "96",
+        "name": "Ginga",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1772'>Frontline Fury<\/a>, emerge victorious in 10 Frontline campaigns while using a title received from the disreputable priest.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1772'>Furiose Front<\/a>, f\u00fcr 10 Siege an der PvP-Front mit einem Garo-Titel errungen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "98",
+        "name": "Sophic Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20042'>Containment Bay P1T6 (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20042'>Zenit Der G\u00f6tter - Sophia<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "100",
+        "name": "Black Pegasus",
+        "sellable": "1",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Gold-trimmed Sack' found in Deep Dungeon - The Palace of Dead.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz IV' aus Tiefes Gew\u00f6lbe - Palast der Toten.",
+                "method_description_ja": null
+            },
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be obtained with an 'Gold-trimmed Sack' found in Deep Dungeon",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch einen 'Gefundener Schatz IV' aus Palast der Toten.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "101",
+        "name": "Arrhidaeus",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Drop in the treasure coffer in the raid <a href='http:\/\/xivdb.com\/instance\/30046'>Alexander - The Soul Of The Creator (Savage)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Garantierte Beute in der Schatztruhe in dem Raid <a href='http:\/\/de.xivdb.com\/instance\/30046'>Alexander - Seele des Sch\u00f6pfers (episch)<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "102",
+        "name": "Raigo",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1773'>Furious Fatalities<\/a>, emerge victorious in a combination of 60 Frontline campaigns and Feast matches while using a title received from the disreputable priest.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1773'>Furioser Fatalismus<\/a>, f\u00fcr 60 Siege in \u201eThe Feast\u201c oder an der PvP-Front mit einem Garo-Titel errungen.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "103",
+        "name": "Red Baron",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "104",
+        "name": "Demonic Lanner",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20044'>Containment Bay Z1T9 (Extreme)<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20044'>Zenit Der G\u00f6tter - Zurvan.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "105",
+        "name": "Firebird",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtained by completing the quest <a href='http:\/\/xivdb.com\/quest\/67086'>Fiery Wings, Fiery Hearts<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss der Quest <a href='http:\/\/de.xivdb.com\/quest\/67086'>Der K\u00f6nig Der L\u00fcfte<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "106",
+        "name": "Eggshilaration System",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Seasonal Rewards",
+                "available": "1",
+                "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2017\/Hatching_tide'>Hatching-tide<\/a>. From Thursday, April 4, 2017 to Monday, April 17, 2017.",
+                "method_description_fr": null,
+                "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2017\/Hatching_tide'>Wundereiersuche<\/a> Von Donnerstag, den 04.04.2017 bis Montag, den 17.04.2017.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "108",
+        "name": "Lone Hellhound",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 3 of 'The Feast' in solo ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezieller Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-100 in der Solo Wertung.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "109",
+        "name": "Pack Hellhound",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 3 of 'The Feast' in group ranking.",
+                "method_description_fr": null,
+                "method_description_de": "Spezieller Preis f\u00fcr die Teilnahme an der Season 3 von 'The Feast' und das erreichen des Platzes 1.-100 in der Gruppen Wertung.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "110",
+        "name": "Archon Throne",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "MGP Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable for 750,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 750.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    }
+]
