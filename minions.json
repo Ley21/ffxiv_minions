@@ -3729,14 +3729,14 @@
     {
         "id": "237",
         "name": "Castaway Chocobo Chick",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Gathering",
+                "available": "1",
+                "method_description_en": "Can be fished at <a href='http://en.ff14angler.com/?spot=10511'>Isle of Endless Summer North Shore<\/a> in Eastern La Noscea.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann am <a href='http://de.ff14angler.com/?spot=10511'>Insel des Ewigen Sommers (Nord)<\/a> im Östliches La Noscea geangelt werden.",
                 "method_description_ja": null
             }
         ]
@@ -3797,7 +3797,7 @@
     {
         "id": "241",
         "name": "Odder Otter",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
@@ -3842,7 +3842,7 @@
     {
         "id": "244",
         "name": "Tiny Tatsunoko",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
@@ -3872,7 +3872,7 @@
     {
         "id": "246",
         "name": "Bom Boko",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
@@ -3887,7 +3887,7 @@
     {
         "id": "247",
         "name": "Road Sparrow",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
@@ -3902,7 +3902,7 @@
     {
         "id": "249",
         "name": "Dress-up Yugiri",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
@@ -3947,7 +3947,7 @@
     {
         "id": "255",
         "name": "Wind-up Chimera",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
@@ -4007,7 +4007,7 @@
     {
         "id": "260",
         "name": "Wind-up Khloe",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
                 "method": null,
