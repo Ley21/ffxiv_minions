@@ -1184,22 +1184,6 @@
         ]
     },
     {
-        "id": "103",
-        "name": "Red Baron",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
         "id": "104",
         "name": "Demonic Lanner",
         "sellable": "0",
@@ -1302,11 +1286,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained from purchasing and registering a Collector's Edition (Stormblood) or upgrade to Collector's Edition (Stormblood) via Mog Station.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Registrierung einer Collector's Edition (Stormblood) oder durch das Upgrade zur Collector's Edition via Mogry-Station.",
                 "method_description_ja": null
             }
         ]
@@ -1318,11 +1302,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 4 of 'The Feast' in solo ranking.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Spezieller Preis f\u00fcr die Teilnahme an der Season 4 von 'The Feast' und das erreichen des Platzes 1.-100 in der Solo Wertung.",
                 "method_description_ja": null
             }
         ]
@@ -1334,11 +1318,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 4 of 'The Feast' in group ranking.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Spezieller Preis f\u00fcr die Teilnahme an der Season 4 von 'The Feast' und das erreichen des Platzes 1.-100 in der Gruppen Wertung.",
                 "method_description_ja": null
             }
         ]
@@ -1347,14 +1331,14 @@
         "id": "115",
         "name": "Blissful Kamuy",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http://xivdb.com/instance/20049/'>Emanation (Extreme)<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http://de.xivdb.com/instance/20049/'>Zenit Der Götter - Lakshmi<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1363,14 +1347,14 @@
         "id": "116",
         "name": "Reveling Kamuy",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http://xivdb.com/instance/20047/'>The Pool Of Tribute (Extreme)<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http://de.xivdb.com/instance/20047/'>Zenit Der Götter - Susano<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1379,14 +1363,14 @@
         "id": "121",
         "name": "Magitek Predator",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Veteran Rewards",
+                "available": "1",
+                "method_description_en": "Veteran Reward for subscribing for 90 cumulative days (3 months) after actived a Stormblood license.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 90 aktive Abo-Tage (3 Monate) nach Regestrierung einer Stormblood Lizenz.",
                 "method_description_ja": null
             }
         ]
@@ -1398,11 +1382,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http://xivdb.com/achievement/1955'>Tank You, Paladin III<\/a>. Complete 300 dungeons (lv.61 and above), extreme trials (lv.61 and above), level 50/60 duty roulette dungeons, or duty roulette leveling duties as a paladin. ※Each roulette only counts with daily award bonus.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1955'>Ein Paladin Für Alle Fälle III<\/a>. 300 Dungeons (ab Stufe 61), Prüfungen (ab Stufe 61), Zufallsinhalte: Stufe 50/60 oder Zufallsinhalte: Stufensteigerung als Paladin abgeschlossen.",
                 "method_description_ja": null
             }
         ]
@@ -1414,11 +1398,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http://xivdb.com/achievement/1958'>Tank You, Warrior III<\/a>. Complete 300 dungeons (lv.61 and above), extreme trials (lv.61 and above), level 50/60 duty roulette dungeons, or duty roulette leveling duties as a warrior. ※Each roulette only counts with daily award bonus.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1958'>Ein Krieger Für Alle Fälle III<\/a>. 300 Dungeons (ab Stufe 61), Prüfungen (ab Stufe 61), Zufallsinhalte: Stufe 50/60 oder Zufallsinhalte: Stufensteigerung als Krieger abgeschlossen.",
                 "method_description_ja": null
             }
         ]
@@ -1430,11 +1414,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http://xivdb.com/achievement/1961'>Tank You, Dark Knight III<\/a>. Complete 300 dungeons (lv.61 and above), extreme trials (lv.61 and above), level 50/60 duty roulette dungeons, or duty roulette leveling duties as a dark knight. ※Each roulette only counts with daily award bonus.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1961'>Ein Dunkelritter Für Alle Fälle III<\/a>. 300 Dungeons (ab Stufe 61), Prüfungen (ab Stufe 61), Zufallsinhalte: Stufe 50/60 oder Zufallsinhalte: Stufensteigerung als Dunkelritter abgeschlossen.",
                 "method_description_ja": null
             }
         ]
@@ -1443,14 +1427,14 @@
         "id": "125",
         "name": "Yol",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Obtain by completing the main szenario quest <a href='http://xivdb.com/quest/68043'>In The Footsteps Of Bardam The Brave<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch den Abschluss die Hauptszenario Quest <a href='http://de.xivdb.com/quest/68043'>Der Weg Zum Naadam<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1462,27 +1446,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http://xivdb.com/achievement/1922'>You Got Game<\/a>.Obtain the achievements “Bring Your A Game V” (Kill 3.000 A-Rank Monster) and “Bring Your S Game V (Kill 2.000 S-Rank Monster).”",
                 "method_description_fr": null,
-                "method_description_de": null,
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
-        "id": "128",
-        "name": "Commandeered Magitek Armor",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1922'>Legendärer Jäger<\/a>. Die Errungenschaften „Jag mir ein A V“ (3.000 A-Rank Monster töten) und „Jag mir ein S V“ (2.0000 S-Rank Monster töten) erlangt.",
                 "method_description_ja": null
             }
         ]
@@ -1494,11 +1462,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "FATE Rewards",
+                "available": "1",
+                "method_description_en": "Receive 12 'Ixion Horn' for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/1105'>A Horse Outside<\/a> and exchange them for a 'Ixion Clarion'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erhalte 12 'Ixion-Hornfragment' durch den FATE <a href='http://de.xivdb.com/fate/1105'>Höllenross<\/a> und tausche sie für ein 'Ixion-Horn' ein.",
                 "method_description_ja": null
             }
         ]

@@ -3747,11 +3747,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained from purchasing and registering a Collector's Edition (Stormblood) or upgrade to Collector's Edition (Stormblood) via Mog Station.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Registrierung einer Collector's Edition (Stormblood) oder durch das Upgrade zur Collector's Edition via Mogry-Station.",
                 "method_description_ja": null
             }
         ]
@@ -3762,11 +3762,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "1",
+                "method_description_en": "Obtained as pre-order bonus for Stormblood.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Vorbesteller-Bonus f\u00fcr Stormblood.",
                 "method_description_ja": null
             }
         ]
@@ -3815,11 +3815,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "FATE Rewards",
+                "available": "1",
+                "method_description_en": "Receive three 'Sassho-seki Fragment' for participation in the FATE <a href='http://xivdb.com/fate/1106'>Foxy Lady<\/a> and exchange them for Fox Pup.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erhalte drei 'Sassho-seki-Fragment' bei dem FATE <a href='http://de.xivdb.com/fate/1106'>Fuchsige Dame<\/a> und tausche diese ein.",
                 "method_description_ja": null
             }
         ]
@@ -3830,11 +3830,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Monster Hunt",
+                "available": "1",
+                "method_description_en": "Purchased with 800 Clan Hunt Seals from <a href='http:\/\/xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 800 Centurio-Abzeichen bei <a href='http:\/\/de.xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3857,14 +3857,14 @@
     {
         "id": "245",
         "name": "Bombfish",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http://xivdb.com/instance/50'>Shisui Of The Violet Tides<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/50'>Shisui<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3917,14 +3917,14 @@
     {
         "id": "252",
         "name": "Mock-up Grynewaht",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http://xivdb.com/instance/54'>Doma Castle<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/54'>Burg Doma<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3932,14 +3932,14 @@
     {
         "id": "254",
         "name": "Ivon Coeurlfist Doll",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http://xivdb.com/instance/51'>The Temple Of The Fist<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/51'>Tempel Der Faust<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3965,11 +3965,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Monster Hunt",
+                "available": "1",
+                "method_description_en": "Purchased with 800 Clan Hunt Seals from <a href='http:\/\/xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 800 Centurio-Abzeichen bei <a href='http:\/\/de.xivdb.com\/npc\/1012225\/Ardolain'>Ardolain<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3977,14 +3977,14 @@
     {
         "id": "257",
         "name": "Magitek Avenger F1",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http://xivdb.com/instance/56'>Ala Mhigo<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/56'>Ala Mhigo<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -3992,14 +3992,14 @@
     {
         "id": "258",
         "name": "Ghido",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http://xivdb.com/instance/52'>The Sirensong Sea<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/52'>Sirenen-See<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -4022,14 +4022,14 @@
     {
         "id": "261",
         "name": "Wind-up Susano",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32431'>Wind-up Susano<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32431'>Susano-Puppe<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4037,14 +4037,14 @@
     {
         "id": "262",
         "name": "Wind-up Lakshmi",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32432'>Wind-up Lakshmi<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32432'>Lakshmi-Puppe<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4052,14 +4052,14 @@
     {
         "id": "263",
         "name": "Wind-up Bismarck",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32433'>Wind-up Bismarck<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32433'>Aufzieh-Bismarck<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
