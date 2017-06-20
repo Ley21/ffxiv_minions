@@ -3845,11 +3845,11 @@
         "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Gathering",
+                "available": "1",
+                "method_description_en": "Can be fished by spear fishing on legendary node (Truth of Oceans) northeast in ruby sea.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erhältlich durch Speerfischen an einem legenderen Fischgrund (Jungfräuliches Meer) im Nordosten vom Rubinsee.",
                 "method_description_ja": null
             }
         ]
