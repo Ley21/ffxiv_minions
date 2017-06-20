@@ -1366,11 +1366,11 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": "Veteran Rewards",
-                "available": "1",
-                "method_description_en": "Veteran Reward for subscribing for 90 cumulative days (3 months) after actived a Stormblood license.",
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
                 "method_description_fr": null,
-                "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 90 aktive Abo-Tage (3 Monate) nach Regestrierung einer Stormblood Lizenz.",
+                "method_description_de": null,
                 "method_description_ja": null
             }
         ]

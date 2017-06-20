@@ -3890,11 +3890,11 @@
         "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http://xivdb.com/instance/53'>Bardam's Mettle<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/53'>Bardams Probe<\/a>.",
                 "method_description_ja": null
             }
         ]
