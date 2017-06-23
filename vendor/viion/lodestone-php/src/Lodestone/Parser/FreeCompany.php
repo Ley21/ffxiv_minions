@@ -1,7 +1,9 @@
 <?php
 namespace Lodestone\Parser;
 
+use Lodestone\Modules\Benchmark;
 use Lodestone\Modules\Logger;
+use Lodestone\Parser\Html\ParserHelper;
 
 /**
  * Class FreeCompany
@@ -10,28 +12,27 @@ use Lodestone\Modules\Logger;
 class FreeCompany extends ParserHelper
 {
     /**
-     * @param bool|string $html
      * @return array|bool
      */
-    public function parse($html = false)
+    public function parse($id)
     {
-        $this->ensureHtml();
-        $html = $this->html;
+        // todo this is temp until we make an "FreeCompanyProfile" class
+        $this->add('id', $id);
 
-        // check exists
-        if ($this->is404($html)) {
-            return false;
-        }
+        $this->initialize();
 
-        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $started = Benchmark::milliseconds();
+        Benchmark::start(__METHOD__,__LINE__);
 
-        $this->setInitialDocument($html);
-
-        $started = microtime(true);
         $this->parseHeader();
         $this->parseProfile();
         $this->parseFocus();
-        Logger::write(__CLASS__, __LINE__, sprintf('PARSE DURATION: %s ms', round(microtime(true) - $started, 3)));
+
+        Benchmark::finish(__METHOD__,__LINE__);
+        $finished = Benchmark::milliseconds();
+        $duration = $finished - $started;
+        Logger::write(__CLASS__, __LINE__, sprintf('PARSE DURATION: %s ms', $duration));
+
 
         return $this->data;
     }
@@ -64,11 +65,6 @@ class FreeCompany extends ParserHelper
         // server
         $data = trim($box->find('.entry__freecompany__gc', 1)->plaintext);
         $this->add('server', $data);
-
-        // id
-        $data = $box->find('a', 0)->getAttribute('href');
-        $data = trim(explode('/', $data)[3]);
-        $this->add('id', $data);
     }
 
     /**
