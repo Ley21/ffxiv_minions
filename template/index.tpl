@@ -146,6 +146,7 @@
                                                 <option value="Lamia">Lamia</option>
                                                 <option value="Leviathan">Leviathan</option>
                                                 <option value="Lich">Lich</option>
+												<option value="Louisoix">Louisoix</option>
                                                 <option value="Malboro">Malboro</option>
                                                 <option value="Mandragora">Mandragora</option>
                                                 <option value="Masamune">Masamune</option>
@@ -153,6 +154,7 @@
                                                 <option value="Midgardsormr">Midgardsormr</option>
                                                 <option value="Moogle">Moogle</option>
                                                 <option value="Odin">Odin</option>
+												<option value="Omega">Omega</option>
                                                 <option value="Pandaemonium">Pandaemonium</option>
                                                 <option value="Phoenix">Phoenix</option>
                                                 <option value="Ragnarok">Ragnarok</option>
@@ -207,22 +209,10 @@
                                 </div>
                                 <div class="panel-body text-left">
                                     <ul>
-                                        <li><b>2017-05-14</b>
+										<li><b>2017-06-23</b>
                                         <ul>
-                                            <li>Add multi rows if the same minion is in the table. Fix find character for characters with three letters in first/second name. Thanks to mail of Bun Bun ^^.</li>
+                                            <li>Add new minions and mounts from 4.0 to page and add all known methodes to obtain them. Pls visit the offical <a href='https://discord.gg/Hq24r54'>discord server</a> and give feedback or where to find the other minions/mounts. I currently working on a new version of the page for a better performance, a xivdb sync integration and many other new features (triple triade, orchestrion, relic tracker,...) pls look for forward to it ^^</li>
                                         </ul>
-                                        </li>
-                                        <li><b>2017-05-08</b>
-                                        <ul>
-                                            <li>Fix Issue #10 for table sorting and general table handling. Pls give me feedback if anything now dont work in tables.</li>
-                                        </ul>
-                                        </li>
-                                        <li><b>2017-04-10</b>
-                                        <ul>
-                                            <li>Character parsing by viion parsing api is broken because of lodestone changes (<a href="http://eu.finalfantasyxiv.com/lodestone/special/update_log/">http://eu.finalfantasyxiv.com/lodestone/special/update_log/</a>).</br>
-                                            Implement own api for lodestone parsing. Could be possible that not everything is running well. If you see any issues pls contact me over github or 'Request Change' link in footer.</li>
-                                        </ul>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
