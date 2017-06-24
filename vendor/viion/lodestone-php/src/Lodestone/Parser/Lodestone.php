@@ -4,7 +4,6 @@ namespace Lodestone\Parser;
 
 use Lodestone\Modules\Routes;
 use Lodestone\Modules\XIVDB;
-use Lodestone\Parser\Html\ParserHelper;
 
 /**
  * Parse character data
@@ -24,11 +23,14 @@ class Lodestone extends ParserHelper
     }
 
     /**
-     * @return array
+     * @return array|bool
      */
     public function parseBanners()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocument()->find('#slider_bnr_area li');
         $results = [];
@@ -45,11 +47,15 @@ class Lodestone extends ParserHelper
     }
 
     /**
-     * @return array
+     * @return array|bool
      */
     public function parseTopics()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocumentFromClassname('.news__content')->find('li.news__list--topics');
         $results = [];
@@ -73,7 +79,11 @@ class Lodestone extends ParserHelper
      */
     public function parseNotices()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocumentFromClassname('.news__content')->find('li.news__list');
         $results = [];
@@ -95,7 +105,11 @@ class Lodestone extends ParserHelper
      */
     public function parseMaintenance()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocumentFromClassname('.news__content')->find('li.news__list');
         $results = [];
@@ -122,7 +136,11 @@ class Lodestone extends ParserHelper
      */
     public function parseUpdates()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocumentFromClassname('.news__content')->find('li.news__list');
         $results = [];
@@ -144,7 +162,11 @@ class Lodestone extends ParserHelper
      */
     public function parseStatus()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocumentFromClassname('.news__content')->find('li.news__list');
         $results = [];
@@ -171,7 +193,11 @@ class Lodestone extends ParserHelper
      */
     public function parseWorldStatus()
     {
-        $this->initialize();
+        $this->ensureHtml();
+
+        $html = $this->html;
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocumentFromClassname('.parts__space--pb16')->find('div.item-list__worldstatus');
         $results = [];
@@ -194,7 +220,8 @@ class Lodestone extends ParserHelper
     {
         $this->ensureHtml();
 
-        $this->setDocument($this->html);
+        $html = $this->html;
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocument()->find('.wolvesden__ranking__table tr');
         $results = [];
@@ -230,7 +257,8 @@ class Lodestone extends ParserHelper
     {
         $this->ensureHtml();
 
-        $this->setDocument($this->html);
+        $html = $this->html;
+        $this->setInitialDocument($html);
 
         $entries = $this->getDocument()->find('.deepdungeon__ranking__wrapper__inner li');
         $results = [];
@@ -284,16 +312,20 @@ class Lodestone extends ParserHelper
     public function parseDevTrackingUrl($lang = 'en')
     {
         $this->ensureHtml();
-        $this->setDocument($this->html);
+
+        $html = $this->html;
 
         $trackerNumber = [
-            'ja' => 0,
-            'en' => 1,
-            'fr' => 2,
-            'de' => 3,
-        ][$lang];
+                             'ja' => 0,
+                             'en' => 1,
+                             'fr' => 2,
+                             'de' => 3,
+                         ][$lang];
 
-        return $this->getDocument()->find('.devtrack_btn', $trackerNumber)->href;
+        $this->setInitialDocument($html);
+
+        $link = $this->getDocument()->find('.devtrack_btn', $trackerNumber)->href;
+        return $link;
     }
 
     /**
@@ -303,7 +335,9 @@ class Lodestone extends ParserHelper
     {
         $this->ensureHtml();
 
-        $this->setDocument($this->html);
+        $html = $this->html;
+
+        $this->setInitialDocument($html);
         $posts = $this->getDocument()->find('.blockbody li');
 
         $links = [];
@@ -321,7 +355,9 @@ class Lodestone extends ParserHelper
     public function parseDevPost($postId)
     {
         $this->ensureHtml();
-        $this->setDocument($this->html);
+
+        $html = $this->html;
+        $this->setInitialDocument($html);
 
         $post = $this->getDocument();
 
@@ -341,15 +377,36 @@ class Lodestone extends ParserHelper
 
         // todo : translate ...
         $timestamp = $post->find('.posthead .date', 0)->plaintext;
+        $timestamp = trim(str_ireplace('&nbsp;', ' ', htmlentities($timestamp)));
+        if (stripos($timestamp, 'Yesterday') !== false || stripos($timestamp, 'Today') !== false) {
+            list($date, $time, $ampm) = explode(' ', $timestamp);
+            list($hour, $minute) = explode(':', $time);
+            $now = new \DateTime("now", new \DateTimeZone('Japan'));
 
-        // remove invisible characters
-        $timestamp = preg_replace('/[[:^print:]]/', ' ', $timestamp);
-        $timestamp = str_ireplace('-', '/', $timestamp);
+            // add 12 hours if it's pm
+            $hour = ($ampm == 'PM') ? $hour + 12 : $hour;
 
-        // fix time from Tokyo to Europe
-        $date = new \DateTime($timestamp, new \DateTimeZone('Asia/Tokyo'));
-        $date->setTimezone(new \DateTimeZone('UTC'));
-        $timestamp = $date->format('U');
+            // minus a day if it was posted yesterday
+            if (stripos($timestamp, 'Today') !== false) {
+                $now->modify('-1 day');
+            }
+
+            $now->setTime($hour, $minute);
+        } else {
+            list($date, $time, $ampm) = explode(' ', $timestamp);
+            list($month, $day, $year) = explode('-', $date);
+            list($hour, $minute) = explode(':', $time);
+
+            // add 12 hours if it's pm
+            $hour = ($ampm == 'PM') ? $hour + 12 : $hour;
+
+            $timestamp = mktime($hour, $minute, 0, $month, $day, $year);
+
+            // should be readable
+            $now = new \DateTime('@'. $timestamp, new \DateTimeZone('Japan'));
+        }
+
+        $now = $now->setTimezone(new \DateTimeZone('UTC'));
 
         // get colour
         $color = str_ireplace(['color: ', ';'], null, $post->find('.username span', 0)->getAttribute('style'));
@@ -377,7 +434,6 @@ class Lodestone extends ParserHelper
             "\t" => null,
             "\n" => null,
             '&#13;' => null,
-            'â€™' => "'",
             'images/' => Routes::LODESTONE_FORUMS .'images/',
             'members/' => Routes::LODESTONE_FORUMS .'members/',
             'showthread.php' => Routes::LODESTONE_FORUMS .'showthread.php',
@@ -397,17 +453,9 @@ class Lodestone extends ParserHelper
         ];
 
         $message = str_ireplace($remove, null, $message);
-        $message = str_ireplace([
-            '<body>', '</body>', '&#xE2;&#x80;&#x99;',
-        ], [
-            '<article>', '</article>', "'",
-        ], $message);
-        
-        // dirty fix for iframes
-        // https://github.com/viion/lodestone-php/issues/22
-        $message = str_ireplace(['allowfullscreen=""/>'], ['allowfullscreen=""></iframe>'], $message);
+        $message = str_ireplace(['<body>', '</body>'], ['<article>', '</article>'], $message);
 
-        $data['time'] = $timestamp;
+        $data['time'] = $now->format('Y-m-d H:i:s');
         $data['message'] = trim($message);
 
         return $data;
