@@ -3,7 +3,6 @@
 namespace Lodestone\Parser;
 
 use Lodestone\Modules\Logger;
-use Lodestone\Parser\Html\ParserHelper;
 
 /**
  * Class Achievements
@@ -24,10 +23,14 @@ class Achievements extends ParserHelper
             return 'private';
         }
 
-        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
-        $this->ensureHtml();
+        // check if doesn't exist
+        if ($this->is404($html)) {
+            return false;
+        }
 
-        $this->setDocument($html);
+        $html = $this->trim($html, 'class="ldst__main"', 'class="ldst__side"');
+
+        $this->setInitialDocument($html);
 
         $started = microtime(true);
         $this->parseList();
@@ -41,9 +44,12 @@ class Achievements extends ParserHelper
     //
     private function parseList()
     {
+        Logger::printtime(__FUNCTION__.'#'.__LINE__);
         $box = $this->getSpecial__Achievements();
+        Logger::printtime(__FUNCTION__.'#'.__LINE__);
 
         $rows = $box->find('li');
+        Logger::printtime(__FUNCTION__.'#'.__LINE__);
 
         $list = [];
         $listPossible = [];
@@ -72,7 +78,7 @@ class Achievements extends ParserHelper
                 'points' => $points,
                 'timestamp' => $timestamp,
             ];
-
+            Logger::printtime(__FUNCTION__.'#'.__LINE__);
         }
 
         $this->add('list', $list);
