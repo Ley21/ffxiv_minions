@@ -4010,11 +4010,11 @@
         "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
                 "method_description_ja": null
             }
         ]
