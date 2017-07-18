@@ -3965,11 +3965,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http://xivdb.com/instance/55002'>The Lost Canals Of Uznair<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55002'>Kanäle Von Uznair<\/a>.",
                 "method_description_ja": null
             }
         ]

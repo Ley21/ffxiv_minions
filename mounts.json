@@ -1315,14 +1315,14 @@
         "id": "112",
         "name": "Falcon",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Veteran Rewards",
+                "available": "1",
+                "method_description_en": "Veteran Reward for subscribing for 90 cumulative days (3 months) of Stormblood.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Veteranen-Belohnung f\u00fcr insgesammt 90 aktive Abo-Tage (3 Monate) von Stormblood.",
                 "method_description_ja": null
             }
         ]
@@ -1331,7 +1331,7 @@
         "id": "113",
         "name": "Lone Faehound",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
                 "method": "PvP",
@@ -1347,7 +1347,7 @@
         "id": "114",
         "name": "Pack Faehound",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
                 "method": "PvP",
@@ -1475,14 +1475,14 @@
         "id": "126",
         "name": "Alte Roite",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Drop in the treasure coffer in the raid <a href='http:\/\/xivdb.com\/instance\/30056'>Deltascape V4.0 (Savage)<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Garantierte Beute in der Schatztruhe in dem Raid <a href='http:\/\/de.xivdb.com\/instance\/30056'>Deltametrie 4.0 (episch)<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1499,22 +1499,6 @@
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1922'>You Got Game<\/a>.Obtain the achievements \u201cBring Your A Game V\u201d (Kill 3.000 A-Rank Monster) and \u201cBring Your S Game V (Kill 2.000 S-Rank Monster).\u201d",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1922'>Legend\u00e4rer J\u00e4ger<\/a>. Die Errungenschaften \u201eJag mir ein A V\u201c (3.000 A-Rank Monster t\u00f6ten) und \u201eJag mir ein S V\u201c (2.0000 S-Rank Monster t\u00f6ten) erlangt.",
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
-        "id": "128",
-        "name": "Commandeered Magitek Armor",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
