@@ -3811,7 +3811,7 @@
     },
     {
         "id": "242",
-        "name": "Fox Pup",
+        "name": "Fox Kit",
         "sellable": "0",
         "methodes": [
             {
@@ -3900,6 +3900,21 @@
         ]
     },
     {
+        "id": "248",
+        "name": "Wind-up Lyse",
+        "sellable": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "249",
         "name": "Dress-up Yugiri",
         "sellable": "1",
@@ -3915,6 +3930,21 @@
         ]
     },
     {
+        "id": "250",
+        "name": "Wind-up Gosetsu",
+        "sellable": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "252",
         "name": "Mock-up Grynewaht",
         "sellable": "1",
@@ -3925,6 +3955,21 @@
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/54'>Doma Castle<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/54'>Burg Doma<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "253",
+        "name": "Wind-up Namazu",
+        "sellable": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
@@ -4014,7 +4059,7 @@
                 "available": "1",
                 "method_description_en": "Found in Final Boss Treasure Coffer in <a href='https:\/\/xivdb.com\/instance\/30052'>Deltascape V4.0<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": "Endboss-Schatzkiste in <a href='http://de.xivdb.com/instance/30052'>Deltametrie 4.0<\/a>.",
+                "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30052'>Deltametrie 4.0<\/a>.",
                 "method_description_ja": null
             }
         ]
