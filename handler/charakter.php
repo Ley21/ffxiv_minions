@@ -17,7 +17,7 @@
             exit;
         }
         $id = $player_id;
-        
+        echo "Updated player id: $id";
     }
     if(!empty($id)){
         
