@@ -441,9 +441,14 @@
         //Get charakter from lodestone
         $api = new \Lodestone\Api;
         $character = (Object)$api->getCharacter($id);
+        if(empty($character->id) && !empty($id)){
+            echo "Character with id '$id' was deleted.";
+            delete_char($id);
+        }
+        else{
         //$character = Lodestone::findCharacterById($id);
         return insert_update_charakter($character);
-        
+        }
     }
     
     function insert_update_charakter_by_name($name,$server){
@@ -467,6 +472,9 @@
     }
     
     function get_freeCompany($fc_id){
+        if($fc_id == null){
+            return null;
+        }
         $api = new \Lodestone\Api;
         $fc = (Object) $api->getFreeCompany($fc_id);
         return $fc;
@@ -477,10 +485,12 @@
         if($character == false){
             return null;
         }
+        
         if(empty($character->id)){
             return "Could not find the charakter '$name' on server '$server'";
             exit;
         }
+        
         $c_name = strtolower($character->name);
         $c_world = strtolower($character->server);
         $c_portrait = $database->quote($character->portrait);
@@ -508,6 +518,7 @@
             	"freeCompanyId" => $character->free_company,
             	"last_update_date" => date("Y-m-d")
             ];
+        
         if(!$player && empty($p_id)){
             $data["id"]= $character->id;
             //Insert new charakter
@@ -561,6 +572,12 @@
         
     }
 
+    function delete_char($id){
+        global $database;
+        $database->delete("player_minion", ["p_id[=]" => $id]);
+        $database->delete("player_mounts", ["p_id[=]" => $id]);
+        $database->delete("players", ["id[=]" => $id]);
+    }
     function get_last_id($type){
         $json = file_get_contents("https://api.xivdb.com/search?one=$type");
         $obj = json_decode($json);
