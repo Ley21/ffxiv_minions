@@ -4265,11 +4265,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "FATE Rewards",
+                "available": "1",
+                "method_description_en": "Receive 5 'Ixion Horn' for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/1105'>A Horse Outside<\/a> and exchange them for a 'Ixion Clarion'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erhalte 5 'Ixion-Hornfragment' durch den FATE <a href='http:\/\/de.xivdb.com\/fate\/1105'>H\u00f6llenross<\/a> und tausche sie f\u00fcr ein 'Ixion-Horn' ein.",
                 "method_description_ja": null
             }
         ]
