@@ -1064,6 +1064,22 @@
         ]
     },
     {
+        "id": "93",
+        "name": "Managarm",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "94",
         "name": "Whisper A-go-go",
         "sellable": "0",
@@ -1112,6 +1128,22 @@
         ]
     },
     {
+        "id": "97",
+        "name": "Mystic Panda",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "98",
         "name": "Sophic Lanner",
         "sellable": "0",
@@ -1123,6 +1155,22 @@
                 "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20042'>Containment Bay P1T6 (Extreme)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20042'>Zenit Der G\u00f6tter - Sophia<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "99",
+        "name": "Starlight Bear",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
@@ -1504,6 +1552,22 @@
         ]
     },
     {
+        "id": "128",
+        "name": "Commandeered Magitek Armor",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "130",
         "name": "Ixion",
         "sellable": "0",
@@ -1515,6 +1579,86 @@
                 "method_description_en": "Receive 12 'Ixion Horn' for participation in the FATE <a href='http:\/\/xivdb.com\/fate\/1105'>A Horse Outside<\/a> and exchange them for a 'Ixion Clarion'.",
                 "method_description_fr": null,
                 "method_description_de": "Erhalte 12 'Ixion-Hornfragment' durch den FATE <a href='http:\/\/de.xivdb.com\/fate\/1105'>H\u00f6llenross<\/a> und tausche sie f\u00fcr ein 'Ixion-Horn' ein.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "133",
+        "name": "Legendary Kamuy",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "136",
+        "name": "Striped Ray",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "140",
+        "name": "Flying Chair",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "141",
+        "name": "Magitek Avenger",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "142",
+        "name": "Korpokkur Kolossus",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
