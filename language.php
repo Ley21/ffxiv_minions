@@ -76,19 +76,19 @@
             "Mogry Shop Purchase","Dungeons & Trials","PvP","Crafting","Gathering","Gardening",
             "Achievement Rewards","Diadem FATE Rewards","FATE Rewards","Quest Rewards","Seasonal Rewards",
             "Veteran Rewards","Treasure Hunt","Treasure Dungeons","Deep Dungeon","Monster Hunt","Promotions",
-            "Retainer Ventures","Wondrous Tails","Misc. Methods"),
+            "Retainer Ventures","Wondrous Tails", "Beast Tribe","Misc. Methods"),
         "fr"=>
         array("Tout","Achat en Gil","Achat en PGS","Achat en Mémoquartz","Achat auprès des GC",
 				"Achat de la Station Mog","Donjons et Défis","PvP","Artisanat","Récolte","Jardinage",
 				"Récompense de Haut Fait","Diadem FATE Rewards","Récompense d'Aléa","Récompense de quête","Récompense d'événement saisonnier",
 				"Récompense de vétérans","Chasse aux trésors","Coffres de donjons","Donjon sans fond","Chasse aux monstres","Promotions",
-				"Expéditions de servants","Carnet de Khloe","Méthodes diverses"),
+				"Expéditions de servants","Carnet de Khloe","Tribu des Bêtes","Méthodes diverses"),
         "de"=>
         array("Alle","Gil","MGP","Allagische Steine","Staatstaler",
             "Mogry Shop","Dungeons & Prüfungen","PvP","Handwerken","Sammeln","Gartenbau",
             "Errungenschafts Belohnung","Diadem FATE Belohnung","FATE Belohnung","Auftrags Belohnung","Saisonale Belohnung",
             "Veteranen Belohnung","Schatzkarten","Schatzkarten Dungeon","Tiefes Gewölbe","Hohe Jagd","Aktionen",
-            "Gehilfen Erkundung","Khloes Abenteueralbum","Sonstige Methoden"),
+            "Gehilfen Erkundung","Khloes Abenteueralbum","Wilder Stamm","Sonstige Methoden"),
         "ja"=>
         array());
     $language_texts['gc_names'] = array(
