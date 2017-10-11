@@ -4172,14 +4172,14 @@
     {
         "id": "267",
         "name": "Mameshiba",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Retainer Ventures",
+                "available": "1",
+                "method_description_en": "Can be obtained by Highlands Exploration XXII.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXII eines Minenarbeiter-Gehilfen.",
                 "method_description_ja": null
             }
         ]
@@ -4202,14 +4202,14 @@
     {
         "id": "269",
         "name": "Wind-up Matanga",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Treasure Dungeons",
+                "available": "1",
+                "method_description_en": "Found in a Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/55002'>The Lost Canals Of Uznair<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Aus einer Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/55002'>Kan\u00e4le Von Uznair<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -4222,9 +4222,9 @@
             {
                 "method": "Retainer Ventures",
                 "available": "1",
-                "method_description_en": "Can be obtained by Woodland Exploration XXI.",
+                "method_description_en": "Can be obtained by Woodland Exploration XXII.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXI eines Gärtner-Gehilfen.",
+                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXII eines Gärtner-Gehilfen.",
                 "method_description_ja": null
             }
         ]
@@ -4252,9 +4252,9 @@
             {
                 "method": "Retainer Ventures",
                 "available": "1",
-                "method_description_en": "Can be obtained by Waterside Exploration XXI.",
+                "method_description_en": "Can be obtained by Waterside Exploration XXII.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXI eines Fischer-Gehilfen.",
+                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXII eines Fischer-Gehilfen.",
                 "method_description_ja": null
             }
         ]
