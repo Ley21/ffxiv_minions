@@ -134,7 +134,7 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -150,9 +150,9 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
-                "method_description_en": "Sylph Bast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_en": "Sylph Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 120.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
                 "method_description_ja": null
@@ -214,7 +214,7 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Sahagin Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -230,7 +230,7 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Kobold Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -358,7 +358,7 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Ixal Beast Tribe. Purchasable for 120,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -614,7 +614,7 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Vanu Beast Tribe. Purchasable for 200,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093'>Luna Vanu<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -798,7 +798,7 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Vath Beast Tribe. Purchasable for 200,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -990,7 +990,7 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Mogry Beast Tribe. Purchasable for 200,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -1070,11 +1070,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchasable for 8 Gold Chocobo Feather from <a href='http:\/\/xivdb.com\/npc\/1006006'>Calamity Salvager in Ul'dah<\/a>, <a href='http:\/\/xivdb.com\/npc\/1006004'>Calamity Salvager in Old-Gridania<\/a> or <a href='http:\/\/xivdb.com\/npc\/1006005'>Calamity Salvager in Limsa Lominsa<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 8 Goldene Chocobo-Federn bei <a href='http:\/\/xivdb.com\/npc\/1006006'>Fundsachen-Verwalter in Ul'dah<\/a>, <a href='http:\/\/de.xivdb.com\/npc\/1006004'>Fundsachen-Verwalter in Alt-Gridania<\/a> oder <a href='http:\/\/de.xivdb.com\/npc\/1006005'>Fundsachen-Verwalter in Limsa Lominsa<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1166,11 +1166,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Seasonal Rewards",
+                "available": "0",
+                "method_description_en": "Reward for the Special Event Starlight Celebration 2017.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Belohnung des Events: Sternlichtfest 2017.",
                 "method_description_ja": null
             }
         ]
@@ -1587,14 +1587,14 @@
         "id": "133",
         "name": "Legendary Kamuy",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Random drop in the trail <a href='http:\/\/xivdb.com\/instance\/20050\/'>The Minstrel's Ballad: Shinryu's Domain<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Zuf\u00e4llige Beute in der Pr\u00fcfung <a href='http:\/\/de.xivdb.com\/instance\/20050\/'>Das Heldenlied Von Shinryu<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -1603,14 +1603,14 @@
         "id": "136",
         "name": "Striped Ray",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Beast Tribe",
+                "available": "1",
+                "method_description_en": "Kojin Beast Tribe. Purchasable for 12 Kojin Sango from <a href='http://xivdb.com/special-shop/1769818'>Kojin Sango Exchange<\/a> (upon reaching 'Bloodsworn' reputation).",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Wilder Stamm: Kojin. Erh\u00e4ltlich f\u00fcr 12 Kojin-Koralle bei <a href='http://de.xivdb.com/special-shop/1769818'>Kojin-Korallen Händler<\/a> (Ab Verbundenheitsgrad 'Solidarisch★').",
                 "method_description_ja": null
             }
         ]
@@ -1618,15 +1618,15 @@
     {
         "id": "140",
         "name": "Flying Chair",
-        "sellable": "0",
-        "can_fly": "0",
+        "sellable": "1",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32461'>Flying Chair<\/a> by alchemist.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32461'>Fliegender Sessel<\/a> vom Alchemisten hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -1635,7 +1635,7 @@
         "id": "141",
         "name": "Magitek Avenger",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
                 "method": null,
@@ -1651,14 +1651,14 @@
         "id": "142",
         "name": "Korpokkur Kolossus",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "MGP Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable for 750,000 MGP from <a href='http:\/\/xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer Attendant<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich f\u00fcr 750.000 MGP beim <a href='http:\/\/de.xivdb.com\/npc\/1011039\/Gold+Saucer+Attendant'>Gold Saucer-Diener<\/a>.",
                 "method_description_ja": null
             }
         ]
