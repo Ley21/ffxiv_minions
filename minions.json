@@ -3804,7 +3804,7 @@
                 "available": "1",
                 "method_description_en": "Can be obtained by Field Exploration XX.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XX eines Minenarbeiter-Gehilfen.",
+                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XX eines Sammler-Gehilfen.",
                 "method_description_ja": null
             }
         ]
@@ -4217,14 +4217,14 @@
     {
         "id": "271",
         "name": "Koala Joey",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Retainer Ventures",
+                "available": "1",
+                "method_description_en": "Can be obtained by Woodland Exploration XXI.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXI eines Gärtner-Gehilfen.",
                 "method_description_ja": null
             }
         ]
@@ -4232,14 +4232,14 @@
     {
         "id": "272",
         "name": "Salt & Pepper Seal",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/58'>The Drowned City Of Skalla<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/58'>Die Versunkene Stadt Skalla<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -4247,14 +4247,14 @@
     {
         "id": "273",
         "name": "Axolotl Eft",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Retainer Ventures",
+                "available": "1",
+                "method_description_en": "Can be obtained by Waterside Exploration XXI.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch eine Erkundung XXI eines Fischer-Gehilfen.",
                 "method_description_ja": null
             }
         ]
