@@ -4187,14 +4187,14 @@
     {
         "id": "268",
         "name": "Tengu Doll",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Retainer Ventures",
+                "available": "1",
+                "method_description_en": "Can be obtained by Quick Exploration.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch eine Schnelle Erkunden eines Gehilfen.",
                 "method_description_ja": null
             }
         ]
