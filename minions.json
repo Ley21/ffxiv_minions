@@ -804,9 +804,9 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
-                "method_description_en": "Sylph Bast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
+                "method_description_en": "Sylph Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
                 "method_description_ja": null
@@ -956,7 +956,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -971,7 +971,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -986,7 +986,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Kobold Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -1001,7 +1001,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Sahagin Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -1890,9 +1890,9 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
-                "method_description_en": "Sylph Bast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Allied' reputation).",
+                "method_description_en": "Sylph Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphic Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Sylphen. Erh\u00e4ltlich f\u00fcr 25.000 Gil bei <a href='http:\/\/de.xivdb.com\/npc\/1005569\/Sylphic+Vendor'>Sylphen-H\u00e4ndlerin<\/a> (Ab Verbundenheitsgrad 'Verb\u00fcndet').",
                 "method_description_ja": null
@@ -1905,7 +1905,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Amalj'aa Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1005554\/Amalj'aa+Vendor'>Amalj'aa Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
@@ -1920,7 +1920,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Ixal Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1009205\/Ixali+Vendor'>Ixali Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
@@ -1935,7 +1935,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Kobold Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008909\/Kobold+Vendor'>Kobold Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
@@ -1950,7 +1950,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Sahagin Beast Tribe. Purchasable for 25,000 gil from <a href='http:\/\/xivdb.com\/npc\/1008907\/Sahagin+Vendor'>Sahagin Vendor<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
@@ -2086,7 +2086,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Vanu Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -2482,7 +2482,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -2770,7 +2770,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Vanu Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016093\/Luna+Vanu'>Luna Vanu<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -2815,7 +2815,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Vath Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1016804\/Vath+Stickpeddler'>Vath Stickpeddler<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
@@ -2950,7 +2950,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Sworn' reputation).",
                 "method_description_fr": null,
@@ -3431,7 +3431,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Misc. Methods",
+                "method": "Wondrous Tails",
                 "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
@@ -3446,7 +3446,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Misc. Methods",
+                "method": "Wondrous Tails",
                 "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
@@ -3589,7 +3589,7 @@
         "sellable": "1",
         "methodes": [
             {
-                "method": "Misc. Methods",
+                "method": "Wondrous Tails",
                 "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
@@ -3702,7 +3702,7 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Gil Purchase",
+                "method": "Beast Tribe",
                 "available": "1",
                 "method_description_en": "Mogry Beast Tribe. Purchasable for 30,000 gil from <a href='http:\/\/xivdb.com\/npc\/1017337\/Mogmul+Mogbelly'>Mogmul Mogbelly<\/a> (upon reaching 'Allied' reputation).",
                 "method_description_fr": null,
@@ -3995,11 +3995,11 @@
         "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32548'>Wind-up Chimera<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32548'>Aufzieh-Chimära<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4070,7 +4070,7 @@
         "sellable": "1",
         "methodes": [
             {
-                "method": "Misc. Methods",
+                "method": "Wondrous Tails",
                 "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
@@ -4127,14 +4127,14 @@
     {
         "id": "264",
         "name": "Wind-up Hien",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Wondrous Tails",
+                "available": "1",
+                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
                 "method_description_ja": null
             }
         ]
@@ -4142,14 +4142,14 @@
     {
         "id": "265",
         "name": "Wind-up Ravana",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32463'>Wind-up Ravana<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32463'>Mini-Ravana<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4160,11 +4160,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Beast Tribe",
+                "available": "1",
+                "method_description_en": "Kojin Beast Tribe. Purchasable for 5 Kojin Sango from <a href='http://xivdb.com/special-shop/1769818'>Kojin Sango Exchange<\/a> (upon reaching 'Respected' reputation).",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Wilder Stamm: Kojin. Erh\u00e4ltlich f\u00fcr 5 Kojin-Koralle bei <a href='http://de.xivdb.com/special-shop/1769818'>Kojin-Korallen Händler<\/a> (Ab Verbundenheitsgrad 'Respektiert').",
                 "method_description_ja": null
             }
         ]
@@ -4277,14 +4277,14 @@
     {
         "id": "275",
         "name": "Wind-up Shinryu",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/32462'>Wind-up Shinryu<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/32462'>Mini-Shinryu<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4295,11 +4295,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Quest Rewards",
+                "available": "1",
+                "method_description_en": "Complete the main story quest <a href='http://xivdb.com/quest/68508'>Return Of The Bull<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Hauptszenario Quest-Belohnung von <a href='http:\/\/de.xivdb.com\/quest\/68508'>Die Versammlung<\/a>.",
                 "method_description_ja": null
             }
         ]
