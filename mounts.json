@@ -1638,11 +1638,11 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1939'>Die Another Day III<\/a>, emerge victorious in an Astragalos campaign 100 times.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1939'>eiße Knöchel III<\/a>, 100 Mal ein Stahlschwingen-Match in Astragalos gewonnen.",
                 "method_description_ja": null
             }
         ]
