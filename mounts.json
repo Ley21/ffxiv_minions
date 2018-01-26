@@ -1539,7 +1539,7 @@
         "id": "127",
         "name": "Centurio Tiger",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
                 "method": "Achievement Rewards",
@@ -1555,14 +1555,14 @@
         "id": "128",
         "name": "Commandeered Magitek Armor",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Achievement Rewards",
+                "available": "1",
+                "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1939'>TDie Another Day III<\/a>. Emerge victorious in an Astragalos campaign 100 times.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1939'>Weiße Knöchel III<\/a>. 100 Mal ein Stahlschwingen-Match in Astragalos gewonnen.",
                 "method_description_ja": null
             }
         ]
@@ -1571,7 +1571,7 @@
         "id": "130",
         "name": "Ixion",
         "sellable": "0",
-        "can_fly": "0",
+        "can_fly": "1",
         "methodes": [
             {
                 "method": "FATE Rewards",
@@ -1608,9 +1608,41 @@
             {
                 "method": "Beast Tribe",
                 "available": "1",
-                "method_description_en": "Kojin Beast Tribe. Purchasable for 12 Kojin Sango from <a href='http://xivdb.com/special-shop/1769818'>Kojin Sango Exchange<\/a> (upon reaching 'Bloodsworn' reputation).",
+                "method_description_en": "Kojin Beast Tribe. Purchasable for 12 Kojin Sango from <a href='http:\/\/xivdb.com\/special-shop\/1769818'>Kojin Sango Exchange<\/a> (upon reaching 'Bloodsworn' reputation).",
                 "method_description_fr": null,
-                "method_description_de": "Wilder Stamm: Kojin. Erh\u00e4ltlich f\u00fcr 12 Kojin-Koralle bei <a href='http://de.xivdb.com/special-shop/1769818'>Kojin-Korallen Händler<\/a> (Ab Verbundenheitsgrad 'Solidarisch★').",
+                "method_description_de": "Wilder Stamm: Kojin. Erh\u00e4ltlich f\u00fcr 12 Kojin-Koralle bei <a href='http:\/\/de.xivdb.com\/special-shop\/1769818'>Kojin-Korallen H\u00e4ndler<\/a> (Ab Verbundenheitsgrad 'Solidarisch\u2605').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "138",
+        "name": "Aquamarine Carbuncle",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for all charakters.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr alle Charaktere.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "139",
+        "name": "Citrine Carbuncle",
+        "sellable": "0",
+        "can_fly": "1",
+        "methodes": [
+            {
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for all charakters.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00e4ltlich in der Mogry-Station f\u00fcr alle Charaktere.",
                 "method_description_ja": null
             }
         ]
@@ -1642,7 +1674,7 @@
                 "available": "1",
                 "method_description_en": "Rewarded when obtaining the achievement <a href='http:\/\/xivdb.com\/achievement\/1939'>Die Another Day III<\/a>, emerge victorious in an Astragalos campaign 100 times.",
                 "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http://de.xivdb.com/achievement/1939'>eiße Knöchel III<\/a>, 100 Mal ein Stahlschwingen-Match in Astragalos gewonnen.",
+                "method_description_de": "Erh\u00e4ltlich durch die Errungenschaft <a href='http:\/\/de.xivdb.com\/achievement\/1939'>ei\u00dfe Kn\u00f6chel III<\/a>, 100 Mal ein Stahlschwingen-Match in Astragalos gewonnen.",
                 "method_description_ja": null
             }
         ]
