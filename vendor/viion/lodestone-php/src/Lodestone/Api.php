@@ -3,17 +3,32 @@
 namespace Lodestone;
 
 // use all the things
-use Lodestone\Modules\{XIVDB, Logger,Routes};
+use Lodestone\Modules\{
+    Logging\Logger, Http\Routes
+};
+
+use Lodestone\Entities\Search\{
+    SearchCharacter,
+    SearchFreeCompany,
+    SearchLinkshell
+};
+
 use Lodestone\Parser\{
-    Achievements,
-    Character,
-    CharacterFollowing,
-    CharacterFriends,
-    FreeCompany,
-    FreeCompanyMembers,
-    Linkshell,
-    Lodestone,
-    Search
+    Character\Parser as CharacterParser,
+    Character\Search as CharacterSearch,
+    CharacterFriends\Parser as CharacterFriendsParser,
+    CharacterFollowing\Parser as CharacterFollowingParser,
+    
+    Achievements\Parser as AchievementsParser,
+    
+    FreeCompany\Parser as FreeCompanyParser,
+    FreeCompany\Search as FreeCompanySearch,
+    FreeCompanyMembers\Parser as FreeCompanyMembersParser,
+    
+    Linkshell\Parser as LinkshellParser,
+    Linkshell\Search as LinkshellSearch,
+    
+    Lodestone
 };
 
 /**
@@ -24,14 +39,13 @@ use Lodestone\Parser\{
  */
 class Api
 {
-    public $xivdb;
-
     /**
-     * Api constructor.
+     * @test .
+     * @return Lodestone/Lodestone
      */
-    public function __construct()
+    private function getLodeStoneInstance()
     {
-        $this->xivdb = new XIVDB();
+        return new Lodestone();
     }
 
     /**
@@ -46,10 +60,12 @@ class Api
 
     /**
      * @test Premium Virtue,Phoenix
-     * @param $id
-     * @return array|bool
+     * @param $name
+     * @param bool $server
+     * @param bool $page
+     * @return SearchCharacter
      */
-    public function searchCharacter($name, $server = false, $page = false)
+    public function searchCharacter($name, $server = false, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('q', str_ireplace(' ', '+', $name));
@@ -57,15 +73,17 @@ class Api
         $urlBuilder->add('page', $page);
 
         $url = Routes::LODESTONE_CHARACTERS_SEARCH_URL;
-        return (new Search())->url($url . $urlBuilder->get())->parseCharacterSearch();
+        return (new CharacterSearch())->url($url . $urlBuilder->get())->parse();
     }
 
     /**
      * @test Equilibrium,Pheonix
-     * @param $id
-     * @return array|bool
+     * @param $name
+     * @param bool $server
+     * @param bool $page
+     * @return SearchFreeCompany
      */
-    public function searchFreeCompany($name, $server = false, $page = false)
+    public function searchFreeCompany($name, $server = false, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('q', str_ireplace(' ', '+', $name));
@@ -73,7 +91,7 @@ class Api
         $urlBuilder->add('page', $page);
 
         $url = Routes::LODESTONE_FREECOMPANY_SEARCH_URL;
-        return (new Search())->url($url . $urlBuilder->get())->parseFreeCompanySearch();
+        return (new FreeCompanySearch())->url($url . $urlBuilder->get())->parse();
     }
 
     /**
@@ -81,9 +99,9 @@ class Api
      * @param $name
      * @param $server
      * @param $page
-     * @return array|bool
+     * @return SearchLinkshell
      */
-    public function searchLinkshell($name, $server = false, $page = false)
+    public function searchLinkshell($name, $server = false, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('q', str_ireplace(' ', '+', $name));
@@ -91,32 +109,18 @@ class Api
         $urlBuilder->add('page', $page);
 
         $url = Routes::LODESTONE_LINKSHELL_SEARCH_URL;
-        return (new Search())->url($url . $urlBuilder->get())->parseLinkshellSearch();
+        return (new LinkshellSearch())->url($url . $urlBuilder->get())->parse();
     }
 
     /**
      * @test 730968
      * @param $id
-     * @param bool $hash
-     * @return array|bool
+     * @return Entities\Character\CharacterProfile
      */
-    public function getCharacter($id, $hash = false)
+    public function getCharacter($id)
     {
         $url = sprintf(Routes::LODESTONE_CHARACTERS_URL, $id);
-        return $hash
-            ? (new Character())->url($url)->parse(true)
-            : (new Character())->url($url)->parse();
-    }
-
-    /**
-     * Get character has from pre-existing data
-     *
-     * @param $data
-     * @return mixed
-     */
-    public function getCharacterHash($data)
-    {
-        return (new Character())->setData((array)$data)->hash();
+        return (new CharacterParser($id))->url($url)->parse();
     }
 
     /**
@@ -124,15 +128,15 @@ class Api
      * @softfail true
      * @param $id
      * @param $page
-     * @return array|bool
+     * @return Entities\Character\CharacterFriends
      */
-    public function getCharacterFriends($id, $page = false)
+    public function getCharacterFriends($id, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('page', $page);
 
         $url = sprintf(Routes::LODESTONE_CHARACTERS_FRIENDS_URL, $id);
-        return (new CharacterFriends())->url($url . $urlBuilder->get())->parse();
+        return (new CharacterFriendsParser())->url($url . $urlBuilder->get())->parse();
     }
 
     /**
@@ -140,68 +144,68 @@ class Api
      * @softfail true
      * @param $id
      * @param $page
-     * @return array|bool
+     * @return Entities\Character\CharacterFollowing
      */
-    public function getCharacterFollowing($id, $page = false)
+    public function getCharacterFollowing($id, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('page', $page);
 
         $url = sprintf(Routes::LODESTONE_CHARACTERS_FOLLOWING_URL, $id);
-        return (new CharacterFollowing())->url($url . $urlBuilder->get())->parse();
+        return (new CharacterFollowingParser())->url($url . $urlBuilder->get())->parse();
     }
 
     /**
      * @test 730968
      * @param $id
-     * @param int $kind
-     * @return array|bool
+     * @param int $category
+     * @return Entities\Character\Achievements
      */
-    public function getCharacterAchievements($id, $kind = 1)
+    public function getCharacterAchievements($id, $category = 1, $includeUnobtained = false)
     {
-        $url = sprintf(Routes::LODESTONE_ACHIEVEMENTS_URL, $id, $kind);
-        return (new Achievements())->url($url)->parse();
+        $url = sprintf(Routes::LODESTONE_ACHIEVEMENTS_URL, $id, $category);
+        return (new AchievementsParser($category))->url($url)->parse($includeUnobtained);
     }
 
     /**
      * @test 9231253336202687179
      * @param $id
-     * @return array|bool
+     * @return Entities\FreeCompany\FreeCompany
      */
     public function getFreeCompany($id)
     {
         $url = sprintf(Routes::LODESTONE_FREECOMPANY_URL, $id);
-        return (new FreeCompany())->url($url)->parse();
+        return (new FreeCompanyParser($id))->url($url)->parse();
     }
 
     /**
      * @test 9231253336202687179
      * @param $id
-     * @param $page
-     * @return array|bool
+     * @param bool $page
+     * @return Entities\FreeCompany\FreeCompanyMembers
      */
-    public function getFreeCompanyMembers($id, $page = false)
+    public function getFreeCompanyMembers($id, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('page', $page);
 
         $url = sprintf(Routes::LODESTONE_FREECOMPANY_MEMBERS_URL, $id);
-        return (new FreeCompanyMembers())->url($url . $urlBuilder->get())->parse();
+        return (new FreeCompanyMembersParser())->url($url . $urlBuilder->get())->parse();
     }
 
     /**
      * @test 19984723346535274
      * @param $id
-     * @param $page
-     * @return array|bool
+     * @param bool $page
+     * @return Entities\Linkshell\Linkshell
      */
-    public function getLinkshellMembers($id, $page = false)
+    public function getLinkshellMembers($id, $page = 1)
     {
         $urlBuilder = new UrlBuilder();
         $urlBuilder->add('page', $page);
 
         $url = sprintf(Routes::LODESTONE_LINKSHELL_MEMBERS_URL, $id) . $urlBuilder->get();
-        return (new Linkshell())->url($url)->parse();
+        return (new LinkshellParser($id))->url($url)->parse();
     }
 
     /**
@@ -210,7 +214,7 @@ class Api
      */
     public function getLodestoneBanners()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_BANNERS)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_BANNERS)->parseBanners();
     }
 
     /**
@@ -219,7 +223,7 @@ class Api
      */
     public function getLodestoneNews()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_NEWS)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_NEWS)->parseTopics();
     }
 
     /**
@@ -228,7 +232,7 @@ class Api
      */
     public function getLodestoneTopics()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_TOPICS)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_TOPICS)->parseTopics();
     }
 
     /**
@@ -237,7 +241,7 @@ class Api
      */
     public function getLodestoneNotices()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_NOTICES)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_NOTICES)->parseNotices();
     }
 
     /**
@@ -246,7 +250,7 @@ class Api
      */
     public function getLodestoneMaintenance()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_MAINTENANCE)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_MAINTENANCE)->parseMaintenance();
     }
 
     /**
@@ -255,7 +259,7 @@ class Api
      */
     public function getLodestoneUpdates()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_UPDATES)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_UPDATES)->parseUpdates();
     }
 
     /**
@@ -264,7 +268,7 @@ class Api
      */
     public function getLodestoneStatus()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_STATUS)->parseBanners();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_STATUS)->parseStatus();
     }
 
     /**
@@ -273,7 +277,7 @@ class Api
      */
     public function getWorldStatus()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_WORLD_STATUS)->parseWorldStatus();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_WORLD_STATUS)->parseWorldStatus();
     }
 
     /**
@@ -282,7 +286,7 @@ class Api
      */
     public function getDevBlog()
     {
-        return (new Lodestone())->url(Routes::LODESTONE_DEV_BLOG)->parseDevBlog();
+        return $this->getLodeStoneInstance()->url(Routes::LODESTONE_DEV_BLOG)->parseDevBlog();
     }
 
     /**

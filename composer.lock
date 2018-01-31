@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "26c8aebcba9c5434576b5b9475d963b7",
     "content-hash": "15e627635d03a77073fae16eadb89af2",
     "packages": [
         {
@@ -60,7 +59,7 @@
                 "sql",
                 "sqlite"
             ],
-            "time": "2016-09-05 07:18:35"
+            "time": "2016-09-05T07:18:35+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -120,7 +119,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2016-06-06 09:09:37"
+            "time": "2016-06-06T09:09:37+00:00"
         },
         {
             "name": "smarty/smarty",
@@ -175,7 +174,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-08-07 18:46:49"
+            "time": "2016-08-07T18:46:49+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -228,7 +227,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2017-05-01 14:55:58"
+            "time": "2017-05-01T14:55:58+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -279,25 +278,28 @@
                 "responsive",
                 "web"
             ],
-            "time": "2016-07-25 15:51:55"
+            "time": "2016-07-25T15:51:55+00:00"
         },
         {
             "name": "viion/lodestone-php",
-            "version": "1.3",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/viion/lodestone-php.git",
-                "reference": "a966e073b2abd82ffb6af69c5468d429f9debb32"
+                "reference": "99b374f88c5a4c99214d1f76942ce57fd043903c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/viion/lodestone-php/zipball/a966e073b2abd82ffb6af69c5468d429f9debb32",
-                "reference": "a966e073b2abd82ffb6af69c5468d429f9debb32",
+                "url": "https://api.github.com/repos/viion/lodestone-php/zipball/99b374f88c5a4c99214d1f76942ce57fd043903c",
+                "reference": "99b374f88c5a4c99214d1f76942ce57fd043903c",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "symfony/css-selector": "^3.2"
+                "symfony/css-selector": ">=3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.1"
             },
             "type": "library",
             "autoload": {
@@ -325,7 +327,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-05-05 14:48:49"
+            "time": "2018-01-25T20:31:33+00:00"
         }
     ],
     "packages-dev": [],
