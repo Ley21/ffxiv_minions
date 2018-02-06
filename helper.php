@@ -649,7 +649,7 @@
         }
         else{
             $xivdb_icon = $database->quote($obj->icon2);
-            if(endsWith($xivdb_icon,"noicon.png")){
+            if(endsWith($xivdb_icon,"noicon.png'")){
                 return;
             }
             $db_id = $database->get("minions",["id"],["id[=]"=>$id]);
