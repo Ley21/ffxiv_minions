@@ -534,11 +534,12 @@
         }
         
         
+        $collectables = $character->getcollectables();
         //Get all minions from current charakter
-        $minions = $character->getminions();
+        $minions = $collectables->getminions();
         insert_item_char($id,$minions,"minions","player_minion");
         
-        $mounts = $character->getmounts();
+        $mounts = $collectables->getmounts();
         insert_item_char($id,$mounts,"mounts","player_mounts");
         
         return $output;
@@ -559,7 +560,7 @@
         
         foreach($items as $item){
             
-            $player_item = strtolower($item['name']);
+            $player_item = strtolower($item->getname());
             $m_id = array_search($player_item,$new_data);
             if ($m_id !== false) {
                 //echo "DB: $new_data[$m_id] - Player: $player_item";
