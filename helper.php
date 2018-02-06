@@ -441,7 +441,8 @@
         //Get charakter from lodestone
         $api = new \Lodestone\Api;
         $character = (Object)$api->getCharacter($id);
-        if(empty($character->id) && !empty($id)){
+        
+        if(empty($character->getid()) && !empty($id)){
             echo "Character with id '$id' was deleted.";
             delete_char($id);
         }
@@ -486,59 +487,59 @@
             return null;
         }
         
-        if(empty($character->id)){
+        if(empty($character->getid())){
             return "Could not find the charakter '$name' on server '$server'";
             exit;
         }
         
-        $c_name = strtolower($character->name);
-        $c_world = strtolower($character->server);
-        $c_portrait = $database->quote($character->portrait);
+        $c_name = strtolower($character->getname());
+        $c_world = strtolower($character->getserver());
+        $c_portrait = $database->quote($character->getportrait());
         
-        $fc = get_freeCompany($character->free_company);
-        $gc = (Object) $character->grand_company;
-        $guardian = (Object)$character->guardian;
+        $fc = get_freeCompany($character->getfreecompany());
+        $gc = (Object) $character->getgrandcompany();
+        $guardian = (Object)$character->getguardian();
+        
         
         //Check if an charakter with the same id already exists
-        $p_id = $database->get("players", "id", ["id" => $character->id]);
+        $p_id = $database->get("players", "id", ["id" => $character->getid()]);
         $output;
         
         $data = [
             	"name" => $c_name,
             	"world" => $c_world,
-            	"title" => $character->title,
+            	"title" => $character->gettitle(),
             	"portrait" => $c_portrait,
-            	"race" => $character->race,
-            	"clan" => $character->clan,
-            	"gender" => strtolower($character->gender),
-            	"nameday" => $character->nameday,
-            	"guardian" => $guardian->name,
-            	"grandCompany" => $gc->name,
-            	"freeCompany" => $fc->name,
-            	"freeCompanyId" => $character->free_company,
+            	"race" => $character->getrace(),
+            	"clan" => $character->getclan(),
+            	"gender" => strtolower($character->getgender()),
+            	"nameday" => $character->getnameday(),
+            	"guardian" => $guardian->getname(),
+            	"grandCompany" => $gc->getname(),
+            	"freeCompany" => $fc->getname(),
+            	"freeCompanyId" => $character->getfreecompany(),
             	"last_update_date" => date("Y-m-d")
             ];
-        
+        $id = $character->getid();
         if(!$player && empty($p_id)){
-            $data["id"]= $character->id;
+            $data["id"]= $id;
             //Insert new charakter
             $database->insert("players", $data);
-            $output = "New charakter '$c_name' with id '$character->id' from server '$c_world' was added to database.";
+            $output = "New charakter '$c_name' with id '$id' from server '$c_world' was added to database.";
         }
         else{
             //Update existing charakter
-            $database->update("players", $data, ["id[=]"=>$character->id]);
-            $output = "Charakter '$c_name' with id '$character->id' from server '$c_world' was updated.";
+            $database->update("players", $data, ["id[=]"=>$id]);
+            $output = "Charakter '$c_name' with id '$id' from server '$c_world' was updated.";
         }
         
-        $p_id = $character->id;
         
         //Get all minions from current charakter
-        $minions = $character->minions;
-        insert_item_char($p_id,$minions,"minions","player_minion");
+        $minions = $character->getminions();
+        insert_item_char($id,$minions,"minions","player_minion");
         
-        $mounts = $character->mounts;
-        insert_item_char($p_id,$mounts,"mounts","player_mounts");
+        $mounts = $character->getmounts();
+        insert_item_char($id,$mounts,"mounts","player_mounts");
         
         return $output;
     }
