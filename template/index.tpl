@@ -31,7 +31,6 @@
     <script src="js/functions.js"></script>
     <script src="js/index.js"></script>
     <script src="https://xivdb.com/tooltips.js"></script>
-    {$piwikScript}
 </head>
 
 <body style="background-image:url(img/background_3.jpg);background-repeat:no-repeat;background-attachment:fixed">
