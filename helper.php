@@ -464,9 +464,9 @@
         // loop through characters
         foreach($characters['results'] as $char) {
             $char = (Object)$char;
-            if($char->server == $server && 
-                $char->name == $name){
-                return insert_update_charakter_by_id($char->id);
+            if($char->getserver() == $server && 
+                $char->getname() == $name){
+                return insert_update_charakter_by_id($char->getid());
             }
         }
         
