@@ -462,7 +462,7 @@
         $characters = $api->searchCharacter($name, $server);
         
         // loop through characters
-        foreach($characters['results'] as $char) {
+        foreach($characters->getresults() as $char) {
             $char = (Object)$char;
             if($char->getserver() == $server && 
                 $char->getname() == $name){
