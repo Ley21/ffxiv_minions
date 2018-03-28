@@ -4585,6 +4585,51 @@
         ]
     },
     {
+        "id": "285",
+        "name": "Wind-up Fafnir",
+        "sellable": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be obtained from a loot box in eureka.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llig in einer Loot Box in Eureka erh\u00e4ltlich.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "286",
+        "name": "Wind-up Mithra",
+        "sellable": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be obtained from a loot box in eureka.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llig in einer Loot Box in Eureka erh\u00e4ltlich.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "287",
+        "name": "The Prince Of Anemos",
+        "sellable": "1",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Receive a Gold Medal for participation in the FATE <a href='http:\/\/xivdb.com\/fate'>The Shadow Over Anemos<\/a> in Eureka.",
+                "method_description_fr": null,
+                "method_description_de": "Erhalte bei dem FATE <a href='http:\/\/de.xivdb.com\/fate'>K\u00fcssen Verboten<\/a> Gold in Eureka.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "288",
         "name": "Komainu",
         "sellable": "0",

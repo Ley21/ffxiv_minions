@@ -1296,6 +1296,22 @@
         ]
     },
     {
+        "id": "103",
+        "name": "Red Baron",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "104",
         "name": "Demonic Lanner",
         "sellable": "0",
@@ -1600,6 +1616,22 @@
         ]
     },
     {
+        "id": "128",
+        "name": "Commandeered Magitek Armor",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "130",
         "name": "Ixion",
         "sellable": "0",
@@ -1633,7 +1665,7 @@
     },
     {
         "id": "135",
-        "name": "\u98a8\u706b\u4e8c\u8f2a",
+        "name": "Nezha Chariot",
         "sellable": "0",
         "can_fly": "0",
         "methodes": [
@@ -1792,6 +1824,22 @@
         ]
     },
     {
+        "id": "147",
+        "name": "Marid",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "148",
         "name": "True Griffin",
         "sellable": "0",
@@ -1803,6 +1851,38 @@
                 "method_description_en": "Ananta Beast Tribe. Purchasable for 18 Ananta Dreamstaff from <a href='http:\/\/xivdb.com\/special-shop\/1769847'>Ananta Dreamstaff Exchange<\/a> (upon reaching 'Bloodsworn' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Ananta. Erh\u00c3\u00a4ltlich f\u00c3\u00bcr 18 Ananta-Traumstab bei <a href='http:\/\/de.xivdb.com\/special-shop\/1769847'>Ananta-Traumst\u00e4be<\/a> (Ab Verbundenheitsgrad 'Solidarisch\u2605').",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "149",
+        "name": "True Griffin",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "150",
+        "name": "Tyrannosaur",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Can be obtained from a loot box in eureka.",
+                "method_description_fr": null,
+                "method_description_de": "Zuf\u00e4llig in einer Loot Box in Eureka erh\u00e4ltlich.",
                 "method_description_ja": null
             }
         ]
