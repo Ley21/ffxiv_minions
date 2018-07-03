@@ -1776,6 +1776,22 @@
         ]
     },
     {
+        "id": "143",
+        "name": "The Red Hare",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
         "id": "144",
         "name": "Auspicious Kamuy",
         "sellable": "0",
@@ -1931,6 +1947,118 @@
                 "method_description_en": "Drop in the treasure coffer in the raid <a href='http:\/\/xivdb.com\/instance\/30066'>Sigmascape V4.0 (Savage)<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Garantierte Beute in der Schatztruhe in dem Raid <a href='http:\/\/de.xivdb.com\/instance\/30066'>Sigmametrie 4.0 (episch)<\/a>.",
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "158",
+        "name": "Lunar Kamuy",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "159",
+        "name": "Dodo",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "162",
+        "name": "Magitek Conveyor",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "163",
+        "name": "Prototype Conveyor",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "164",
+        "name": "Mikoshi",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "166",
+        "name": "Juedi",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
+                "method_description_ja": null
+            }
+        ]
+    },
+    {
+        "id": "168",
+        "name": "Safeguard System",
+        "sellable": "0",
+        "can_fly": "0",
+        "methodes": [
+            {
+                "method": null,
+                "available": 0,
+                "method_description_en": null,
+                "method_description_fr": null,
+                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
