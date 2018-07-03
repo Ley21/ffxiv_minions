@@ -3551,14 +3551,6 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Misc. Methods",
-                "available": "1",
-                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
-                "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
-                "method_description_ja": null
-            },
-            {
                 "method": "Wondrous Tails",
                 "available": "1",
                 "method_description_en": "Can be a reward form 'Wondrous Tails'.",
@@ -3573,14 +3565,6 @@
         "name": "Dress-up Alisaie",
         "sellable": "0",
         "methodes": [
-            {
-                "method": "Misc. Methods",
-                "available": "1",
-                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
-                "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
-                "method_description_ja": null
-            },
             {
                 "method": "Wondrous Tails",
                 "available": "1",
@@ -4557,14 +4541,14 @@
     {
         "id": "282",
         "name": "Wind-up Magnai",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/33009'>Wind-up Magnai<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/33009'>Magnai-Puppe<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4677,14 +4661,14 @@
     {
         "id": "290",
         "name": "Monkey King",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/61'>The Swallow's Compass<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/61'>Kompass Der Schwalbe<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -4695,11 +4679,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "PvP",
+                "available": "1",
+                "method_description_en": "Can be purchased for 15,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann f\u00c3\u00bcr 15.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00c3\u00b6hlen-Pier<\/a> gekauft werden.",
                 "method_description_ja": null
             }
         ]
@@ -4737,14 +4721,14 @@
     {
         "id": "294",
         "name": "Wind-up Sadu",
-        "sellable": "0",
+        "sellable": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Crafting",
+                "available": "1",
+                "method_description_en": "Can be crafted from recept <a href='http:\/\/xivdb.com\/recipe\/33008'>Wind-up Sadu<\/a> by weaver.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Kann durch das Rezept <a href='http:\/\/de.xivdb.com\/recipe\/33008'>Sadu-Puppe<\/a> vom Weber hergestellt werden.",
                 "method_description_ja": null
             }
         ]
@@ -4755,11 +4739,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Promotions",
+                "available": "0",
+                "method_description_en": "Obtained by redeeming a code through purchasing the 'STORMBLOOD: FINAL FANTASY XIV Original-Soundtrack'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'STORMBLOOD: FINAL FANTASY XIV Original-Soundtrack'.",
                 "method_description_ja": null
             }
         ]
@@ -4770,11 +4754,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Wondrous Tails",
+                "available": "1",
+                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich durch 'Khloes Abenteueralbum'.",
                 "method_description_ja": null
             }
         ]
@@ -4785,11 +4769,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Dungeons & Trials",
+                "available": "1",
+                "method_description_en": "Found in Final Boss Treasure Coffer in <a href='http:\/\/xivdb.com\/instance\/30068'>The Ridorana Lighthouse<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/30068'>Richtfeuer Von Ridorana<\/a>.",
                 "method_description_ja": null
             }
         ]
@@ -4800,11 +4784,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Beast Tribe",
+                "available": "1",
+                "method_description_en": "Namazu Beast Tribe. Purchasable for 7 Namazu Koban from <a href='http:\/\/xivdb.com\/special-shop\/1769868'>Namazu Koban Exchange<\/a> (upon reaching 'Trusted' reputation).",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Wilder Stamm: Namazu. Erh\u00c3\u00a4ltlich f\u00c3\u00bcr 7 Namazuo-Koban bei <a href='http:\/\/de.xivdb.com\/special-shop\/1769868'>Namazuo-Koban<\/a> (Ab Verbundenheitsgrad 'Vertraut').",
                 "method_description_ja": null
             }
         ]
