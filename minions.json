@@ -1070,6 +1070,14 @@
         "name": "Wind-up Shantotto",
         "sellable": "0",
         "methodes": [
+			{
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
             {
                 "method": "Seasonal Rewards",
                 "available": "0",
@@ -2686,7 +2694,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY\u00c2\u00ae XIV: HEAVENSWARD\u00e2\u201e\u00a2 The Art of Ishgard -Stone and Steel- [Art Book]'. Available until Dec. 31, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'FINAL FANTASY\u00c2\u00ae XIV: HEAVENSWARD\u00e2\u201e\u00a2 The Art of Ishgard -Stone and Steel- [Art Book]'. Verf\u00c3\u00bcgbar bis 31.12.2017.",
@@ -2956,6 +2964,14 @@
         "name": "Dress-up Y'shtola",
         "sellable": "1",
         "methodes": [
+			{
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
             {
                 "method": "Seasonal Rewards",
                 "available": "0",
@@ -3033,7 +3049,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'Heavensward: Final Fantasy XIV Original Soundtrack'. Available until Dec. 31, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'Heavensward: Final Fantasy XIV Original Soundtrack'. Verf\u00c3\u00bcgbar bis 31.12.2017.",
@@ -3175,14 +3191,6 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": "Misc. Methods",
-                "available": "1",
-                "method_description_en": "Can be purchased for 15,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
-                "method_description_fr": null,
-                "method_description_de": "Kann f\u00c3\u00bcr 15.000 Wolfsmarken am <a href='http:\/\/de.xivdb.com\/placename\/358'>Wolfsh\u00c3\u00b6hlen-Pier<\/a> gekauft werden.",
-                "method_description_ja": null
-            },
-            {
                 "method": "PvP",
                 "available": "1",
                 "method_description_en": "Can be purchased for 15,000 Wolf Marks at <a href='http:\/\/xivdb.com\/placename\/358'>Wolves' Den Pier<\/a>.",
@@ -3197,6 +3205,14 @@
         "name": "Wind-up Krile",
         "sellable": "0",
         "methodes": [
+			{
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
             {
                 "method": "Seasonal Rewards",
                 "available": "0",
@@ -3507,7 +3523,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'Encyclopaedia Eorzea - The World of Final Fantasy XIV'. Available until Dec. 31, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'Encyclopaedia Eorzea - The World of Final Fantasy XIV'. Verf\u00c3\u00bcgbar bis 31.12.2017.",
@@ -3605,7 +3621,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Frankfurt.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Frankfurt.",
@@ -3620,7 +3636,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Las Vegas.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Las Vegas.",
@@ -3635,7 +3651,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by visiting or buying the Premium Live Stream of Fan Festival 2016\/2017 in Tokyo.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch den Besuch oder den Kauf des Premium Live Stream des Fan Festival 2016\/2017 in Tokyo.",
@@ -3663,6 +3679,14 @@
         "name": "Continental Eye",
         "sellable": "0",
         "methodes": [
+			{
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
             {
                 "method": "Seasonal Rewards",
                 "available": "0",
@@ -3693,6 +3717,14 @@
         "name": "Angel Of Mercy",
         "sellable": "0",
         "methodes": [
+			{
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station.",
+                "method_description_fr": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich in der Mogry-Station.",
+                "method_description_ja": null
+            },
             {
                 "method": "Seasonal Rewards",
                 "available": "0",
@@ -3708,14 +3740,6 @@
         "name": "Wind-up Estinien",
         "sellable": "1",
         "methodes": [
-            {
-                "method": "Misc. Methods",
-                "available": "1",
-                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
-                "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
-                "method_description_ja": null
-            },
             {
                 "method": "Wondrous Tails",
                 "available": "1",
@@ -3733,7 +3757,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY\u00c2\u00ae XIV: HEAVENSWARD\u00e2\u201e\u00a2 The Art of Ishgard -The Scars of War- [Art Book]'. Available until Dec. 31, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'FINAL FANTASY\u00c2\u00ae XIV: HEAVENSWARD\u00e2\u201e\u00a2 The Art of Ishgard -The Scars of War- [Art Book]'. Verf\u00c3\u00bcgbar bis 31.12.2017.",
@@ -3793,7 +3817,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'THE FAR EDGE OF FATE: FINAL FANTASY XIV Original Soundtrack'. Available until Dec. 31, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'THE FAR EDGE OF FATE: FINAL FANTASY XIV Original Soundtrack'. Verf\u00c3\u00bcgbar bis 31.12.2017",
@@ -3899,7 +3923,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Obtained as pre-order bonus for Stormblood.",
                 "method_description_fr": null,
                 "method_description_de": "Vorbesteller-Bonus f\u00c3\u00bcr Stormblood.",
@@ -4042,7 +4066,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2017\/The_Rising\/'>The Rising 2017<\/a>. From Saturday, August 26, 2017 to Thursday, September 14, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2017\/The_Rising\/'>Fest der Wiedergeburt 2017<\/a>. Von Samstag, den 26.08.2017 bis Donnerstag, den 14.09.2017.",
@@ -4057,7 +4081,7 @@
         "methodes": [
             {
                 "method": "Dungeons & Trials",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Found in Final Boss Treasure Coffer in  <a href='http:\/\/xivdb.com\/instance\/57'>Kugane Castle<\/a>.",
                 "method_description_fr": null,
                 "method_description_de": "Endboss-Schatzkiste in <a href='http:\/\/de.xivdb.com\/instance\/57'>Schloss Kugane<\/a>.",
@@ -4072,7 +4096,7 @@
         "methodes": [
             {
                 "method": "Seasonal Rewards",
-                "available": "1",
+                "available": "0",
                 "method_description_en": "Reward for the Special Event <a href='http:\/\/eu.finalfantasyxiv.com\/lodestone\/special\/2017\/The_Rising\/'>The Rising 2017<\/a>. From Saturday, August 26, 2017 to Thursday, September 14, 2017.",
                 "method_description_fr": null,
                 "method_description_de": "Belohnung des Events: <a href='http:\/\/de.finalfantasyxiv.com\/lodestone\/special\/2017\/The_Rising\/'>Fest der Wiedergeburt 2017<\/a>. Von Samstag, den 26.08.2017 bis Donnerstag, den 14.09.2017.",
@@ -4087,7 +4111,7 @@
         "methodes": [
             {
                 "method": "Promotions",
-                "available": "0",
+                "available": "1",
                 "method_description_en": "Obtained by redeeming a code through purchasing the 'FINAL FANTASY XIV: Art of the Revolution-'.",
                 "method_description_fr": null,
                 "method_description_de": "Erh\u00c3\u00a4ltlich durch das einl\u00c3\u00b6sen eines Codes aus dem 'FINAL FANTASY XIV: Art of the Revolution'.",
@@ -4220,14 +4244,6 @@
         "name": "Wind-up Khloe",
         "sellable": "1",
         "methodes": [
-            {
-                "method": "Misc. Methods",
-                "available": "1",
-                "method_description_en": "Can be a reward form 'Wondrous Tails'.",
-                "method_description_fr": null,
-                "method_description_de": "Erh\u00e4ltlich durch 'Khloes Abenteueralbum'.",
-                "method_description_ja": null
-            },
             {
                 "method": "Wondrous Tails",
                 "available": "1",
@@ -4694,11 +4710,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Misc. Methods",
+                "available": "1",
+                "method_description_en": "Purchased from <a href='http:\/\/xivdb.com\/npc\/1025848'>Confederate Custodian<\/a> for 10 <a href='http:\/\/xivdb.com\/item\/23164'>Empyrean Potsherd<\/a>. (Obtainable from The Heaven-on-High)",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00c3\u00a4tlich bei <a href='http:\/\/xivdb.com\/npc\/1025848'>Materialhüterin<\/a> f\u00c3\u00bcr 10 <a href='http:\/\/de.xivdb.com\/item\/23164'>Empyreum-Scherben<\/a>. (Himmelssäule)",
                 "method_description_ja": null
             }
         ]
@@ -4709,11 +4725,11 @@
         "sellable": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Seasonal Rewards",
+                "available": "0",
+                "method_description_en": "Reward for the Special Event <a href=''>The Rising 2018<\/a>.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Belohnung des Events: <a href=''>Fest der Wiedergeburt 2018<\/a>.",
                 "method_description_ja": null
             }
         ]
