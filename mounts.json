@@ -1288,22 +1288,6 @@
         ]
     },
     {
-        "id": "103",
-        "name": "Red Baron",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
         "id": "104",
         "name": "Demonic Lanner",
         "sellable": "0",
@@ -1608,22 +1592,6 @@
         ]
     },
     {
-        "id": "128",
-        "name": "Commandeered Magitek Armor",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
         "id": "130",
         "name": "Ixion",
         "sellable": "0",
@@ -1662,11 +1630,11 @@
         "can_fly": "0",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Mogry Shop Purchase",
+                "available": "1",
+                "method_description_en": "Purchasable from the Mog Station for all charakters.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erh\u00c3\u00a4ltlich in der Mogry-Station f\u00c3\u00bcr alle Charaktere.",
                 "method_description_ja": null
             }
         ]
@@ -1832,22 +1800,6 @@
         ]
     },
     {
-        "id": "147",
-        "name": "Marid",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
         "id": "148",
         "name": "True Griffin",
         "sellable": "0",
@@ -1859,22 +1811,6 @@
                 "method_description_en": "Ananta Beast Tribe. Purchasable for 18 Ananta Dreamstaff from <a href='http:\/\/xivdb.com\/special-shop\/1769847'>Ananta Dreamstaff Exchange<\/a> (upon reaching 'Bloodsworn' reputation).",
                 "method_description_fr": null,
                 "method_description_de": "Wilder Stamm: Ananta. Erh\u00c3\u00a4ltlich f\u00c3\u00bcr 18 Ananta-Traumstab bei <a href='http:\/\/de.xivdb.com\/special-shop\/1769847'>Ananta-Traumst\u00e4be<\/a> (Ab Verbundenheitsgrad 'Solidarisch\u2605').",
-                "method_description_ja": null
-            }
-        ]
-    },
-    {
-        "id": "149",
-        "name": "True Griffin",
-        "sellable": "0",
-        "can_fly": "0",
-        "methodes": [
-            {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
-                "method_description_fr": null,
-                "method_description_de": null,
                 "method_description_ja": null
             }
         ]
@@ -1998,11 +1934,11 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "PvP",
+                "available": "0",
+                "method_description_en": "Special price for reaching rank 1.-100. in the season 8 of 'The Feast' in ranking.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Spezieller Preis f\u00c3\u00bcr die Teilnahme an der Season 8 von 'The Feast' und das erreichen des Platzes 1.-100 in der Wertung.",
                 "method_description_ja": null
             }
         ]
@@ -2030,11 +1966,11 @@
         "can_fly": "1",
         "methodes": [
             {
-                "method": null,
-                "available": 0,
-                "method_description_en": null,
+                "method": "Deep Dungeon",
+                "available": "1",
+                "method_description_en": "Will be optained by clear four times floor 100 of Heaven-on-High.",
                 "method_description_fr": null,
-                "method_description_de": null,
+                "method_description_de": "Erhältlich durch das viermalige abschliessen der Ebene 100 der Himmelssäule.",
                 "method_description_ja": null
             }
         ]
